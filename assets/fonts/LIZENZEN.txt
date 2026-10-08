@@ -5,3 +5,4 @@ Alle Schriften stehen unter der SIL Open Font License 1.1 (https://openfontlicen
 - Caveat – Copyright 2014 The Caveat Project Authors
 - Source Sans 3 – Copyright 2010-2020 Adobe
 - Source Serif 4 – Copyright 2014-2021 Adobe
+- Recursive (Variable, alle Achsen) – Copyright 2019 The Recursive Project Authors, SIL Open Font License 1.1

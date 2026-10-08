@@ -60,6 +60,19 @@ if(h1){
   }
 }
 
+/* ---------- Maschine → Mensch: der Stift läuft durch den Satz ---------- */
+const m2=$('.morph .m2');
+if(m2&&!RM){
+  const t=m2.textContent;m2.innerHTML=t.split(' ').map(w=>`<span class="mw">${[...w].map(c=>`<span class="ml">${c}</span>`).join('')}</span>`).join(' ');
+  const L=$$('.ml',m2),n=L.length,sec=$('.morph');let raf=0,last=-1;
+  const ease=x=>x<0?0:x>1?1:x*x*(3-2*x);
+  const frame=()=>{raf=0;const r=sec.getBoundingClientRect();const T=Math.min(1,Math.max(0,(innerHeight*.92-r.top)/(innerHeight*.75)));
+    if(Math.abs(T-last)<.002)return;last=T;
+    L.forEach((el,i)=>{const k=ease(T*1.7-(i/n)*.7);el.style.setProperty('--mono',(1-k).toFixed(3));el.style.setProperty('--casl',k.toFixed(3));el.style.setProperty('--wg',(360+300*k).toFixed(0));el.style.setProperty('--sl',(-7*k).toFixed(2));el.style.setProperty('--c',k.toFixed(3))})};
+  const req=()=>{if(!raf)raf=requestAnimationFrame(frame)};
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);frame();
+}
+
 /* ---------- „Wo ziehen Sie die Linie?“ ---------- */
 const LF={
   'Kursausschreibung':{a:['Erstfassung aus Stichworten','Varianten für Website und Social Media'],n:['„Wie liest das jemand ohne Vorwissen?“','Fehlende Pflichtangaben aufspüren'],b:['passt der Kurs zur Zielgruppe?','Preis und Förderhinweis','die Freigabe'],note:'Leitbild, Stilregeln und gute Beispiele aus dem Haus machen den Unterschied – nicht der geschickte Satz.'},
