@@ -2,11 +2,12 @@
 (()=>{
 const ROOT=document.currentScript.dataset.root||'./';
 const A=()=>window.AF,esc=s=>A().esc(s);
+const mins=v=>v?Math.max(1,Math.round(v>60?v/60:v)):0;
 const SEL='id,title,slug,excerpt,featured_image_url,published_at,average_read_time,category:categories(name,slug)';
 function card(p){
-  return `<a class="post rv in" href="${ROOT}impulse/beitrag.html?slug=${encodeURIComponent(p.slug)}">
+  return `<a class="post rv in" href="${ROOT}impulse/${encodeURIComponent(p.slug)}/">
     ${p.featured_image_url?`<div class="im"><img src="${esc(p.featured_image_url)}" alt="" loading="lazy"></div>`:''}
-    <div class="b"><span class="cat">${esc(p.category?.name||'Impuls')}</span><h3>${esc(p.title)}</h3>${p.excerpt?`<p>${esc(p.excerpt)}</p>`:''}<span class="meta">${A().date(p.published_at)}${p.average_read_time?` · ${p.average_read_time} Min. Lesezeit`:''}</span></div></a>`;
+    <div class="b"><span class="cat">${esc(p.category?.name||'Impuls')}</span><h3>${esc(p.title)}</h3>${p.excerpt?`<p>${esc(p.excerpt)}</p>`:''}<span class="meta">${A().date(p.published_at)}${p.average_read_time?` · ${mins(p.average_read_time)} Min. Lesezeit`:''}</span></div></a>`;
 }
 async function latest(el,n){
   try{const d=await A().get(`posts?select=${SEL}&status=eq.published&order=published_at.desc&limit=${n}`);el.innerHTML=d.map(card).join('')}
@@ -64,7 +65,7 @@ async function post(el){
   let imgs=[];try{imgs=(await A().get(`post_images?select=image_url,alt_text,image_type,sort_order&post_id=eq.${p.id}&order=sort_order`)).filter(x=>x.image_type!=='featured')}catch(e){}
   document.title=p.title+' · Armin Fradler';if(p.meta_description){let m=document.querySelector('meta[name=description]');if(!m){m=document.createElement('meta');m.name='description';document.head.appendChild(m)}m.content=p.meta_description}
   const md0=(p.content||'').replace(/^#\s+.*\n/,'');
-  el.innerHTML=`<p class="kick"><a href="./${p.category?`?thema=${esc(p.category.slug)}`:''}" style="text-decoration:none">${esc(p.category?.name||'Impuls')}</a> · ${A().date(p.published_at)}${p.average_read_time?` · ${p.average_read_time} Min.`:''}</p>
+  el.innerHTML=`<p class="kick"><a href="./${p.category?`?thema=${esc(p.category.slug)}`:''}" style="text-decoration:none">${esc(p.category?.name||'Impuls')}</a> · ${A().date(p.published_at)}${p.average_read_time?` · ${mins(p.average_read_time)} Min.`:''}</p>
     <h1 style="font-size:clamp(32px,5vw,50px);margin-bottom:22px">${esc(p.title)}</h1>
     ${new Date(p.published_at)<new Date('2026-09-01')?'<p class="archive-note">Aus dem Archiv: Dieser Beitrag ist vor über einem halben Jahr erschienen. Manche Zahlen und Produktnamen haben sich seither geändert.</p>':''}
     ${p.featured_image_url?`<figure style="margin:0 0 30px"><img src="${esc(p.featured_image_url)}" alt="" style="border-radius:4px"></figure>`:''}

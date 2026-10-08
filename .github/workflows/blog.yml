@@ -1,0 +1,25 @@
+name: Impulse statisch bauen
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    paths: ["tools/build_blog.py", "site.json"]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/build_blog.py
+      - name: Änderungen übernehmen
+        run: |
+          git config user.name "Armin Fradler"
+          git config user.email "info@arminfradler.at"
+          git add -A impulse blog sitemap.xml
+          git diff --cached --quiet || git commit -m "Impulse automatisch aktualisiert"
+          git push
