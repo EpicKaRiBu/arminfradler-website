@@ -5,7 +5,7 @@ const A=()=>window.AF,esc=s=>A().esc(s);
 const SEL='id,title,slug,excerpt,featured_image_url,published_at,average_read_time,category:categories(name,slug)';
 function card(p){
   return `<a class="post rv in" href="${ROOT}impulse/beitrag.html?slug=${encodeURIComponent(p.slug)}">
-    ${p.featured_image_url?`<img src="${esc(p.featured_image_url)}" alt="" loading="lazy">`:''}
+    ${p.featured_image_url?`<div class="im"><img src="${esc(p.featured_image_url)}" alt="" loading="lazy"></div>`:''}
     <div class="b"><span class="cat">${esc(p.category?.name||'Impuls')}</span><h3>${esc(p.title)}</h3>${p.excerpt?`<p>${esc(p.excerpt)}</p>`:''}<span class="meta">${A().date(p.published_at)}${p.average_read_time?` · ${p.average_read_time} Min. Lesezeit`:''}</span></div></a>`;
 }
 async function latest(el,n){
