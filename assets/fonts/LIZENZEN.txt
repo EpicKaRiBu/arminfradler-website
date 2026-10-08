@@ -1,0 +1,7 @@
+Selbst gehostete Schriften, unverändert, bezogen über das Fontsource-Projekt.
+Alle Schriften stehen unter der SIL Open Font License 1.1 (https://openfontlicense.org).
+
+- Special Elite – Copyright (c) 2010 Astigmatic (AOETI)
+- Caveat – Copyright 2014 The Caveat Project Authors
+- Source Sans 3 – Copyright 2010-2020 Adobe
+- Source Serif 4 – Copyright 2014-2021 Adobe

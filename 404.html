@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seite nicht gefunden · Armin Fradler</title>
+<meta name="robots" content="noindex">
+<script>
+/* Alte Adressen der bisherigen Website auf die neuen Seiten umleiten.
+   Funktioniert sowohl unter der eigenen Domain als auch unter der Vorschau-Adresse (Unterordner). */
+(function(){
+  var p=location.pathname, base=p.indexOf('/arminfradler-website/')===0?'/arminfradler-website/':'/';
+  var rest=p.slice(base.length).replace(/\/+$/,'');
+  var map={'training':'angebot.html','services':'angebot.html#betrieb','bildung':'angebot.html#schule','infrastruktur':'angebot.html#betrieb','masssoftware':'angebot.html#betrieb','kontakt':'kontakt.html','impressum':'impressum.html','datenschutz':'datenschutz.html','agb':'agb.html','ueber-mich':'ueber-mich.html','blog':'impulse/','impulse':'impulse/','ki-readiness-check':'https://mitmachen.arminfradler.at/werkzeuge/ki/'};
+  var m=rest.match(/^(?:blog|impulse)\/([^\/?#]+)$/);
+  var to=m?base+'impulse/beitrag.html?slug='+encodeURIComponent(m[1]):(map[rest]?(map[rest].indexOf('http')===0?map[rest]:base+map[rest]):null);
+  if(to)location.replace(to+(location.search&&!m?location.search:''));
+})();
+</script>
+<script>(function(){var b=location.pathname.indexOf('/arminfradler-website/')===0?'/arminfradler-website/':'/';document.write('<link href="'+b+'assets/fonts/fonts.css" rel="stylesheet"><link href="'+b+'assets/site.css" rel="stylesheet">');window.__base=b})();</script>
+</head>
+<body>
+<main>
+<section>
+  <div class="wrap narrow center">
+    <p class="hand" style="font-size:44px;margin-bottom:6px">Hier ist nichts.</p>
+    <h1 style="font-size:clamp(28px,4vw,40px)">Diese Seite gibt es nicht (mehr).</h1>
+    <p class="lead" style="margin-top:16px">Vielleicht ist sie umgezogen. Von hier aus geht es weiter:</p>
+    <p><a class="btn" id="home" href="/">Zur Startseite →</a></p><script>document.getElementById("home").href=window.__base||"/"</script>
+  </div>
+</section>
+</main>
+</body>
+</html>
