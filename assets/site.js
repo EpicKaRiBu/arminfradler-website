@@ -13,7 +13,7 @@ document.body.insertAdjacentHTML('afterbegin',`<svg width="0" height="0" style="
 document.documentElement.classList.add('tx-on');
 
 /* ---------- Kopf und Fuß ---------- */
-const NAV=[['angebot','Angebot','angebot.html'],['termine','Termine','termine.html'],['werkzeuge','Werkzeuge','https://mitmachen.arminfradler.at/werkzeuge/ki/'],['impulse','Impulse','impulse/'],['ueber','Über mich','ueber-mich.html']];
+const NAV=[['angebot','Angebot','angebot.html'],['methode','So arbeite ich','methode.html'],['termine','Termine','termine.html'],['werkzeuge','Werkzeuge','https://mitmachen.arminfradler.at/werkzeuge/ki/'],['impulse','Impulse','impulse/'],['ueber','Über mich','ueber-mich.html']];
 const head=$('#site-head');
 if(head){
   head.className='site-head';
@@ -31,7 +31,7 @@ if(foot){
   foot.className='site-foot';
   foot.innerHTML=`<div class="wrap">
     <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen für Bildungsorganisationen, Schulen und kleine Unternehmen. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
-    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
+    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
     <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:12px">Keine Cookies. Keine Analyse-Tools.</p></div>
   </div>`;
 }
@@ -100,6 +100,28 @@ if(lf){
   const show=t=>{const d=LF[t];['a','n','b'].forEach(k=>{cols[k].innerHTML=d[k].map(x=>`<li>${x}</li>`).join('');$$('li',cols[k]).forEach((li,j)=>setTimeout(()=>li.classList.add('on'),RM?0:120+j*140+(k==='n'?160:k==='b'?320:0)))});note.textContent=d.note;if(seen&&!RM)setTimeout(drawLine,380)};
   $$('button',tasks).forEach(b=>b.onclick=()=>{$$('button',tasks).forEach(x=>x.setAttribute('aria-pressed',x===b));show(b.textContent)});
   show(Object.keys(LF)[0]);
+}
+
+
+/* ---------- „Darf das in die KI?“ ---------- */
+const dt=$('.dt');
+if(dt){
+  const card=$('.dt-card',dt),out=$('.dt-out',dt),narrow=matchMedia('(max-width:860px)'),V={g:'Grün: passt.',y:'Gelb: nur mit freigegebenem Werkzeug.',r:'Rot: bleibt draußen.'};
+  $$('.dt-pick button',dt).forEach(b=>{b.setAttribute('aria-pressed','false');b.onclick=()=>{
+    $$('.dt-pick button',dt).forEach(x=>x.setAttribute('aria-pressed',x===b));b.classList.add('seen');
+    dt.dataset.l=b.dataset.l;$('.dt-v',card).textContent=V[b.dataset.l];$('.dt-t',card).textContent=b.dataset.t;
+    if(narrow.matches){b.after(out);out.classList.remove('pop');void out.offsetWidth;out.classList.add('pop')}else if(out.parentNode!==dt)dt.append(out);
+    card.classList.remove('pop','st');void card.offsetWidth;card.classList.add('pop');if(b.dataset.s)card.classList.add('st');
+  }});
+}
+
+
+/* ---------- Handy: Erstgespräch-Knopf unten ---------- */
+if(!['kontakt','impressum','datenschutz','agb'].includes(PAGE)&&head){
+  document.body.insertAdjacentHTML('beforeend',`<a class="btn mcta" href="${ROOT}kontakt.html">Kostenloses Erstgespräch <span class="arr">→</span></a>`);
+  const m=$('.mcta'),ft=$('#site-foot');
+  const upd=()=>{const end=ft?ft.getBoundingClientRect().top<innerHeight+260:false;m.classList.toggle('on',scrollY>innerHeight*.9&&!end)};
+  addEventListener('scroll',upd,{passive:true});upd();
 }
 
 })();

@@ -243,7 +243,8 @@ def main():
     ersetzen('impulse/index.html', 'impulse',
              f'\n    <div class="filters" id="filters" role="group" aria-label="Nach Thema filtern">{filter_html}</div>\n'
              f'    <div class="grid g3" id="list">\n' + '\n'.join(karte(p, '../') for p in posts) + '\n    </div>\n    ')
-    ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in posts[:3]) + '\n')
+    # Startseite: nur Beiträge mit „startseite: true“ (geprüft, mit Quellen, für Einsteiger:innen verständlich), höchstens zwei
+    ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in [q for q in posts if q.get('startseite') is True][:2]) + '\n')
 
     # RSS
     jetzt = dt(max(str(p.get('updated') or p['date']) for p in posts)).strftime('%a, %d %b %Y %H:%M:%S +0000') if posts else ''

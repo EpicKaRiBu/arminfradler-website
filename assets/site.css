@@ -109,7 +109,7 @@ section.tight{padding:64px 0}
 @media (max-width:700px){.g2,.g3,.g4{grid-template-columns:1fr}section{padding:70px 0}
   .hero{padding:26px 0 64px}
   .hero .wrap{grid-template-columns:1fr;gap:0}
-  .portrait{order:-1;justify-self:start;width:190px;margin:4px 0 30px 4px}
+  .portrait{justify-self:start;width:170px;margin:38px 0 0 4px}
   .portrait .photo{padding:8px 8px 34px;--rot:-2.5deg}
   .portrait .cap{font-size:21px;bottom:6px}
   .portrait .stamp{left:150px;right:auto;bottom:auto;top:40%;font-size:12px;padding:5px 10px;white-space:nowrap}
@@ -222,7 +222,7 @@ form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media (max-width:640px){form .row{grid-template-columns:1fr}}
 label{display:block;font-weight:600;font-size:16px;margin:16px 0 6px}
 input,select,textarea{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1.5px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink)}
-input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:3px solid rgba(192,57,43,.35);outline-offset:1px}
 textarea{min-height:160px;resize:vertical}
 .hp{position:absolute;left:-5000px}
 .ok{border-left:5px solid var(--green);background:var(--card);padding:16px 20px;border-radius:0 4px 4px 0}
@@ -339,3 +339,86 @@ textarea{min-height:160px;resize:vertical}
 .faq summary::after{content:"+";font-family:var(--type);color:var(--pencil);font-size:24px;line-height:1}
 .faq details[open] summary::after{content:"–"}
 .faq details p{margin:10px 0 0;color:var(--ink-2)}
+
+/* Handy: Menü gut antippbar, Fragen als Wischreihe, Formate als Karten */
+@media (max-width:900px){.nav{gap:2px}.nav a{display:flex;align-items:center;min-height:44px}.nav a.on::after,.nav a:hover::after{bottom:6px}.nav .cta{margin-top:10px}}
+@media (max-width:600px){
+  .notes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;margin:16px -22px 0;padding:18px 22px 26px;scrollbar-width:none}
+  .notes::-webkit-scrollbar{display:none}
+  .note-q{flex:0 0 76%;scroll-snap-align:center;min-height:200px}
+}
+.notes-hint{font-family:var(--hand);font-size:22px;color:var(--pencil);margin:4px 0 0}
+.notes-hint{display:none}
+@media (max-width:600px){.notes-hint{display:block}}
+.kit{list-style:none;padding:0;margin:0}
+.kit li{padding:9px 0 9px 30px;border-bottom:1px dashed var(--line);position:relative}
+.kit li:last-child{border-bottom:0}
+.kit li::before{content:"✓";position:absolute;left:4px;top:6px;font-family:var(--hand);font-size:24px;color:var(--pencil)}
+.faq summary{min-height:44px;display:flex;align-items:center}
+
+/* „Darf das in die KI?“ – Datenampel zum Antippen */
+.dt{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;margin-top:30px;align-items:start}
+.dt-pick{display:grid;gap:10px}
+.dt-pick button{font:inherit;font-size:17px;text-align:left;padding:13px 18px 13px 46px;min-height:52px;border:1.5px solid var(--line);border-radius:4px;background:var(--card);cursor:pointer;position:relative;transition:border-color .2s,transform .2s,box-shadow .2s;color:var(--ink)}
+.dt-pick button::before{content:"";position:absolute;left:17px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;border:2px solid var(--line);transition:background .3s,border-color .3s}
+.dt-pick button:hover{border-color:var(--ink);transform:translateX(3px)}
+.dt-pick button[aria-pressed=true]{border-color:var(--ink);box-shadow:0 10px 20px -16px rgba(0,0,0,.6)}
+.dt-pick button.seen[data-l=g]::before{background:var(--green);border-color:var(--green)}
+.dt-pick button.seen[data-l=y]::before{background:var(--yellow);border-color:var(--yellow)}
+.dt-pick button.seen[data-l=r]::before{background:var(--red);border-color:var(--red)}
+.dt-out{display:flex;gap:26px;align-items:flex-start;position:sticky;top:100px}
+.dt-amp{flex:0 0 auto;background:var(--ink);border-radius:30px;padding:14px 12px;display:grid;gap:12px;box-shadow:0 18px 30px -18px rgba(0,0,0,.7);transform:rotate(-2deg)}
+.dt-amp i{display:block;width:46px;height:46px;border-radius:50%;background:#3a3630;box-shadow:inset 0 3px 6px rgba(0,0,0,.6);transition:background .25s,box-shadow .35s}
+.dt[data-l=r] .dt-amp .r{background:var(--red);box-shadow:0 0 22px 4px rgba(178,58,46,.65),inset 0 -3px 6px rgba(0,0,0,.25)}
+.dt[data-l=y] .dt-amp .y{background:var(--yellow);box-shadow:0 0 22px 4px rgba(211,162,33,.6),inset 0 -3px 6px rgba(0,0,0,.25)}
+.dt[data-l=g] .dt-amp .g{background:var(--green);box-shadow:0 0 22px 4px rgba(63,125,78,.6),inset 0 -3px 6px rgba(0,0,0,.25)}
+.dt-card{flex:1;min-height:200px;transform:rotate(1deg);padding-bottom:44px}
+.dt-v{font-family:var(--type);font-size:24px;line-height:1.2;margin:0 0 10px}
+.dt-t{margin:0;color:var(--ink-2)}
+.dt-card.pop .dt-v,.dt-card.pop .dt-t{animation:dtin .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes dtin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.dt-stamp{right:14px;bottom:-16px;font-size:13px;transition:none}
+.dt-card.st .dt-stamp{animation:stamp .45s cubic-bezier(.3,1.6,.5,1) .35s forwards}
+.dt-more{margin-top:30px;max-width:720px}
+@media (max-width:860px){
+  .dt{grid-template-columns:1fr;gap:26px}
+  .dt-out{position:static;gap:12px;margin:4px 0 8px;align-items:center}
+  .dt:not([data-l]) .dt-out{display:none}
+  .dt-out.pop{animation:dtin .4s cubic-bezier(.2,.8,.2,1)}
+  .dt-amp{flex-direction:column;padding:8px 7px;gap:6px;border-radius:18px;transform:none}
+  .dt-amp i{width:22px;height:22px}
+  .dt-card{min-height:0;padding:16px 18px 30px;transform:none}
+  .dt-v{font-size:19px;margin-bottom:6px}.dt-t{font-size:16px}
+  .dt-stamp{font-size:11px;padding:4px 8px;bottom:-12px}
+  .dt-pick button{font-size:16.5px}
+}
+@media (prefers-reduced-motion:reduce){.dt-card.pop .dt-v,.dt-card.pop .dt-t{animation:none}.dt-card.st .dt-stamp{animation:none;opacity:.92}}
+
+/* Sanfte Seitenwechsel wie ein neues Blatt */
+@view-transition{navigation:auto}
+.site-head{view-transition-name:kopf}
+::view-transition-old(root){animation:.22s ease-out both blatt-weg}
+::view-transition-new(root){animation:.32s cubic-bezier(.2,.8,.2,1) both blatt-her}
+@keyframes blatt-weg{to{opacity:0;transform:translateY(-10px)}}
+@keyframes blatt-her{from{opacity:0;transform:translateY(14px)}}
+@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}
+/* Handy: Erstgespräch immer griffbereit */
+.mcta{display:none}
+@media (max-width:700px){
+  .mcta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;transform:translateY(140%);transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:0 14px 30px -12px rgba(0,0,0,.55)}
+  .mcta.on{transform:none}
+}
+@media print{.mcta{display:none!important}}
+
+/* Zugänglichkeit: geschlossenes Handy-Menü nicht vorlesen, Rotstift-Text kräftiger, Stempel lesbar */
+@media (max-width:900px){.nav{visibility:hidden;transition:transform .3s,visibility 0s .3s}.nav.open{visibility:visible;transition:transform .3s}}
+.c-be .role,.lf-line-label,.notes-hint{color:#A93226}
+input,select,textarea{border-color:#A89A80}
+.portrait .stamp{top:auto;bottom:16%}
+/* Handy: die Linie der Leitfrage quer gezeichnet */
+@media (max-width:760px){
+  .c-be{border-top:0;margin-top:0;padding-top:8px}
+  .c-be::before{content:"hier ziehen wir die Linie";display:block;font-family:var(--hand);font-size:23px;color:#A93226;padding:0 0 16px;margin:0 -6px 14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 14' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 60 2, 110 13, 170 7 S 290 3, 340 9 S 385 6, 398 7' fill='none' stroke='%23C0392B' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") bottom/100% 14px no-repeat;clip-path:inset(0 100% 0 0)}
+  .lf-cols:has(.lf-line.draw) .c-be::before{clip-path:inset(0 0 0 0);transition:clip-path 1s cubic-bezier(.6,.1,.3,1)}
+}
+@media (max-width:760px) and (prefers-reduced-motion:reduce){.c-be::before{clip-path:none}}
