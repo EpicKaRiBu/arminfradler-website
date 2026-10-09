@@ -222,7 +222,7 @@ def main():
     ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in posts[:3]) + '\n')
 
     # RSS
-    jetzt = datetime.datetime.now(datetime.timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
+    jetzt = dt(max(str(p.get('updated') or p['date']) for p in posts)).strftime('%a, %d %b %Y %H:%M:%S +0000') if posts else ''
     items = ''.join(
         f'<item><title>{esc(p["title"])}</title><link>{base}/impulse/{p["slug"]}/</link><guid>{base}/impulse/{p["slug"]}/</guid>'
         f'<pubDate>{dt(p["date"]).strftime("%a, %d %b %Y %H:%M:%S +0000")}</pubDate><description>{esc(p.get("description") or p.get("excerpt"))}</description></item>'
