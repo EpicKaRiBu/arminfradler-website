@@ -23,8 +23,9 @@ if(head){
   const b=$('.burger',head),n=$('#nav');
   b.onclick=()=>{const o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);n.classList.toggle('open',o)};
   head.insertAdjacentHTML('beforeend','<span class="progress" aria-hidden="true"></span>');
-  const onScroll=()=>{head.classList.toggle('scrolled',scrollY>8);const h=document.documentElement.scrollHeight-innerHeight;head.style.setProperty('--p',h>0?Math.min(1,scrollY/h).toFixed(4):0)};
-  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  let tk=0;
+  const onScroll=()=>{tk=0;const h=document.documentElement.scrollHeight-innerHeight;head.classList.toggle('scrolled',scrollY>8);head.style.setProperty('--p',h>0?Math.min(1,scrollY/h).toFixed(3):0)};
+  addEventListener('scroll',()=>{if(!tk)tk=requestAnimationFrame(onScroll)},{passive:true});onScroll();
 }
 const foot=$('#site-foot');
 if(foot){
@@ -119,9 +120,20 @@ if(dt){
 /* ---------- Handy: Erstgespräch-Knopf unten ---------- */
 if(!['kontakt','impressum','datenschutz','agb'].includes(PAGE)&&head){
   document.body.insertAdjacentHTML('beforeend',`<a class="btn mcta" href="${ROOT}kontakt.html">Kostenloses Erstgespräch <span class="arr">→</span></a>`);
-  const m=$('.mcta'),ft=$('#site-foot');
-  const upd=()=>{const end=ft?ft.getBoundingClientRect().top<innerHeight+260:false;m.classList.toggle('on',scrollY>innerHeight*.9&&!end)};
-  addEventListener('scroll',upd,{passive:true});upd();
+  const m=$('.mcta'),ft=$('#site-foot');let past=false,end=false;
+  const upd=()=>m.classList.toggle('on',past&&!end);
+  if('IntersectionObserver' in window){
+    const top=document.createElement('span');top.style.cssText='position:absolute;top:90vh;left:0;width:1px;height:1px;pointer-events:none';top.setAttribute('aria-hidden','true');document.body.prepend(top);
+    new IntersectionObserver(es=>{past=!es[0].isIntersecting&&es[0].boundingClientRect.top<0;upd()}).observe(top);
+    ft&&new IntersectionObserver(es=>{end=es[0].isIntersecting;upd()},{rootMargin:'0px 0px 260px 0px'}).observe(ft);
+  }
 }
+
+
+/* ---------- Kurzfilme: laufen nur, solange sie zu sehen sind ---------- */
+$$('.clip video').forEach(v=>{
+  if(RM||!('IntersectionObserver' in window)){v.controls=true;return}
+  new IntersectionObserver(es=>{const e=es[0];if(e.isIntersecting){v.preload='auto';v.play().catch(()=>{v.controls=true})}else v.pause()},{threshold:.5}).observe(v);
+});
 
 })();
