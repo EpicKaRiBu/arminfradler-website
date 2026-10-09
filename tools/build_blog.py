@@ -1,21 +1,44 @@
-"""Baut statische Seiten für alle veröffentlichten Impulse (Blog), damit Suchmaschinen und KI-Crawler sie ohne JavaScript lesen.
-- impulse/<slug>/index.html  : vollständiger Beitrag mit strukturierten Daten (schema.org Article)
-- blog/<slug>/index.html     : alte Adresse, verweist auf die neue (kanonisch)
-- sitemap.xml
-Liest nur öffentlich freigegebene Beiträge über den öffentlichen, eingeschränkten Schlüssel. Läuft lokal oder als GitHub Action."""
-import json, os, re, html, urllib.request, datetime, shutil
+"""Baut die Impulse (Blog) aus den Markdown-Dateien in content/impulse/ – ohne Datenbank, ohne externe Dienste.
+
+Ein neuer Beitrag ist eine Datei content/impulse/<slug>.md (Kopfdaten zwischen ---) plus Bilder in assets/impulse/<slug>/.
+Bilder im Text: ![Beschreibung](datei.webp) – ein bloßer Dateiname meint den Bilderordner des Beitrags.
+
+Erzeugt:
+- impulse/<slug>/index.html   vollständiger Beitrag mit strukturierten Daten (schema.org Article)
+- blog/<slug>/index.html      alte Adresse, leitet auf die neue weiter
+- impulse/index.html          Übersicht (zwischen den Markierungen impulse:start/end), Filter nach Thema
+- index.html                  die drei neuesten Beiträge (zwischen latest:start/end)
+- impulse/feed.xml            RSS-Feed
+- sitemap.xml, llms.txt       für Suchmaschinen und KI-Assistenten
+
+Status „draft“: Beitrag wird nicht gebaut, seine Adressen führen zur Übersicht. Läuft lokal oder als GitHub Action."""
+import datetime, html, json, os, re, shutil
+from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, 'site.json'), encoding='utf-8'))
-URL = 'https://wztxprmmrkgghisodheh.supabase.co/rest/v1/'
-KEY = re.search(r"key:'([^']+)'", open(os.path.join(ROOT, 'assets', 'site.js'), encoding='utf-8').read()).group(1)
-
-def get(path):
-    req = urllib.request.Request(URL + path, headers={'apikey': KEY, 'Authorization': 'Bearer ' + KEY})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode('utf-8'))
+SRC = os.path.join(ROOT, 'content', 'impulse')
+ARCHIV_VOR = '2026-09-01'
 
 esc = lambda s: html.escape(str(s or ''), quote=True)
+
+
+def lesen(pfad):
+    """Kopfdaten (key: JSON-Wert) und Markdown-Text einer Beitragsdatei."""
+    s = open(pfad, encoding='utf-8').read().replace('\r', '')
+    m = re.match(r'---\n(.*?)\n---\n', s, re.S)
+    meta = {}
+    for zeile in (m.group(1).split('\n') if m else []):
+        if ':' in zeile:
+            k, v = zeile.split(':', 1)
+            v = v.strip()
+            try:
+                meta[k.strip()] = json.loads(v)
+            except ValueError:
+                meta[k.strip()] = v
+    meta['text'] = s[m.end():] if m else s
+    return meta
+
 
 def inline(t):
     t = esc(t)
@@ -25,8 +48,27 @@ def inline(t):
     t = re.sub(r'`([^`]+)`', r'<code>\1</code>', t)
     return t
 
-def md(src, images):
-    lines = src.replace('\r', '').split('\n'); out = []; i = 0; para = []
+
+def masse(slug, datei):
+    try:
+        with Image.open(os.path.join(ROOT, 'assets', 'impulse', slug, datei)) as im:
+            return f' width="{im.width}" height="{im.height}"'
+    except OSError:
+        return ''
+
+
+def figur(src, alt, slug, rel, label):
+    if '://' in src:
+        attr = ''
+    else:
+        attr = masse(slug, src)
+        src = f'{rel}assets/impulse/{slug}/{src}'
+    cap = f'<figcaption>{esc(label)}</figcaption>' if label else ''
+    return f'<figure><img src="{esc(src)}" alt="{esc(alt)}" loading="lazy" decoding="async"{attr}>{cap}</figure>'
+
+
+def md(src, slug, rel, label):
+    lines = src.split('\n'); out = []; i = 0; para = []
     def flush():
         if para: out.append('<p>' + inline(' '.join(para)) + '</p>'); para.clear()
     while i < len(lines):
@@ -34,10 +76,7 @@ def md(src, images):
         if not l.strip(): flush(); i += 1; continue
         m = re.match(r'^(#{1,4})\s+(.*)', l)
         if m:
-            flush()
-            if len(m.group(1)) > 1:
-                lv = min(max(len(m.group(1)), 2), 3); out.append(f'<h{lv}>{inline(m.group(2))}</h{lv}>')
-            i += 1; continue
+            flush(); lv = min(max(len(m.group(1)), 2), 3); out.append(f'<h{lv}>{inline(m.group(2))}</h{lv}>'); i += 1; continue
         if re.match(r'^---+\s*$', l): flush(); out.append('<hr>'); i += 1; continue
         if re.match(r'^>\s?', l):
             flush(); q = []
@@ -56,25 +95,39 @@ def md(src, images):
             while i < len(lines) and re.match(r'^\|.*\|\s*$', lines[i]): rows.append(lines[i]); i += 1
             body = [r for r in rows if not re.match(r'^\|[\s:|-]+\|$', r.strip())]
             cells = lambda r: [c.strip() for c in r.strip()[1:-1].split('|')]
-            out.append('<table>' + ''.join('<tr>' + ''.join((f'<td>{inline(c)}</td>' if k else f'<th>{inline(c)}</th>') for c in cells(r)) + '</tr>' for k, r in enumerate(body)) + '</table>'); continue
-        m = re.match(r'^!\[([^\]]*)\]\((https?://[^\s)]+)\)', l)
-        if m: flush(); out.append(f'<figure><img src="{esc(m.group(2))}" alt="{esc(m.group(1))}" loading="lazy"></figure>'); i += 1; continue
+            out.append('<div class="tbl"><table>' + ''.join('<tr>' + ''.join((f'<td>{inline(c)}</td>' if k else f'<th>{inline(c)}</th>') for c in cells(r)) + '</tr>' for k, r in enumerate(body)) + '</table></div>'); continue
+        m = re.match(r'^!\[([^\]]*)\]\(([^\s)]+)\)\s*$', l)
+        if m: flush(); out.append(figur(m.group(2), m.group(1), slug, rel, label)); i += 1; continue
         para.append(l.strip()); i += 1
     flush()
-    s = '\n'.join(out)
-    if images:
-        parts = s.split('<h2>')
-        for k, im in enumerate(images):
-            at = min(len(parts) - 1, round((k + 1) * len(parts) / (len(images) + 1)))
-            if at > 0:
-                fig = f'<figure><img src="{esc(im["image_url"])}" alt="{esc(im.get("alt_text"))}" loading="lazy">' + (f'<figcaption>{esc(im.get("alt_text"))}</figcaption>' if im.get('alt_text') else '') + '</figure>'
-                parts[at] = parts[at].replace('</p>', '</p>' + fig, 1)
-        s = '<h2>'.join(parts)
-    return s
+    return '\n'.join(out)
 
-def fmt_date(d):
-    m = ['Jänner','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']
-    dt = datetime.datetime.fromisoformat(d.replace('Z', '+00:00')); return f'{dt.day}. {m[dt.month-1]} {dt.year}'
+
+MONATE = ['Jänner', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+dt = lambda d: datetime.datetime.fromisoformat(str(d).replace('Z', '+00:00'))
+datum = lambda d: f'{dt(d).day}. {MONATE[dt(d).month - 1]} {dt(d).year}'
+
+
+def karte(p, rel):
+    """Karte für Übersicht und Startseite. rel = Weg zur Website-Wurzel."""
+    s = p['slug']
+    img = (f'<div class="im"><img src="{rel}assets/impulse/{s}/{esc(p["image"])}" alt="" loading="lazy" decoding="async"{masse(s, p["image"])}></div>'
+           if p.get('image') else '')
+    meta = datum(p['date']) + (f' · {p["minutes"]} Min. Lesezeit' if p.get('minutes') else '')
+    return (f'<a class="post rv" href="{rel}impulse/{s}/" data-c="{esc(p.get("category_slug", ""))}">{img}'
+            f'<div class="b"><span class="cat">{esc(p.get("category") or "Impuls")}</span><h3>{esc(p["title"])}</h3>'
+            + (f'<p>{esc(p["excerpt"])}</p>' if p.get('excerpt') else '') + f'<span class="meta">{meta}</span></div></a>')
+
+
+def ersetzen(datei, marke, inhalt):
+    pfad = os.path.join(ROOT, datei)
+    s = open(pfad, encoding='utf-8').read()
+    neu, n = re.subn(rf'(<!-- {marke}:start -->).*?(<!-- {marke}:end -->)', lambda m: m.group(1) + inhalt + m.group(2), s, flags=re.S)
+    if not n:
+        raise SystemExit(f'Markierung {marke} fehlt in {datei}')
+    if neu != s:
+        open(pfad, 'w', encoding='utf-8', newline='\n').write(neu)
+
 
 HEAD = '''<!doctype html>
 <html lang="de">
@@ -85,7 +138,8 @@ HEAD = '''<!doctype html>
 <title>{title} · Armin Fradler</title>
 <meta name="description" content="{desc}">
 {robots}<link rel="canonical" href="{canon}">
-<meta property="og:type" content="article"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{canon}">{ogimg}
+<link rel="alternate" type="application/rss+xml" title="Impulse · Armin Fradler" href="{base}/impulse/feed.xml">
+<meta property="og:type" content="article"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="de_AT">{ogimg}
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
 <link href="../../assets/site.css" rel="stylesheet">
 <link href="../../assets/textures.css" rel="stylesheet">
@@ -102,52 +156,104 @@ FOOT = '''</article></section></main>
 </body>
 </html>
 '''
+UMLEITUNG = '<!doctype html><html lang="de"><head><meta charset="utf-8"><title>{t}</title><link rel="canonical" href="{c}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={u}"></head><body><p><a href="{u}">{t}</a></p></body></html>'
+
 
 def main():
     base = CFG['base'].rstrip('/')
     robots = '<meta name="robots" content="noindex">\n' if CFG.get('preview') else ''
-    posts = get('posts?select=*,category:categories(name,slug)&status=eq.published&order=published_at.desc')
-    imgs = get('post_images?select=post_id,image_url,alt_text,image_type,sort_order&order=sort_order')
+    alle = [lesen(os.path.join(SRC, f)) for f in sorted(os.listdir(SRC)) if f.endswith('.md')]
+    posts = sorted([p for p in alle if p.get('status') == 'published'], key=lambda p: p['date'], reverse=True)
     for d in ('impulse', 'blog'):
         for name in os.listdir(os.path.join(ROOT, d)) if os.path.isdir(os.path.join(ROOT, d)) else []:
-            p = os.path.join(ROOT, d, name)
-            if os.path.isdir(p): shutil.rmtree(p)
-    urls = []
+            if os.path.isdir(os.path.join(ROOT, d, name)): shutil.rmtree(os.path.join(ROOT, d, name))
+
     for p in posts:
         slug = p['slug']; canon = f'{base}/impulse/{slug}/'
-        title = p['title']; desc = p.get('meta_description') or p.get('excerpt') or ''
-        cat = (p.get('category') or {})
-        content = re.sub(r'^#\s+.*\n', '', p.get('content') or '')
-        inl = [i for i in imgs if i['post_id'] == p['id'] and i['image_type'] != 'featured']
-        old = p['published_at'] < '2026-09-01'
-        ld = json.dumps({'@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': desc,
-                         'datePublished': p['published_at'], 'dateModified': p.get('updated_at') or p['published_at'],
-                         'author': {'@type': 'Person', 'name': 'Armin Fradler', 'url': base + '/ueber-mich.html'},
-                         'publisher': {'@type': 'Person', 'name': 'Armin Fradler'}, 'inLanguage': 'de-AT',
-                         'mainEntityOfPage': canon, **({'image': p['featured_image_url']} if p.get('featured_image_url') else {})}, ensure_ascii=False)
-        page = HEAD.format(title=esc(title), desc=esc(desc), robots=robots, canon=canon, ld=ld.replace('</', '<\\/'),
-                           ogimg=f'<meta property="og:image" content="{esc(p["featured_image_url"])}">' if p.get('featured_image_url') else '')
-        page += f'<p class="kick"><a href="../?thema={esc(cat.get("slug",""))}" style="text-decoration:none">{esc(cat.get("name","Impuls"))}</a> · {fmt_date(p["published_at"])}' + (f' · {max(1, round(p["average_read_time"] / 60 if p["average_read_time"] > 60 else p["average_read_time"]))} Min.' if p.get('average_read_time') else '') + '</p>\n'
+        title = p['title']; desc = p.get('description') or p.get('excerpt') or ''
+        bild_abs = f'{base}/assets/impulse/{slug}/{p["image"]}' if p.get('image') else ''
+        ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': desc,
+              'datePublished': p['date'], 'dateModified': p.get('updated') or p['date'], 'inLanguage': 'de-AT',
+              'author': {'@type': 'Person', 'name': 'Armin Fradler', 'url': base + '/ueber-mich.html'},
+              'publisher': {'@type': 'Person', 'name': 'Armin Fradler', 'url': base + '/'},
+              'mainEntityOfPage': canon, 'keywords': ', '.join(p.get('keywords') or [])}
+        if bild_abs: ld['image'] = bild_abs
+        if p.get('category'): ld['articleSection'] = p['category']
+        page = HEAD.format(title=esc(p.get('seo_title') or title).replace(' | Armin Fradler', '').replace(' · Armin Fradler', ''),
+                           desc=esc(desc), robots=robots, canon=canon, base=base,
+                           ld=json.dumps(ld, ensure_ascii=False).replace('</', '<\\/'),
+                           ogimg=f'<meta property="og:image" content="{esc(bild_abs)}">' if bild_abs else '')
+        page += (f'<p class="kick"><a href="../?thema={esc(p.get("category_slug", ""))}" style="text-decoration:none">{esc(p.get("category") or "Impuls")}</a>'
+                 f' · <time datetime="{esc(p["date"][:10])}">{datum(p["date"])}</time>' + (f' · {p["minutes"]} Min.' if p.get('minutes') else '') + '</p>\n')
         page += f'<h1 style="font-size:clamp(32px,5vw,50px);margin-bottom:22px">{esc(title)}</h1>\n'
-        if old: page += '<p class="archive-note">Aus dem Archiv: Dieser Beitrag ist vor über einem halben Jahr erschienen. Manche Zahlen und Produktnamen haben sich seither geändert.</p>\n'
-        if p.get('featured_image_url'): page += f'<figure style="margin:0 0 30px"><img src="{esc(p["featured_image_url"])}" alt="" style="border-radius:4px"></figure>\n'
-        page += '<div class="article">' + md(content, inl) + '</div>\n'
-        page += '<hr style="border:0;border-top:1px solid var(--line);margin:46px 0 22px"><p class="s m">Armin Fradler begleitet Bildungsorganisationen und Teams beim Umgang mit KI und unterrichtet selbst in der Erwachsenenbildung.</p><p><a href="../">← Alle Impulse</a> · <a href="../../kontakt.html">Darüber reden? Schreiben Sie mir.</a></p>\n'
+        if p['date'] < ARCHIV_VOR:
+            page += '<p class="archive-note">Aus dem Archiv: Dieser Beitrag ist vor über einem halben Jahr erschienen. Manche Zahlen und Produktnamen haben sich seither geändert.</p>\n'
+        if p.get('image'):
+            page += '<div class="lead-img">' + figur(p['image'], p.get('image_alt') or '', slug, '../../', p.get('image_label')).replace(' loading="lazy"', ' fetchpriority="high"') + '</div>\n'
+        page += '<div class="article">' + md(p['text'], slug, '../../', p.get('image_label')) + '</div>\n'
+        if p.get('sources'):
+            page += '<h2 class="src-h">Quellen</h2><ul class="sources">' + ''.join(
+                f'<li><a href="{esc(q["url"])}" rel="noopener">{esc(q.get("title") or q["url"])}</a></li>' if isinstance(q, dict) else f'<li>{inline(str(q))}</li>'
+                for q in p['sources']) + '</ul>\n'
+        page += ('<hr style="border:0;border-top:1px solid var(--line);margin:46px 0 22px"><p class="s m">Armin Fradler begleitet Bildungsorganisationen und Teams beim Umgang mit KI'
+                 ' und unterrichtet selbst in der Erwachsenenbildung.</p><p><a href="../">← Alle Impulse</a> · <a href="../../kontakt.html">Darüber reden? Schreiben Sie mir.</a></p>\n')
         page += FOOT
         os.makedirs(os.path.join(ROOT, 'impulse', slug), exist_ok=True)
-        open(os.path.join(ROOT, 'impulse', slug, 'index.html'), 'w', encoding='utf-8').write(page)
+        open(os.path.join(ROOT, 'impulse', slug, 'index.html'), 'w', encoding='utf-8', newline='\n').write(page)
         os.makedirs(os.path.join(ROOT, 'blog', slug), exist_ok=True)
-        open(os.path.join(ROOT, 'blog', slug, 'index.html'), 'w', encoding='utf-8').write(
-            f'<!doctype html><html lang="de"><head><meta charset="utf-8"><title>{esc(title)}</title><link rel="canonical" href="{canon}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=../../impulse/{slug}/"></head><body><p><a href="../../impulse/{slug}/">{esc(title)}</a></p></body></html>')
-        urls.append((canon, (p.get('updated_at') or p['published_at'])[:10]))
-    today = datetime.date.today().isoformat()
+        open(os.path.join(ROOT, 'blog', slug, 'index.html'), 'w', encoding='utf-8', newline='\n').write(
+            UMLEITUNG.format(t=esc(title), c=canon, u=f'../../impulse/{slug}/'))
+
+    # Entwürfe: alte Adressen führen zur Übersicht
+    for p in alle:
+        if p.get('status') != 'published':
+            for d in ('impulse', 'blog'):
+                os.makedirs(os.path.join(ROOT, d, p['slug']), exist_ok=True)
+                open(os.path.join(ROOT, d, p['slug'], 'index.html'), 'w', encoding='utf-8', newline='\n').write(
+                    UMLEITUNG.format(t='Impulse', c=f'{base}/impulse/', u='../../impulse/'))
+
+    # Übersicht mit Filter und Startseite
+    themen = list(dict.fromkeys((p['category_slug'], p['category']) for p in posts if p.get('category_slug')))
+    filter_html = '<button type="button" data-c="" aria-pressed="true">Alle</button>' + ''.join(
+        f'<button type="button" data-c="{esc(s)}" aria-pressed="false">{esc(n)}</button>' for s, n in themen)
+    ersetzen('impulse/index.html', 'impulse',
+             f'\n    <div class="filters" id="filters" role="group" aria-label="Nach Thema filtern">{filter_html}</div>\n'
+             f'    <div class="grid g3" id="list">\n' + '\n'.join(karte(p, '../') for p in posts) + '\n    </div>\n    ')
+    ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in posts[:3]) + '\n')
+
+    # RSS
+    jetzt = datetime.datetime.now(datetime.timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
+    items = ''.join(
+        f'<item><title>{esc(p["title"])}</title><link>{base}/impulse/{p["slug"]}/</link><guid>{base}/impulse/{p["slug"]}/</guid>'
+        f'<pubDate>{dt(p["date"]).strftime("%a, %d %b %Y %H:%M:%S +0000")}</pubDate><description>{esc(p.get("description") or p.get("excerpt"))}</description></item>'
+        for p in posts[:30])
+    open(os.path.join(ROOT, 'impulse', 'feed.xml'), 'w', encoding='utf-8', newline='\n').write(
+        f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Impulse · Armin Fradler</title><link>{base}/impulse/</link>'
+        f'<description>KI in Organisationen, Bildung und Arbeit</description><language>de-AT</language><lastBuildDate>{jetzt}</lastBuildDate>{items}</channel></rss>\n')
+
+    # Sitemap
+    heute = datetime.date.today().isoformat()
     static = ['', 'angebot.html', 'termine.html', 'impulse/', 'ueber-mich.html', 'kontakt.html']
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f'<url><loc>{base}/{u}</loc><lastmod>{today}</lastmod></url>' for u in static]
-    sm += [f'<url><loc>{u}</loc><lastmod>{d}</lastmod></url>' for u, d in urls]
+    sm += [f'<url><loc>{base}/{u}</loc><lastmod>{heute}</lastmod></url>' for u in static]
+    sm += [f'<url><loc>{base}/impulse/{p["slug"]}/</loc><lastmod>{str(p.get("updated") or p["date"])[:10]}</lastmod></url>' for p in posts]
     sm.append('</urlset>')
-    open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8').write('\n'.join(sm) + '\n')
-    print(f'{len(posts)} Beiträge gebaut')
+    open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n').write('\n'.join(sm) + '\n')
+
+    # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
+    llm = [f'# Armin Fradler', '',
+           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe in Österreich. '
+           'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
+           '## Seiten', '',
+           f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
+           f'- [Über mich]({base}/ueber-mich.html): Hintergrund und Arbeitsweise',
+           f'- [Termine]({base}/termine.html): offene Vorträge und Workshops',
+           f'- [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',
+           f'- [Kontakt]({base}/kontakt.html)', '', '## Impulse', '']
+    llm += [f'- [{p["title"]}]({base}/impulse/{p["slug"]}/): {p.get("description") or p.get("excerpt") or ""}' for p in posts]
+    open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8', newline='\n').write('\n'.join(llm) + '\n')
+    print(f'{len(posts)} Beiträge gebaut, {len(alle) - len(posts)} Entwürfe')
+
 
 if __name__ == '__main__':
     main()

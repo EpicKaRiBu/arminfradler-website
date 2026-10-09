@@ -271,3 +271,10 @@ textarea{min-height:160px;resize:vertical}
   .mark svg path,.brand svg path{stroke-dashoffset:0}
 }
 @media print{.site-head,.site-foot,.btn{display:none}body{background:#fff}}
+/* Impulse: Titelbild, breite Tabellen, Quellen */
+.lead-img figure{margin:0 0 30px}
+.lead-img figcaption,.article figcaption{font-family:var(--type);font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-top:8px}.lead-img img{border-radius:4px;width:100%;height:auto}
+.article img{width:100%;height:auto;border-radius:4px}
+.tbl{overflow-x:auto;margin:22px 0}.tbl table{margin:0}
+.src-h{font-size:22px;margin-top:40px}.sources{font-size:15px;color:var(--muted)}
+.post[hidden]{display:none}

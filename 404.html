@@ -13,8 +13,9 @@
   var p=location.pathname, base=p.indexOf('/arminfradler-website/')===0?'/arminfradler-website/':'/';
   var rest=p.slice(base.length).replace(/\/+$/,'');
   var map={'training':'angebot.html','services':'angebot.html#betrieb','bildung':'angebot.html#schule','infrastruktur':'angebot.html#betrieb','masssoftware':'angebot.html#betrieb','kontakt':'kontakt.html','impressum':'impressum.html','datenschutz':'datenschutz.html','agb':'agb.html','ueber-mich':'ueber-mich.html','blog':'impulse/','impulse':'impulse/','ki-readiness-check':'https://mitmachen.arminfradler.at/werkzeuge/ki/'};
+  /* Bekannte Beiträge haben eigene Seiten (auch unter /blog/). Landet ein Beitrag hier, gibt es ihn nicht mehr: zur Übersicht. */
   var m=rest.match(/^(?:blog|impulse)\/([^\/?#]+)$/);
-  var to=m?base+'impulse/beitrag.html?slug='+encodeURIComponent(m[1]):(map[rest]?(map[rest].indexOf('http')===0?map[rest]:base+map[rest]):null);
+  var to=m?base+'impulse/':(map[rest]?(map[rest].indexOf('http')===0?map[rest]:base+map[rest]):null);
   if(to)location.replace(to+(location.search&&!m?location.search:''));
 })();
 </script>
