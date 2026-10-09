@@ -12,8 +12,8 @@ seo_title: "Vibe Coding für KMUs: Software ohne Entwickler | Armin Fr..."
 keywords: ["Vibe Coding KMU", "Softwareentwicklung ohne Entwickler", "Digitalisierung KMU Österreich", "Prozessautomatisierung KI", "No-Code Low-Code", "KI österreichische Unternehmen", "Effizienzsteigerung KMU"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Vibe Coding Konzepte vereinfachen Softwareentwicklung für Unternehmen massiv."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Bausteine aus farbigem Karton zu einem kleinen Bauwerk zusammengesetzt, daneben Lineal und Rotstift"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://de.wikipedia.org/wiki/Vibe_Coding", "title": "Vibe Coding – Wikipedia"}, {"url": "https://www.ibm.com/think/topics/vibe-coding", "title": "What is Vibe Coding? (IBM)"}, {"url": "https://cloud.google.com/discover/what-is-vibe-coding", "title": "Vibe Coding Explained (Google Cloud)"}, {"url": "https://aimagazine.com/news/vibe-coding-the-future-of-code-or-just-a-short-term-con", "title": "Vibe Coding: Enterprise Governance Concerns (AI Magazine)"}, {"url": "https://simonwillison.net/2025/Mar/19/vibe-coding/", "title": "Not all AI-assisted programming is vibe coding (Simon Willison)"}]
 ---
 
@@ -50,8 +50,6 @@ Der Begriff wurde so einflussreich, dass [Collins Dictionary](https://aimagazine
 ## Was die meisten übersehen: Der echte Paradigmenwechsel
 
 Die übliche Darstellung: "KI hilft Programmierern, schneller zu arbeiten."
-
-![Technologischer Wandel ermöglicht KMUs jetzt eine einfachere Steuerung von Digitalprojekten.](bild-1.webp)
 
 Die eigentliche Revolution: **KI macht Nicht-Programmierer zu Software-Erschaffern.**
 
@@ -111,8 +109,6 @@ Laut [Google Cloud](https://cloud.google.com/discover/what-is-vibe-coding) sollt
 ## Konkrete Anwendungen für KMUs
 
 Wo kann Vibe Coding in einem österreichischen KMU helfen?
-
-![KMU-Mitarbeiter werden mit KI-Unterstützung zu eigenständigen Software-Entwicklern.](bild-2.webp)
 
 ### 1. Interne Tools
 
@@ -192,8 +188,6 @@ Mehr zum Thema Datensouveränität: [Wem gehören die Daten?](/blog/ki-souveraen
 ## Wie starten Sie mit Vibe Coding?
 
 ### Schritt 1: Klein anfangen
-
-![Das volle Potenzial des Vibe Coding erschließt neue Möglichkeiten für unternehmerisches Wachstum.](bild-3.webp)
 
 Wählen Sie ein Problem, das:
 - Überschaubar ist (nicht geschäftskritisch)

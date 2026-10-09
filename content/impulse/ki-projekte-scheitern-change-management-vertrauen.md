@@ -12,8 +12,8 @@ seo_title: "KI-Projekte scheitern? So gelingt Transformation | Armin ..."
 keywords: ["KI-Projekte", "KI-Implementierung KMU", "Digitalisierung Österreich", "Change Management KI", "Prozessautomatisierung Scheitern", "Mitarbeiterängste KI", "KI-Beratung Österreich"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Warum die meisten KI-Projekte stocken: Ein verschlungenes Labyrinth symbolisiert den Weg zum Misserfolg."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Eine Brücke aus Karteikarten zwischen zwei Mappen, in der Mitte mit Klebeband verstärkt"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/", "title": "MIT Report: 95% of AI Pilots Failing (Fortune)"}, {"url": "https://fortune.com/2025/08/21/an-mit-report-that-95-of-ai-pilots-fail-spooked-investors-but-the-reason-why-those-pilots-failed-is-what-should-make-the-c-suite-anxious/", "title": "MIT Report Analysis (Fortune Follow-up)"}, {"url": "https://www.marketingaiinstitute.com/blog/mit-study-ai-pilots", "title": "Kritik an der MIT-Studie (Marketing AI Institute)"}, {"url": "https://trullion.com/blog/why-95-of-ai-projects-fail-and-why-the-5-that-survive-matter/", "title": "Why 95% of AI Projects Fail (Trullion)"}]
 ---
 
@@ -75,8 +75,6 @@ Die Frage ist: Warum?
 ## Warum scheitern KI-Projekte wirklich?
 
 Die MIT-Studie und andere Forschung identifizieren konsistente Muster:
-
-![Hohe Hürden bei KI-Implementierungen: Eine undurchdringliche Mauer stellt die Blockaden dar](bild-1.webp)
 
 ### 1. Falsche Implementierungsstrategie
 
@@ -200,8 +198,6 @@ In meiner Erfahrung: Wenn Mitarbeiter verstehen, dass KI sie **unterstützen** s
 
 Die gute Nachricht: KMU haben strukturelle Vorteile.
 
-![Die Grafik betont eine hohe Erfolgsrate bei der Implementierung von extern bezogenen KI-Lösungen.](bild-2.webp)
-
 | Faktor | Großunternehmen | KMU |
 |--------|-----------------|-----|
 | Zeit bis Skalierung | 9 Monate | 90 Tage |
@@ -233,8 +229,6 @@ Die Lösung ist nicht, KI zu vermeiden. Die Lösung ist, es richtig zu machen.
 ## Konkrete Schritte für Ihr Unternehmen
 
 ### Schritt 1: Bestandsaufnahme
-
-![Ein präziser Kompass steht für die richtige Strategie zur Vermeidung von KI-Projektfehlern.](bild-3.webp)
 
 Fragen Sie Ihre Mitarbeiter (anonym, wenn nötig):
 - Welche KI-Tools nutzt ihr bereits privat für die Arbeit?

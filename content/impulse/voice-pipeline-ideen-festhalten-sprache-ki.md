@@ -12,8 +12,8 @@ seo_title: "Voice-Pipeline: Ideen nie vergessen | Armin Fradler"
 keywords: ["Voice-Pipeline", "Ideen festhalten", "Sprachnotizen KI", "Produktivität KMU", "Prozessautomatisierung", "Digitalisierung Österreich", "Effizienzsteigerung", "KI-Beratung"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Die Feierabend-Pipeline visualisiert, wie spontane Ideen methodisch erfasst und nutzbar gemacht werden."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Eine Karteikarte mit einer Schallwelle in Rotstift, daneben ein Mikrofon aus Karton und gesammelte Karten"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://openai.com/de-DE/index/whisper/", "title": "OpenAI Whisper"}, {"url": "https://the-decoder.de/whisper-openai-bringt-open-source-spracherkennungsmodell/", "title": "Whisper Open-Source (The Decoder)"}, {"url": "https://ai-automation-engineers.de/blog/2025-09-14-openai-whisper-spracherkennung-revolution/", "title": "Whisper Revolution (AI-Automation-Engineers)"}, {"url": "https://ki.engineering/glossar/whisper-openai-spracherkennungssystem/", "title": "Whisper Glossar (KI Engineering)"}]
 ---
 
@@ -48,8 +48,6 @@ Das Problem ist nicht, dass wir zu wenig denken. Das Problem ist, dass wir zu we
 ## Was die meisten übersehen: Sprechen ist 4x schneller als Tippen
 
 Die übliche Reaktion: "Ich nehme mir vor, abends noch Notizen zu machen."
-
-![Visualisierung des Potenzials vergessener Gedanken, die durch neue Methoden gesichert werden können.](bild-1.webp)
 
 Das funktioniert nicht. Abends sind Sie müde. Die Gedanken sind nicht mehr frisch. Und ehrlich: Sie haben Besseres zu tun.
 
@@ -140,8 +138,6 @@ Das Ergebnis: Aus einer 3-Minuten-Sprachnotiz wird ein strukturiertes Dokument, 
 
 ### 1. Nach Meetings: Die 5-Minuten-Nachbereitung
 
-![Die Bedeutung der umgehenden Erfassung von Gedanken zur sofortigen Umsetzung und Nutzenmaximierung.](bild-2.webp)
-
 Direkt nach dem Meeting, auf dem Weg zum Auto:
 
 *"Meeting mit Kunde X. Hauptthema war Budget für nächstes Jahr. Sie haben signalisiert, dass 50k möglich wären, aber erst Q2. Action Items: Angebot bis Freitag, Follow-up Call in zwei Wochen. Mein Eindruck: Die CFO war skeptisch, der Geschäftsführer will es eigentlich..."*
@@ -222,8 +218,6 @@ Bei starken Dialekten (Schweizerdeutsch, Österreichisch) kann die Genauigkeit s
 ## Wie starten Sie heute?
 
 ### Minimaler Start (5 Minuten)
-
-![Eine innovative Lösung zur einfachen Aufnahme von Feierabend-Ideen, selbst unterwegs.](bild-3.webp)
 
 1. Öffnen Sie die Sprachnotiz-App auf Ihrem Handy
 2. Sprechen Sie auf dem nächsten Heimweg Ihre Gedanken ein

@@ -12,8 +12,8 @@ seo_title: "KI-Wissenstransfer: Lebenswerk digital sichern | Armin Fr..."
 keywords: ["KI Wissenstransfer", "Digitalisierung KMU Österreich", "Erfahrungswissen sichern", "Nachfolge digitale Lösung", "KI Consulting Österreich", "Unternehmenswissen erhalten", "Implizites Wissen KI"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Das Lebenswerk digital konservieren: Altes Wissen nahtlos in moderne digitale Strukturen überführen."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Ein altes, abgegriffenes Notizbuch neben einem frischen Stapel Karteikarten, ein Rotstift verbindet beide"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://www.bmwet.gv.at/Themen/Wirtschaftsstandort-Oesterreich/KMU/unternehmensnachfolge.html", "title": "BMWET: Unternehmensnachfolge in Österreich"}, {"url": "https://www.ots.at/presseaussendung/OTS_20250522_OTS0057/kmu-studie-2025-rechtliche-absicherung-bleibt-zentrales-thema-bei-unternehmensnachfolge-notariat-gewinnt-an-bedeutung", "title": "KMU-Studie 2025 zur Unternehmensnachfolge"}, {"url": "https://www.iff.fraunhofer.de/de/geschaeftsbereiche/menschzentrierte-arbeitssysteme/erfahrungswissen-erfahrungstransfer.html", "title": "Fraunhofer IFF: Erfahrungstransfer"}, {"url": "https://www.zukunft-personal.com/de/zp-content/news/vom-wissenstransfer-zur-wissensbewahrung-mit-kuenstlicher-intelligenz/", "title": "Wissenstransfer mit KI (Zukunft Personal)"}, {"url": "https://www.haufe.de/personal/neues-lernen/tools-fuer-den-wissenstransfer_589614_638906.html", "title": "Haufe: Tools für den Wissenstransfer"}]
 ---
 
@@ -38,8 +38,6 @@ Ein Muster, das in vielen Unternehmen zu beobachten ist: Das wertvollste Wissen 
 ## Die Nachfolgewelle, die niemand kommen sah
 
 Österreich steckt mitten in einer Übergabewelle, die das Wirtschaftsministerium als "größte Herausforderung der letzten Jahrzehnte" bezeichnet.
-
-![Zugang zu verborgenem Unternehmenswissen durch innovative KI-Lösungen erschließen.](bild-1.webp)
 
 Die Zahlen aus dem [BMWET-Bericht 2025](https://www.bmwet.gv.at/Themen/Wirtschaftsstandort-Oesterreich/KMU/unternehmensnachfolge.html):
 
@@ -130,8 +128,6 @@ Der Gründer beschreibt die Vision: "In Zukunft werden die Mitarbeiter wie in ei
 
 Für KMUs und Familienunternehmen ist das besonders relevant. Hier steckt oft das gesamte Geschäftsgeheimnis im Kopf einer Person – des Gründers, des Seniors, des langjährigen Meisters.
 
-![Die essenzielle Sicherung und lückenlose Bewahrung von Unternehmenserbe durch digitale Erfassung.](bild-2.webp)
-
 Die klassische Nachfolge-Herausforderung: Der Nachfolger hat die Prozesse gelernt. Aber er hat nicht das Gespür. Nicht die Erfahrung. Nicht die tausend kleinen Entscheidungen, die in Summe den Unterschied zwischen "gut" und "außergewöhnlich" machen.
 
 ### Das Nachfolgewiki formuliert es präzise:
@@ -198,8 +194,6 @@ Eine geregelte Betriebsnachfolge ist kein einmaliges Ereignis. Es ist ein Prozes
 ## Die eine Frage für heute
 
 Wenn Ihr erfahrenster Mitarbeiter morgen in Pension ginge – wie viel von seinem Wissen wäre zugänglich für den, der nach ihm kommt?
-
-![Die digitale Archivierung Ihres Lebenswerks in einem sicheren, zukunftssicheren System.](bild-3.webp)
 
 Wenn die Antwort "wenig" ist, haben Sie nicht nur ein Nachfolgeproblem. Sie haben ein Vermögensproblem.
 

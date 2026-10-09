@@ -12,8 +12,8 @@ seo_title: "Claude Code, OpenClaw Agent-Architektur 2026 | Armin Fradler"
 keywords: ["Claude Code", "OpenClaw", "Agent Architektur", "Claude Agent SDK", "KI System KMU", "bounded recursion", "protected zones", "EU AI Act Compliance"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Die Zukunft der KI-Automation mit Claude Code, OpenClaw und der neuen Agent-Architektur erleben"
-image_label: "Bild: mit KI erstellt"
+image_alt: "Zahnräder aus Karton in vier Farben greifen ineinander, das mittlere ist mit Rotstift umkreist"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 ---
 
 Wenn ich KMU-Geschäftsführern erkläre, was ich einrichte, sage ich: Ein System, das Ihren Betrieb kennt, sich an Ihre Regeln hält und mit der Zeit besser wird. Das stimmt. Aber es ist die halbe Geschichte.
@@ -29,8 +29,6 @@ Das hat sich fundamental geändert. Nicht weil die Modelle besser geworden sind 
 ## Claude Code: Mehr als ein Coding-Tool
 
 Claude Code ist Anthropics Agent-Werkzeug. Es läuft als CLI, als Desktop-App, als VS Code- und JetBrains-Extension, und seit kurzem auch im Browser unter claude.ai/code. Aber der Name täuscht: Es ist kein reines Programmierwerkzeug. Es ist eine Agent-Runtime mit eingebautem Werkzeugkasten.
-
-![KI-Systeme entwickeln ein Gedächtnis und halten sich an definierte Regeln im Unternehmensumfeld](bild-1.webp)
 
 Was Claude Code von einem simplen Chat-Interface unterscheidet:
 
@@ -78,8 +76,6 @@ Die Architektur, die wir einsetzen, funktioniert so:
 
 Das ist der Punkt, der technisch am interessantesten und geschäftlich am relevantesten ist.
 
-![Die transformative Kraft von Agent-Frameworks ermöglicht proaktives Handeln anstatt nur zu reagieren](bild-2.webp)
-
 Ein naives selbstverbesserndes System ist gefährlich — es könnte seine eigenen Regeln wegoptimieren, wenn das kurzfristig bessere Ergebnisse liefert. Die Lösung liegt in einer Architektur mit zwei klar getrennten Zonen:
 
 **Offene Zone** — hier lernt das System. Kommunikationsstil, Vorlagen, Prozess-Optimierungen, neue Muster aus dem Feedback. Diese Regeln verändern sich mit jeder Interaktion und werden besser.
@@ -109,8 +105,6 @@ Für den EU AI Act ist das kein Nice-to-have, sondern eine Anforderung. Und für
 ## Für wen das relevant ist
 
 Wenn Sie IT-Dienstleister sind und Ihren Kunden KI-Systeme anbieten wollen — nicht als Proof of Concept, sondern als produktives Werkzeug — dann ist die Frage nicht mehr „Welches Modell?", sondern „Welche Architektur?"
-
-![Effiziente Integration und Sicherheit für Ihre Claude Code und OpenClaw Agenten](bild-3.webp)
 
 Die Modelle sind austauschbar. Claude Opus heute, vielleicht etwas anderes morgen. Was bleibt, ist die Persistenz-Schicht, die Compliance-Architektur und das akkumulierte Firmenwissen. Das ist der Wert, den ein System über die Zeit aufbaut — und der Grund, warum ein einmal eingerichtetes System nicht einfach durch den nächsten Chatbot ersetzt wird.
 

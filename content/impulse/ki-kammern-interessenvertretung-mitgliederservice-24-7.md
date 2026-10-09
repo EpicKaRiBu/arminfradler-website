@@ -12,8 +12,8 @@ seo_title: "KI für Kammern & Verbände: Konkrete Anwendungen | Armin F..."
 keywords: ["KI Kammern Österreich", "KI Interessenvertretungen", "Digitalisierung Verbände", "Mitgliederservice KI", "KI Beratung KMU", "Prozessautomatisierung Kammern", "Wirtschaftskammer KI", "KI-Anwendungen Österreich"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Effiziente Prozesse durch KI für Kammern und Interessenvertretungen, symbolisiert durch nahtlos ineinandergreifende Zahnrä..."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Ein Karteikasten aus Holz mit farbigen Reitern, eine Karte ist halb herausgezogen"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://www.ots.at/presseaussendung/OTS_20230926_OTS0040/wk-wien-revolutioniert-mitgliederservice-mithilfe-von-ki", "title": "WK Wien revolutioniert Mitgliederservice mithilfe von KI (APA OTS)"}, {"url": "https://de.wikipedia.org/wiki/Wirtschaftskammer_%C3%96sterreich", "title": "Wirtschaftskammer Österreich - Mitgliederstatistik (Wikipedia)"}, {"url": "https://news.microsoft.com/source/emea/features/zukunftsweisende-foerdermittelsuche-die-wko-setzt-auf-innovation-mit-microsoft-oesterreich-und-ey/?lang=at", "title": "WKO Fördermittelsuche mit Microsoft und EY"}, {"url": "https://www.wko.at/oe/information-consulting/kuenstliche-intelligenz", "title": "WKO: Künstliche Intelligenz - Rechtliche Rahmenbedingungen"}, {"url": "https://www.meinbezirk.at/tag/chatbot", "title": "Gemeinde-Chatbots in Österreich (MeinBezirk)"}]
 ---
 
@@ -50,8 +50,6 @@ Der [Personal-Crunch](/blog/personal-crunch-arbeitskraeftemangel-automatisierung
 ## Was hat die WK Wien konkret umgesetzt?
 
 Die Wirtschaftskammer Wien hat im September 2023 zwei KI-Tools gestartet, die den Mitgliederservice grundlegend verändern.
-
-![Sicherer Umgang mit sensiblen Daten durch digitale Lösungen in Interessenvertretungen und Kammern.](bild-1.webp)
 
 **Der Chatbot I.S.A. (Information-Service-Auskunft):**
 
@@ -121,8 +119,6 @@ Das spart Zeit auf beiden Seiten und erhöht die Qualität der Beratung.
 
 Die Kosten für KI in Kammern variieren stark je nach Umfang:
 
-![Die ständige Verfügbarkeit des Mitgliederservice durch innovative KI-Anwendungen in Kammern.](bild-2.webp)
-
 | Variante | Investition | Laufende Kosten |
 |----------|-------------|-----------------|
 | Einfacher FAQ-Chatbot (Cloud) | 5.000-15.000 € | 500-2.000 €/Monat |
@@ -174,8 +170,6 @@ Der WKW-Chatbot lernt aus dem Feedback der Nutzer. Schlechte Antworten werden ma
 ## Was bedeutet das für Ihre Kammer oder Ihren Verband?
 
 Wenn Sie in einer Kammer, einem Verband oder einer Interessenvertretung arbeiten, stellen sich zwei Fragen:
-
-![Moderne Arbeitsplätze durch KI-Unterstützung – eine intelligente Verbindung von Tradition und Technologie in Kammern.](bild-3.webp)
 
 **Erstens: Wo verbringen Ihre Mitarbeiter Zeit mit repetitiven Anfragen?**
 

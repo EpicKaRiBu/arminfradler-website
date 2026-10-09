@@ -12,8 +12,8 @@ seo_title: "KI im Gemeindeamt: Datensicher digital für Ihr KMU | Armi..."
 keywords: ["KI Gemeindeamt", "Digitalisierung Kommunen Österreich", "KI für KMU Österreich", "Datenschutz KI", "Lokale KI-Lösungen", "Bürgerservice Automatisierung", "Prozessoptimierung Rathaus"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Sichere KI im Gemeindeamt – ein stilisiertes Schloss schützt bürgernahe digitale Lösungen und Datenhoheit."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Ein kleines Gemeindeamt aus gefaltetem Karton, davor ein Holzstempel und Karteikarten"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://kommunal.at/erster-generativer-chatbot-fuer-gemeinden-kremsmuenster", "title": "Erster generativer Chatbot für Gemeinden in Kremsmünster (Kommunal.at)"}, {"url": "https://kommunal.at/auf-dem-weg-zur-digitalen-gemeinde", "title": "Auf dem Weg zur digitalen Gemeinde - IKT-Strategie Wien (Kommunal.at)"}, {"url": "https://www.meinbezirk.at/tirol/c-lokales/tirol-setzt-mit-erstem-ki-chatbot-neuen-meilenstein-im-buergerservice_a7759538", "title": "Tirol: Erster KI-Chatbot der Landesverwaltung (MeinBezirk)"}, {"url": "https://www.meinbezirk.at/tag/chatbot", "title": "42 Gemeinden Weinviertel mit Chatbots (MeinBezirk)"}, {"url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2025/05/regierung-setzt-mit-chatbot-der-ki-servicestelle-auf-informationsvermittlung-verstaendlichkeit-und-zugaenglichkeit.html", "title": "Bundeskanzleramt: KI-Servicestelle Chatbot"}]
 ---
 
@@ -52,8 +52,6 @@ Der [Personal-Crunch](/blog/personal-crunch-arbeitskraeftemangel-automatisierung
 ## Welche Gemeinden setzen bereits KI ein?
 
 Die gute Nachricht: Österreich ist weiter als viele denken. Es gibt bereits funktionierende Beispiele.
-
-![Lokale Datenhoheit – ein sicherer Tresorraum symbolisiert den Schutz sensibler Bürgerinformationen direkt im Gemeindeamt.](bild-1.webp)
 
 ### Kremsmünster: "Kremsi" – der erste generative Chatbot
 
@@ -146,8 +144,6 @@ Das [Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) hilft bei der E
 
 Die Kosten variieren stark je nach Gemeindegröße und gewählter Lösung:
 
-![KI-gestützte Effizienz: Das Textstatement visualisiert die enorme Entlastung des Personals in österreichischen Gemeindeämt...](bild-2.webp)
-
 | Lösung | Einmalig | Laufend/Monat | Geeignet für |
 |--------|----------|---------------|--------------|
 | Einfacher FAQ-Bot (Cloud) | 2.000-5.000 € | 200-500 € | Kleine Gemeinden |
@@ -179,8 +175,6 @@ Die gute Nachricht: Die meisten Gemeinde-Anwendungen (FAQ-Bot, Terminbuchung, In
 ## Wie startet eine Gemeinde am besten?
 
 Der Fehler vieler Digitalisierungsprojekte: Zu groß anfangen, zu viel wollen, zu schnell scheitern.
-
-![Lokale Server-Hardware stellt die Basis für sichere KI im Gemeindeamt dar und gewährleistet Datenunabhängigkeit.](bild-3.webp)
 
 **Schritt 1: Klein anfangen**
 

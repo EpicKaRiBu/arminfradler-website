@@ -12,8 +12,8 @@ seo_title: "KI im Betrieb: Warum Schulung allein nicht reicht"
 keywords: ["KI im Betrieb", "KI Workshop KMU", "EU AI Act Schulung", "KMU DIGITAL Förderung", "KI Burgenland"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Sinnvolle KI im Betrieb: Steuerung komplexer Prozesse durch passgenaue Systemintegration."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Eine Urkunde mit Siegel liegt beiseite, davor fünf Karteikarten als Arbeitsablauf, mit Rotstift verbunden"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 ---
 
 Der Workshop ist vorbei. Ihr Team hat ein Zertifikat. Und jetzt?
@@ -34,8 +34,6 @@ Das Ergebnis: Die Mitarbeiter, die vorher schon ChatGPT genutzt haben, machen we
 
 Ein Workshop ist wie ein Führerschein. Er ist wichtig, gesetzlich vorgeschrieben, und ohne ihn sollte niemand fahren. Aber mit dem Führerschein allein kommt niemand zur Arbeit. Dafür braucht es ein Fahrzeug — eines, das zur Strecke passt und zuverlässig funktioniert.
 
-![Der Führerschein steht für Wissen, das Fahrzeug für die individuelle Anwendung im Geschäftsalltag.](bild-1.webp)
-
 Übersetzt auf KI: Was ein Betrieb braucht, ist nicht nur geschultes Personal, sondern ein System, das den Arbeitsalltag tatsächlich verändert. Eines, das die Sprache des Unternehmens spricht, die internen Abläufe kennt und klare Regeln hat, welche Daten wohin dürfen.
 
 ## Warum ChatGPT mit Hausregeln nicht reicht
@@ -51,8 +49,6 @@ Diese Regeln liegen nicht in einem Dokument, das jemand lesen muss. Sie sind im 
 ## Wie ein lernfähiges KI-System funktioniert
 
 Das Prinzip ist einfacher als es klingt. Im Kern passieren vier Dinge:
-
-![Ein maßgeschneidertes KI-System im Betrieb speichert das individuelle Wissen des Unternehmens dauerhaft.](bild-2.webp)
 
 **Das System kennt Ihren Betrieb.** Bei der Einrichtung wird festgelegt, wie das Unternehmen arbeitet: Welchen Ton die Kundenkommunikation hat, welche Begriffe in der Branche wichtig sind, welche Abläufe wiederkehren. Das System bekommt keine allgemeine Anweisung, sondern einen konkreten Arbeitsauftrag — zugeschnitten auf den täglichen Betrieb. Es versteht dabei nicht nur Text: Sprachnachrichten, Bilder, PDFs — es arbeitet mit dem Material, das es bekommt. Und für sensible Aufgaben kann ein lokales KI-Modell direkt auf Ihren Geräten laufen — ohne dass Daten Ihr Haus verlassen.
 
@@ -95,8 +91,6 @@ In der Praxis bedeutet das: Ein Workshop plus System-Einrichtung, die regulär z
 ## Drei Schritte — ein Ansprechpartner
 
 Wie der Weg vom Workshop zum laufenden System aussieht:
-
-![Sichere KI-Implementierung: Der Schlüssel zu geschütztem Unternehmenswissen liegt intern verankert.](bild-3.webp)
 
 **Schritt 1: KI-Workshop.** Ein halber Tag. Das Team lernt den sicheren Umgang mit KI. Dazu gibt es den Schulungsnachweis und eine KI-Richtlinie mit dem Ampel-System. Das ist die Pflicht — und ein guter Einstieg.
 

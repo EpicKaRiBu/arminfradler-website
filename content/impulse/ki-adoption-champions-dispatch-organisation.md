@@ -12,8 +12,8 @@ seo_title: "KI-Implementierung KMU: Warum Trainings nicht reichen"
 keywords: ["KI-Adoption", "Champions-Modell", "Claude Cowork", "OpenClaw", "NemoClaw", "KI-Governance", "EU AI Act", "Schleusen-Prinzip", "KMU", "lokale KI"]
 minutes: 8
 image: "titel.webp"
-image_alt: "Das Tool läuft, aber ein Stillstand verhindert den Fortschritt. Effektive Lösungen für ungenutztes Potenzial"
-image_label: "Bild: mit KI erstellt"
+image_alt: "Links eine unberührte, versiegelte Mappe, rechts eine abgegriffene Karteikarte voller Bleistiftspuren"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://www.bitkom.org/Presse/Presseinformation/KI-Strategie-Deutschland", "title": "Bitkom Digitalindex 2025"}, {"url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689", "title": "EU AI Act Artikel 4 – KI-Kompetenzpflicht"}, {"url": "https://www.anthropic.com/news/claude-cowork", "title": "Anthropic Claude Dispatch Research Preview"}]
 ---
 
@@ -34,8 +34,6 @@ Laut Bitkom-Digitalindex 2025 haben 76% der deutschen Unternehmen keine systemat
 ## Warum KI-Schulungen nach drei Monaten verpufft sind
 
 Das ist kein Motivationsproblem. Es ist ein Lernpsychologie-Problem, und ich habe es als Lehrer zehn Jahre lang beobachtet bevor ich KI-Berater wurde.
-
-![Kompetenzabfall nach kurzer Zeit – warum Wissen ohne Praxis nicht haften bleibt.](bild-1.webp)
 
 Schulungen erzeugen Wissens-Spikes. Direkt danach können Teilnehmer das Gelernte anwenden, fühlen sich kompetent, sind motiviert. Dann kommt der Alltag. Keine Übungsstruktur, keine Kolleg:innen die dasselbe tun, keine Feedbackschleifen. Lernkurven zeigen nach drei bis sechs Monaten ohne Praxiseinbettung dasselbe: schneller Kompetenzabfall zurück auf Ausgangsniveau, außer bei den wenigen die von selbst weitergemacht haben.
 
@@ -61,8 +59,6 @@ Ein oft übersehener Punkt dabei: Champions geben weiter was sie selbst erlebt h
 
 Die meisten Unternehmen denken bei KI noch in einem Modell das seit 2023 veraltet ist: Mitarbeiter öffnet Browser, gibt Text ein, bekommt Antwort, kopiert sie irgendwo hin. Alles passiert in der Cloud, alles läuft über externe Server, der Anbieter sieht alles.
 
-![Die Notwendigkeit menschlicher Qualitätskontrolle bei automationsgestützten Abläufen im Unternehmen wird betont.](bild-2.webp)
-
 Das neue Modell funktioniert anders. Claude Cowork und Claude Code laufen als lokale Agenten auf dem Rechner des Mitarbeiters. Der Agent arbeitet in einer isolierten Sandbox, greift auf freigegebene lokale Ordner und Dateien zu, verbindet sich über das Model Context Protocol (MCP) selektiv mit externen Diensten wie Google Workspace, Salesforce oder Slack – aber nur mit explizit genehmigten. Daten verlassen das Gerät nur dort wo es bewusst erlaubt wurde.
 
 Das ist nicht zufällig dieselbe Architektur wie OpenClaw, das ich [im vorigen Beitrag beschrieben habe](/blog/ki-transformation-agent-architektur-nemoclaw). OpenClaw hat dieses Prinzip als Open-Source-Projekt etabliert, Claude Cowork und Code setzen es als kommerzielle Implementierung um. NemoClaw von NVIDIA legt dieselbe Architektur als Enterprise-fähigen Wrapper für regulierte Umgebungen an – mit Policy Engine, Audit-Logs und Privacy Router. Drei verschiedene Produkte, eine Grundidee: der Agent gehört zum Gerät, nicht zur Cloud.
@@ -86,8 +82,6 @@ Das ist der Unterschied zwischen "wir haben ein KI-Tool abonniert" und "wir habe
 ## Das Schleusen-Prinzip als Entscheidungs-Sprache
 
 Das Schleusen-Prinzip habe ich ursprünglich als technische Systemarchitektur entwickelt: Rot für sensible Daten die lokal bleiben, Gelb für interne Dokumente die zu DSGVO-konformen Cloud-Diensten dürfen, Grün für öffentliche Aufgaben wo externe Modelle nutzbar sind. Es ist damit das organisatorische Spiegelbild der Architektur die Cowork, OpenClaw und NemoClaw technisch umsetzen.
-
-![Champions schärfen den Blick für KI-Integration – so wird Ihr KI-Tool effizient genutzt.](bild-3.webp)
 
 Was sich bei der Arbeit mit Teams gezeigt hat: Rot, Gelb, Grün ist vor allem eine Entscheidungssprache, die keine IT-Kenntnisse voraussetzt. Der Champion im Vertrieb muss nicht verstehen wie Datenverschlüsselung funktioniert. Er muss wissen: "Angebote mit Kundendaten sind Rot, die bleiben lokal. Marktrecherchen sind Grün, da können wir externe Dienste nutzen."
 

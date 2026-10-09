@@ -2,6 +2,7 @@
 title: "KI in der Erwachsenenbildung: Warum Trainer wertvoller werden, nicht überflüssig"
 slug: "ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar"
 status: "published"
+pin: 1
 date: "2025-12-16T10:46:16.136+00:00"
 updated: "2025-12-20T10:32:09.450246+00:00"
 category: "Branchenlösungen"
@@ -12,8 +13,8 @@ seo_title: "KI in Erwachsenenbildung: Trainer werden wertvoller | Arm..."
 keywords: ["KI Erwachsenenbildung", "Trainer Wert", "Digitalisierung KMU Österreich", "WIFI KI Kurse", "Lernbegleiter", "Zukunft Weiterbildung", "Prozessautomatisierung Bildung", "KI Strategie KMU"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Navigation in der KI in der Erwachsenenbildung zeigt den Wandel zur anwendungsorientierten Lernbegleitung."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Links eine Karte mit schnellem Rotstift-Haken, rechts ein Notizbuch voller Skizzen und Durchgestrichenem"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://www.wko.at/oe/news/wifi-ki-ausbildung", "title": "WIFI-Weiterbildungsbarometer 2025: KI-Ausbildung als Schlüssel"}, {"url": "https://www.wifi.at/ueber-uns/news/weiterbildungsbarometer-2024", "title": "WIFI-Weiterbildungsbarometer 2024"}, {"url": "https://erwachsenenbildung.at/digiprof/neuigkeiten/19801-tag-der-weiterbildung-2024-ki-in-der-erwachsenenbildung.php", "title": "Tag der Weiterbildung 2024: KI in der Erwachsenenbildung"}, {"url": "https://bericht.wko.at/geschaeftsbericht/2024/zukunftsorientierte-bildung", "title": "WKO Zukunftsorientierte Bildung 2024"}, {"url": "https://www.vhs-baden.at/kuenstliche-intelligenz-im-bildungsbereich/", "title": "VHS Baden: KI im Bildungsbereich"}]
 ---
 
@@ -52,8 +53,6 @@ Die Frage ist: "Was kann der Trainer, was ChatGPT nicht kann?"
 ## Was die meisten übersehen: Die Rolle des Trainers verändert sich fundamental
 
 Laut dem [WIFI-Weiterbildungsbarometer 2024](https://www.wifi.at/ueber-uns/news/weiterbildungsbarometer-2024) halten 85% der österreichischen Unternehmer Weiterbildung für wichtig oder sehr wichtig. Und 22% planen trotz Kostendruck, mehr in Weiterbildung zu investieren.
-
-![Der Wandel traditioneller Lernweisen zu digitalen Kompetenzen durch künstliche Intelligenz.](bild-1.webp)
 
 Aber hier ist die Diskrepanz: Während 71% der Unternehmer Nachhaltigkeit als wichtiges Weiterbildungsthema sehen, trifft das bei KI nur auf 52% zu.
 
@@ -114,8 +113,6 @@ Das Motto der Veranstaltung? **"Fürchtet euch nicht, so kompliziert ist es gar 
 ## Die drei Trainer-Typen der Zukunft
 
 Aus meiner Erfahrung als KI-Trainer bei WIFI Burgenland und VHS Steiermark sehe ich drei Entwicklungspfade:
-
-![Hervorhebung der entscheidenden Frage nach der Anwendungsfähigkeit von Trainern im Zeitalter der KI.](bild-2.webp)
 
 ### Typ 1: Der KI-Skeptiker (wird ersetzt)
 
@@ -187,8 +184,6 @@ Die Zukunft gehört dem Blended Learning: Online für Wissen, Präsenz für Anwe
 ## Meine persönliche Erfahrung als KI-Trainer
 
 Nach zehn Jahren als Mathematik- und Physiklehrer und jetzt als KI-Dozent sehe ich den Unterschied täglich:
-
-![Strategische Wegweiser für die Weiterbildung mit KI-Integration und neuen digitalen Fähigkeiten für Trainer.](bild-3.webp)
 
 **Was Teilnehmer von mir wollen:**
 - Nicht: "Erkläre mir, was ein Prompt ist" (das kann ChatGPT selbst)

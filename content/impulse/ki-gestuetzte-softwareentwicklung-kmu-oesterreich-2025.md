@@ -12,8 +12,8 @@ seo_title: "KI Softwareentwicklung für KMU 2025 – Chancen & Grenzen"
 keywords: ["KI Softwareentwicklung KMU", "KI Digitalisierung Österreich", "Prozessautomatisierung KMU", "KI Förderungen Österreich", "Digitalisierung Beratung", "KI-gesteuerte Entwicklung", "Softwareentwicklung Kosten", "KI Anwendungen KMU"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Sichere Daten: Server-Turm mit Wurzeln symbolisiert lokale Kontrolle"
-image_label: "Bild: mit KI erstellt"
+image_alt: "Karteikarten mit skizzierten Bildschirm-Entwürfen, mit Rotstift-Pfeilen verbunden"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://survey.stackoverflow.co/2025", "title": "Stack Overflow Developer Survey 2025"}, {"url": "https://survey.stackoverflow.co/2025/ai", "title": "Stack Overflow 2025: AI Section"}, {"url": "https://stackoverflow.blog/2025/07/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/", "title": "Stack Overflow Blog: 2025 Survey Results"}]
 ---
 
@@ -52,8 +52,6 @@ Für standardisierte Geschäftsanwendungen ist die Technologie ausgereift. Die F
 ## Die Realität: Stack Overflow Developer Survey 2025
 
 Der [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025) mit 49.000+ Entwicklern aus 177 Ländern zeichnet ein ernüchterndes Bild:
-
-![Kaputtes Zahnrad: KI-Ergebnisse passen 'fast, aber nicht ganz'](bild-1.webp)
 
 | Metrik | 2024 | 2025 | Trend |
 |--------|------|------|-------|
@@ -146,8 +144,6 @@ Mehr dazu: [Die Cloud ist keine Bank, sie ist ein Casino](/blog/cloud-casino-ven
 
 Realistische Kalkulation ohne Marketing-Versprechen:
 
-![Ihr Code: Frage der digitalen Eigentumsrechte im Mittelpunkt](bild-2.webp)
-
 | Komplexität | Beispiele | Zeit | Kosten |
 |-------------|-----------|------|--------|
 | Einfach | CRM, Terminbuchung | 2-4 Wochen | 3.000-8.000€ |
@@ -206,8 +202,6 @@ Das System läuft auf Standard-Webhosting, der Code gehört dem Unternehmen.
 | Integration in bestehende Systeme | ✅ Externe Unterstützung |
 | Standardanwendungen unter 8.000€ | ⚠️ Möglicherweise verzichtbar |
 | Pilotprojekte mit wenigen Nutzern | ⚠️ Möglicherweise verzichtbar |
-
-![Der Schlüssel: Digitale Unabhängigkeit und Exit-Strategien](bild-3.webp)
 
 ---
 

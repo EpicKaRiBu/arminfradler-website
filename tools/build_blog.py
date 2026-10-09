@@ -11,7 +11,7 @@ Erzeugt:
 - impulse/feed.xml            RSS-Feed
 - sitemap.xml, llms.txt       für Suchmaschinen und KI-Assistenten
 
-Status „draft“: Beitrag wird nicht gebaut, seine Adressen führen zur Übersicht. Läuft lokal oder als GitHub Action."""
+Status „draft“: Beitrag wird nicht gebaut, seine Adressen führen zur Übersicht. „pin: 1“ bis „pin: 3“ stellt Beiträge nach vorne. Läuft lokal oder als GitHub Action."""
 import datetime, html, json, os, re, shutil
 from PIL import Image
 
@@ -164,6 +164,8 @@ def main():
     robots = '<meta name="robots" content="noindex">\n' if CFG.get('preview') else ''
     alle = [lesen(os.path.join(SRC, f)) for f in sorted(os.listdir(SRC)) if f.endswith('.md')]
     posts = sorted([p for p in alle if p.get('status') == 'published'], key=lambda p: p['date'], reverse=True)
+    # Kopfdaten „pin: 1/2/3“: diese Beiträge stehen vorne (Startseite und Übersicht), danach nach Datum
+    posts.sort(key=lambda p: (p.get('pin') or 99))
     for d in ('impulse', 'blog'):
         for name in os.listdir(os.path.join(ROOT, d)) if os.path.isdir(os.path.join(ROOT, d)) else []:
             if os.path.isdir(os.path.join(ROOT, d, name)): shutil.rmtree(os.path.join(ROOT, d, name))
@@ -172,6 +174,8 @@ def main():
         slug = p['slug']; canon = f'{base}/impulse/{slug}/'
         title = p['title']; desc = p.get('description') or p.get('excerpt') or ''
         bild_abs = f'{base}/assets/impulse/{slug}/{p["image"]}' if p.get('image') else ''
+        if os.path.exists(os.path.join(ROOT, 'assets', 'impulse', slug, 'social.jpg')):
+            bild_abs = f'{base}/assets/impulse/{slug}/social.jpg'  # 1200 × 630 für LinkedIn & Co.
         ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': desc,
               'datePublished': p['date'], 'dateModified': p.get('updated') or p['date'], 'inLanguage': 'de-AT',
               'author': {'@type': 'Person', 'name': 'Armin Fradler', 'url': base + '/ueber-mich.html'},
@@ -182,7 +186,7 @@ def main():
         page = HEAD.format(title=esc(p.get('seo_title') or title).replace(' | Armin Fradler', '').replace(' · Armin Fradler', ''),
                            desc=esc(desc), robots=robots, canon=canon, base=base,
                            ld=json.dumps(ld, ensure_ascii=False).replace('</', '<\\/'),
-                           ogimg=f'<meta property="og:image" content="{esc(bild_abs)}">' if bild_abs else '')
+                           ogimg=(f'<meta property="og:image" content="{esc(bild_abs)}"><meta name="twitter:card" content="summary_large_image">' if bild_abs else ''))
         page += (f'<p class="kick"><a href="../?thema={esc(p.get("category_slug", ""))}" style="text-decoration:none">{esc(p.get("category") or "Impuls")}</a>'
                  f' · <time datetime="{esc(p["date"][:10])}">{datum(p["date"])}</time>' + (f' · {p["minutes"]} Min.' if p.get('minutes') else '') + '</p>\n')
         page += f'<h1 style="font-size:clamp(32px,5vw,50px);margin-bottom:22px">{esc(title)}</h1>\n'

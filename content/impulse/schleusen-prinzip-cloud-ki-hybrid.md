@@ -12,8 +12,8 @@ seo_title: "Cloud-KI im KMU: Schleusen-Prinzip nutzen | Armin Fradler"
 keywords: ["Cloud-KI", "KMU Österreich", "KI-Implementierung", "Datenschutz KI", "AI Act", "WKO KI Guidelines", "KI Strategie", "digitale Transformation"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Grafische Schleuse trennt offene vs. gesicherte Datenströme"
-image_label: "Bild: mit KI erstellt"
+image_alt: "Ein Tor aus gefalteten Karteikarten zwischen zwei Mappen, grüner und gelber Punkt sind durch, der rote bleibt davor"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 sources: [{"url": "https://midrange.de/souveraenitaet-und-resilienz-gewinnen-laut-cloud-studie-fuer-deutsche-unternehmen-an-bedeutung/", "title": "EuroCloud Pulse Check 2025: Souveränität und Resilienz"}, {"url": "https://ap-verlag.de/unternehmen-richten-cloud-strategie-neu-aus/99366/", "title": "Unternehmen richten Cloud-Strategie neu aus (AP Verlag)"}, {"url": "https://firstcolo.net/cloud-trends-2025-die-zukunft-der-it-infrastruktur/", "title": "Cloud-Trends 2025: Die Zukunft der IT-Infrastruktur"}, {"url": "https://www.industr.com/de/multi-cloud-vs-hybrid-cloud-welche-strategie-passt-zu-welcher-it-inf-2898908", "title": "Multi-Cloud vs. Hybrid-Cloud (Industr.com)"}]
 ---
 
@@ -48,8 +48,6 @@ Das ist keine Schleuse – das ist ein Sieb.
 ## Warum ist das jetzt wichtiger denn je?
 
 Die [EuroCloud-Studie 2025](https://ap-verlag.de/unternehmen-richten-cloud-strategie-neu-aus/99366/) zeigt einen fundamentalen Wandel: Deutsche Unternehmen verlassen ihre Public-Cloud-Only-Strategie und rücken Souveränität ins Zentrum.
-
-![Hände lenken Datenstrom in zwei Bahnen: Cloud und Lokal](bild-1.webp)
 
 Die Zahlen:
 - **47%** der Führungskräfte stufen Souveränität und Resilienz als erfolgskritisch ein – vor 5 Jahren waren es nur 25%
@@ -137,8 +135,6 @@ Das sind Standarddienste, bei denen der Anbieter austauschbar ist:
 
 ### Schritt 1: Inventar erstellen
 
-![Große Zahlenangabe '0 EURO' auf dunklem Hintergrund](bild-2.webp)
-
 Listen Sie alle Dienste und Datentypen auf, die Ihr Unternehmen nutzt. Das klingt banal, aber die meisten Unternehmen haben keinen vollständigen Überblick.
 
 Fragen Sie sich:
@@ -203,8 +199,6 @@ KI-Assistenten werden nützlicher, je mehr Kontext sie haben. Das verleitet dazu
 ## Die häufigsten Fehler
 
 ### Fehler 1: "Wir haben ja Verschlüsselung"
-
-![Stilisierter Schlüsselbund auf einem offenen Dokument](bild-3.webp)
 
 Verschlüsselung schützt Daten während der Übertragung und Speicherung. Aber: Wenn der Cloud-Anbieter die Schlüssel hat (was bei den meisten Diensten der Fall ist), kann er entschlüsseln. Das ist kein Schutz vor dem Anbieter selbst.
 

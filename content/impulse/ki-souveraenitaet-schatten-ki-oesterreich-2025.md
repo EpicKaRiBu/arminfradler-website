@@ -2,6 +2,7 @@
 title: "Wem gehören die Daten, die Ihre Mitarbeiter gerade in ChatGPT tippen?"
 slug: "ki-souveraenitaet-schatten-ki-oesterreich-2025"
 status: "published"
+pin: 3
 date: "2025-12-15T20:35:36.557+00:00"
 updated: "2025-12-17T08:28:08.617666+00:00"
 category: "KI-Strategie"
@@ -12,8 +13,8 @@ seo_title: "KI Daten & DSGVO: Was US-Recht für KMU bedeutet | Armin F..."
 keywords: ["KI Daten", "DSGVO", "Schatten-KI", "OpenAI Daten", "KMU Österreich", "KI Risiken", "Datenschutz KI", "lokale KI"]
 minutes: 7
 image: "titel.webp"
-image_alt: "Datenabfluss symbolisiert durch offenes Schloss, daneben sicherer Serverschrank – Kontrolle vs. Verlust"
-image_label: "Bild: mit KI erstellt"
+image_alt: "Ein Stapel Mappen wirft einen langen Schatten, darin halb versteckt eine einzelne Karteikarte"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 ---
 
 Im Mai 2025 hat ein US-Bundesgericht OpenAI verpflichtet, alle Konversationsdaten aufzubewahren – auch die Ihrer Mitarbeiter. Was das für österreichische KMU bedeutet.
@@ -51,8 +52,6 @@ Laut [INNOQ](https://www.innoq.com/en/articles/2025/09/on-premise-llms-strategis
 ## Wie verbreitet ist Schatten-KI wirklich?
 
 Laut [Handelsblatt-Umfrage 2025](https://www.ha-ds.de/schatten-ki-im-unternehmensalltag-risiken-chancen-und-loesungen/) nutzen sieben von zehn Beschäftigten KI-Werkzeuge ohne Freigabe ihrer Firma. Die [Bitkom-Studie vom Mai 2025](https://vonwestfalen.de/schatten-ki-im-unternehmen/) zeigt: Die heimliche KI-Nutzung hat sich innerhalb eines Jahres verdoppelt – von 5% auf 10%.
-
-![Digitales Gerät im Spinnennetz, Metapher für unkontrollierte Datenverbindungen](bild-1.webp)
 
 | Metrik | 2023 | 2025 | Veränderung |
 |--------|------|------|-------------|
@@ -99,8 +98,6 @@ Ich habe darüber in [meinem Artikel über Cloud-Preisrisiken](/blog/cloud-casin
 ## Gibt es eine echte Alternative zu Cloud-KI?
 
 Ja. Open-Source-Modelle wie Llama (Meta), Mistral (Frankreich) oder Falcon (VAE) laufen lokal auf Ihrer eigenen Hardware. Die Daten verlassen nie Ihr Unternehmen.
-
-![Typografie: 55% SCHATTEN-KI – Alarmierende Zunahme an Sicherheitsvorfällen](bild-2.webp)
 
 | Aspekt | Cloud-KI | Lokale KI |
 |--------|----------|-----------|
@@ -161,8 +158,6 @@ Für viele KMU ist eine Hybrid-Lösung sinnvoll: Cloud für unkritische Aufgaben
 ## Was ist mit dem AI Act?
 
 Der [EU AI Act](https://www.bundeskanzleramt.gv.at/themen/europa-aktuell/2025/07/neuer-praxisleitfaden-fuer-kuenstliche-intelligenz-veroeffentlicht.html) ist am 2. August 2025 in Kraft getreten. Die meisten KMU-Anwendungsfälle – Textverarbeitung, Recherche, Zusammenfassungen – fallen in die Kategorie "minimales Risiko" und sind kaum betroffen.
-
-![Sicheres Vorhängeschloss auf lokalem Server – Symbol für Datensouveränität vor Ort](bild-3.webp)
 
 **Aber:** Seit Februar 2025 ist die KI-Kompetenz nach Artikel 4 verpflichtend. Das bedeutet: Unternehmen müssen sicherstellen, dass Mitarbeiter, die KI nutzen, ausreichend geschult sind.
 

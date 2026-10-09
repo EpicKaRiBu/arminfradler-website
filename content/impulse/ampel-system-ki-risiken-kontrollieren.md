@@ -2,6 +2,7 @@
 title: "Das Ampel-System: KI-Risiken kontrollieren, ohne KI zu bremsen"
 slug: "ampel-system-ki-risiken-kontrollieren"
 status: "published"
+pin: 2
 date: "2026-03-29T21:07:32.306+00:00"
 updated: "2026-03-31T21:19:09.899441+00:00"
 category: "KI-Strategie"
@@ -12,8 +13,8 @@ seo_title: "Das Ampel-System: KI-Risiken kontrollieren | Armin Fradler"
 keywords: ["KI-Risiken KMU", "Ampel-System KI", "Datenschutz KI", "EU AI Act KMU", "KI-Richtlinien Unternehmen", "KI-Compliance", "KI-Strategie Österreich"]
 minutes: 6
 image: "titel.webp"
-image_alt: "Das Ampel-System visualisiert präzise Richtlinien für den sicheren Einsatz von KI in Unternehmen."
-image_label: "Bild: mit KI erstellt"
+image_alt: "Drei Papierpunkte in Grün, Gelb und Rot auf einer Karteikarte, daneben Rotstift, Stempel und farbige Mappen"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
 ---
 
 ## Das echte Risiko: nicht KI selbst, sondern KI ohne Spielregeln
@@ -27,8 +28,6 @@ Das ist die Realität in den meisten österreichischen KMU. Nicht die Technologi
 ## Warum das PDF in der Schublade nicht reicht
 
 Viele Unternehmen reagieren auf dieses Problem mit dem, was sie kennen: einem Dokument. Eine KI-Richtlinie wird geschrieben, vielleicht sogar von einem Anwalt geprüft, als PDF verschickt und in der Ablage gespeichert.
-
-![Verstaubte Unternehmensleitlinien vs. dynamische KI-Regeln, die wirklich genutzt werden.](bild-1.webp)
 
 Und dann passiert — wenig.
 
@@ -96,8 +95,6 @@ So wird aus einer guten Absicht ein funktionierender Prozess.
 
 Moderne KI-Systeme lernen und verbessern sich laufend. Das ist gewünscht — aber es birgt ein Risiko: Was passiert, wenn das System beim Lernen seine eigenen Sicherheitsregeln aufweicht?
 
-![Ein verständliches System ermöglicht transparente KI-Nutzung und festigt die Datensicherheit im Betrieb.](bild-2.webp)
-
 Deshalb gibt es im System geschützte Bereiche. Das sind Regeln, die vom laufenden Lernprozess bewusst ausgenommen sind:
 
 - Die Zuordnung, welche Datentypen in welche Kategorie fallen, ist in der Konfiguration festgelegt.
@@ -133,8 +130,6 @@ Der Mitarbeiter spart Zeit. Die Daten bleiben geschützt. Niemand musste in eine
 ## Wie das Ampel-System in Ihr Unternehmen passt
 
 In [Post 1 dieser Serie](/blog/ki-im-betrieb-warum-schulung-allein-nicht-reicht) habe ich beschrieben, warum Schulungen allein nicht ausreichen — und warum es ein System braucht, das Ihre Mitarbeiter im Arbeitsalltag unterstützt, statt sie mit Regeln zu überfordern.
-
-![Integrierte Tools für das Ampel-System: Praktische Lösungen für den Alltag, um Risiken zu kontrollieren.](bild-3.webp)
 
 Das Ampel-System ist ein zentraler Baustein dieses Ansatzes. Zusammen mit dem [Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) — das regelt, welche Daten in die Cloud gehen und welche lokal bleiben — entsteht eine Lösung, die:
 
