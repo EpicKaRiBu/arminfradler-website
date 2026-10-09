@@ -4,6 +4,14 @@ const S=document.currentScript,ROOT=S.dataset.root||'./',PAGE=document.body.data
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
 
+/* ---------- Texturen: Tinte, Rotstift, Stempel als SVG-Filter ---------- */
+document.body.insertAdjacentHTML('afterbegin',`<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<filter id="tx-ink" x="-3%" y="-8%" width="106%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="1.3" numOctaves="1" seed="9" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.3 1.5" result="m"/><feComposite in="d" in2="m" operator="in"/></filter>
+<filter id="tx-pencil" x="-3%" y="-8%" width="106%" height="116%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="5" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 1.75" result="m"/><feComposite in="SourceGraphic" in2="m" operator="in"/></filter>
+<filter id="tx-stamp" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".05 .09" numOctaves="3" seed="12" result="b"/><feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="1" seed="2" result="s"/><feComposite in="b" in2="s" operator="arithmetic" k1="0" k2=".6" k3=".6" k4="0" result="mix"/><feColorMatrix in="mix" type="matrix" values="0 0 0 0 1 0 0 0 0 .99 0 0 0 0 .96 0 0 0 -3.2 2.2" result="spots"/><feDisplacementMap in="SourceGraphic" in2="s" scale="1.5" xChannelSelector="R" yChannelSelector="G" result="d"/><feComposite in="spots" in2="d" operator="in" result="worn"/><feMerge><feMergeNode in="d"/><feMergeNode in="worn"/></feMerge></filter>
+</defs></svg>`);
+document.documentElement.classList.add('tx-on');
+
 /* ---------- Kopf und Fuß ---------- */
 const NAV=[['angebot','Angebot','angebot.html'],['termine','Termine','termine.html'],['werkzeuge','Werkzeuge','https://mitmachen.arminfradler.at/werkzeuge/ki/'],['impulse','Impulse','impulse/'],['ueber','Über mich','ueber-mich.html']];
 const head=$('#site-head');

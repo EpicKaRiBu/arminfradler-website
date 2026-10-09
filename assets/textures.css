@@ -1,0 +1,43 @@
+/* Textursystem · ein Material, eine Textur. Gemeinsam für Website, Präsentation und Video.
+   Papier (Körnung, Fasern, Ton) · Tinte (ausgefranst) · Rotstift (Körnung) · Stempel (Fehlstellen) · Karte, Zettel, Klebeband */
+:root{
+  --tx-grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.875' numOctaves='3' seed='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .25 0 0 0 0 .15 0 0 0 .12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --tx-fiber:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><filter id='f' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.0625 .1875' numOctaves='2' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .26 0 0 0 .28 -.1'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>");
+  --tx-mottle:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024'><filter id='m' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.00390625' numOctaves='3' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55 0 0 0 0 .46 0 0 0 0 .3 0 0 0 .14 0'/></filter><rect width='100%' height='100%' filter='url(%23m)'/></svg>");
+  --tx-card:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='c' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' seed='5' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4 0 0 0 0 .34 0 0 0 0 .22 0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+}
+
+/* Papier: Körnung + Fasern + ungleichmäßiger Ton */
+body{background-color:var(--paper);background-image:var(--tx-grain),var(--tx-fiber),var(--tx-mottle);background-size:256px 256px,512px 512px,1024px 1024px}
+.site-head{background-image:var(--tx-grain);background-size:256px 256px}
+.alt{background-color:rgba(233,223,203,.5);background-image:var(--tx-mottle);background-size:1024px 1024px;background-position:300px 200px}
+
+/* Karteikarten: eigene Körnung, eine feine rote Kopflinie wie auf echten Karteikarten */
+.card,.post,.lf-cols,.check{background-image:var(--tx-card);background-size:160px 160px}
+.card.index{background-image:linear-gradient(to bottom,transparent 46px,rgba(192,57,43,.28) 46px,rgba(192,57,43,.28) 47.5px,transparent 47.5px),var(--tx-card);background-size:100% 100%,160px 160px}
+
+/* Ordner: farbiger Karton mit Körnung */
+.folder{background-image:var(--tx-card),linear-gradient(160deg,rgba(255,255,255,.08),rgba(0,0,0,.08));background-size:160px 160px,100% 100%;background-blend-mode:multiply,normal}
+
+/* Notizzettel: Papier mit Körnung und leicht gewölbter Ecke */
+.note-q{background-image:linear-gradient(135deg,transparent 82%,rgba(0,0,0,.06) 92%,rgba(0,0,0,.12)),var(--tx-card);background-size:100% 100%,160px 160px}
+
+/* Klebeband: durchscheinend mit Fasern */
+.tape,.note-q::before{background-image:var(--tx-fiber),linear-gradient(90deg,rgba(255,255,255,.18),rgba(255,255,255,0) 40%,rgba(255,255,255,.12));background-size:256px 256px,100% 100%;backdrop-filter:blur(.4px)}
+
+/* Polaroid: mattes Fotopapier */
+.portrait .photo{background-image:var(--tx-card);background-size:160px 160px}
+
+/* Beitragsbilder: wie auf Papier gedruckt – leicht entsättigt, mit Körnung. Beim Darüberfahren kommt die Farbe zurück. */
+.post .im{position:relative}
+.post .im::after{content:"";position:absolute;inset:0;background-image:var(--tx-grain);background-size:256px 256px;mix-blend-mode:multiply;pointer-events:none}
+.post img{filter:saturate(.72) sepia(.14) contrast(.97);transition:transform .6s cubic-bezier(.2,.8,.2,1),filter .5s}
+.post:hover img,.post:focus-visible img{filter:none}
+
+/* Tinte, Rotstift, Stempel: SVG-Filter (in site.js eingefügt). Nur auf großen Schriften – dort sieht man es, und es bleibt schnell. */
+.tx-on h1,.tx-on h2,.tx-on .brand b,.tx-on .event .date b,.tx-on .index .num,.tx-on .lf-col h3{filter:url(#tx-ink)}
+.tx-on .hand,.tx-on .c-be h3,.tx-on .c-be li,.tx-on .note-q .q{filter:url(#tx-pencil)}
+.tx-on .mark svg,.tx-on .brand svg,.tx-on .lf-line,.tx-on .site-head .progress{filter:url(#tx-pencil)}
+.tx-on .stamp{filter:url(#tx-stamp)}
+@media (prefers-reduced-motion:reduce){/* Texturen bleiben – sie bewegen sich nicht */}
+@media print{body{background-image:none}.tx-on *{filter:none!important}}

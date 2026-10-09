@@ -147,7 +147,7 @@ a.folder:hover{transform:translateY(-4px);color:#fff;box-shadow:0 28px 40px -24p
 @media (max-width:900px){.notes{grid-template-columns:1fr 1fr}}@media (max-width:600px){.notes{grid-template-columns:1fr}}
 .note-q{display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-height:170px;padding:22px 22px 18px;background:#fbf3c4;color:var(--ink);text-decoration:none;font-family:var(--hand);font-size:27px;line-height:1.18;box-shadow:0 14px 22px -16px rgba(0,0,0,.45);transform:rotate(var(--r,0deg));transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;position:relative}
 .note-q::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:22px;margin-left:-35px;background:rgba(214,196,150,.6);transform:rotate(-3deg)}
-.note-q span{font-family:var(--sans);font-size:14px;color:var(--muted);line-height:1.3}
+.note-q small{display:block;font-family:var(--sans);font-size:14px;color:var(--muted);line-height:1.3}
 .note-q:hover{transform:rotate(0deg) translateY(-4px) scale(1.02);box-shadow:0 24px 30px -18px rgba(0,0,0,.5);color:var(--ink)}
 .note-q:last-child{background:transparent;border:2px dashed var(--line);box-shadow:none}.note-q:last-child::before{display:none}
 .js .notes.rv .note-q{opacity:0;transform:translateY(26px) rotate(calc(var(--r,0deg)*3))}
@@ -181,8 +181,8 @@ a.folder:hover{transform:translateY(-4px);color:#fff;box-shadow:0 28px 40px -24p
 @media (max-width:760px){.lf-cols{grid-template-columns:1fr}.lf-col{border-right:0;border-bottom:1px solid var(--line)}.lf-line,.lf-line-label{display:none}.c-be{border-top:3px solid var(--pencil);margin-top:-1px}}
 
 /* Termine */
-.lights span{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:8px;vertical-align:-1px;opacity:.25;transform:scale(.8);transition:opacity .35s,transform .45s cubic-bezier(.3,1.8,.5,1),box-shadow .45s}
-.lights.in span{opacity:1;transform:none}
+.lights p>span{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:8px;vertical-align:-1px;opacity:.25;transform:scale(.8);transition:opacity .35s,transform .45s cubic-bezier(.3,1.8,.5,1),box-shadow .45s}
+.lights.in p>span{opacity:1;transform:none}
 .lights.in .l-g{transition-delay:.2s;box-shadow:0 0 0 4px rgba(63,125,78,.15)}.lights.in .l-y{transition-delay:.55s;box-shadow:0 0 0 4px rgba(211,162,33,.18)}.lights.in .l-r{transition-delay:.9s;box-shadow:0 0 0 4px rgba(178,58,46,.15)}
 .lights .stamp{transition:none}.lights.in .stamp{animation:stamp .45s cubic-bezier(.3,1.6,.5,1) 1.4s forwards}
 .event{display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:start}
@@ -267,7 +267,7 @@ textarea{min-height:160px;resize:vertical}
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .rv,.fan .card,.lf-col li{opacity:1!important;transform:none!important}
   .hero h1 .ch{opacity:1}.hero .write{clip-path:none}.stamp{opacity:.92}
-  .js .kick.rv,.site-foot .bye{clip-path:none!important}.js .portrait .photo,.js .portrait .tape{opacity:1!important}.lf-line path{stroke-dashoffset:0}.lights span{opacity:1;transform:none}.js .event.rv .date{transform:rotate(-1.5deg)}.js .folder.rv::before{transform:none}
+  .js .kick.rv,.site-foot .bye{clip-path:none!important}.js .portrait .photo,.js .portrait .tape{opacity:1!important}.lf-line path{stroke-dashoffset:0}.lights p>span{opacity:1;transform:none}.js .event.rv .date{transform:rotate(-1.5deg)}.js .folder.rv::before{transform:none}
   .mark svg path,.brand svg path{stroke-dashoffset:0}
 }
 @media print{.site-head,.site-foot,.btn{display:none}body{background:#fff}}

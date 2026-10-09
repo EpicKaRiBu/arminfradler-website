@@ -88,6 +88,7 @@ HEAD = '''<!doctype html>
 <meta property="og:type" content="article"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{canon}">{ogimg}
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
 <link href="../../assets/site.css" rel="stylesheet">
+<link href="../../assets/textures.css" rel="stylesheet">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body data-page="impulse">
