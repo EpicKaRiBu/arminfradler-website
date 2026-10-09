@@ -1,7 +1,8 @@
 ---
 title: "Das Schleusen-Prinzip: Wie Sie entscheiden, welche Daten in die Cloud dürfen"
 slug: "schleusen-prinzip-cloud-ki-hybrid"
-status: "published"
+status: "draft"
+replaced_by: "datenampel-welche-daten-in-ki-tools"
 date: "2025-12-15T20:36:13.873+00:00"
 updated: "2025-12-20T20:27:53.708576+00:00"
 category: "KI-Strategie"

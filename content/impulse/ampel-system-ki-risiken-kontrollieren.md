@@ -1,7 +1,8 @@
 ---
 title: "Das Ampel-System: KI-Risiken kontrollieren, ohne KI zu bremsen"
 slug: "ampel-system-ki-risiken-kontrollieren"
-status: "published"
+status: "draft"
+replaced_by: "datenampel-welche-daten-in-ki-tools"
 pin: 2
 date: "2026-03-29T21:07:32.306+00:00"
 updated: "2026-03-31T21:19:09.899441+00:00"
