@@ -6,7 +6,7 @@
 //   KONTAKT_VON      Absender auf der bei Resend bestätigten Domain, z. B. Website arminfradler.at <noreply@updates.arminfradler.at>
 import {createClient} from 'npm:@supabase/supabase-js@2.49.4';
 
-const ERLAUBT = ['https://arminfradler.at', 'https://www.arminfradler.at', 'https://epickaribu.github.io', 'http://localhost:8765'];
+const ERLAUBT = ['https://arminfradler.at', 'https://www.arminfradler.at', 'https://epickaribu.github.io', 'http://localhost:8765', 'http://localhost:8766'];
 const ANLAESSE = ['Workshop', 'Vortrag oder Impuls', 'Pädagogischer Tag / SCHILF', 'Leitungsklausur', 'Workshop-Reihe', 'Online-Format', 'Etwas anderes'];
 const zuletzt = new Map<string, number[]>(); // einfache Bremse pro Instanz: höchstens 5 Anfragen in 10 Minuten je Adresse
 
