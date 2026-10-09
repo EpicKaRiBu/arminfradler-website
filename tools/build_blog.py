@@ -96,8 +96,8 @@ def md(src, slug, rel, label):
             body = [r for r in rows if not re.match(r'^\|[\s:|-]+\|$', r.strip())]
             cells = lambda r: [c.strip() for c in r.strip()[1:-1].split('|')]
             out.append('<div class="tbl"><table>' + ''.join('<tr>' + ''.join((f'<td>{inline(c)}</td>' if k else f'<th>{inline(c)}</th>') for c in cells(r)) + '</tr>' for k, r in enumerate(body)) + '</table></div>'); continue
-        m = re.match(r'^!\[([^\]]*)\]\(([^\s)]+)\)\s*$', l)
-        if m: flush(); out.append(figur(m.group(2), m.group(1), slug, rel, label)); i += 1; continue
+        m = re.match(r'^!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)\s*$', l)  # optional: "eigene Bildunterschrift"
+        if m: flush(); out.append(figur(m.group(2), m.group(1), slug, rel, label if m.group(3) is None else m.group(3))); i += 1; continue
         para.append(l.strip()); i += 1
     flush()
     return '\n'.join(out)
@@ -246,7 +246,7 @@ def main():
 
     # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
     llm = [f'# Armin Fradler', '',
-           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe in Österreich. '
+           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe – vor Ort in Österreich, online im deutschsprachigen Raum. '
            'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
