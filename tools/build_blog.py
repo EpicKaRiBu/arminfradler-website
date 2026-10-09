@@ -45,8 +45,26 @@ def inline(t):
     t = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(^|[^*])\*([^*\n]+)\*', r'\1<em>\2</em>', t)
     t = re.sub(r'\[([^\]]+)\]\((https?://[^\s)]+)\)', r'<a href="\2" rel="noopener">\1</a>', t)
+    t = re.sub(r'\[([^\]]+)\]\((/[^\s)]*)\)', intern, t)
     t = re.sub(r'`([^`]+)`', r'<code>\1</code>', t)
     return t
+
+
+LIVE, ERSETZT = set(), {}  # veröffentlichte Slugs und „replaced_by“ der Entwürfe, setzt main()
+SEITEN = {'kontakt': 'kontakt.html', 'ueber-mich': 'ueber-mich.html', 'angebot': 'angebot.html', 'termine': 'termine.html', 'impulse': 'impulse/', 'blog': 'impulse/'}
+
+
+def intern(m):
+    """Interne Links aus alten Beiträgen (/blog/<slug>, /kontakt …) auf die neue Seite umbiegen.
+    Beiträge, die nicht mehr online sind, werden zu reinem Text (oder zum Nachfolger)."""
+    text, pfad = m.group(1), m.group(2).strip('/').split('#')[0]
+    teile = pfad.split('/')
+    if len(teile) == 2 and teile[0] in ('blog', 'impulse'):
+        ziel = teile[1] if teile[1] in LIVE else ERSETZT.get(teile[1])
+        return f'<a href="../../impulse/{ziel}/">{text}</a>' if ziel in LIVE else text
+    if teile[0] in SEITEN and len(teile) == 1:
+        return f'<a href="../../{SEITEN[teile[0]]}">{text}</a>'
+    return text
 
 
 def masse(slug, datei):
@@ -158,8 +176,8 @@ HEAD = '''<!doctype html>
 <link rel="icon" href="../../assets/logo/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/logo/apple-touch-icon.png">
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
-<link href="../../assets/site.css" rel="stylesheet">
-<link href="../../assets/textures.css" rel="stylesheet">
+<link href="../../assets/site.css?v=20261009e" rel="stylesheet">
+<link href="../../assets/textures.css?v=20261009e" rel="stylesheet">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body data-page="impulse">
@@ -169,7 +187,7 @@ HEAD = '''<!doctype html>
 '''
 FOOT = '''</article></section></main>
 <footer id="site-foot"></footer>
-<script src="../../assets/site.js" data-root="../../"></script>
+<script src="../../assets/site.js?v=20261009e" data-root="../../"></script>
 </body>
 </html>
 '''
@@ -187,6 +205,8 @@ def main():
         for name in os.listdir(os.path.join(ROOT, d)) if os.path.isdir(os.path.join(ROOT, d)) else []:
             if os.path.isdir(os.path.join(ROOT, d, name)): shutil.rmtree(os.path.join(ROOT, d, name))
 
+    LIVE.update(q['slug'] for q in posts)
+    ERSETZT.update({q['slug']: q['replaced_by'] for q in alle if q.get('status') != 'published' and q.get('replaced_by')})
     for p in posts:
         slug = p['slug']; canon = f'{base}/impulse/{slug}/'
         title = p['title']; desc = p.get('description') or p.get('excerpt') or ''
@@ -258,7 +278,7 @@ def main():
 
     # Sitemap
     heute = datetime.date.today().isoformat()
-    static = ['', 'angebot.html', 'termine.html', 'impulse/', 'ueber-mich.html', 'kontakt.html']
+    static = ['', 'angebot.html', 'termine.html', 'impulse/', 'methode.html', 'ueber-mich.html', 'kontakt.html']
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f'<url><loc>{base}/{u}</loc><lastmod>{heute}</lastmod></url>' for u in static]
     sm += [f'<url><loc>{base}/impulse/{p["slug"]}/</loc><lastmod>{str(p.get("updated") or p["date"])[:10]}</lastmod></url>' for p in posts]
@@ -271,6 +291,7 @@ def main():
            'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
+           f'- [So arbeite ich]({base}/methode.html): Leitfrage, Prinzipien und Ablauf eines Workshops, mit Quellen',
            f'- [Über mich]({base}/ueber-mich.html): Hintergrund und Arbeitsweise',
            f'- [Termine]({base}/termine.html): offene Vorträge und Workshops',
            f'- [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',

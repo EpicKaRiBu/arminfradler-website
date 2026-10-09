@@ -5,6 +5,7 @@
 ## Seiten
 
 - [Angebot](https://arminfradler.at/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe
+- [So arbeite ich](https://arminfradler.at/methode.html): Leitfrage, Prinzipien und Ablauf eines Workshops, mit Quellen
 - [Über mich](https://arminfradler.at/ueber-mich.html): Hintergrund und Arbeitsweise
 - [Termine](https://arminfradler.at/termine.html): offene Vorträge und Workshops
 - [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen
@@ -12,7 +13,7 @@
 
 ## Impulse
 
-- [KI in der Erwachsenenbildung: Warum Trainer wertvoller werden, nicht überflüssig](https://arminfradler.at/impulse/ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar/): KI in der Erwachsenenbildung: WIFI-Barometer 2025 zeigt 85% Weiterbildungs-Relevanz. Warum Trainer wertvoller werden – und welche ersetzt werden.
+- [Erledigt ist nicht gelernt: Was KI für Kurse in der Erwachsenenbildung bedeutet](https://arminfradler.at/impulse/ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar/): Braucht es noch Kurse, wenn alle ChatGPT haben? Ja, aber anders. Was die Forschung zeigt und was Kursleiter:innen jetzt tun können.
 - [Das Ampel-System: KI-Risiken kontrollieren, ohne KI zu bremsen](https://arminfradler.at/impulse/ampel-system-ki-risiken-kontrollieren/): Das Ampel-System gibt KMU klare Regeln für KI-Nutzung: Grün, Gelb, Rot — direkt im System verankert, nicht in einem PDF. EU AI Act-konform und praxistauglich.
 - [Wem gehören die Daten, die Ihre Mitarbeiter gerade in ChatGPT tippen?](https://arminfradler.at/impulse/ki-souveraenitaet-schatten-ki-oesterreich-2025/): US-Entscheidung zwingt OpenAI zur Datenspeicherung: Gefährdet Schatten-KI Ihre Firmendaten? Schützen Sie jetzt sensible Infos – erfahren Sie, wie. Sofort han...
 - [Claude Code, OpenClaw und die neue Agent-Architektur: Was dahinter steckt](https://arminfradler.at/impulse/claude-code-openclaw-agent-architektur-2026/): Wie Claude Code, OpenClaw hybride Agent-Architekturen zusammenspielen. Warum bounded recursion mit protected zones der Schluessel zu sicheren KI-Systemen ist.

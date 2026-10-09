@@ -107,7 +107,7 @@ if(lf){
 /* ---------- „Darf das in die KI?“ ---------- */
 const dt=$('.dt');
 if(dt){
-  const card=$('.dt-card',dt),out=$('.dt-out',dt),narrow=matchMedia('(max-width:860px)'),V={g:'Grün: passt.',y:'Gelb: nur mit freigegebenem Werkzeug.',r:'Rot: bleibt draußen.'};
+  const card=$('.dt-card',dt),out=$('.dt-out',dt),narrow=matchMedia('(max-width:860px)'),V={g:'Grün: passt.',y:'Gelb: nur mit freigegebenem Werkzeug.',r:'Rot: nicht ohne Freigabe.'};
   $$('.dt-pick button',dt).forEach(b=>{b.setAttribute('aria-pressed','false');b.onclick=()=>{
     $$('.dt-pick button',dt).forEach(x=>x.setAttribute('aria-pressed',x===b));b.classList.add('seen');
     dt.dataset.l=b.dataset.l;$('.dt-v',card).textContent=V[b.dataset.l];$('.dt-t',card).textContent=b.dataset.t;

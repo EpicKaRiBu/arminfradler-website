@@ -1,10 +1,10 @@
 /* Textursystem · ein Material, eine Textur. Gemeinsam für Website, Präsentation und Video.
    Papier (Körnung, Fasern, Ton) · Tinte (ausgefranst) · Rotstift (Körnung) · Stempel (Fehlstellen) · Karte, Zettel, Klebeband */
 :root{
-  --tx-grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.875' numOctaves='3' seed='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .25 0 0 0 0 .15 0 0 0 .12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  --tx-fiber:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><filter id='f' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.0625 .1875' numOctaves='2' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .26 0 0 0 .28 -.1'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>");
-  --tx-mottle:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024'><filter id='m' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='.00390625' numOctaves='3' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .55 0 0 0 0 .46 0 0 0 0 .3 0 0 0 .14 0'/></filter><rect width='100%' height='100%' filter='url(%23m)'/></svg>");
-  --tx-card:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='c' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' seed='5' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4 0 0 0 0 .34 0 0 0 0 .22 0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+  --tx-grain:url(textures/grain.webp);
+  --tx-fiber:url(textures/fiber.webp);
+  --tx-mottle:url(textures/mottle.webp);
+  --tx-card:url(textures/card.webp);
 }
 
 /* Papier: Körnung + Fasern + ungleichmäßiger Ton */
@@ -41,3 +41,14 @@ body{background-color:var(--paper);background-image:var(--tx-grain),var(--tx-fib
 .tx-on .stamp{filter:url(#tx-stamp)}
 @media (prefers-reduced-motion:reduce){/* Texturen bleiben – sie bewegen sich nicht */}
 @media print{body{background-image:none}.tx-on *{filter:none!important}}
+
+/* Handy und Tablet: Tinten- und Stiftfilter aus. Sie werden bei jedem Bild neu gerechnet und lassen das Scrollen ruckeln. Muss hier stehen, weil diese Datei nach site.css lädt. */
+@media (hover:none),(max-width:900px){
+  .tx-on h1,.tx-on h2,.tx-on h3,.tx-on .lf-col h3,.tx-on .c-be h3,.tx-on .brand b,.tx-on .brand svg,.tx-on .event .date b,.tx-on .index .num,.tx-on .hand,.tx-on .c-be li,.tx-on .note-q .q,.tx-on .mark svg,.tx-on .lf-line,.tx-on .stamp,.tx-on .site-head .progress{filter:none}
+  .tape,.note-q::before{backdrop-filter:none;-webkit-backdrop-filter:none}
+  /* Stattdessen derselbe Look als fertiges Bild: Tinte, Rotstift und Stempel als Maske. Das kostet kaum Rechenzeit. */
+  .tx-on h1,.tx-on h2,.tx-on .lf-col h3,.tx-on .brand b,.tx-on .event .date b,.tx-on .index .num{-webkit-mask:url(textures/mask-ink.webp) 0 0/256px 256px;mask:url(textures/mask-ink.webp) 0 0/256px 256px}
+  .tx-on .hand,.tx-on .c-be h3,.tx-on .c-be li,.tx-on .note-q .q,.tx-on .mark svg,.tx-on .brand svg,.tx-on .lf-line{-webkit-mask:url(textures/mask-pencil.webp) 0 0/256px 256px;mask:url(textures/mask-pencil.webp) 0 0/256px 256px}
+  .tx-on .stamp{-webkit-mask:url(textures/mask-stamp.webp) 0 0/512px 512px;mask:url(textures/mask-stamp.webp) 0 0/512px 512px}
+}
+.tx-on .site-head .progress{filter:none}

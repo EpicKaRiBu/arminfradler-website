@@ -1,223 +1,68 @@
 ---
-title: "KI in der Erwachsenenbildung: Warum Trainer wertvoller werden, nicht überflüssig"
+title: "Erledigt ist nicht gelernt: Was KI für Kurse in der Erwachsenenbildung bedeutet"
 slug: "ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar"
 status: "published"
 pin: 1
-date: "2025-12-16T10:46:16.136+00:00"
-updated: "2025-12-20T10:32:09.450246+00:00"
-category: "Branchenlösungen"
-category_slug: "branchenloesungen"
-description: "KI in der Erwachsenenbildung: WIFI-Barometer 2025 zeigt 85% Weiterbildungs-Relevanz. Warum Trainer wertvoller werden – und welche ersetzt werden."
-excerpt: "85% der Unternehmer halten Weiterbildung für wichtig, 68% der Mitarbeiter erwarten KI-Einsatz. Die Frage ist nicht ob KI Trainer ersetzt – sondern welche Trainer ersetzt werden. Der Shift vom Wissensvermittler zum Lernbegleiter."
-seo_title: "KI in Erwachsenenbildung: Trainer werden wertvoller | Arm..."
-keywords: ["KI Erwachsenenbildung", "Trainer Wert", "Digitalisierung KMU Österreich", "WIFI KI Kurse", "Lernbegleiter", "Zukunft Weiterbildung", "Prozessautomatisierung Bildung", "KI Strategie KMU"]
-minutes: 7
+date: "2026-10-09T18:00:00+02:00"
+category: "Lernen mit KI"
+category_slug: "lernen-mit-ki"
+description: "Braucht es noch Kurse, wenn alle ChatGPT haben? Ja, aber anders. Was die Forschung zeigt und was Kursleiter:innen jetzt tun können."
+excerpt: "„Wozu noch ein Kurs, wenn ich ChatGPT fragen kann?“ KI kann vieles erledigen. Lernen müssen die Menschen trotzdem selbst. Genau dafür braucht es Kursleiter:innen, nur in einer etwas anderen Rolle."
+seo_title: "Ersetzt KI Trainer:innen? Erledigt ist nicht gelernt"
+keywords: ["KI Erwachsenenbildung", "KI im Kurs", "Kursleiterin", "Lernen mit KI", "Volkshochschule", "Trainer KI"]
+minutes: 5
 image: "titel.webp"
 image_alt: "Links eine Karte mit schnellem Rotstift-Haken, rechts ein Notizbuch voller Skizzen und Durchgestrichenem"
 image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 10/2026)"
-sources: [{"url": "https://www.wko.at/oe/news/wifi-ki-ausbildung", "title": "WIFI-Weiterbildungsbarometer 2025: KI-Ausbildung als Schlüssel"}, {"url": "https://www.wifi.at/ueber-uns/news/weiterbildungsbarometer-2024", "title": "WIFI-Weiterbildungsbarometer 2024"}, {"url": "https://erwachsenenbildung.at/digiprof/neuigkeiten/19801-tag-der-weiterbildung-2024-ki-in-der-erwachsenenbildung.php", "title": "Tag der Weiterbildung 2024: KI in der Erwachsenenbildung"}, {"url": "https://bericht.wko.at/geschaeftsbericht/2024/zukunftsorientierte-bildung", "title": "WKO Zukunftsorientierte Bildung 2024"}, {"url": "https://www.vhs-baden.at/kuenstliche-intelligenz-im-bildungsbereich/", "title": "VHS Baden: KI im Bildungsbereich"}]
+sources: [{"title": "Universität Graz / Ö-Cert (2026): Künstliche Intelligenz in der Erwachsenenbildung", "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20789-studie-kuenstliche-intelligenz-in-der-erwachsenenbildung-veroeffentlicht.php"}, {"title": "Bastani et al. (2025): Generative AI without guardrails can harm learning, PNAS", "url": "https://ui.adsabs.harvard.edu/abs/2025PNAS..12222633B/abstract"}, {"title": "Kestin, Miller et al. (2025): AI tutoring outperforms in-class active learning, Scientific Reports", "url": "https://www.nature.com/articles/s41598-025-97652-6"}, {"title": "OECD (2026): Digital Education Outlook", "url": "https://doi.org/10.1787/062a7394-en"}]
 ---
 
-## Das Wichtigste in Kürze
+„Wozu brauche ich noch einen Kurs, wenn ich ChatGPT fragen kann?“ Die ehrliche Antwort: KI kann sehr viel erledigen. Lernen muss man trotzdem selbst. Kurse und Kursleiter:innen werden deshalb nicht überflüssig. Ihre Aufgabe verschiebt sich, weg vom reinen Erklären, hin zum Üben, Nachfragen und Einordnen.
 
-- Laut WEF "Future of Jobs Report 2025" werden bis 2030 rund **39% der heute genutzten Skills** obsolet oder stark verändert
-- [WIFI-Weiterbildungsbarometer 2025](https://www.wko.at/oe/news/wifi-ki-ausbildung): **85% der Unternehmer** halten Weiterbildung für wichtig, **68% der Erwerbstätigen** erwarten KI-Einsatz im Unternehmen
-- Mit **65%** bleibt KI das Top-Thema der Weiterbildung in Österreich, gefolgt von IT-Skills (53%)
-- Der Shift für Trainer: Vom Wissensvermittler zum Lernbegleiter – denn Wissen hat jetzt jeder in der Tasche
-- Die Kernfrage ist nicht "Ersetzt KI Trainer?" sondern "Welche Trainer werden ersetzt?"
+## Unsicherheit ist normal, Skepsis auch
 
----
+In der Erwachsenenbildung ist KI längst angekommen. In einer Befragung der Universität Graz und von Ö-Cert hatten 95 Prozent der Befragten KI schon genutzt, die Hälfte fast täglich. Über ein Viertel sagte aber auch: In unserem Haus gibt es keine gemeinsamen Regeln dafür.
 
-"Wozu brauche ich noch einen Kurs, wenn ich ChatGPT fragen kann?"
+Entsprechend unterschiedlich sind die Gefühle. Manche Kolleg:innen sind begeistert und probieren alles aus. Andere sind verunsichert, weil Hausübungen plötzlich fehlerfrei zurückkommen. Und manche sind skeptisch. Diese Skepsis ist oft Fachwissen: Wer seit Jahren unterrichtet, weiß, dass ein schönes Ergebnis noch nichts darüber sagt, ob jemand etwas verstanden hat.
 
-Diese Frage höre ich von Teilnehmern. Ich höre sie von Unternehmen. Und ich verstehe sie – nach zehn Jahren als Lehrer und jetzt als Dozent bei VHS und WIFI.
+## Was die Forschung zeigt
 
-Die ehrliche Antwort: Für reine Wissensvermittlung brauchen Sie vielleicht wirklich keinen Kurs mehr. Aber Wissensvermittlung war nie der eigentliche Wert guter Weiterbildung.
+Die Studien dazu sind jung, die Richtung ist trotzdem ziemlich klar: Es kommt nicht darauf an, *ob* KI beim Lernen benutzt wird, sondern *wie*.
 
----
+Ein Beispiel aus einer großen Studie mit knapp 1.000 Schüler:innen: Wer beim Üben eine KI hatte, die einfach die Lösung lieferte, war beim Üben besser. In der Prüfung ohne KI schnitten dieselben Jugendlichen aber um 17 Prozent schlechter ab als die Vergleichsgruppe. Eine KI, die nur Hinweise gab statt Lösungen, hatte diesen Nachteil nicht.
 
-## Was sich wirklich ändert
+Umgekehrt kann KI das Lernen auch deutlich verbessern. In einem Physikkurs an einer US-Universität lernten Studierende mit einem KI-Tutor, der nach guten didaktischen Regeln gebaut war, mehr als doppelt so viel wie im aktiven Präsenzunterricht. Das war ein einzelnes Fach über zwei Wochen, also kein Freibrief. Aber es zeigt, was möglich ist, wenn jemand die KI bewusst als Lernhilfe gestaltet.
 
-Der "Future of Jobs Report 2025" des Weltwirtschaftsforums prognostiziert, dass bis 2030 rund 39 Prozent der heute genutzten Fähigkeiten obsolet oder stark verändert sein werden.
+Die OECD fasst es in ihrem Bildungsbericht 2026 ähnlich zusammen. Ohne didaktische Gestaltung steigert KI vor allem das Ergebnis auf dem Papier, nicht das Lernen im Kopf. Oder kurz: Erledigt ist nicht gelernt.
 
-Das betrifft nicht nur die Inhalte, die wir lehren. Es betrifft die Art, wie wir lehren.
+## Warum es Kursleiter:innen dafür braucht
 
-Früher war der Trainer derjenige, der etwas wusste, was die Teilnehmer nicht wussten. Heute hat jeder Teilnehmer Zugang zu mehr Wissen, als ein Mensch jemals haben könnte – in seiner Tasche.
+Für eine erfahrene Fachkraft ist eine Aufgabe Arbeit. Die darf sie gern an die KI abgeben. Für eine Lernende ist dieselbe Aufgabe Übung, und Übung kann man nicht abgeben. Diesen Unterschied muss jemand im Blick haben, Aufgabe für Aufgabe.
 
-Die Frage ist nicht mehr: "Was weiß der Trainer?"
+Das ist die neue Rolle: entscheiden, wo KI im Kurs hilft und wo die Teilnehmenden selbst denken sollen. Aufgaben so stellen, dass das Denken bei ihnen bleibt. Nachfragen, wenn ein Ergebnis glatter ist als das Verständnis dahinter. Und ermutigen, wenn jemand Angst vor der Technik hat. All das kann eine KI nicht übernehmen, weil sie die Gruppe nicht kennt.
 
-Die Frage ist: "Was kann der Trainer, was ChatGPT nicht kann?"
+## Ein Beispiel aus dem Kurs
 
----
+*(Beispiel erfunden)* In einem Deutschkurs auf Niveau B1 sollen die Teilnehmenden eine Beschwerde an die Hausverwaltung schreiben. Die Kursleiterin lässt die KI nicht den Brief schreiben. Zuerst schreibt jede und jeder selbst. Danach bekommt die KI den Auftrag: „Markiere drei Stellen, die man höflicher sagen könnte. Verbessere sie nicht, erkläre nur, warum.“ Die Teilnehmenden überarbeiten selbst und vergleichen dann in Zweiergruppen.
 
-## Was die meisten übersehen: Die Rolle des Trainers verändert sich fundamental
+Die KI hat hier nichts erledigt. Sie hat angeregt. Das Schreiben und das Entscheiden blieben bei den Lernenden.
 
-Laut dem [WIFI-Weiterbildungsbarometer 2024](https://www.wifi.at/ueber-uns/news/weiterbildungsbarometer-2024) halten 85% der österreichischen Unternehmer Weiterbildung für wichtig oder sehr wichtig. Und 22% planen trotz Kostendruck, mehr in Weiterbildung zu investieren.
+## Was Sie in Ihrem Kurs tun können
 
-Aber hier ist die Diskrepanz: Während 71% der Unternehmer Nachhaltigkeit als wichtiges Weiterbildungsthema sehen, trifft das bei KI nur auf 52% zu.
+1. **Sagen Sie offen, wofür KI im Kurs erlaubt ist.** Zum Beispiel: „Zum Üben und Nachfragen ja, bei der Abschlussaufgabe nein.“ Klare Regeln nehmen den Druck raus, auf beiden Seiten.
+2. **Lassen Sie zuerst selbst denken, dann die KI fragen.** Wer erst eigene Gedanken hat, nutzt die KI als Sparringspartner und nicht als Ghostwriter.
+3. **Bauen Sie eine Aufgabe um.** Nehmen Sie eine Hausübung, die die KI in einer Minute erledigt, und machen Sie daraus eine, bei der die KI nur Hinweise geben darf.
 
-Das bedeutet: Die konkreten Anwendungsfälle von KI werden noch zu wenig gesehen. Und genau hier liegt die Chance für Trainer.
+## Häufige Fragen
 
-**Der alte Trainer:**
-- Hat Wissen
-- Vermittelt Wissen
-- Prüft Wissen
+**Ersetzt KI Kursleiter:innen?**
+Beim reinen Erklären von Wissen kann KI vieles übernehmen. Beim Lernen nicht. Üben begleiten, Fehler besprechen, eine Gruppe zusammenhalten und einschätzen, wer was gerade braucht, bleibt Aufgabe von Menschen.
 
-**Der neue Trainer:**
-- Hat Erfahrung in der Anwendung
-- Begleitet beim Lernen
-- Hilft bei der Einordnung
+**Soll ich KI im Kurs verbieten?**
+Ein Verbot ist schwer durchzusetzen, weil fast alle KI auf dem Handy haben. Besser wirkt eine klare Absprache, wofür KI gedacht ist und wofür nicht, und Aufgaben, bei denen das eigene Denken sichtbar wird.
 
-Der Unterschied? KI kann Wissen liefern. KI kann nicht sagen: "In der Praxis funktioniert das anders, weil..."
+**Ich bin selbst noch unsicher mit KI. Kann ich trotzdem damit arbeiten?**
+Ja. Sie müssen keine Expertin sein, um gute Fragen zu stellen. Fangen Sie mit einer einzigen Aufgabe an und probieren Sie sie vorher selbst aus.
 
----
-
-## Konkrete Zahlen aus Österreich
-
-Das [WIFI-Weiterbildungsbarometer 2025](https://www.wko.at/oe/news/wifi-ki-ausbildung) zeigt interessante Entwicklungen:
-
-| Kennzahl | Wert | Bedeutung |
-|----------|------|-----------|
-| Unternehmer, die Weiterbildung für wichtig halten | 85% | Stabil seit 2020 |
-| Unternehmen, die mehr investieren wollen | 25% | Steigend trotz Krise |
-| Erwerbstätige, die KI-Einsatz erwarten | 68% | Höher als Unternehmer! |
-| KI als Top-Weiterbildungsthema | 65% | Platz 1 |
-
-Besonders spannend: **68% der Erwerbstätigen** erwarten, dass KI in ihrem Unternehmen wichtig wird – aber nur **52% der Unternehmer** sehen das ähnlich.
-
-Das zeigt: Die Mitarbeiter sind oft weiter als ihre Chefs. Und genau hier können Trainer vermitteln.
-
----
-
-## Wie WIFI und VHS reagieren
-
-Die österreichischen Bildungseinrichtungen haben reagiert. Laut [WKO](https://bericht.wko.at/geschaeftsbericht/2024/zukunftsorientierte-bildung) wurde das WIFI-Angebot 2024 im Bereich KI deutlich erweitert:
-
-**Die WIFI KI-Akademie bietet:**
-- KI-Führerschein (Grundlagen für alle)
-- Ausbildung zum zertifizierten KI-Beauftragten
-- CAIO-Zertifizierung (Chief AI Officer)
-- Über 50 KI-Kurse und Seminare österreichweit
-
-Beim [Tag der Weiterbildung 2024](https://erwachsenenbildung.at/digiprof/neuigkeiten/19801-tag-der-weiterbildung-2024-ki-in-der-erwachsenenbildung.php) in der Steiermark demonstrierte WIFI-Trainer Lothar Lackner live mehrere didaktische Einsatzmöglichkeiten:
-
-- Prompt-Aufgaben zum Training von logischem Denken
-- Rollenspiele mit ChatGPT auf Basis von Megaprompts
-- Chat mit Ressourcensammlungen über Google NotebookLM
-- KI-Bilderkennung von Flipchart-Fotos
-
-Das Motto der Veranstaltung? **"Fürchtet euch nicht, so kompliziert ist es gar nicht."**
-
----
-
-## Die drei Trainer-Typen der Zukunft
-
-Aus meiner Erfahrung als KI-Trainer bei WIFI Burgenland und VHS Steiermark sehe ich drei Entwicklungspfade:
-
-### Typ 1: Der KI-Skeptiker (wird ersetzt)
-
-Dieser Trainer ignoriert KI oder lehnt sie ab. Er beharrt auf "So haben wir das immer gemacht".
-
-**Problem:** Seine Teilnehmer nutzen KI längst privat. Sie merken, wenn der Trainer hinterherhinkt.
-
-**Prognose:** Diese Trainer werden von KI-Tools ersetzt – nicht weil KI besser ist, sondern weil sie den Anschluss verloren haben.
-
-### Typ 2: Der KI-Nutzer (bleibt relevant)
-
-Dieser Trainer nutzt KI für seine Vorbereitung: Trainingsplanung, Icebreaker, Lernerfolgskontrollen. Er spart Zeit und ist besser vorbereitet.
-
-**Vorteil:** Mehr Zeit für das, was Trainer wirklich gut können – den direkten Kontakt mit Teilnehmern.
-
-**Prognose:** Bleibt relevant, hat aber keinen Wettbewerbsvorteil.
-
-### Typ 3: Der KI-Integrator (wird wertvoller)
-
-Dieser Trainer lehrt MIT KI. Er zeigt Teilnehmern, wie sie KI in ihrem Arbeitsalltag einsetzen. Er beantwortet die Frage: "Wie nutze ich das konkret in meiner Situation?"
-
-**Vorteil:** Einzigartiger Wert, den kein YouTube-Video und kein Chatbot liefern kann.
-
-**Prognose:** Wird wertvoller, weil die Nachfrage steigt.
-
----
-
-## Was KI in der Erwachsenenbildung kann – und was nicht
-
-Laut [VHS Baden](https://www.vhs-baden.at/kuenstliche-intelligenz-im-bildungsbereich/) bietet KI in der Erwachsenenbildung mehrere Chancen:
-
-| KI kann | KI kann nicht |
-|---------|---------------|
-| Lerninhalte personalisieren | Motivation aufbauen |
-| Schwächen analysieren | Persönliche Erfahrungen teilen |
-| Administrative Aufgaben entlasten | Gruppendynamik steuern |
-| Übungen anpassen | "Warum" erklären |
-| Tests korrigieren | Kontext einordnen |
-
-Die entscheidende Erkenntnis: **KI ist ein Werkzeug, kein Ersatz.**
-
-Ein Hammer ersetzt keinen Tischler. Er macht ihn produktiver. Genauso mit KI und Trainern.
-
----
-
-## Die ehrliche Frage: Braucht es noch Präsenzkurse?
-
-Die [Weiterbildungsstudie 2024](https://wise-up.at/weiterbildung-in-oesterreich/) zeigt: Unternehmen setzen verstärkt auf Präsenztrainings für sozialen Austausch und direkte Rückmeldungen.
-
-88% der Weiterbildungsteilnehmer sind mit dem gewählten Format zufrieden.
-
-Aber hier ist die Nuance: Es geht nicht um "Präsenz vs. Online" oder "Trainer vs. KI". Es geht um die richtige Kombination.
-
-**Für reine Wissensvermittlung:**
-- Online-Kurse, Videos, KI-Chats sind oft effizienter
-- Selbstgesteuert, im eigenen Tempo
-- Günstiger und flexibler
-
-**Für Anwendung und Einordnung:**
-- Präsenz mit erfahrenem Trainer ist unersetzlich
-- Fragen stellen, die man sich selbst nicht stellen würde
-- Vom Erfahrungsschatz anderer Teilnehmer profitieren
-- Fehler in sicherer Umgebung machen
-
-Die Zukunft gehört dem Blended Learning: Online für Wissen, Präsenz für Anwendung.
-
----
-
-## Meine persönliche Erfahrung als KI-Trainer
-
-Nach zehn Jahren als Mathematik- und Physiklehrer und jetzt als KI-Dozent sehe ich den Unterschied täglich:
-
-**Was Teilnehmer von mir wollen:**
-- Nicht: "Erkläre mir, was ein Prompt ist" (das kann ChatGPT selbst)
-- Sondern: "Zeig mir, wie ich das für meine Buchhaltung nutze"
-- Nicht: "Liste alle KI-Tools auf" (das kann jede Suchmaschine)
-- Sondern: "Welches Tool passt zu meinem Anwendungsfall?"
-
-Der Wert liegt in der Übersetzung: Von der Theorie in die Praxis. Von der Möglichkeit zur Anwendung. Vom "Was kann KI?" zum "Was kann KI für MICH?".
-
-Das kann keine KI – weil sie meinen Kontext nicht kennt. Meine Branche nicht kennt. Meine Teilnehmer nicht kennt.
-
-Mein Ansatz: KI menschlich machen, Menschen KI-fähig.
-
----
-
-## Die eine Frage für Trainer
-
-Wenn Ihre Teilnehmer morgen kostenlosen Zugang zu allen KI-Tools hätten – würden sie trotzdem in Ihren Kurs kommen?
-
-Wenn die Antwort "Nein" ist, haben Sie ein Problem.
-
-Wenn die Antwort "Ja, weil..." ist, haben Sie Ihren Wert gefunden.
-
-Für mich ist die Antwort: Ja, weil ich zeige, wie man KI im österreichischen KMU-Kontext konkret einsetzt. Mit echten Beispielen. Mit ehrlicher Einschätzung, was funktioniert und was nicht.
-
-Das ist kein Wissen. Das ist Erfahrung. Und Erfahrung lässt sich nicht googeln.
-
-
----
-
-## Weiterführende Artikel
-
-- [Warum die meisten KI-Projekte scheitern](/blog/ki-projekte-scheitern-change-management-vertrauen) – Der menschliche Faktor
-- [KI für Kammern](/blog/ki-kammern-interessenvertretung-mitgliederservice-24-7) – Wie Interessenvertretungen KI einsetzen
-- [Die Feierabend-Pipeline](/blog/voice-pipeline-ideen-festhalten-sprache-ki) – Persönliches Wissensmanagement mit KI
-- [Vibe Coding](/blog/vibe-coding-ki-software-kmu-ohne-entwickler) – Software beschreiben statt programmieren
-- [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Welche Daten wohin gehören
+**Und was sage ich skeptischen Kolleg:innen?**
+Dass ihre Skepsis berechtigt ist. Die Forschung gibt ihnen in einem wichtigen Punkt recht: Ohne Gestaltung kann KI das Lernen schwächen. Genau deshalb braucht es Menschen, die das gestalten.
