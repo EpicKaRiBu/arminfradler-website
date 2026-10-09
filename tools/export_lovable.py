@@ -11,7 +11,7 @@ from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 URL = 'https://wztxprmmrkgghisodheh.supabase.co/rest/v1/'
-KEY = re.search(r"key:'([^']+)'", open(os.path.join(ROOT, 'assets', 'site.js'), encoding='utf-8').read()).group(1)
+KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind6dHhwcm1tcmtnZ2hpc29kaGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ2NDY0MjQsImV4cCI6MjA4MDIyMjQyNH0.WfFqbGmfh2WScJ6OeyltpgYvvUiTWX2g0zc2ukbJMQw'  # öffentlicher, nur lesender Schlüssel der alten Datenbank (Export am 9.10.2026 erledigt)
 MD = os.path.join(ROOT, 'content', 'impulse')
 IMG = os.path.join(ROOT, 'assets', 'impulse')
 

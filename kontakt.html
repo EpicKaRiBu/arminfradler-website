@@ -51,17 +51,19 @@
 <script src="assets/site.js" data-root="./"></script>
 <script>
 (()=>{
-const f=document.getElementById('f'),err=document.getElementById('err');
+const f=document.getElementById('f'),err=document.getElementById('err'),start=Date.now();
+const KONTAKT='https://jfdxewwynvmahhgtmdvg.supabase.co/functions/v1/kontakt'; // eigene Funktion, Frankfurt (Code: backend/)
 const pre={'Vortrag-Workshop':'Vortrag oder Impuls','Bildung':'Pädagogischer Tag / SCHILF','Inhouse-Training':'Workshop-Reihe','Thema':'Etwas anderes'};
 const b=new URLSearchParams(location.search).get('betreff');if(b&&pre[b])f.anlass.value=pre[b];
 f.onsubmit=async e=>{
   e.preventDefault();err.textContent='';
-  if(f.web.value)return; // Spamschutz
   const name=f.name.value.trim(),email=f.email.value.trim(),msg=f.msg.value.trim();
   if(!name||!msg||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Bitte Name, eine gültige E-Mail-Adresse und Ihre Nachricht ausfüllen.';return}
   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Wird gesendet …';
   try{
-    await AF.insert('contact_submissions',{name,email,company:f.org.value.trim()||null,message:`Betreff: ${f.anlass.value}\n\n${msg}`});
+    const r=await fetch(KONTAKT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,organisation:f.org.value.trim(),anlass:f.anlass.value,nachricht:msg,website:f.web.value,dauer:Date.now()-start})});
+    const d=await r.json().catch(()=>({}));
+    if(!r.ok||!d.ok)throw new Error(d.fehler||r.status);
     f.outerHTML=`<div class="ok"><p class="hand" style="font-size:34px;margin:0 0 6px">Danke!</p><p style="margin:0">Ihre Nachricht ist angekommen. Ich melde mich meist innerhalb weniger Tage.</p></div>`;
   }catch(x){btn.disabled=false;btn.innerHTML='Anfrage senden <span class="arr">→</span>';err.innerHTML='Das hat nicht geklappt. Bitte schreiben Sie mir direkt an <a href="mailto:info@arminfradler.at">info@arminfradler.at</a>.'}
 };

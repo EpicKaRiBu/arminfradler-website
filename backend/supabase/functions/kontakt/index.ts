@@ -3,7 +3,7 @@
 // Geheimnisse (im Supabase-Dashboard unter Edge Functions → Secrets, nie im Code):
 //   RESEND_API_KEY   Schlüssel von resend.com (nur „Sending access“)
 //   KONTAKT_AN       Empfänger, z. B. info@arminfradler.at
-//   KONTAKT_VON      Absender auf der bei Resend bestätigten Domain, z. B. Website <kontakt@updates.arminfradler.at>
+//   KONTAKT_VON      Absender auf der bei Resend bestätigten Domain, z. B. Website arminfradler.at <noreply@updates.arminfradler.at>
 import {createClient} from 'npm:@supabase/supabase-js@2.49.4';
 
 const ERLAUBT = ['https://arminfradler.at', 'https://www.arminfradler.at', 'https://epickaribu.github.io', 'http://localhost:8765'];
@@ -19,6 +19,7 @@ const cors = (origin: string | null) => ({
 const antwort = (status: number, body: unknown, origin: string | null) =>
   new Response(JSON.stringify(body), {status, headers: {...cors(origin), 'Content-Type': 'application/json'}});
 const text = (v: unknown, max: number) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
+const zeile = (v: unknown, max: number) => text(v, max).replace(/\s+/g, ' '); // einzeilig, keine Zeilenumbrüche im Betreff
 const html = (s: string) => s.replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]!));
 
 Deno.serve(async (req) => {
@@ -38,24 +39,24 @@ Deno.serve(async (req) => {
   if (liste.length >= 5) return antwort(429, {ok: false, fehler: 'Zu viele Anfragen. Bitte später noch einmal.'}, origin);
   zuletzt.set(ip, [...liste, jetzt]);
 
-  const name = text(d.name, 120), email = text(d.email, 200), organisation = text(d.organisation, 200);
+  const name = zeile(d.name, 120), email = zeile(d.email, 200), organisation = zeile(d.organisation, 200);
   const anlass = ANLAESSE.includes(text(d.anlass, 60)) ? text(d.anlass, 60) : 'Etwas anderes';
   const nachricht = text(d.nachricht, 5000);
   if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || nachricht.length < 10)
     return antwort(400, {ok: false, fehler: 'Bitte Name, gültige E-Mail-Adresse und eine Nachricht angeben.'}, origin);
 
   const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
-  const {data: zeile, error} = await db.from('kontakt').insert({name, email, organisation: organisation || null, anlass, nachricht}).select('id').single();
+  const {data: eintrag, error} = await db.from('kontakt').insert({name, email, organisation: organisation || null, anlass, nachricht}).select('id').single();
   if (error) return antwort(500, {ok: false, fehler: 'Die Nachricht konnte nicht gespeichert werden.'}, origin);
 
   let mail_ok = false;
   const key = Deno.env.get('RESEND_API_KEY');
-  if (key) {
+  if (key) try {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {Authorization: `Bearer ${key}`, 'Content-Type': 'application/json'},
       body: JSON.stringify({
-        from: Deno.env.get('KONTAKT_VON') || 'Website <kontakt@updates.arminfradler.at>',
+        from: Deno.env.get('KONTAKT_VON') || 'Website arminfradler.at <noreply@updates.arminfradler.at>',
         to: [Deno.env.get('KONTAKT_AN') || 'info@arminfradler.at'],
         reply_to: email,
         subject: `Anfrage über die Website: ${anlass} – ${name}`,
@@ -64,7 +65,7 @@ Deno.serve(async (req) => {
       }),
     });
     mail_ok = r.ok;
-  }
-  await db.from('kontakt').update({mail_ok}).eq('id', zeile.id);
+  } catch { /* gespeichert ist die Nachricht trotzdem */ }
+  await db.from('kontakt').update({mail_ok}).eq('id', eintrag.id);
   return antwort(200, {ok: true}, origin);
 });

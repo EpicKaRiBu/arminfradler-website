@@ -102,14 +102,4 @@ if(lf){
   show(Object.keys(LF)[0]);
 }
 
-/* ---------- Backend (bestehende Datenbank der bisherigen Website; öffentlicher, eingeschränkter Schlüssel) ---------- */
-window.AF={
-  url:'https://wztxprmmrkgghisodheh.supabase.co',
-  key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind6dHhwcm1tcmtnZ2hpc29kaGVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ2NDY0MjQsImV4cCI6MjA4MDIyMjQyNH0.WfFqbGmfh2WScJ6OeyltpgYvvUiTWX2g0zc2ukbJMQw',
-  async get(path){const r=await fetch(this.url+'/rest/v1/'+path,{headers:{apikey:this.key,Authorization:'Bearer '+this.key}});if(!r.ok)throw new Error(r.status);return r.json()},
-  async insert(table,row){const r=await fetch(this.url+'/rest/v1/'+table,{method:'POST',headers:{apikey:this.key,Authorization:'Bearer '+this.key,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(row)});if(!r.ok)throw new Error(r.status)},
-  esc:s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),
-  date:d=>d?new Date(d).toLocaleDateString('de-AT',{day:'numeric',month:'long',year:'numeric'}):'',
-  root:ROOT
-};
 })();
