@@ -279,19 +279,26 @@ textarea{min-height:160px;resize:vertical}
 .src-h{font-size:22px;margin-top:40px}.sources{font-size:15px;color:var(--muted)}
 .post[hidden]{display:none}
 
-/* Bilder auf dem Papier: Abzug mit weißem Rand, zwei Streifen Klebeband, dezente KI-Kennzeichnung */
+/* Bilder auf dem Papier: Abzug mit weißem Rand, oben mit Klebeband fixiert.
+   Beim Darüberfahren hebt sich die untere Kante leicht an – das Klebeband hält oben, nichts dreht sich weg. */
 .still{position:relative;margin:0;justify-self:center;width:min(var(--w,420px),100%)}
-.still .print{background:#fff;padding:10px;box-shadow:0 22px 36px -22px rgba(0,0,0,.5);transform:rotate(var(--rot,-1.6deg));transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s}
+.still .print{position:relative;background:#fff;padding:10px;box-shadow:0 22px 36px -22px rgba(0,0,0,.5);transform-origin:50% 0;transform:perspective(1100px) rotate(var(--rot,-1.6deg)) rotateX(0deg);transition:transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .7s}
 .still img{display:block;width:100%;height:auto;background:var(--paper-d)}
-.still .tape{top:-12px;width:86px;height:24px}
-.still figcaption{font-family:var(--type);font-size:11.5px;letter-spacing:.05em;color:var(--muted);margin-top:14px;text-align:right}
-.still:hover .print,.js .still.rv.in:hover .print{transform:rotate(0deg) translateY(-3px);box-shadow:0 30px 44px -24px rgba(0,0,0,.55)}
+.still .tape{top:-13px;width:86px;height:24px}
+.still:hover .print,.js .still.rv.in:hover .print{transform:perspective(1100px) rotate(var(--rot,-1.6deg)) rotateX(7deg);box-shadow:0 40px 42px -26px rgba(0,0,0,.42)}
 .js .still.rv{opacity:1;transform:none}
-.js .still.rv .print{opacity:0;transform:translateY(-28px) rotate(-6deg) scale(1.03)}
-.js .still.rv.in .print{opacity:1;transform:rotate(var(--rot,-1.6deg));transition:opacity .5s,transform .9s cubic-bezier(.2,1.2,.3,1),box-shadow .6s}
+.js .still.rv .print{opacity:0;transform:perspective(1100px) translateY(-26px) rotate(-5deg) rotateX(0deg) scale(1.03)}
+.js .still.rv.in .print{opacity:1;transform:perspective(1100px) rotate(var(--rot,-1.6deg)) rotateX(0deg);transition:opacity .5s,transform .9s cubic-bezier(.2,1.2,.3,1),box-shadow .7s}
 .js .still.rv .tape{opacity:0;transform:scale(.6) rotate(var(--tr,0deg))}
 .js .still.rv.in .tape{opacity:1;transform:scale(1) rotate(var(--tr,0deg));transition:opacity .25s .7s,transform .35s .7s cubic-bezier(.3,1.6,.5,1)}
 .still-note{font-size:28px;margin:14px 0 0;text-align:center}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,400px);gap:64px;align-items:center}
 @media (max-width:860px){.split{grid-template-columns:1fr;gap:34px}.split .still{--w:290px;justify-self:start;margin-left:6px}}
 @media (prefers-reduced-motion:reduce){.js .still.rv .print,.js .still.rv .tape{opacity:1;transform:rotate(var(--rot,-1.6deg))}}
+
+/* KI-Kennzeichnung: kleiner Stempel in der Bildecke, Details beim Darüberfahren. Was KI gemacht hat, trägt einen Stempel. */
+.ki-wrap{position:relative}
+.ki{position:absolute;right:10px;bottom:10px;z-index:3;display:grid;place-items:center;height:21px;padding:1px 6px 0;font-family:var(--type);font-size:12px;line-height:1;letter-spacing:.14em;-webkit-text-stroke:.35px currentColor;color:var(--pencil);background:rgba(255,253,248,.92);border:1.5px solid currentColor;border-radius:4px;box-shadow:0 1px 2px rgba(60,40,10,.12);transform:rotate(-6deg);cursor:help;user-select:none}
+.post .ki{right:8px;bottom:8px;height:20px;font-size:11px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.portrait .photo{position:relative}

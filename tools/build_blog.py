@@ -57,14 +57,24 @@ def masse(slug, datei):
         return ''
 
 
-def figur(src, alt, slug, rel, label):
+def ki_text(label):
+    """„Bild: mit KI erstellt (Modell, Monat)“ → kurzer Text für den KI-Stempel."""
+    return (label or '').replace('Bild: mit KI erstellt', 'Mit KI erstellt').strip() or None
+
+
+def stempel(ki):
+    return f'<span class="ki" title="{esc(ki)}"><span aria-hidden="true">KI</span><span class="sr">{esc(ki)}</span></span>' if ki else ''
+
+
+def figur(src, alt, slug, rel, caption=None, ki=None, extra=' loading="lazy" decoding="async"'):
+    """Bild mit optionaler Bildunterschrift und dezentem KI-Stempel in der Ecke."""
     if '://' in src:
         attr = ''
     else:
         attr = masse(slug, src)
         src = f'{rel}assets/impulse/{slug}/{src}'
-    cap = f'<figcaption>{esc(label)}</figcaption>' if label else ''
-    return f'<figure><img src="{esc(src)}" alt="{esc(alt)}" loading="lazy" decoding="async"{attr}>{cap}</figure>'
+    cap = f'<figcaption>{esc(caption)}</figcaption>' if caption else ''
+    return f'<figure><div class="ki-wrap"><img src="{esc(src)}" alt="{esc(alt)}"{extra}{attr}>{stempel(ki)}</div>{cap}</figure>'
 
 
 def md(src, slug, rel, label):
@@ -97,7 +107,11 @@ def md(src, slug, rel, label):
             cells = lambda r: [c.strip() for c in r.strip()[1:-1].split('|')]
             out.append('<div class="tbl"><table>' + ''.join('<tr>' + ''.join((f'<td>{inline(c)}</td>' if k else f'<th>{inline(c)}</th>') for c in cells(r)) + '</tr>' for k, r in enumerate(body)) + '</table></div>'); continue
         m = re.match(r'^!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)\s*$', l)  # optional: "eigene Bildunterschrift"
-        if m: flush(); out.append(figur(m.group(2), m.group(1), slug, rel, label if m.group(3) is None else m.group(3))); i += 1; continue
+        if m:
+            # KI-Stempel: ohne eigene Bildunterschrift gilt die Kennzeichnung des Beitrags; Dateien mit „ki-“ am Anfang immer
+            flush(); src, cap = m.group(2), m.group(3)
+            ki = ki_text(label) if label and (cap is None or os.path.basename(src).startswith('ki-')) else None
+            out.append(figur(src, m.group(1), slug, rel, cap, ki)); i += 1; continue
         para.append(l.strip()); i += 1
     flush()
     return '\n'.join(out)
@@ -111,7 +125,7 @@ datum = lambda d: f'{dt(d).day}. {MONATE[dt(d).month - 1]} {dt(d).year}'
 def karte(p, rel):
     """Karte für Übersicht und Startseite. rel = Weg zur Website-Wurzel."""
     s = p['slug']
-    img = (f'<div class="im"><img src="{rel}assets/impulse/{s}/{esc(p["image"])}" alt="" loading="lazy" decoding="async"{masse(s, p["image"])}></div>'
+    img = (f'<div class="im"><img src="{rel}assets/impulse/{s}/{esc(p["image"])}" alt="" loading="lazy" decoding="async"{masse(s, p["image"])}>{stempel(ki_text(p.get("image_label")))}</div>'
            if p.get('image') else '')
     meta = datum(p['date']) + (f' · {p["minutes"]} Min. Lesezeit' if p.get('minutes') else '')
     return (f'<a class="post rv" href="{rel}impulse/{s}/" data-c="{esc(p.get("category_slug", ""))}">{img}'
@@ -193,7 +207,7 @@ def main():
         if p['date'] < ARCHIV_VOR:
             page += '<p class="archive-note">Aus dem Archiv: Dieser Beitrag ist vor über einem halben Jahr erschienen. Manche Zahlen und Produktnamen haben sich seither geändert.</p>\n'
         if p.get('image'):
-            page += '<div class="lead-img">' + figur(p['image'], p.get('image_alt') or '', slug, '../../', p.get('image_label')).replace(' loading="lazy"', ' fetchpriority="high"') + '</div>\n'
+            page += '<div class="lead-img">' + figur(p['image'], p.get('image_alt') or '', slug, '../../', None, ki_text(p.get('image_label')), ' fetchpriority="high"') + '</div>\n'
         page += '<div class="article">' + md(p['text'], slug, '../../', p.get('image_label')) + '</div>\n'
         if p.get('sources'):
             page += '<h2 class="src-h">Quellen</h2><ul class="sources">' + ''.join(
@@ -246,7 +260,7 @@ def main():
 
     # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
     llm = [f'# Armin Fradler', '',
-           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe – vor Ort in Österreich, online im deutschsprachigen Raum. '
+           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe. Aus Oberwart (Burgenland), in ganz Österreich und online. '
            'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',

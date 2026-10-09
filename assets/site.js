@@ -30,7 +30,7 @@ const foot=$('#site-foot');
 if(foot){
   foot.className='site-foot';
   foot.innerHTML=`<div class="wrap">
-    <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen für Bildungsorganisationen, Schulen und kleine Unternehmen. Vor Ort in ganz Österreich, online im deutschsprachigen Raum.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
+    <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen für Bildungsorganisationen, Schulen und kleine Unternehmen. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
     <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
     <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:12px">Keine Cookies. Keine Analyse-Tools.</p></div>
   </div>`;
