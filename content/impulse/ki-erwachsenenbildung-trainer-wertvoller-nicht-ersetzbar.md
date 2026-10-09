@@ -211,16 +211,13 @@ Für mich ist die Antwort: Ja, weil ich zeige, wie man KI im österreichischen K
 
 Das ist kein Wissen. Das ist Erfahrung. Und Erfahrung lässt sich nicht googeln.
 
-→ [Mehr über meine KI-Workshops erfahren](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
 - [Warum die meisten KI-Projekte scheitern](/blog/ki-projekte-scheitern-change-management-vertrauen) – Der menschliche Faktor
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet
 - [KI für Kammern](/blog/ki-kammern-interessenvertretung-mitgliederservice-24-7) – Wie Interessenvertretungen KI einsetzen
 - [Die Feierabend-Pipeline](/blog/voice-pipeline-ideen-festhalten-sprache-ki) – Persönliches Wissensmanagement mit KI
 - [Vibe Coding](/blog/vibe-coding-ki-software-kmu-ohne-entwickler) – Software beschreiben statt programmieren
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Welche Daten wohin gehören
-- [Der hybride Ansatz](/blog/hybrider-ansatz-cloud-lokal-ki-kmu-2026) – Cloud und lokal intelligent kombinieren

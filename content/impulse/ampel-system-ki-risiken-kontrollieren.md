@@ -138,7 +138,3 @@ Das Ampel-System ist ein zentraler Baustein dieses Ansatzes. Zusammen mit dem [S
 - und Sie bei Compliance-Fragen absichert.
 
 Kein Unternehmen ist wie das andere. Welche Daten bei Ihnen in welche Kategorie fallen, hängt von Ihrer Branche, Ihren Prozessen und Ihren Anforderungen ab.
-
-## Nächster Schritt: Reden wir darüber
-
-In einem kostenlosen Erstgespräch schauen wir uns gemeinsam an, wo in Ihrem Unternehmen die Grenzen zwischen Grün, Gelb und Rot verlaufen — und wie Sie KI nutzen können, ohne Risiken einzugehen.

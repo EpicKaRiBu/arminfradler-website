@@ -1,7 +1,7 @@
 ---
 title: "KI-Hardware 2025: Warum zwei gebrauchte RTX 3090 die neue RTX 5090 schlagen"
 slug: "ki-hardware-2025-rtx-3090-vs-5090-kmu-strategie"
-status: "published"
+status: "draft"
 date: "2025-12-18T09:22:55.935+00:00"
 updated: "2026-03-29T20:27:22.122488+00:00"
 category: "Cloud & Infrastruktur"

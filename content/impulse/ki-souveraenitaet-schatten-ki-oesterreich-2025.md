@@ -91,7 +91,7 @@ Die Beratungsfirma Asterès hat im April 2025 berechnet: **EU-Unternehmen zahlen
 
 Diese Abhängigkeit ist nicht nur teuer – sie ist fragil. Cloud-KI-Anbieter operieren größtenteils mit Verlusten und finanzieren sich über Investoren. Wenn diese Finanzierung ausläuft, werden die Kosten auf die Kunden verlagert. 
 
-Ich habe darüber in [meinem Artikel über Cloud-Preisrisiken](/blog/cloud-casino-vendor-lock-in-saas-risiko) geschrieben: Die Cloud ist kein stabiles Fundament – sie ist ein Casino, in dem langfristig das Haus gewinnt.
+Die Cloud ist kein stabiles Fundament – sie ist ein Casino, in dem langfristig das Haus gewinnt.
 
 ---
 
@@ -179,15 +179,12 @@ Ich helfe österreichischen KMU seit drei Jahren beim dritten Weg. Nicht mit Pan
 
 Wenn Sie darüber nachdenken wollen, nehme ich mir gerne Zeit.
 
-→ [In 15 Minuten klären, ob das für Sie relevant ist](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Wann Cloud-KI Sinn macht, wann lokal
-- [Die Cloud ist keine Bank, sie ist ein Casino](/blog/cloud-casino-vendor-lock-in-saas-risiko) – Warum SaaS-Preise steigen werden
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet und bringt
 - [KI-gestützte Softwareentwicklung für KMU](/blog/ki-gestuetzte-softwareentwicklung-kmu-oesterreich-2025) – Was 2025 möglich ist
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT + Hausregeln = Custom Agent? Warum der Unterschied zählt"
 slug: "chatgpt-hausregeln-custom-agent-unterschied"
-status: "published"
+status: "draft"
 date: "2026-03-29T21:07:32.914+00:00"
 updated: "2026-04-06T18:53:34.488047+00:00"
 category: "KI-Strategie"

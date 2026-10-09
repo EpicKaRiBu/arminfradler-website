@@ -1,7 +1,7 @@
 ---
 title: "Der hybride Ansatz: Warum weder Cloud noch Isolation für österreichische KMUs funktioniert"
 slug: "hybrider-ansatz-cloud-lokal-ki-kmu-2026"
-status: "published"
+status: "draft"
 date: "2025-12-18T09:11:48.686+00:00"
 updated: "2025-12-28T09:00:42.968167+00:00"
 description: "Hybrider KI-Ansatz für KMUs 2026: TCO-Vergleich (€108k vs €27k), EU AI Act Compliance-Checkliste, aws Förderung bis €150.000."

@@ -205,7 +205,7 @@ Die gute Nachricht: KMU haben strukturelle Vorteile.
 | Mitarbeiter-Nähe | Gering | Hoch |
 | Flexibilität | Niedrig | Hoch |
 
-Der [Personal-Crunch](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) trifft KMU besonders hart – aber KI kann hier schneller helfen als in Konzernen.
+Der Fachkräftemangel trifft KMU besonders hart – aber KI kann hier schneller helfen als in Konzernen.
 
 Die Voraussetzung: Sie machen es richtig.
 
@@ -263,13 +263,10 @@ Wenn die meisten KI-Projekte scheitern – was machen Sie anders, damit Ihres zu
 
 Die Antwort liegt nicht in besserer Technologie. Sie liegt in besserer Führung.
 
-→ [In 15 Minuten besprechen, wie Sie es richtig angehen](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Warum Schatten-KI ein Problem ist
-- [Der Personal-Crunch wird nicht vorbeigehen](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) – Warum KI unvermeidlich wird
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet und bringt
 - [KI in der Erwachsenenbildung](/blog/ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar) – Wie Menschen KI-fähig werden

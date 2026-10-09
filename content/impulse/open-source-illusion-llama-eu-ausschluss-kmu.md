@@ -1,7 +1,7 @@
 ---
 title: "\"Open Source\" ist ein Trugschluss: Was der Llama-4-Ausschluss für österreichische KMUs bedeutet"
 slug: "open-source-illusion-llama-eu-ausschluss-kmu"
-status: "published"
+status: "draft"
 date: "2025-12-18T09:26:33.609+00:00"
 updated: "2026-03-29T20:27:21.780346+00:00"
 category: "KI-Strategie"

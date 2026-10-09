@@ -17,7 +17,7 @@ const NAV=[['angebot','Angebot','angebot.html'],['termine','Termine','termine.ht
 const head=$('#site-head');
 if(head){
   head.className='site-head';
-  head.innerHTML=`<div class="wrap"><a class="brand" href="${ROOT}" aria-label="Armin Fradler – Startseite"><b>Armin Fradler</b><svg viewBox="0 0 132 9" aria-hidden="true"><path d="M2 6 C 30 2, 60 8, 90 4 S 125 5, 130 3"/></svg></a>
+  head.innerHTML=`<div class="wrap"><a class="brand" href="${ROOT}" aria-label="Armin Fradler – Startseite"><img src="${ROOT}assets/logo/logo.svg" alt="Armin Fradler" width="238" height="40"></a>
   <button class="burger" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   <nav class="nav" id="nav" aria-label="Hauptmenü">${NAV.map(([k,l,h])=>`<a href="${h.startsWith('http')?h:ROOT+h}" class="${PAGE===k?'on':''}">${l}</a>`).join('')}<a class="cta" href="${ROOT}kontakt.html">Anfragen</a></nav></div>`;
   const b=$('.burger',head),n=$('#nav');

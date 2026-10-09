@@ -1,7 +1,7 @@
 ---
 title: "KMU.DIGITAL: So bekommen Sie bis zu 60 % Förderung für Ihr KI-System"
 slug: "kmu-digital-foerderung-ki-system-oesterreich"
-status: "published"
+status: "draft"
 date: "2026-03-29T21:07:33.178+00:00"
 updated: "2026-04-06T18:54:05.247532+00:00"
 category: "KI-Strategie"

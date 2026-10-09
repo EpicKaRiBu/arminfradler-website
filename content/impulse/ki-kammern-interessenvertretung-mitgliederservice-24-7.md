@@ -43,7 +43,7 @@ Die Rechnung ist einfach: Wenn jedes Mitglied nur einmal pro Jahr anruft, sind d
 
 Die Alternative zu KI ist nicht "alles bleibt wie es ist". Die Alternative ist: Mehr Personal einstellen (teuer und kaum zu finden) oder längere Wartezeiten akzeptieren (frustriert Mitglieder und führt zu Abwanderung).
 
-Der [Personal-Crunch](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) trifft auch Kammern. Die Frage ist nicht ob, sondern wie schnell automatisiert wird.
+Der Fachkräftemangel trifft auch Kammern.
 
 ---
 
@@ -197,7 +197,6 @@ Die WK Wien hat sich entschieden. [42 Gemeinden im Weinviertel](https://www.mein
 
 Die Frage ist: Was entscheiden Sie?
 
-→ [In 15 Minuten besprechen, wie KI Ihrer Kammer helfen kann](/kontakt)
 
 ---
 
@@ -208,4 +207,3 @@ Die Frage ist: Was entscheiden Sie?
 - [Wie Sie Ihr Lebenswerk digital konservieren](/blog/lebenswerk-digital-konservieren-ki-wissenstransfer) – Wissensmanagement mit KI
 - [Warum die meisten KI-Projekte scheitern](/blog/ki-projekte-scheitern-change-management-vertrauen) – Change Management als Erfolgsfaktor
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Welche Daten dürfen in die Cloud?
-- [Der hybride Ansatz](/blog/hybrider-ansatz-cloud-lokal-ki-kmu-2026) – Die Gesamtstrategie für Cloud und Lokal

@@ -248,7 +248,6 @@ Das ist der Preis, den wir jeden Tag zahlen. Nicht weil die Technologie fehlt. S
 
 Die Feierabend-Pipeline ändert das. Ein Gedanke, drei Minuten Sprechen, und das Wissen ist gesichert.
 
-→ [In 15 Minuten besprechen, wie eine Voice-Pipeline in Ihrem Alltag aussehen könnte](/kontakt)
 
 ---
 
@@ -257,4 +256,3 @@ Die Feierabend-Pipeline ändert das. Ein Gedanke, drei Minuten Sprechen, und das
 - [Vibe Coding](/blog/vibe-coding-ki-software-kmu-ohne-entwickler) – Software durch Beschreiben statt Programmieren
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Welche Daten dürfen in die Cloud?
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Datensouveränität im KI-Zeitalter
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet

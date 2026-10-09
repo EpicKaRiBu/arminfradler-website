@@ -11,7 +11,7 @@ Erzeugt:
 - impulse/feed.xml            RSS-Feed
 - sitemap.xml, llms.txt       für Suchmaschinen und KI-Assistenten
 
-Status „draft“: Beitrag wird nicht gebaut, seine Adressen führen zur Übersicht. „pin: 1“ bis „pin: 3“ stellt Beiträge nach vorne. Läuft lokal oder als GitHub Action."""
+Status „draft“: Beitrag wird nicht gebaut, seine Adressen führen zur Übersicht, mit „replaced_by: <slug>“ zum neuen Beitrag. „pin: 1“ bis „pin: 3“ stellt Beiträge nach vorne. Läuft lokal oder als GitHub Action."""
 import datetime, html, json, os, re, shutil
 from PIL import Image
 
@@ -154,6 +154,9 @@ HEAD = '''<!doctype html>
 {robots}<link rel="canonical" href="{canon}">
 <link rel="alternate" type="application/rss+xml" title="Impulse · Armin Fradler" href="{base}/impulse/feed.xml">
 <meta property="og:type" content="article"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="de_AT">{ogimg}
+<link rel="icon" href="../../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/logo/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/logo/apple-touch-icon.png">
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
 <link href="../../assets/site.css" rel="stylesheet">
 <link href="../../assets/textures.css" rel="stylesheet">
@@ -222,13 +225,16 @@ def main():
         open(os.path.join(ROOT, 'blog', slug, 'index.html'), 'w', encoding='utf-8', newline='\n').write(
             UMLEITUNG.format(t=esc(title), c=canon, u=f'../../impulse/{slug}/'))
 
-    # Entwürfe: alte Adressen führen zur Übersicht
+    # Entwürfe: alte Adressen führen zur Übersicht, mit „replaced_by“ zum Beitrag, der sie ersetzt
+    live = {q['slug']: q for q in posts}
     for p in alle:
         if p.get('status') != 'published':
+            neu = live.get(p.get('replaced_by'))
+            ziel = (neu['title'], f'{base}/impulse/{neu["slug"]}/', f'../../impulse/{neu["slug"]}/') if neu else ('Impulse', f'{base}/impulse/', '../../impulse/')
             for d in ('impulse', 'blog'):
                 os.makedirs(os.path.join(ROOT, d, p['slug']), exist_ok=True)
                 open(os.path.join(ROOT, d, p['slug'], 'index.html'), 'w', encoding='utf-8', newline='\n').write(
-                    UMLEITUNG.format(t='Impulse', c=f'{base}/impulse/', u='../../impulse/'))
+                    UMLEITUNG.format(t=esc(ziel[0]), c=ziel[1], u=ziel[2]))
 
     # Übersicht mit Filter und Startseite
     themen = list(dict.fromkeys((p['category_slug'], p['category']) for p in posts if p.get('category_slug')))

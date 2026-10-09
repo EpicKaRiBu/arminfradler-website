@@ -1,7 +1,7 @@
 ---
 title: "Warum KI-Transformation in Unternehmen bisher scheiterte und welche Architektur das jetzt wirklich ändert"
 slug: "ki-transformation-agent-architektur-nemoclaw"
-status: "published"
+status: "draft"
 date: "2026-03-21T16:02:06.392+00:00"
 updated: "2026-03-21T17:02:14.611362+00:00"
 category: "KI-Strategie"

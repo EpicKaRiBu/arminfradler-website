@@ -225,7 +225,6 @@ Welches kleine, nervige Problem in Ihrem Unternehmen könnten Sie mit einem einf
 
 Die Frage ist nicht mehr, ob Sie es können. Die Frage ist, ob Sie es versuchen.
 
-→ [In 15 Minuten besprechen, ob Vibe Coding für Ihr Projekt passt](/kontakt)
 
 ---
 
@@ -233,5 +232,4 @@ Die Frage ist nicht mehr, ob Sie es können. Die Frage ist, ob Sie es versuchen.
 
 - [KI-gestützte Softwareentwicklung für KMUs](/blog/ki-gestuetzte-softwareentwicklung-kmu-oesterreich-2025) – Der größere Kontext
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Warum Datensouveränität auch beim Coden wichtig ist
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet und bringt
 - [Die Feierabend-Pipeline](/blog/voice-pipeline-ideen-festhalten-sprache-ki) – Wie Sie Ideen per Sprache festhalten

@@ -110,11 +110,8 @@ Die Modelle sind austauschbar. Claude Opus heute, vielleicht etwas anderes morge
 
 Die Werkzeuge dafür sind da. Claude Code liefert das Agent SDK, OpenClaw liefert die Daemon-Architektur, und MCP verbindet beides mit der bestehenden Infrastruktur. Was fehlt, ist jemand, der das für einen konkreten Betrieb zusammenbaut — mit den richtigen Regeln, den richtigen Grenzen und dem Verständnis dafür, was ein Geschäftsführer nachts ruhig schlafen lässt. Wichtig dabei: KI-Modelle arbeiten probabilistisch. Die Konfiguration ist eine leistungsfähige organisatorische Maßnahme — sie ersetzt keine Firewall, kein DLP-System und kein IT-Security-Audit. Sie ergänzt diese Maßnahmen und macht den Umgang mit KI im Betrieb strukturiert und nachvollziehbar.
 
-Wenn Sie das Ihren Kunden anbieten wollen, sollten wir reden.
-
 ## Weiterführend
 
 Wie wir unseren KMU-Kunden erklären, was diese Architektur für ihren Alltag bedeutet:
 - [KI im Betrieb: Warum Schulung allein nicht reicht](/blog/ki-im-betrieb-warum-schulung-allein-nicht-reicht)
 - [Das Schleusen-Prinzip: Welche Daten dürfen wohin?](/blog/schleusen-prinzip-cloud-ki-hybrid)
-- [Der hybride Ansatz: Cloud und Lokal richtig kombinieren](/blog/hybrider-ansatz-cloud-lokal-ki-kmu-2026)

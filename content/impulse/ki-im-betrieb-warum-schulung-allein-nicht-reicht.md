@@ -102,6 +102,6 @@ Wie der Weg vom Workshop zum laufenden System aussieht:
 
 Der KI-Workshop ist der richtige erste Schritt. Er schafft Bewusstsein, erfüllt die gesetzliche Pflicht und gibt dem Team die Grundlagen. Aber wenn KI den Arbeitsalltag tatsächlich verändern soll — weniger Routine, schnellere Ergebnisse, klare Regeln — dann braucht ein Betrieb ein System, nicht nur Wissen.
 
-Wer tiefer einsteigen will: Im Beitrag [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) wird erklärt, wie die Entscheidung funktioniert, welche Daten wohin dürfen. Und [Der hybride Ansatz](/blog/hybrider-ansatz-cloud-lokal-ki-kmu-2026) zeigt, warum weder reine Cloud noch komplette Isolation für die meisten Betriebe die richtige Antwort ist.
+Wer tiefer einsteigen will: Im Beitrag [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) wird erklärt, wie die Entscheidung funktioniert, welche Daten wohin dürfen.
 
 Die Technologie ist da. Die Förderung ist da. Und der Aufwand ist überschaubarer als die meisten denken.

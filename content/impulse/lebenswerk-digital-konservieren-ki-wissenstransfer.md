@@ -199,12 +199,9 @@ Wenn die Antwort "wenig" ist, haben Sie nicht nur ein Nachfolgeproblem. Sie habe
 
 Denn implizites Wissen ist Unternehmenswert. Nur steht es in keiner Bilanz.
 
-→ [In 15 Minuten besprechen, wie Sie anfangen](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
-- [Der Personal-Crunch wird nicht vorbeigehen](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) – Warum Automatisierung unvermeidlich wird
 - [Warum die meisten KI-Projekte scheitern](/blog/ki-projekte-scheitern-change-management-vertrauen) – Und wie die 5% Erfolgreichen es anders machen
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – Was KI wirklich kostet und bringt

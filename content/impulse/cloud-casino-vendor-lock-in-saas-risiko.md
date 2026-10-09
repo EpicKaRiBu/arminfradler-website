@@ -1,7 +1,7 @@
 ---
 title: "Die Cloud ist keine Bank, sie ist ein Casino"
 slug: "cloud-casino-vendor-lock-in-saas-risiko"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:16.539+00:00"
 updated: "2025-12-20T10:31:57.760237+00:00"
 category: "Cloud & Infrastruktur"

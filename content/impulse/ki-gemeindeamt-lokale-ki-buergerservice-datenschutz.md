@@ -45,7 +45,7 @@ Die Rechnung ist einfach: Wenn eine Gemeinde mit 5.000 Einwohnern drei Mitarbeit
 
 Für diese Fragen braucht es keine menschliche Expertise. Aber sie binden Zeit, die für komplexe Fälle fehlt.
 
-Der [Personal-Crunch](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) trifft Gemeinden besonders hart. Die Frage ist nicht ob, sondern wie schnell automatisiert wird.
+Der Fachkräftemangel trifft Gemeinden besonders hart.
 
 ---
 
@@ -208,14 +208,11 @@ Kremsmünster, 42 Gemeinden im Weinviertel und die Landeshauptstadt St. Pölten 
 
 Die Frage ist: Was entscheidet Ihre Gemeinde?
 
-→ [In 15 Minuten klären, ob KI für Ihre Gemeinde passt](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
-- [Der hybride Ansatz](/blog/hybrider-ansatz-cloud-lokal-ki-kmu-2026) – Cloud und lokal: Die Gesamtstrategie für öffentliche Stellen
 - [KI für Kammern und Interessenvertretungen](/blog/ki-kammern-interessenvertretung-mitgliederservice-24-7) – Parallele Herausforderungen bei Mitgliederorganisationen
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Warum Datenschutz bei KI kritisch ist
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Entscheidungshilfe für Cloud vs. lokal
-- [Der Personal-Crunch wird nicht vorbeigehen](/blog/personal-crunch-arbeitskraeftemangel-automatisierung) – Warum Automatisierung unvermeidlich ist

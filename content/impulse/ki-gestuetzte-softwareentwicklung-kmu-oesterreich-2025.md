@@ -136,7 +136,6 @@ Es gibt lokale Alternativen wie **Ollama mit Continue.dev**, die auf Ihrer Hardw
 
 Interessant: Laut Stack Overflow ist **Claude Sonnet** das "most admired LLM" unter Entwicklern (nach Gemini Reasoning) – und Claude kann lokal mit Ollama-kompatiblen Modellen kombiniert werden.
 
-Mehr dazu: [Die Cloud ist keine Bank, sie ist ein Casino](/blog/cloud-casino-vendor-lock-in-saas-risiko)
 
 ---
 
@@ -211,7 +210,6 @@ KI-gestützte Entwicklung ist 2025 für österreichische KMUs eine echte Option.
 
 Die Frage ist nicht, ob KI-gestützte Entwicklung relevant wird – sondern wann und wie Sie einsteigen. **Und vor allem: Mit welchen Tools, unter welchen Bedingungen, und wem der Code am Ende gehört.**
 
-→ [In 15 Minuten besprechen, was für Ihr Unternehmen Sinn macht](/kontakt)
 
 ---
 
@@ -219,4 +217,3 @@ Die Frage ist nicht, ob KI-gestützte Entwicklung relevant wird – sondern wann
 
 - [Vibe Coding: Software ohne Entwickler?](/blog/vibe-coding-ki-software-kmu-ohne-entwickler) – Was wirklich möglich ist
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Das Souveränitätsproblem
-- [Die Cloud ist keine Bank, sie ist ein Casino](/blog/cloud-casino-vendor-lock-in-saas-risiko) – Vendor Lock-in verstehen

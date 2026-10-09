@@ -1,7 +1,7 @@
 ---
 title: "Der Personal-Crunch wird nicht vorbeigehen"
 slug: "personal-crunch-arbeitskraeftemangel-automatisierung"
-status: "published"
+status: "draft"
 date: "2025-12-15T14:42:41.173+00:00"
 updated: "2025-12-28T09:02:01.313039+00:00"
 category: "Automatisierung"

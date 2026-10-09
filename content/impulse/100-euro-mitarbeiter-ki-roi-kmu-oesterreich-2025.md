@@ -1,7 +1,7 @@
 ---
 title: "Der 100-Euro-Mitarbeiter: Was KI für österreichische KMU wirklich leistet"
 slug: "100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025"
-status: "published"
+status: "draft"
 date: "2025-12-15T20:35:43.123+00:00"
 updated: "2025-12-28T09:00:39.317741+00:00"
 category: "Automatisierung"

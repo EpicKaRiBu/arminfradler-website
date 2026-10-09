@@ -68,7 +68,7 @@ Die typische Beratung sagt: "Sensible Daten lokal, der Rest in die Cloud." Das k
 Die eigentliche Frage ist: **Wer kann Ihnen den Zugang abdrehen?**
 
 Ein Cloud-Anbieter kann:
-- Preise erhöhen (passiert regelmäßig, siehe [Cloud-Casino-Artikel](/blog/cloud-casino-vendor-lock-in-saas-risiko))
+- Preise erhöhen (passiert regelmäßig)
 - Nutzungsbedingungen ändern (passiert ständig)
 - Ihren Account sperren (passiert bei Zahlungsverzug oder "Verdacht")
 - Den Dienst einstellen (passiert öfter als Sie denken)
@@ -170,7 +170,6 @@ Die technische Umsetzung kann einfach sein:
 - EU-Cloud-Anbieter für Zone 2 (z.B. Nextcloud, HiDrive)
 - Standard-Cloud für Zone 3
 
-Für KI-Anwendungen gilt besondere Vorsicht: [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) zeigt, welche KI-Tools mit welchen Daten genutzt werden sollten.
 
 ---
 
@@ -224,13 +223,10 @@ Wenn die Antwort "Nein" oder "Ich weiß nicht" ist, haben Sie ein Schleusenprobl
 
 Die Lösung ist nicht, alle Cloud-Dienste zu kündigen. Die Lösung ist, bewusst zu entscheiden, was wohin darf – und die Kontrolle zu behalten.
 
-→ [In 15 Minuten besprechen, wie eine Schleuse für Ihr Unternehmen aussehen könnte](/kontakt)
 
 ---
 
 ## Weiterführende Artikel
 
-- [Die Cloud ist keine Bank, sie ist ein Casino](/blog/cloud-casino-vendor-lock-in-saas-risiko) – Warum Vendor Lock-in gefährlich ist
 - [Wem gehören die Daten?](/blog/ki-souveraenitaet-schatten-ki-oesterreich-2025) – Datensouveränität in der KI-Ära
-- [Der 100-Euro-Mitarbeiter](/blog/100-euro-mitarbeiter-ki-roi-kmu-oesterreich-2025) – KI-Kosten und Datenschutz
 - [KI im Gemeindeamt](/blog/ki-gemeindeamt-lokale-ki-buergerservice-datenschutz) – Wie öffentliche Einrichtungen mit der Frage umgehen
