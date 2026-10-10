@@ -17,8 +17,8 @@
 <link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
 <link href="assets/fonts/fonts.css" rel="stylesheet">
-<link href="assets/site.css?v=20261009e" rel="stylesheet">
-<link href="assets/textures.css?v=20261009e" rel="stylesheet">
+<link href="assets/site.css?v=20261010a" rel="stylesheet">
+<link href="assets/textures.css?v=20261010a" rel="stylesheet">
 <style>
 .topic{display:grid;grid-template-columns:300px 1fr;gap:46px;padding:56px 0;border-top:1px solid var(--line);scroll-margin-top:90px}
 .topic:first-of-type{border-top:0}
@@ -30,6 +30,7 @@
 .steps div{counter-increment:s;border-top:3px solid var(--ink);padding-top:14px}
 .steps div::before{content:counter(s);font-family:var(--type);font-size:38px;color:var(--pencil);display:block;line-height:1;margin-bottom:8px}
 @media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr;gap:18px}}
 .fmt td:first-child{font-family:var(--type);white-space:nowrap}
 .fmt{width:100%;border-collapse:collapse;background:var(--card);font-size:16px}
 .fmt th,.fmt td{border-bottom:1px solid var(--line);padding:14px 16px;text-align:left;vertical-align:top}
@@ -109,7 +110,7 @@
       <tr><td>Workshop</td><td>2–4 Stunden</td><td data-l="Gruppe">bis etwa 25</td><td data-l="Ergebnis"><b>Ein</b> Schwerpunkt: ein Leitlinien-Entwurf <i>oder</i> eine Anleitung für eine wiederkehrende Aufgabe <i>oder</i> ein Plan fürs Team.</td><td data-l="Vorbereitung">Vorgespräch. Sie nennen zwei, drei typische Aufgaben aus Ihrem Alltag.</td></tr>
       <tr><td>Praxis-Sitzung</td><td>2–3 Stunden</td><td data-l="Gruppe">bis etwa 15</td><td data-l="Ergebnis">In Ihrem eigenen KI-Werkzeug (z. B. Copilot), an Ihren echten Aufgaben: recherchieren, ordnen, Abläufe vereinfachen. Ihre Leute arbeiten selbst, ich begleite.</td><td data-l="Vorbereitung">Vorgespräch. Ihr Werkzeug ist eingerichtet, alle haben Zugang, dazu ein paar Beispieldaten.</td></tr>
       <tr><td>Fortbildungstag</td><td>ganztägig</td><td data-l="Gruppe">bis etwa 25</td><td data-l="Ergebnis">Zwei bis drei Ergebnisse, etwa Leitlinien-Entwurf und Datenampel, dazu Anleitungen für Ihre häufigsten Aufgaben.</td><td data-l="Vorbereitung">Vorgespräch, Beispielaufgaben und, falls vorhanden, Ihre bisherigen Regeln</td></tr>
-      <tr><td>Reihe</td><td>3 Termine über einige Wochen</td><td data-l="Gruppe">bis etwa 20, immer dieselben</td><td data-l="Ergebnis">Alle Ergebnisse, im Alltag erprobt und nachgeschärft. Zwischen den Terminen wird ausprobiert.</td><td data-l="Vorbereitung">Vorgespräch und kleine Aufgaben zwischen den Terminen</td></tr>
+      <tr><td>Reihe</td><td>3 Termine über einige Wochen</td><td data-l="Gruppe">bis etwa 20, immer dieselben</td><td data-l="Ergebnis">Leitlinie, Anleitungen und Plan, im Alltag erprobt und nachgeschärft. Zwischen den Terminen wird ausprobiert.</td><td data-l="Vorbereitung">Vorgespräch und kleine Aufgaben zwischen den Terminen</td></tr>
       <tr><td>Online</td><td>ab 90 Minuten</td><td data-l="Gruppe">bis etwa 20</td><td data-l="Ergebnis">Ein Schwerpunkt, kompakter als vor Ort. Gut für verteilte Teams oder als Auffrischung.</td><td data-l="Vorbereitung">Vorgespräch und ein Link, ohne Installation</td></tr>
     </table></div>
   </div>
@@ -122,7 +123,7 @@
     <div class="steps rv" style="margin-top:26px">
       <div><h3>Vorgespräch</h3><p>Kostenlos, 30–45 Minuten: Was ist Ihr Anlass? Wer kommt, mit welchen Vorerfahrungen und Bedenken?</p></div>
       <div><h3>Vorbereitung</h3><p>Ich bereite Beispiele aus Ihrem Alltag vor – mit erfundenen Daten, nie mit echten.</p></div>
-      <div><h3>Workshop</h3><p>Sie arbeiten an Ihren Fragen. Abstimmungen und Arbeitsschritte laufen am Handy, anonym.</p></div>
+      <div><h3>Workshop</h3><p>Sie arbeiten an Ihren eigenen Fragen. Abgestimmt wird anonym am eigenen Handy, ohne Konto.</p></div>
       <div><h3>Danach</h3><p>Ihre Ergebnisse als Datei, die Übungen online für alle in Ihrem Haus, auf Wunsch eine Praxis-Sitzung in Ihrem eigenen Werkzeug.</p></div>
     </div>
     <p class="rv" style="margin-top:26px"><a href="methode.html">Was hinter meinem Vorgehen steckt und warum es wirkt →</a></p>
@@ -154,6 +155,6 @@
 </section>
 </main>
 <footer id="site-foot"></footer>
-<script src="assets/site.js?v=20261009e" data-root="./"></script>
+<script src="assets/site.js?v=20261010a" data-root="./"></script>
 </body>
 </html>

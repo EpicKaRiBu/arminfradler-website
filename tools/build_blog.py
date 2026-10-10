@@ -176,8 +176,8 @@ HEAD = '''<!doctype html>
 <link rel="icon" href="../../assets/logo/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/logo/apple-touch-icon.png">
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
-<link href="../../assets/site.css?v=20261009e" rel="stylesheet">
-<link href="../../assets/textures.css?v=20261009e" rel="stylesheet">
+<link href="../../assets/site.css?v=20261010a" rel="stylesheet">
+<link href="../../assets/textures.css?v=20261010a" rel="stylesheet">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body data-page="impulse">
@@ -187,7 +187,7 @@ HEAD = '''<!doctype html>
 '''
 FOOT = '''</article></section></main>
 <footer id="site-foot"></footer>
-<script src="../../assets/site.js?v=20261009e" data-root="../../"></script>
+<script src="../../assets/site.js?v=20261010a" data-root="../../"></script>
 </body>
 </html>
 '''

@@ -319,6 +319,7 @@ textarea{min-height:160px;resize:vertical}
 .obj .kick{margin-bottom:8px;font-size:12.5px}
 .obj h3{font-size:21px;margin-bottom:12px}
 .obj.doc p{font-family:var(--type);font-size:15px;line-height:1.55;margin-bottom:10px}
+.obj.doc p.intro{font-family:var(--sans);font-size:14.5px;color:var(--muted);line-height:1.45;margin-bottom:12px}
 .obj.doc del{text-decoration-color:var(--pencil);text-decoration-thickness:2.5px;color:var(--muted)}
 .obj.doc ins{text-decoration:none;font-family:var(--hand);color:var(--pencil);font-size:22px;display:block;line-height:1.15;margin-top:2px}
 .obj .amp{display:flex;gap:10px;align-items:baseline;font-size:16.5px;line-height:1.4;margin-bottom:10px}
@@ -438,3 +439,5 @@ input,select,textarea{border-color:#A89A80}
 .hero .write{font-size:clamp(34px,4.6vw,58px);margin:4px 0 18px}
 .dt-more+.dt-more{margin-top:12px}
 .latest:empty,.latest:not(:has(*)){display:none}
+
+@media (max-width:600px){h1,h2,h3{-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word}}
