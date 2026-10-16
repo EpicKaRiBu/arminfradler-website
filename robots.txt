@@ -1,4 +1,21 @@
+# Suchmaschinen und KI-Suche (Antworten mit Link auf diese Seite): erlaubt
 User-agent: *
 Allow: /
+
+# KI-Training: nicht erlaubt (Vorbehalt nach § 42h Abs. 6 UrhG, siehe Impressum)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: omgili
+User-agent: Timpibot
+Disallow: /
 
 Sitemap: https://arminfradler.at/sitemap.xml
