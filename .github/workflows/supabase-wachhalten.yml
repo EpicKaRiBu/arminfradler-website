@@ -1,0 +1,35 @@
+name: Supabase wachhalten
+# Kostenlose Supabase-Projekte werden nach etwa 7 Tagen ohne Zugriff pausiert.
+# Zweimal pro Woche eine harmlose Leseabfrage, die keine Daten liest: Es wird nichts gespeichert und nichts gesendet.
+# Die Schlüssel sind die öffentlichen "publishable" Schlüssel (dürfen im Code stehen, RLS schützt die Daten).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1,4" # Montag und Donnerstag, 06:17 UTC
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: arminfradler-web (Kontaktformular)
+            ref: jfdxewwynvmahhgtmdvg
+            key: sb_publishable_KIBT2fhZ4cAA-QSJ3Pafew_ZJ8-IJcw
+            table: kontakt
+          - name: tdw-2026 (Mitmach-App)
+            ref: nqkbtfhoixgplmxcpxyn
+            key: sb_publishable_C4iTUIUu-CJA4WdyHxjAVw_VAL-cp2F
+            table: sessions
+    name: ${{ matrix.name }}
+    steps:
+      - name: Leseabfrage
+        run: |
+          code=$(curl -sS -o /dev/null -w '%{http_code}' --retry 3 --retry-delay 10 \
+            "https://${{ matrix.ref }}.supabase.co/rest/v1/${{ matrix.table }}?select=*&limit=0" \
+            -H "apikey: ${{ matrix.key }}")
+          echo "Antwort: $code"
+          # 200, oder 401/403 wenn die Tabelle für Fremde gesperrt ist: beides heißt, die Datenbank hat geantwortet.
+          # 5xx (z. B. 540) heißt: Projekt pausiert oder gestört. Dann schlägt der Lauf fehl und GitHub schickt eine Mail.
+          test "$code" -lt 500
