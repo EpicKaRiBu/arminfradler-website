@@ -1,4 +1,4 @@
-/* arminfradler.at · gemeinsame Bausteine. Keine Cookies, keine Analyse, keine fremden Dienste außer dem eigenen Blog-/Kontakt-Backend. */
+/* arminfradler.at · gemeinsame Bausteine. Keine Cookies, kein Tracking, keine fremden Dienste außer dem eigenen Kontakt-Backend und dem anonymen Seitenzähler. */
 (()=>{
 const S=document.currentScript,ROOT=S.dataset.root||'./',PAGE=document.body.dataset.page||'';
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -33,7 +33,7 @@ if(foot){
   foot.innerHTML=`<div class="wrap">
     <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen für Bildungsorganisationen, Schulen und kleine Unternehmen. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
     <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
-    <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:12px">Keine Cookies. Keine Analyse-Tools.</p></div>
+    <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:14px;color:var(--ink)">✓ Keine Cookies, kein Tracking.<br><a href="${ROOT}datenschutz.html#zaehler">Nur ein anonymer Seitenzähler.</a></p></div>
   </div>`;
 }
 
@@ -135,5 +135,11 @@ $$('.clip video').forEach(v=>{
   if(RM||!('IntersectionObserver' in window)){v.controls=true;return}
   new IntersectionObserver(es=>{const e=es[0];if(e.isIntersecting){v.preload='auto';v.play().catch(()=>{v.controls=true})}else v.pause()},{threshold:.5}).observe(v);
 });
+
+
+/* ---------- Anonymer Seitenzähler: nur Seite und Herkunft, keine IP, kein Cookie (Code: backend/) ---------- */
+if(/^(www\.)?arminfradler\.at$/.test(location.hostname)&&!navigator.webdriver&&!navigator.globalPrivacyControl&&navigator.doNotTrack!=='1'){
+  try{fetch('https://jfdxewwynvmahhgtmdvg.supabase.co/functions/v1/zaehler',{method:'POST',keepalive:true,headers:{'Content-Type':'text/plain'},body:JSON.stringify({seite:location.pathname,herkunft:document.referrer,quelle:new URLSearchParams(location.search).get('quelle')||''})}).catch(()=>{})}catch(e){}
+}
 
 })();

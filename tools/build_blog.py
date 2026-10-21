@@ -187,7 +187,7 @@ HEAD = '''<!doctype html>
 '''
 FOOT = '''</article></section></main>
 <footer id="site-foot"></footer>
-<script src="../../assets/site.js?v=20261010a" data-root="../../"></script>
+<script src="../../assets/site.js?v=20261021a" data-root="../../"></script>
 </body>
 </html>
 '''

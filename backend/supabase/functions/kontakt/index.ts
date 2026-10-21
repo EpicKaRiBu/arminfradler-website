@@ -8,6 +8,7 @@ import {createClient} from 'npm:@supabase/supabase-js@2.49.4';
 
 const ERLAUBT = ['https://arminfradler.at', 'https://www.arminfradler.at', 'https://epickaribu.github.io', 'http://localhost:8765', 'http://localhost:8766'];
 const ANLAESSE = ['Workshop', 'Vortrag oder Impuls', 'Pädagogischer Tag / SCHILF', 'Leitungsklausur', 'Workshop-Reihe', 'Online-Format', 'Etwas anderes'];
+const QUELLEN = ['Workshop, Kurs oder Vortrag von mir', 'Empfehlung', 'LinkedIn', 'Suche im Internet', 'KI-Assistent (z. B. ChatGPT)', 'Volkshochschule oder Bildungshaus', 'Etwas anderes'];
 const zuletzt = new Map<string, number[]>(); // einfache Bremse pro Instanz: höchstens 5 Anfragen in 10 Minuten je Adresse
 
 const cors = (origin: string | null) => ({
@@ -41,12 +42,13 @@ Deno.serve(async (req) => {
 
   const name = zeile(d.name, 120), email = zeile(d.email, 200), organisation = zeile(d.organisation, 200);
   const anlass = ANLAESSE.includes(text(d.anlass, 60)) ? text(d.anlass, 60) : 'Etwas anderes';
+  const quelle = QUELLEN.includes(text(d.quelle, 60)) ? text(d.quelle, 60) : '';
   const nachricht = text(d.nachricht, 5000);
   if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || nachricht.length < 10)
     return antwort(400, {ok: false, fehler: 'Bitte Name, gültige E-Mail-Adresse und eine Nachricht angeben.'}, origin);
 
   const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
-  const {data: eintrag, error} = await db.from('kontakt').insert({name, email, organisation: organisation || null, anlass, nachricht}).select('id').single();
+  const {data: eintrag, error} = await db.from('kontakt').insert({name, email, organisation: organisation || null, anlass, quelle: quelle || null, nachricht}).select('id').single();
   if (error) return antwort(500, {ok: false, fehler: 'Die Nachricht konnte nicht gespeichert werden.'}, origin);
 
   let mail_ok = false;
@@ -60,8 +62,8 @@ Deno.serve(async (req) => {
         to: [Deno.env.get('KONTAKT_AN') || 'info@arminfradler.at'],
         reply_to: email,
         subject: `Anfrage über die Website: ${anlass} – ${name}`,
-        text: `${name}${organisation ? ' · ' + organisation : ''}\n${email}\nAnlass: ${anlass}\n\n${nachricht}\n`,
-        html: `<p><b>${html(name)}</b>${organisation ? ' · ' + html(organisation) : ''}<br>${html(email)}<br>Anlass: ${html(anlass)}</p><p style="white-space:pre-wrap">${html(nachricht)}</p>`,
+        text: `${name}${organisation ? ' · ' + organisation : ''}\n${email}\nAnlass: ${anlass}${quelle ? '\nGefunden über: ' + quelle : ''}\n\n${nachricht}\n`,
+        html: `<p><b>${html(name)}</b>${organisation ? ' · ' + html(organisation) : ''}<br>${html(email)}<br>Anlass: ${html(anlass)}${quelle ? '<br>Gefunden über: ' + html(quelle) : ''}</p><p style="white-space:pre-wrap">${html(nachricht)}</p>`,
       }),
     });
     mail_ok = r.ok;

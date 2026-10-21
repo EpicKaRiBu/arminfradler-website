@@ -47,6 +47,10 @@
       <select id="anlass" name="anlass">
         <option value="">Bitte wählen (optional)</option><option>Workshop</option><option>Vortrag oder Impuls</option><option>Pädagogischer Tag / SCHILF</option><option>Leitungsklausur</option><option>Workshop-Reihe</option><option>Online-Format</option><option>Etwas anderes</option>
       </select>
+      <label for="quelle">Wie sind Sie auf mich gekommen?</label>
+      <select id="quelle" name="quelle">
+        <option value="">Bitte wählen (optional)</option><option>Workshop, Kurs oder Vortrag von mir</option><option>Empfehlung</option><option>LinkedIn</option><option>Suche im Internet</option><option>KI-Assistent (z. B. ChatGPT)</option><option>Volkshochschule oder Bildungshaus</option><option>Etwas anderes</option>
+      </select>
       <label for="msg">Ihre Nachricht *</label><textarea id="msg" name="msg" required maxlength="4000" placeholder="Zum Beispiel: Wir sind ein Bildungshaus mit 25 Mitarbeitenden und möchten im Frühjahr eine KI-Leitlinie erarbeiten …"></textarea>
       <div class="hp" aria-hidden="true"><label for="web">Website</label><input id="web" name="web" tabindex="-1" autocomplete="off"></div>
       <p class="s m" style="margin-top:14px">Ihre Angaben werden nur zur Bearbeitung Ihrer Anfrage gespeichert. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
@@ -58,7 +62,7 @@
 </section>
 </main>
 <footer id="site-foot"></footer>
-<script src="assets/site.js?v=20261010a" data-root="./"></script>
+<script src="assets/site.js?v=20261021a" data-root="./"></script>
 <script>
 (()=>{
 const f=document.getElementById('f'),err=document.getElementById('err'),start=Date.now();
@@ -71,7 +75,7 @@ f.onsubmit=async e=>{
   if(!name||!msg||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Bitte Name, eine gültige E-Mail-Adresse und Ihre Nachricht ausfüllen.';return}
   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Wird gesendet …';
   try{
-    const r=await fetch(KONTAKT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,organisation:f.org.value.trim(),anlass:f.anlass.value,nachricht:msg,website:f.web.value,dauer:Date.now()-start})});
+    const r=await fetch(KONTAKT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,organisation:f.org.value.trim(),anlass:f.anlass.value,quelle:f.quelle.value,nachricht:msg,website:f.web.value,dauer:Date.now()-start})});
     const d=await r.json().catch(()=>({}));
     if(!r.ok||!d.ok)throw new Error(d.fehler||r.status);
     f.outerHTML=`<div class="ok"><p class="hand" style="font-size:34px;margin:0 0 6px">Danke!</p><p style="margin:0">Ihre Nachricht ist angekommen. Ich melde mich meist innerhalb weniger Tage.</p></div>`;
