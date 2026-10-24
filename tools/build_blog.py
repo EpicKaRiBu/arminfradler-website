@@ -287,7 +287,7 @@ def main():
 
     # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
     llm = [f'# Armin Fradler', '',
-           '> Workshops, Vorträge und Fortbildungen zu KI für Organisationen und Teams, vom Bildungshaus bis zum Betrieb. Aus Oberwart (Burgenland), in ganz Österreich und online. '
+           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart (Burgenland), in ganz Österreich und online. '
            'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
