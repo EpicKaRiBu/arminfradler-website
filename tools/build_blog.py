@@ -263,8 +263,8 @@ def main():
     ersetzen('impulse/index.html', 'impulse',
              f'\n    <div class="filters" id="filters" role="group" aria-label="Nach Thema filtern">{filter_html}</div>\n'
              f'    <div class="grid g3" id="list">\n' + '\n'.join(karte(p, '../') for p in posts) + '\n    </div>\n    ')
-    # Startseite: nur Beiträge mit „startseite: true“ (geprüft, mit Quellen, für Einsteiger:innen verständlich), höchstens zwei
-    ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in [q for q in posts if q.get('startseite') is True][:2]) + '\n')
+    # Startseite: nur Beiträge mit „startseite: true“ (geprüft, mit Quellen, für Einsteiger:innen verständlich), höchstens drei
+    ersetzen('index.html', 'latest', '\n' + '\n'.join(karte(p, '') for p in [q for q in posts if q.get('startseite') is True][:3]) + '\n')
 
     # RSS
     jetzt = dt(max(str(p.get('updated') or p['date']) for p in posts)).strftime('%a, %d %b %Y %H:%M:%S +0000') if posts else ''
@@ -287,7 +287,7 @@ def main():
 
     # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
     llm = [f'# Armin Fradler', '',
-           '> Workshops, Vorträge und Fortbildungen zu KI für Bildungsorganisationen, Teams und kleine Betriebe. Aus Oberwart (Burgenland), in ganz Österreich und online. '
+           '> Workshops, Vorträge und Fortbildungen zu KI für Organisationen und Teams, vom Bildungshaus bis zum Betrieb. Aus Oberwart (Burgenland), in ganz Österreich und online. '
            'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',

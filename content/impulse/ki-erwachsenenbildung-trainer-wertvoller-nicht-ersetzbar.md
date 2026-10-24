@@ -2,7 +2,6 @@
 title: "Erledigt ist nicht gelernt: Was KI für Kurse in der Erwachsenenbildung bedeutet"
 slug: "ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar"
 status: "published"
-pin: 1
 date: "2026-10-09T18:00:00+02:00"
 category: "Lernen mit KI"
 category_slug: "lernen-mit-ki"

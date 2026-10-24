@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding: Warum KMUs jetzt Software bauen können, ohne Entwickler einzustellen"
 slug: "vibe-coding-ki-software-kmu-ohne-entwickler"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:15.727+00:00"
 updated: "2025-12-28T09:00:49.838877+00:00"
 category: "Softwareentwicklung"

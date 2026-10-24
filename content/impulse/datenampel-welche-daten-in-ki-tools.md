@@ -2,6 +2,8 @@
 title: "Darf das in ChatGPT? Die Datenampel gibt in zehn Sekunden Antwort"
 slug: "datenampel-welche-daten-in-ki-tools"
 status: "published"
+pin: 1
+startseite: true
 date: "2026-10-09T19:00:00+02:00"
 category: "KI-Strategie"
 category_slug: "ki-strategie"

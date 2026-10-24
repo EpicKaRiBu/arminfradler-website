@@ -1,0 +1,105 @@
+# Wach-Agent, Stufe 1: prüft arminfradler.at jede Woche von außen und legt ein Issue mit dem Ergebnis an.
+# Nur lesen. Keine fremden Actions, keine Secrets außer dem eingebauten GITHUB_TOKEN.
+name: Wache
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"   # Montag 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  wache:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Von außen prüfen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          DOMAINS: "arminfradler.at www.arminfradler.at mitmachen.arminfradler.at"
+        run: |
+          python3 - <<'PY' > bericht.md
+          import os, re, ssl, socket, subprocess, urllib.request, datetime, json, base64
+
+          heute = datetime.datetime.now(datetime.timezone.utc)
+          zeilen, warnungen = [], 0
+
+          def gut(t):  zeilen.append(f"- ✅ {t}")
+          def info(t): zeilen.append(f"- ℹ️ {t}")
+          def warn(t):
+              global warnungen
+              warnungen += 1
+              zeilen.append(f"- ⚠️ {t}")
+
+          def dig(name, typ):
+              r = subprocess.run(["dig", "+short", typ, name], capture_output=True, text=True, timeout=20)
+              return [l.strip().strip('"') for l in r.stdout.splitlines() if l.strip()]
+
+          def holen(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "Wache/1 (arminfradler.at)"})
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  return r.status, r.geturl(), dict(r.headers), r.read(400000).decode("utf-8", "replace")
+
+          for d in os.environ["DOMAINS"].split():
+              zeilen.append(f"\n### {d}")
+              try:
+                  ctx = ssl.create_default_context()
+                  with socket.create_connection((d, 443), timeout=15) as s:
+                      with ctx.wrap_socket(s, server_hostname=d) as t:
+                          ende = datetime.datetime.strptime(t.getpeercert()["notAfter"], "%b %d %H:%M:%S %Y %Z").replace(tzinfo=datetime.timezone.utc)
+                  tage = (ende - heute).days
+                  (warn if tage < 21 else gut)(f"Zertifikat gültig, noch {tage} Tage")
+              except Exception as e:
+                  warn(f"Zertifikat nicht prüfbar: {e}")
+              try:
+                  _, ziel, _, _ = holen(f"http://{d}/")
+                  (gut if ziel.startswith("https://") else warn)(f"http leitet weiter auf {ziel}")
+              except Exception as e:
+                  warn(f"http-Aufruf fehlgeschlagen: {e}")
+              try:
+                  status, _, kopf, html = holen(f"https://{d}/")
+                  (gut if status == 200 else warn)(f"Seite antwortet mit {status}")
+                  fremd = sorted({h for h in re.findall(r'<script[^>]+src=["\']https?://([^/"\']+)', html, re.I) if not h.endswith("arminfradler.at")})
+                  (warn if fremd else gut)("fremde Skripte: " + (", ".join(fremd) if fremd else "keine"))
+                  csp = "Content-Security-Policy" in kopf or re.search(r'http-equiv=["\']Content-Security-Policy', html, re.I)
+                  (gut if csp else info)("Content-Security-Policy " + ("gesetzt" if csp else "fehlt (bei GitHub Pages nur per meta-Tag möglich)"))
+                  gen = re.search(r'<meta[^>]+name=["\']generator["\'][^>]+content=["\']([^"\']+)', html, re.I)
+                  if gen: info(f"Generator-Angabe: {gen.group(1)}")
+              except Exception as e:
+                  warn(f"https-Aufruf fehlgeschlagen: {e}")
+
+          zeilen.append("\n### E-Mail und DNS (arminfradler.at)")
+          spf = [t for t in dig("arminfradler.at", "TXT") if t.startswith("v=spf1")]
+          (gut if spf else warn)("SPF: " + (spf[0] if spf else "fehlt"))
+          dmarc = [t for t in dig("_dmarc.arminfradler.at", "TXT") if t.startswith("v=DMARC1")]
+          if not dmarc: warn("DMARC fehlt")
+          elif "p=none" in dmarc[0]: info(f"DMARC nur beobachtend: {dmarc[0]}")
+          else: gut(f"DMARC: {dmarc[0]}")
+          caa = dig("arminfradler.at", "CAA")
+          (gut if caa else info)("CAA: " + (", ".join(caa) if caa else "nicht gesetzt (legt fest, wer Zertifikate ausstellen darf)"))
+          info("MX: " + (", ".join(dig("arminfradler.at", "MX")) or "keiner"))
+          info("NS: " + (", ".join(dig("arminfradler.at", "NS")) or "keiner"))
+
+          zeilen.append("\n### GitHub Actions in diesem Repo")
+          try:
+              r = subprocess.run(["gh", "api", f"repos/{os.environ['REPO']}/contents/.github/workflows"], capture_output=True, text=True, check=True)
+              for f in json.loads(r.stdout):
+                  roh = subprocess.run(["gh", "api", f["url"]], capture_output=True, text=True, check=True)
+                  inhalt = base64.b64decode(json.loads(roh.stdout)["content"]).decode()
+                  for u in re.findall(r'uses:\s*([^\s#]+)', inhalt):
+                      if u.startswith("./"): continue
+                      fest = re.search(r'@[0-9a-f]{40}$', u)
+                      (gut if fest else warn)(f"{f['name']}: {u} " + ("(fest gepinnt)" if fest else "(nicht auf Commit gepinnt)"))
+          except Exception as e:
+              warn(f"Workflows nicht lesbar: {e}")
+
+          print(f"Wache vom {heute:%d.%m.%Y}, {warnungen} Hinweis(e)\n")
+          print("Automatischer Lauf, nur von außen und lesend. Nichts wurde geändert. Bewertung und Fix-Vorschläge macht der Bericht-Agent, Freigabe ein Mensch.\n")
+          print("\n".join(zeilen))
+          PY
+          cat bericht.md >> "$GITHUB_STEP_SUMMARY"
+          gh issue create --repo "$REPO" --title "Wache $(date +%d.%m.%Y)" --body-file bericht.md

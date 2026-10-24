@@ -2,7 +2,6 @@
 title: "Wem gehören die Daten, die Ihre Mitarbeiter gerade in ChatGPT tippen?"
 slug: "ki-souveraenitaet-schatten-ki-oesterreich-2025"
 status: "published"
-pin: 3
 date: "2025-12-15T20:35:36.557+00:00"
 updated: "2025-12-17T08:28:08.617666+00:00"
 category: "KI-Strategie"
@@ -185,7 +184,6 @@ Wenn Sie darüber nachdenken wollen, nehme ich mir gerne Zeit.
 ## Weiterführende Artikel
 
 - [Das Schleusen-Prinzip](/blog/schleusen-prinzip-cloud-ki-hybrid) – Wann Cloud-KI Sinn macht, wann lokal
-- [KI-gestützte Softwareentwicklung für KMU](/blog/ki-gestuetzte-softwareentwicklung-kmu-oesterreich-2025) – Was 2025 möglich ist
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "KI-gestützte Softwareentwicklung für KMUs: Was ist 2025 wirklich möglich?"
 slug: "ki-gestuetzte-softwareentwicklung-kmu-oesterreich-2025"
-status: "published"
+status: "draft"
 date: "2025-12-04T20:53:04.41148+00:00"
 updated: "2025-12-28T09:01:16.818811+00:00"
 category: "Softwareentwicklung"
