@@ -1,7 +1,8 @@
 ---
 title: "Wem gehören die Daten, die Ihre Mitarbeiter gerade in ChatGPT tippen?"
 slug: "ki-souveraenitaet-schatten-ki-oesterreich-2025"
-status: "published"
+status: "draft"
+replaced_by: "datenampel-welche-daten-in-ki-tools"
 date: "2025-12-15T20:35:36.557+00:00"
 updated: "2025-12-17T08:28:08.617666+00:00"
 category: "KI-Strategie"

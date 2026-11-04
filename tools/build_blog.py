@@ -187,7 +187,7 @@ HEAD = '''<!doctype html>
 '''
 FOOT = '''</article></section></main>
 <footer id="site-foot"></footer>
-<script src="../../assets/site.js?v=20261104z" data-root="../../"></script>
+<script src="../../assets/site.js?v=20261105k" data-root="../../"></script>
 </body>
 </html>
 '''
@@ -288,7 +288,7 @@ def main():
     # llms.txt: kurze Landkarte der Seite für KI-Assistenten (llmstxt.org)
     llm = [f'# Armin Fradler', '',
            '> Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart (Burgenland), in ganz Österreich und online. '
-           'Leitfrage: Wo lassen wir uns Arbeit abnehmen – und wo das Denken?', '',
+           'Leitfrage: Wo lassen wir uns Arbeit abnehmen, und wo das Denken?', '',
            '## Seiten', '',
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
            f'- [So arbeite ich]({base}/methode.html): Leitfrage, Prinzipien und Ablauf eines Workshops, mit Quellen',
@@ -297,7 +297,7 @@ def main():
            f'- [KI-Nachrichten]({base}/nachrichten.html): Meldungen mit Datum, Quelle und Einordnung, wöchentlich nachgeschaut',
            f'- [Modelle und Werkzeuge]({base}/modelle.html): Steckbriefe zu Daten, Kosten und Schule',
            f'- [Termine]({base}/termine.html): offene Vorträge und Workshops',
-           f'- [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',
+           f'- [Kostenlose Arbeitshilfen](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',
            f'- [Kontakt]({base}/kontakt.html)', '', '## Impulse', '']
     llm += [f'- [{p["title"]}]({base}/impulse/{p["slug"]}/): {p.get("description") or p.get("excerpt") or ""}' for p in posts]
     open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8', newline='\n').write('\n'.join(llm) + '\n')

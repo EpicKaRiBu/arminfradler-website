@@ -1,7 +1,8 @@
 ---
 title: "Das Tool läuft. Warum fast niemand es nutzt."
 slug: "ki-adoption-champions-dispatch-organisation"
-status: "published"
+status: "draft"
+replaced_by: "wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken"
 date: "2026-03-21T16:53:32.412+00:00"
 updated: "2026-03-21T16:58:31.747258+00:00"
 category: "KI-Strategie"

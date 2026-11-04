@@ -1,7 +1,7 @@
 ---
 title: "Die Feierabend-Pipeline: Wie Sie Ihre besten Ideen nie wieder vergessen"
 slug: "voice-pipeline-ideen-festhalten-sprache-ki"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:02.803+00:00"
 updated: "2025-12-20T10:31:56.309757+00:00"
 category: "Automatisierung"

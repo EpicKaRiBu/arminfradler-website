@@ -1,7 +1,8 @@
 ---
 title: "Warum die meisten KI-Projekte scheitern – und was die erfolgreichen anders machen"
 slug: "ki-projekte-scheitern-change-management-vertrauen"
-status: "published"
+status: "draft"
+replaced_by: "wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken"
 date: "2025-12-16T10:46:02.312+00:00"
 updated: "2025-12-20T10:32:33.166689+00:00"
 category: "KI-Strategie"

@@ -138,7 +138,7 @@ function init(D,K){
     det.style.setProperty('--c',COL[p.thema]);
     det.innerHTML=`<p class="tag"><i></i>${esc(TH[p.thema].name)} · Nr. ${p.n}</p><h3>${esc(p.name)}</h3><p class="ring">${esc(RG[ringOf(p)].name)}</p>${bw&&ringOf(p)!==p.ring?`<p class="alle">Ohne Blickwinkel: ${esc(RG[p.ring].name)}</p>`:''}${offFor(p)?`<p class="alle">Für ${esc(BWN[bw].mehrzahl)} eher am Rand.</p>`:''}<p>${T(p.satz)}</p>
       <div class="haus"><b>Für ${esc(bw?BWN[bw].fuer:'Ihr Haus')}</b>${T(hausOf(p))}</div>
-      ${bel.length?`<p class="xs m" style="margin:14px 0 0">Was dahinter steht (${bel.length})</p><ul class="bel">${bel.map(f=>`<li><a href="#${f.id}" data-f="${f.id}" data-from="${p.id}">${esc(cut(f.text,120))}</a> <span class="xs m">· ${esc(f.guete_name)}, geprüft ${dat(f.geprueft)}</span></li>`).join('')}</ul>`:''}
+      ${bel.length?`<p class="xs m" style="margin:14px 0 0">Was dahinter steht (${bel.length})</p><ul class="bel">${bel.map(f=>`<li><a href="#${f.id}" data-f="${f.id}" data-from="${p.id}">${esc(cut(f.text,120))}</a> <span class="xs m">· ${esc(f.guete_name)}, nachgelesen ${dat(f.geprueft)}</span></li>`).join('')}</ul>`:''}
       ${p.impuls&&D.impulse[p.impuls]?`<p class="s" style="margin:14px 0 0">Ausführlich im Impuls: <a href="impulse/${p.impuls}/">${esc(D.impulse[p.impuls])}</a></p>`:''}
       <div class="nav2"><button type="button" data-d="-1">← voriger</button><button type="button" data-d="1">nächster →</button></div>`;
     if(scroll&&innerWidth<980)det.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
@@ -180,7 +180,7 @@ function init(D,K){
     const top=pool.sort((a,b)=>GW[b.gewicht]-GW[a.gewicht]||b.datum.localeCompare(a.datum)).slice(0,5).sort((a,b)=>b.datum.localeCompare(a.datum));
     $('#board').innerHTML=`<div class="w-week rv in"><h3>Stand ${st0?dat(st0):''} <small>${bw?'für '+esc(BWN[bw].mehrzahl)+', ':''}aus den letzten vier Wochen</small></h3>${top.length?`<div class="w-notes">${top.map(note).join('')}</div>`:`<p class="w-empty">In den letzten vier Wochen war nichts dabei, was ${esc(bw?BWN[bw].mehrzahl:'alle')} besonders betrifft.</p>`}</div>`;
     $('#alle-n').href='nachrichten.html'+(bw?'?fuer='+bw:'');
-    $('#alle-n').innerHTML=`Alle ${NN.meldungen.length} KI-Nachrichten <span class="arr">→</span>`;
+    $('#alle-n').innerHTML=`Alle ${NN.meldungen.filter(m=>m.gewicht!=='laut').length} KI-Nachrichten <span class="arr">→</span>`;
   }
   $('#board').addEventListener('click',e=>{const b=e.target.closest('button[data-r]');if(b)pick(b.dataset.r,true)});
 
@@ -211,7 +211,7 @@ function init(D,K){
     const due=f.faellig&&f.faellig<TODAY;
     const rad=(f.radar||[]).map(id=>P.find(p=>p.id===id)).filter(Boolean);
     return `<article class="w-fact${st.hl===f.id?' hl':''}" id="${f.id}" style="--c:${COL[f.tags[0]]}"><p>${esc(f.text)}</p>
-      <div class="meta"><span class="g g${f.guete}" title="Güte der Quelle">${esc(f.guete_name)}</span><span>geprüft ${dat(f.geprueft)}</span><span class="herk">${esc(LAND[f.land]||'')} · ${esc((ART.find(a=>a[0]===f.art)||['',''])[1])}</span>${due?'<span class="due">wird nachgeprüft</span>':''}</div>
+      <div class="meta"><span class="g g${f.guete}" title="Güte der Quelle">${esc(f.guete_name)}</span><span>nachgelesen ${dat(f.geprueft)}</span><span class="herk">${esc(LAND[f.land]||'')} · ${esc((ART.find(a=>a[0]===f.art)||['',''])[1])}</span>${due?'<span class="due">wird nachgeprüft</span>':''}</div>
       ${f.grenzen?`<p class="lim"><b>Grenzen:</b> ${esc(f.grenzen)}</p>`:''}
       <div class="links">${f.quellen.map(q=>`<a href="${esc(q.u)}" rel="noopener">${esc(cut(q.t,48))}</a>`).join('')}${(f.impulse||[]).filter(s=>D.impulse[s]).map(s=>`<a href="impulse/${s}/">Impuls: ${esc(cut(D.impulse[s],46))}</a>`).join('')}${rad.map(p=>`<button class="r" type="button" data-r="${p.id}">→ Radar ${p.n}: ${esc(p.name)}</button>`).join('')}</div>${st.hl===f.id&&st.back?`<p class="w-back"><button type="button" data-back>← zurück ${st.back.r?`zu Radarpunkt ${P.find(p=>p.id===st.back.r)?.n}`:'zum Wichtigsten'}</button></p>`:''}</article>`;
   }

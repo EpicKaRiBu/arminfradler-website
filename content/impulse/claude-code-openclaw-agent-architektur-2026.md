@@ -1,7 +1,7 @@
 ---
 title: "Claude Code, OpenClaw und die neue Agent-Architektur: Was dahinter steckt"
 slug: "claude-code-openclaw-agent-architektur-2026"
-status: "published"
+status: "draft"
 date: "2026-03-29T21:07:33.414+00:00"
 updated: "2026-03-31T21:18:31.926557+00:00"
 category: "Softwareentwicklung"

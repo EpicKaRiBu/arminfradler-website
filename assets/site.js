@@ -32,7 +32,7 @@ if(foot){
   foot.className='site-foot';
   foot.innerHTML=`<div class="wrap">
     <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
-    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="${ROOT}wissen.html">Wissen</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
+    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="${ROOT}wissen.html">Wissen</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Arbeitshilfen</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
     <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:14px;color:var(--ink)">✓ Keine Cookies, kein Tracking.<br><a href="${ROOT}datenschutz.html#zaehler">Nur ein anonymer Seitenzähler.</a></p></div>
   </div>`;
 }
@@ -144,7 +144,7 @@ const neu=document.getElementById('weg-neu');
 if(neu){fetch(ROOT+'data/neu.json').then(r=>r.json()).then(d=>{
   const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const t=iso=>{const[,m,dd]=iso.split('-');return `${+dd}.${+m}.`};
-  neu.innerHTML='<span class="hand">Neu nachgeschaut:</span>'+d.meldungen.map(m=>`<span><time datetime="${m.datum}">${t(m.datum)}</time><a href="${ROOT}nachrichten.html#${e(m.id)}">${e(m.titel)}</a></span>`).join('')+`<a class="alle" href="${ROOT}nachrichten.html">alle KI-Nachrichten →</a>`;
+  neu.innerHTML='<span class="hand">Zuletzt wichtig:</span>'+d.meldungen.map(m=>`<span><time datetime="${m.datum}">${t(m.datum)}</time><a href="${ROOT}nachrichten.html#${e(m.id)}">${e(m.titel)}</a></span>`).join('')+`<a class="alle" href="${ROOT}nachrichten.html">alle KI-Nachrichten →</a>`;
   neu.hidden=false}).catch(()=>{})}
 
 /* ---------- Anonymer Seitenzähler: nur Seite und Herkunft, keine IP, kein Cookie (Code: backend/) ---------- */

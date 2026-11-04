@@ -3,8 +3,8 @@ title: "Erledigt ist nicht gelernt: Was KI für Kurse in der Erwachsenenbildung 
 slug: "ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar"
 status: "published"
 date: "2026-10-09T18:00:00+02:00"
-category: "Lernen mit KI"
-category_slug: "lernen-mit-ki"
+category: "Lernen und Denken"
+category_slug: "lernen-und-denken"
 description: "Braucht es noch Kurse, wenn alle ChatGPT haben? Ja, aber anders. Was die Forschung zeigt und was Kursleiter:innen jetzt tun können."
 excerpt: "„Wozu noch ein Kurs, wenn ich ChatGPT fragen kann?“ KI kann vieles erledigen. Lernen müssen die Menschen trotzdem selbst. Genau dafür braucht es Kursleiter:innen, nur in einer etwas anderen Rolle."
 seo_title: "Ersetzt KI Trainer:innen? Erledigt ist nicht gelernt"
@@ -65,3 +65,6 @@ Ja. Sie müssen keine Expertin sein, um gute Fragen zu stellen. Fangen Sie mit e
 
 **Und was sage ich skeptischen Kolleg:innen?**
 Dass ihre Skepsis berechtigt ist. Die Forschung gibt ihnen in einem wichtigen Punkt recht: Ohne Gestaltung kann KI das Lernen schwächen. Genau deshalb braucht es Menschen, die das gestalten.
+
+**Wo zieht man im Kurs die Linie?**
+Mit drei Spalten: abgeben, anregen lassen, behalten. Wie das geht, steht im Impuls [Wo lassen wir uns Arbeit abnehmen, und wo das Denken?](/impulse/wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken/)

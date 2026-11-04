@@ -1,7 +1,8 @@
 ---
 title: "KI im Betrieb: Warum Schulung allein nicht reicht"
 slug: "ki-im-betrieb-warum-schulung-allein-nicht-reicht"
-status: "published"
+status: "draft"
+replaced_by: "wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken"
 date: "2026-03-29T21:07:31.903+00:00"
 updated: "2026-03-29T23:08:22.024621+00:00"
 category: "KI-Strategie"

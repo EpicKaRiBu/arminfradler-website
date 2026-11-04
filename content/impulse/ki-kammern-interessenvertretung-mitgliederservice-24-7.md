@@ -1,7 +1,7 @@
 ---
 title: "KI für Kammern und Interessenvertretungen: Konkrete Anwendungen statt Buzzwords"
 slug: "ki-kammern-interessenvertretung-mitgliederservice-24-7"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:30.89+00:00"
 updated: "2025-12-20T10:31:46.398013+00:00"
 category: "Branchenlösungen"

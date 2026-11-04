@@ -1,7 +1,7 @@
 ---
 title: "KI im Gemeindeamt: Digital stark, nah beim Menschen"
 slug: "ki-gemeindeamt-lokale-ki-buergerservice-datenschutz"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:31.234+00:00"
 updated: "2025-12-20T10:30:58.455929+00:00"
 category: "Branchenlösungen"

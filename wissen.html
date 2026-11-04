@@ -9,7 +9,7 @@
 <meta name="description" content="Das KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe: jede Woche nachgeschaut, jede Zahl mit Quelle, Güte und Prüfdatum. Mit Einordnung, was das für Ihr Haus heißt.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Was man über KI wirklich weiß · Armin Fradler">
-<meta property="og:description" content="KI-Radar, KI-Nachrichten mit Einordnung und geprüfte Befunde. Jede Woche nachgeschaut, nicht nachgeplappert.">
+<meta property="og:description" content="KI-Radar, KI-Nachrichten mit Einordnung und Befunde mit Quelle. Jede Woche nachgeschaut, nicht nachgeplappert.">
 <meta property="og:url" content="https://arminfradler.at/wissen.html">
 <meta property="og:image" content="https://arminfradler.at/assets/portrait.webp">
 <meta property="og:locale" content="de_AT">
@@ -34,10 +34,10 @@
       <h1>Was man über KI <span class="mark">wirklich</span> weiß.</h1>
       <p class="hand w-sub">Nachgeschaut, nicht nachgeplappert.</p>
       <p class="lead">Jede Woche sucht eine KI-Routine die wichtigsten Meldungen zusammen und liest jede Zahl an der Originalquelle nach. Ich lese, was hängen bleibt, ordne es ein und entscheide, was hier steht: für Bildungshäuser, Schulen, Gemeinden und Betriebe. Mit Quelle, Datum und meiner Einordnung.</p>
-      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Ich bin aus …</span><div id="bw"></div></div>
+      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Mein Blickwinkel:</span><div id="bw"></div></div>
       <p class="w-bw-ok s" id="bw-ok" aria-live="polite" hidden></p>
       <div class="w-nums" aria-label="Auf einen Blick">
-        <a href="#nachgeschaut"><b data-n="fakten">92</b><span>geprüfte Befunde</span></a>
+        <a href="#nachgeschaut"><b data-n="fakten">92</b><span>Befunde mit Quelle</span></a>
         <a href="#radar"><b data-n="radar">19</b><span>Punkte im Radar</span></a>
         <a href="#nachrichten"><b data-n="woche">2.11.</b><span>zuletzt nachgeschaut</span></a>
       </div>
@@ -73,7 +73,7 @@
     <div class="w-radar-wrap">
       <figure class="w-radar" role="group" aria-label="KI-Radar">
         <svg id="radar-svg" viewBox="-330 -330 660 660" aria-hidden="true"></svg>
-        <figcaption class="xs m">Einordnung von Armin Fradler. Jeder Punkt verweist auf geprüfte Befunde.</figcaption>
+        <figcaption class="xs m">Einordnung von Armin Fradler. Jeder Punkt verweist auf Befunde mit Quelle.</figcaption>
       </figure>
       <aside class="w-detail" id="radar-detail" aria-live="polite"></aside>
     </div>
@@ -96,7 +96,7 @@
   <div class="wrap">
     <p class="kick rv">Nachgeschaut</p>
     <h2 class="rv">Befunde mit Quelle, Güte und Datum</h2>
-    <p class="lead rv w-max">Jede Zahl, die ich in Workshops und Impulsen verwende, steht hier. Mit der Angabe, wie gut die Quelle ist, wo ihre Grenzen liegen und wann ich zuletzt nachgeschaut habe.</p>
+    <p class="lead rv w-max">Die Zahlen, die ich in Workshops und Impulsen verwende, stehen hier. Mit der Angabe, wie gut die Quelle ist, wo ihre Grenzen liegen und wann ich zuletzt nachgeschaut habe.</p>
     <div class="w-filter">
       <label class="w-search"><span class="sr">Befunde durchsuchen</span><input id="q" type="search" placeholder="Suchen, etwa PISA, Copilot, Datenschutz" autocomplete="off"></label>
       <details class="w-filt" id="filt" open><summary>Filtern nach Thema, Art und Herkunft</summary>
@@ -132,8 +132,9 @@
     </ol>
     <div class="w-who rv">
       <img src="assets/portrait.webp" alt="Armin Fradler" width="96" height="96" loading="lazy">
-      <div><p class="kick">Wer hier prüft</p><p>Ich bin Armin Fradler aus Oberwart. Ich unterrichte selbst, an der Volkshochschule, am BFI und an einer Mittelschule, und begleite Organisationen beim Umgang mit KI. Die Routine spart mir das Suchen. Das Lesen und Entscheiden spart sie mir nicht.</p>
-      <p class="s m">Fehler passieren auch mir. Hinweise bitte an <a href="mailto:info@arminfradler.at">info@arminfradler.at</a>, ich schaue nach und korrigiere. <a href="ueber-mich.html">Mehr über mich</a></p></div>
+      <div><p class="kick">Wer hier einordnet</p><p>Ich bin Armin Fradler aus Oberwart. Ich unterrichte selbst, an der Volkshochschule, am BFI und an einer Mittelschule, und begleite Organisationen beim Umgang mit KI. Die Routine spart mir das Suchen. Das Lesen und Entscheiden spart sie mir nicht.</p>
+      <p class="s m">Fehler passieren auch mir. Hinweise bitte an <a href="mailto:info@arminfradler.at">info@arminfradler.at</a>, ich schaue nach und korrigiere. <a href="ueber-mich.html">Mehr über mich</a></p>
+      <p class="xs m">Diese Seite ordnet ein und gibt Orientierung. Sie ersetzt keine Rechts-, Datenschutz- oder IT-Beratung im Einzelfall. Alle Angaben nach bestem Wissen und ohne Gewähr, jeweils mit Stand und Quelle.</p></div>
     </div>
     <div class="w-map rv w-map-end">
       <figure class="w-map-fig"><svg id="map" viewBox="0 0 1000 500" role="group" aria-label="Weltkarte: Herkunft der Befunde"></svg></figure>
@@ -151,13 +152,13 @@
   <div class="wrap narrow center rv">
     <p class="hand" style="font-size:clamp(30px,4vw,42px);margin-bottom:10px" id="cta-h">Und was heißt das für Ihr Haus?</p>
     <p class="lead" id="cta-t">In einer Praxis-Sitzung gehen wir Ihr eigenes Radar durch: was bei Ihnen schon läuft, was Sie ausprobieren und wovon Sie die Finger lassen. Am Ende steht Ihr Blatt an der Wand.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px"><a class="btn" href="kontakt.html">Gespräch vereinbaren <span class="arr">→</span></a><a class="btn light" href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge zum Selbermachen</a></div>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px"><a class="btn" href="kontakt.html">Gespräch vereinbaren <span class="arr">→</span></a><a class="btn light" href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Arbeitshilfen zum Selbermachen</a></div>
   </div>
 </section>
 
 </main>
 <footer id="site-foot"></footer>
-<script src="assets/site.js?v=20261104z" data-root="./"></script>
-<script src="assets/wissen.js?v=20261104z"></script>
+<script src="assets/site.js?v=20261105k" data-root="./"></script>
+<script src="assets/wissen.js?v=20261105k"></script>
 </body>
 </html>

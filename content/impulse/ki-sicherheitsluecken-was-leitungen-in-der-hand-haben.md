@@ -2,11 +2,11 @@
 title: "KI findet Lücken schneller, als wir sie stopfen. Jetzt zählt der Hausverstand"
 slug: "ki-sicherheitsluecken-was-leitungen-in-der-hand-haben"
 status: "published"
-pin: 1
+pin: 2
 startseite: true
 date: "2026-10-30T14:00:00+01:00"
-category: "KI-Strategie"
-category_slug: "ki-strategie"
+category: "Sicher mit Hausverstand"
+category_slug: "sicher-mit-hausverstand"
 description: "KI findet Sicherheitslücken schneller als je zuvor. Was heißt das für Organisationen ohne IT-Abteilung? Drei Dinge, die jede Leitung selbst regeln kann."
 excerpt: "Im Oktober hat KI zwei Lücken gefunden, die seit 2012 in der Technik hinter den meisten Websites steckten. Panik hilft nicht. Was hilft, ist das, was jede Feuerwehr am Land kann: wissen, wo der Hydrant ist, und wen man anruft."
 seo_title: "KI und Sicherheitslücken: Was Organisationen ohne IT-Abteilung jetzt tun können"

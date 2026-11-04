@@ -1,7 +1,7 @@
 ---
 title: "Wie Sie Ihr Lebenswerk digital konservieren – bevor es zu spät ist"
 slug: "lebenswerk-digital-konservieren-ki-wissenstransfer"
-status: "published"
+status: "draft"
 date: "2025-12-16T10:46:30.421+00:00"
 updated: "2025-12-28T09:00:45.336791+00:00"
 category: "KI-Strategie"

@@ -2,11 +2,10 @@
 title: "Darf das in ChatGPT? Die Datenampel gibt in zehn Sekunden Antwort"
 slug: "datenampel-welche-daten-in-ki-tools"
 status: "published"
-pin: 2
-startseite: true
+pin: 3
 date: "2026-10-09T19:00:00+02:00"
-category: "KI-Strategie"
-category_slug: "ki-strategie"
+category: "KI im Team"
+category_slug: "ki-im-team"
 description: "Welche Daten darf man in ChatGPT, Copilot & Co. eingeben? Die Datenampel hilft mit drei Farben und drei Fragen, ohne Juristerei."
 excerpt: "Viele nutzen KI und haben dabei ein ungutes Gefühl: Darf ich das hier überhaupt hineinkopieren? Die Datenampel beantwortet die Frage mit drei Farben und drei einfachen Fragen."
 seo_title: "Welche Daten darf man in ChatGPT eingeben? Die Datenampel"
@@ -93,3 +92,6 @@ Rot. Für KI, die bei der Auswahl von Personal mitentscheidet, gelten nach dem e
 
 **Und wenn die KI selbst auf mein Postfach zugreifen kann?**
 Dann entscheiden nicht mehr Sie beim Einfügen, sondern die Zugriffsrechte. Die KI findet alles, was Sie sehen dürfen. Klären Sie das mit Ihrer IT, bevor Sie solche Funktionen einschalten.
+
+**Und wie hängt das mit dem Abgeben zusammen?**
+Die Datenampel sagt, welche Daten hinein dürfen. Die zweite Frage ist, welche Arbeit Sie überhaupt abgeben wollen. Dazu gibt es den Impuls [Wo lassen wir uns Arbeit abnehmen, und wo das Denken?](/impulse/wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken/)
