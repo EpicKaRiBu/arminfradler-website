@@ -4,7 +4,7 @@ slug: "wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken"
 status: "published"
 startseite: true
 pin: 1
-date: "2026-11-05T07:00:00+01:00"
+date: "2026-11-04T23:10:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Wie arbeitet man gut mit KI, ohne das Denken abzugeben? Drei Spalten für jede Aufgabe: abgeben, anregen lassen, behalten. Für Teams in Bildungshaus, Büro und Betrieb."
