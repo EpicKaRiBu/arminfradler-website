@@ -22,18 +22,20 @@
 </head>
 <body data-page="wissen">
 <a class="skip" href="#inhalt">Zum Inhalt</a>
-<header id="site-head"></header>
+<header id="site-head" class="site-head"><!--vr--><div class="wrap"><a class="brand" href="./" aria-label="Armin Fradler – Startseite"><img src="./assets/logo/logo.svg" alt="Armin Fradler" width="238" height="40"></a>
+  <button class="burger" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav" aria-label="Hauptmenü"><a href="./angebot.html" class="">Angebot</a><a href="./methode.html" class="">So arbeite ich</a><a href="./termine.html" class="">Termine</a><a href="./wissen.html" class="on">Wissen</a><a href="./impulse/" class="">Impulse</a><a href="./ueber-mich.html" class="">Über mich</a><a class="cta" href="./kontakt.html">Anfragen</a></nav></div><!--/vr--></header>
 <main id="inhalt">
 
 <nav class="w-bereich" aria-label="Bereich Wissen"><div class="wrap"><span class="hand">Wissen:</span><a href="wissen.html">Überblick</a><a href="nachrichten.html">KI-Nachrichten</a><a href="modelle.html" aria-current="page">Modelle und Werkzeuge</a></div></nav>
 <section class="w-hero n-hero">
   <div class="wrap">
     <div>
-      <p class="kick">Wissen · Modelle und Werkzeuge · <span data-stand></span></p>
+      <p class="kick">Wissen · Modelle und Werkzeuge · <span data-stand>Stand 4. November 2026</span></p>
       <h1>Welches KI-Werkzeug <span class="nw"><span class="mark">wofür</span>?</span></h1>
       <p class="hand w-sub">Ein Überblick ohne Werbung.</p>
       <p class="lead">Die bekanntesten KI-Werkzeuge in Steckbriefen: was neu ist, wo Ihre Daten landen, was es kostet und ob es für die Schule taugt. Alles am Original nachgelesen, mit Datum. Dazu meine Einschätzung.</p>
-      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Mein Blickwinkel:</span><div id="bw"></div></div>
+      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Mein Blickwinkel:</span><div id="bw"><!--vr--><button type="button" data-b="" aria-pressed="true">Alle</button><button type="button" data-b="bildung" title="Erwachsenenbildung und Weiterbildung" aria-pressed="false">Bildungshaus</button><button type="button" data-b="schule" title="Direktion, Kollegium, Schulteam" aria-pressed="false">Schule</button><button type="button" data-b="gemeinde" title="Amt, Verwaltung, Bürgerservice" aria-pressed="false">Gemeinde</button><button type="button" data-b="betrieb" title="KMU und Mittelstand" aria-pressed="false">Betrieb</button><!--/vr--></div></div>
     </div>
     <div class="n-note" id="m-vorweg" aria-live="polite"><p class="kick">Vorweg</p><p>Das beste Werkzeug ist meist das, für das Ihr Haus einen Vertrag hat. Ein Organisationskonto mit klaren Regeln schlägt jedes Gratis-Konto, egal wie gut das Modell ist.</p></div>
   </div>
@@ -43,7 +45,7 @@
   <div class="wrap">
     <p class="kick rv">Auf einen Blick</p>
     <h2 class="rv">Die Werkzeuge nebeneinander</h2>
-    <div class="m-tab-wrap rv"><table class="m-tab" id="m-tab"></table></div>
+    <div class="m-tab-wrap rv"><table class="m-tab" id="m-tab"><!--vr--><thead><tr><th scope="col">Werkzeug</th><th scope="col">Daten in der EU</th><th scope="col">Lernt aus Ihren Eingaben</th><th scope="col">Kosten</th><th scope="col">Schule</th></tr></thead><tbody><tr><th scope="row"><a href="#copilot">Microsoft 365 Copilot und Copilot Chat</a></th><td data-l="Daten in der EU" class="yes">Ja, EU-Datengrenze (Websuche ausgenommen)</td><td data-l="Lernt aus Ihren Eingaben" class="yes">Nein, mit Dienst- oder Schulkonto</td><td data-l="Kosten">Copilot Chat ohne Aufpreis im passenden Abo; Copilot Business 18,20 € netto pro Person (Jahreszahlung)</td><td data-l="Schule">Copilot Chat für Lehrende und ab 13; keine Freigabe des BMB für Schüler:innen gefunden</td></tr><tr><th scope="row"><a href="#chatgpt">ChatGPT</a></th><td data-l="Daten in der EU" class="mid">Nur in Enterprise und Edu</td><td data-l="Lernt aus Ihren Eingaben" class="no">Gratis, Go, Plus: ja, abschaltbar. Business: nein</td><td data-l="Kosten">Gratis mit Werbung; Plus rund 23 € im Monat; Business rund 21 € pro Person (Jahreszahlung, ab 2 Personen)</td><td data-l="Schule">Ab 13 mit Erlaubnis der Eltern; kein Steckbrief des BMB</td></tr><tr><th scope="row"><a href="#gemini">Google Gemini</a></th><td data-l="Daten in der EU" class="mid">Nicht bestätigt</td><td data-l="Lernt aus Ihren Eingaben" class="mid">Privat: ja, abschaltbar. Schulkonto: nein</td><td data-l="Kosten">Gratis; Google AI Pro 19,99 USD; in Workspace for Education Fundamentals ohne Aufpreis</td><td data-l="Schule">Mit Schulkonto für alle Altersgruppen, der Admin schaltet es frei</td></tr><tr><th scope="row"><a href="#notebooklm">NotebookLM (jetzt Gemini Notebook)</a></th><td data-l="Daten in der EU" class="mid">Nicht geprüft</td><td data-l="Lernt aus Ihren Eingaben" class="yes">Nein, außer Sie geben Feedback</td><td data-l="Kosten">Gratis; mehr Nutzung mit Google AI Pro oder Workspace</td><td data-l="Schule">Kerndienst in Workspace for Education</td></tr><tr><th scope="row"><a href="#claude">Claude</a></th><td data-l="Daten in der EU" class="no">Nur über Cloud-Anbieter wie AWS oder Google</td><td data-l="Lernt aus Ihren Eingaben" class="mid">Free, Pro: ja, außer Sie widersprechen. Team: nein</td><td data-l="Kosten">Pro 20 USD; Team 25 USD pro Person</td><td data-l="Schule">Mindestalter 18, also nicht für Schüler:innen</td></tr><tr><th scope="row"><a href="#lechat">Le Chat von Mistral (jetzt Vibe)</a></th><td data-l="Daten in der EU" class="mid">Anbieter in Frankreich; Datenstandort nicht geprüft</td><td data-l="Lernt aus Ihren Eingaben" class="mid">Einzelkonto: ja, abschaltbar. Enterprise: nein</td><td data-l="Kosten">Pro 14,99 USD; Team 24,99 USD pro Person</td><td data-l="Schule">Keine Vorgabe gefunden</td></tr><tr><th scope="row"><a href="#deepl">DeepL Translator und Write</a></th><td data-l="Daten in der EU" class="yes">Dokumente laut DeepL im EWR</td><td data-l="Lernt aus Ihren Eingaben" class="mid">Gratis: ja. Pro: nein</td><td data-l="Kosten">Individual 7,49 €; Team 24,99 € pro Person (bei Jahreszahlung)</td><td data-l="Schule">Keine Vorgabe gefunden</td></tr><tr><th scope="row"><a href="#lokal">Lokale offene Modelle</a></th><td data-l="Daten in der EU" class="yes">Bleibt im Haus</td><td data-l="Lernt aus Ihren Eingaben" class="yes">Nein</td><td data-l="Kosten">Keine Lizenz, aber Hardware, Strom und Betreuung</td><td data-l="Schule">Keine Vorgabe gefunden</td></tr><tr><th scope="row"><a href="#govgpt">GovGPT (Public AI des Bundes)</a></th><td data-l="Daten in der EU" class="yes">Bundesrechenzentrum in Österreich</td><td data-l="Lernt aus Ihren Eingaben">Keine Angabe</td><td data-l="Kosten">Nur für Bundesbedienstete</td><td data-l="Schule">Nicht geöffnet</td></tr></tbody><!--/vr--></table></div>
     <p class="s m">Preise und Angaben laut Hersteller, nach bestem Wissen und ohne Gewähr. Meine Einschätzung ist Orientierung, keine Rechts- oder IT-Beratung. In US-Dollar, wo der Hersteller keinen Euro-Preis nennt. Stand und Quelle stehen im jeweiligen Steckbrief.</p>
   </div>
 </section>
@@ -52,7 +54,161 @@
   <div class="wrap">
     <p class="kick rv">Steckbriefe</p>
     <h2 class="rv">Was jedes Werkzeug kann, und was Sie wissen sollten</h2>
-    <div class="m-cards" id="m-cards"></div>
+    <div class="m-cards" id="m-cards"><!--vr--><article class="m-card" id="copilot">
+        <h3>Microsoft 365 Copilot und Copilot Chat</h3><p class="m-sub">Microsoft, USA · Büro-Assistent</p>
+        <p class="m-gut"><b>Gut für</b> Häuser, die schon mit Microsoft 365 arbeiten: Mails, Protokolle, Dokumente im eigenen Mandanten.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Wenn Ihr Haus Microsoft 365 hat, ist Copilot Chat mit dem Dienstkonto der naheliegende erste Schritt: kein Aufpreis, alles im bestehenden Vertrag. Das volle Copilot erst kaufen, wenn Sie vier Wochen lang bei einer Aufgabe gemessen haben, was es bringt.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-copilotchat">→ Radar 23: Copilot Chat mit Dienstkonto</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Mehrere Modelle zur Auswahl, unter anderem GPT-6.1 Sol von OpenAI und Claude Sonnet 5.5 von Anthropic, eingeführt ab 30.9.2026. Für Copilot Chat in der Bildung nennt Microsoft GPT-5.</dd>
+          <dt>Neu</dt><dd><ul><li><b>30.9.2026</b> GPT-6.1 Sol und Claude Sonnet 5.5 kommen in Microsoft Copilot dazu; Anthropic-Modelle sind in EU-Tenants standardmäßig aus. <a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801" rel="noopener">Microsoft Tech Community, GPT-6.1 Sol und Claude Sonnet 5.5</a></li><li><b>6.10.2026</b> Antworten lassen sich neu erzeugen, auch mit einem anderen Modell. <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" rel="noopener">Microsoft Learn, Copilot Release Notes</a></li><li><b>27.10.2026</b> Ein Lern-Agent kommt in Microsoft 365 Copilot unter Windows, und Admins können eigene MCP-Konnektoren verteilen. <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" rel="noopener">Microsoft Learn, Copilot Release Notes</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Mit Arbeits- oder Schulkonto gelten Microsofts Data Protection Addendum (DPA) und die Product Terms, Microsoft ist Auftragsverarbeiter. Eingaben, Antworten und Daten aus Microsoft Graph werden nicht zum Training verwendet, Copilot unterstützt die EU Data Boundary. Ausgenommen sind Websuchen über Bing und die Anthropic-Modelle, die in EU-Tenants standardmäßig ausgeschaltet sind.</dd>
+          <dt>Konto</dt><dd>Copilot Chat gibt es ohne Aufpreis für Entra-Konten mit passendem Microsoft-365-Abo, in der Bildung für Lehrende, Personal und Lernende ab 13 Jahren. Das private Copilot mit Microsoft-Konto ist ein anderes Produkt.</dd>
+          <dt>Kosten</dt><dd><ul><li>Copilot Chat: 0 € zusätzlich zu einem passenden Microsoft-365-Abo</li><li>Microsoft 365 Copilot Business (Zusatz, bis 300 Personen): 18,20 € pro Person und Monat bei Jahreszahlung, Aktion 15,60 € bis 31.12.2026; 21,84 € bei monatlicher Zahlung; netto</li><li>Microsoft 365 Copilot (Enterprise): 26,00 € pro Person und Monat bei Jahreszahlung, 27,30 € bei monatlicher Zahlung; netto</li><li>Microsoft 365 Copilot für Bildungseinrichtungen: 18 USD pro Person und Monat (Stand Oktober 2025, Euro-Preis nicht angegeben)</li></ul></dd>
+          <dt>Schule</dt><dd>Das BMB nennt für Microsoft 365 eine Eigenerklärung vom Mai 2022 und empfiehlt eine datenschutzfreundliche Tenant-Konfiguration; zu Copilot sagt sie nichts. Eine Freigabe von Copilot für Schüler:innen durch BMB oder Bildungsdirektionen wurde nicht gefunden.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://www.microsoft.com/de-at/microsoft-365/copilot/pricing" rel="noopener">Microsoft Österreich, Copilot Business Preise</a> · <a href="https://www.microsoft.com/de-at/microsoft-365/copilot/enterprise" rel="noopener">Microsoft Österreich, Microsoft 365 Copilot Enterprise</a> · <a href="https://www.microsoft.com/de-at/education/products/copilot-in-education" rel="noopener">Microsoft Österreich, Copilot in der Bildung</a> · <a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection" rel="noopener">Microsoft Learn, Enterprise data protection (aktualisiert 29.10.2026)</a> · <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor" rel="noopener">Microsoft Learn, Anthropic als Unterauftragsverarbeiter</a> · <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" rel="noopener">Microsoft Learn, Copilot Release Notes</a> · <a href="https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370" rel="noopener">Microsoft Tech Community, Copilot Chat für Lernende ab 13</a> · <a href="https://www.aguidetocloud.com/blog/microsoft-365-copilot-october-2026-updates/" rel="noopener">A Guide to Cloud, Copilot-Neuerungen Oktober 2026 (Zusammenfassung)</a> · <a href="https://www.bmb.gv.at/Themen/schule/schulrecht/ds.html" rel="noopener">BMB, Datenschutz in Schulen (aus der Faktenbank)</a></p>
+        </details>
+      </article><article class="m-card" id="chatgpt">
+        <h3>ChatGPT</h3><p class="m-sub">OpenAI, USA · Chat-Assistent</p>
+        <p class="m-gut"><b>Gut für</b> Texte entwerfen, Fragen klären, Ideen sammeln. Das Werkzeug, das die meisten schon privat kennen.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Das bekannteste Werkzeug, und darum das häufigste Gratis-Konto im Haus. Gratis heißt: Werbung, Training mit Ihren Eingaben und kein Vertrag für die Organisation. Wenn ChatGPT, dann als Business-Konto mit Hausregel.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-orgkonto">→ Radar 2: Organisationskonto statt Gratis-Konto</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>GPT-6: „Sol“ in den Bezahltarifen, „Luna“ in Free und Go, seit 7. und 8.10.2026</dd>
+          <dt>Neu</dt><dd><ul><li><b>7.10.2026</b> GPT-6 ersetzt das bisherige Modell: „Sol“ in den Bezahltarifen ab 7.10., „Luna“ in Free und Go ab 8.10. <a href="https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163" rel="noopener">OpenAI Community, 7.10.2026</a></li><li><b>21.10.2026</b> Werbung gibt es nur in Free und Go, inzwischen in 89 Ländern; Plus, Pro und Enterprise bleiben werbefrei. <a href="https://www.relevantaudience.com/ai/chatgpt-ads-expands-26-countries-89-total/" rel="noopener">Relevant Audience, 21.10.2026</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Vertragspartner für Personen in der EU ist OpenAI Ireland Ltd. In Free, Go und Plus dürfen Eingaben standardmäßig zum Training verwendet werden, abschaltbar in den Einstellungen oder über temporäre Chats. Business, Enterprise und Edu werden standardmäßig nicht zum Training genutzt, ein Auftragsverarbeitungsvertrag (DPA) ist möglich; Datenhaltung in Europa gibt es nur für Enterprise und Edu, nicht für Business. Euro-Preise zeigt OpenAI erst im Bestellvorgang; die Beträge hier stammen aus einem Preisvergleich.</dd>
+          <dt>Konto</dt><dd>Mindestalter 13 Jahre oder das höhere Einwilligungsalter des Landes, unter 18 nur mit Erlaubnis der Eltern. Gratis- und Einzelkonten sind private Verträge, Business, Enterprise und Edu verwaltet die Organisation.</dd>
+          <dt>Kosten</dt><dd><ul><li>Free: 0 €, mit Werbung</li><li>Go: rund 8 € pro Monat, mit Werbung</li><li>Plus: rund 23 € pro Monat</li><li>Business: rund 21 € pro Person und Monat bei Jahreszahlung, ab 2 Personen</li><li>Enterprise und Edu: auf Anfrage</li></ul></dd>
+          <dt>Schule</dt><dd>Kein BMB-Steckbrief zu ChatGPT gefunden. Die Steckbriefe der Uni Graz (Juli 2025) beschreiben ChatGPT, sind aber ausdrücklich keine Empfehlungsliste.</dd>
+          <dt>Werbung</dt><dd>nur Free/Go</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163" rel="noopener">OpenAI Community, 7.10.2026</a> · <a href="https://chatgpt.com/de-DE/pricing/" rel="noopener">OpenAI, ChatGPT-Preise (de-DE), abgerufen 4.11.2026</a> · <a href="https://openai.com/policies/eu-terms-of-use/" rel="noopener">OpenAI, EU Terms of Use</a> · <a href="https://openai.com/business-data/" rel="noopener">OpenAI, Business data privacy</a> · <a href="https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/" rel="noopener">OpenAI, How your data is used to improve model performance (13.3.2026)</a> · <a href="https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/" rel="noopener">TechRepublic, ChatGPT-Werbung in Europa, 20.8.2026</a></p>
+        </details>
+      </article><article class="m-card" id="gemini">
+        <h3>Google Gemini</h3><p class="m-sub">Google, USA · Chat-Assistent</p>
+        <p class="m-gut"><b>Gut für</b> Häuser mit Google Workspace: Texte, Tabellen, Folien und Recherche direkt in den Google-Programmen.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Stark, wenn Ihr Haus ohnehin mit Google arbeitet. Mit Schul- oder Firmenkonto deutlich datenschutzfreundlicher als jedes private Konto. Bei Vorführungen aufpassen: Das Gratis-Konto nutzt meist ein kleineres Modell als das bezahlte.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-orgkonto">→ Radar 2: Organisationskonto statt Gratis-Konto</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Gemini 4 Argon für Google AI Pro und Ultra, ausgerollt ab 13.10.2026; das Gratis-Konto nutzt ein Flash-Lite-Modell.</dd>
+          <dt>Neu</dt><dd><ul><li><b>13.10.2026</b> Gemini 4 Argon wird weltweit für Google AI Pro und Ultra ausgerollt; über ein Menü lassen sich mehr als 40 Apps verbinden. <a href="https://gemini.google/release-notes/" rel="noopener">Google, Gemini Release Notes</a></li><li><b>30.9.2026</b> „Skills“ kommen in den Gemini-Chat als wiederverwendbare Anleitungen und sollen die Gems ablösen. <a href="https://gemini.google/release-notes/" rel="noopener">Google, Gemini Release Notes</a></li><li><b>10.9.2026</b> Die Gemini-App gibt es nun für Windows 10 und neuer. <a href="https://gemini.google/release-notes/" rel="noopener">Google, Gemini Release Notes</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Im privaten Konto werden Chats bei aktivierter Einstellung „Aktivitäten speichern“ zur Verbesserung der Modelle genutzt und teils von Menschen geprüft, geprüfte Chats bleiben bis zu drei Jahre gespeichert. Mit Schulkonto (Workspace for Education) werden die Daten laut Google nicht zum Training verwendet und nicht von Menschen geprüft. Ob Gemini-Daten in der EU bleiben können, ist nicht bestätigt.</dd>
+          <dt>Konto</dt><dd>Für private Google-Konten gilt in Österreich ein Mindestalter von 14 Jahren. In Workspace for Education ist Gemini für alle Altersgruppen verfügbar, unter 18 mit strengeren Inhaltsregeln; der Admin schaltet es für Gruppen ein oder aus.</dd>
+          <dt>Kosten</dt><dd><ul><li>Gratis: 0 €</li><li>Google AI Plus: 4,99 USD pro Monat (Euro-Preis nicht bestätigt)</li><li>Google AI Pro: 19,99 USD pro Monat (Euro-Preis nicht bestätigt)</li><li>Google AI Ultra: ab 99,99 USD pro Monat (Euro-Preis nicht bestätigt)</li><li>Workspace for Education Fundamentals mit Gemini for Education: 0 € für berechtigte Einrichtungen</li><li>Google AI Pro for Education (Zusatz): 15 USD pro Person und Monat bei Jahresbindung, 24 USD monatlich; in Österreich Preis auf Anfrage</li></ul></dd>
+          <dt>Schule</dt><dd>Das BMB nennt für Google eine Eigenerklärung vom April 2022, Gemini ist darin nicht behandelt. Keine Vorgabe von BMB oder Bildungsdirektionen zu Gemini gefunden.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://gemini.google/subscriptions/" rel="noopener">Google, Gemini-Abos</a> · <a href="https://gemini.google/release-notes/" rel="noopener">Google, Gemini Release Notes</a> · <a href="https://support.google.com/gemini/answer/13594961?hl=de" rel="noopener">Google, Datenschutzhinweise für Gemini-Apps (23.10.2026)</a> · <a href="https://edu.google.at/workspace-for-education/add-ons/gemini-education" rel="noopener">Google for Education Österreich, Gemini for Education</a> · <a href="https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?authuser=0" rel="noopener">Google Workspace Admin, Gemini und Gemini Notebook für Education (22.10.2026)</a> · <a href="https://edu.google.com/intl/ALL_us/workspace-for-education/editions/compare-editions/" rel="noopener">Google for Education, Editionen vergleichen</a> · <a href="https://workspace.google.com/intl/de/pricing.html" rel="noopener">Google Workspace, Preise (de)</a> · <a href="https://heise.de/-10509578" rel="noopener">heise online, NotebookLM für jüngere Nutzer (Altersgrenzen je Land)</a> · <a href="https://www.bmb.gv.at/Themen/schule/schulrecht/ds.html" rel="noopener">BMB, Datenschutz in Schulen (aus der Faktenbank)</a></p>
+        </details>
+      </article><article class="m-card" id="notebooklm">
+        <h3>NotebookLM (jetzt Gemini Notebook)</h3><p class="m-sub">Google, USA · Notizbuch</p>
+        <p class="m-gut"><b>Gut für</b> Lernen und Vorbereiten aus eigenen Unterlagen: Die KI antwortet aus Ihren Quellen und zeigt die Stelle.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Gut für Kursvorbereitung und Lernen, weil jede Antwort auf eine Stelle in Ihren Unterlagen zeigt. Das macht Prüfen leicht. Hineinladen nur, was nach der Datenampel darf.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-pruefroutine">→ Radar 10: Antworten prüfen als Gewohnheit</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Läuft mit Gemini-Modellen; seit 16.7.2026 heißt NotebookLM „Gemini Notebook“ und ist auch in der Gemini-App nutzbar.</dd>
+          <dt>Neu</dt><dd><ul><li><b>16.7.2026</b> NotebookLM wird zu Gemini Notebook; jedes Notizbuch bekommt einen Cloud-Rechner, der Code für Datenanalysen aus den Quellen ausführt, zuerst für Ultra- und Workspace-Kunden. <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" rel="noopener">Google Blog, NotebookLM heißt jetzt Gemini Notebook, 16.7.2026</a></li><li><b>18.9.2026</b> Neue Lernfunktionen: Audioaufnahme am Handy, Sprachgespräche zu den eigenen Quellen (ab 18), Prüfungsvorbereitung und kurze Lernvideos. <a href="https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html" rel="noopener">Google Workspace Updates, Lernfunktionen in Gemini Notebook, 18.9.2026</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Laut Google werden Daten nicht zum Training verwendet, außer man gibt Feedback; dann können Menschen den ganzen Verlauf prüfen. In den Unternehmens-Stufen von Workspace werden Dateien, Chats und Antworten weder von Menschen geprüft noch zum Training genutzt. Für Schulen gelten die Bedingungen von Workspace for Education.</dd>
+          <dt>Konto</dt><dd>Privat ab 13 Jahren, in Österreich wegen des Mindestalters für Google-Konten ab 14. Mit Schulkonto (Workspace for Education) für alle Altersgruppen als Kerndienst, der Admin schaltet es ein oder aus.</dd>
+          <dt>Kosten</dt><dd><ul><li>Gratis (privates Google-Konto): 0 €</li><li>Workspace for Education Fundamentals: 0 € für berechtigte Einrichtungen, mit Nutzungsgrenzen</li></ul></dd>
+          <dt>Schule</dt><dd>Keine Vorgabe von BMB oder Bildungsdirektionen gefunden. Google führt Gemini Notebook in Workspace for Education als Kerndienst für alle Altersgruppen.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" rel="noopener">Google Blog, NotebookLM heißt jetzt Gemini Notebook, 16.7.2026</a> · <a href="https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html" rel="noopener">Google Workspace Updates, Lernfunktionen in Gemini Notebook, 18.9.2026</a> · <a href="https://support.google.com/gemininotebook/answer/16337734" rel="noopener">Google-Hilfe, Gemini Notebook mit Arbeits- oder Schulkonto</a> · <a href="https://edu.google.at/workspace-for-education/add-ons/gemini-education" rel="noopener">Google for Education Österreich, Gemini for Education</a> · <a href="https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?authuser=0" rel="noopener">Google Workspace Admin, Gemini und Gemini Notebook für Education (22.10.2026)</a> · <a href="https://heise.de/-10509578" rel="noopener">heise online, NotebookLM für jüngere Nutzer</a></p>
+        </details>
+      </article><article class="m-card" id="claude">
+        <h3>Claude</h3><p class="m-sub">Anthropic, USA · Chat-Assistent</p>
+        <p class="m-gut"><b>Gut für</b> Lange Dokumente, sorgfältiges Schreiben, Arbeitsanleitungen (Skills) für wiederkehrende Aufgaben.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Gut beim Schreiben und bei langen Dokumenten, und der Ursprung der Skills. Im Privatkonto wird mit Ihren Eingaben trainiert, außer Sie widersprechen, und die Daten gehen in die USA. Im Haus darum nur als Team-Konto mit Vertrag.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-skills">→ Radar 7: Eine Aufgabe als Anleitung (Skill) schreiben</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Claude Opus 5.5 (22.9.2026), Sonnet 5.5 (28.9.2026) und Haiku 5.5 (7.10.2026); als stärkstes Modell nennt die Preisseite „Fable 5.1“.</dd>
+          <dt>Neu</dt><dd><ul><li><b>7.10.2026</b> Claude Haiku 5.5: das schnellste und günstigste Modell, laut Anthropic im Schnitt rund 75 % billiger als der Vorgänger. <a href="https://www.anthropic.com/claude-haiku-5-5" rel="noopener">Anthropic, 7.10.2026</a></li><li><b>22.10.2026</b> Anthropic übergibt den Standard „Agent Skills“ an die Linux Foundation; über 70 Plattformen nutzen ihn. <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" rel="noopener">Anthropic, 22.10.2026</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>In Free, Pro und Max dürfen Inhalte zum Training verwendet werden, außer man widerspricht in den Kontoeinstellungen; Feedback und Sicherheitsprüfungen bleiben ausgenommen. Team, Enterprise und API haben laut Kanzlei-Einschätzung einen Auftragsverarbeitungsvertrag und kein Training. Die direkte Nutzung bedeutet eine Übermittlung in die USA, eine Verarbeitung in der EU gibt es nur über Cloud-Anbieter wie AWS oder Google.</dd>
+          <dt>Konto</dt><dd>Mindestalter 18 Jahre laut Verbraucherbedingungen; das gilt für Free, Pro und Max. Team und Enterprise sind Organisationskonten mit eigenen Geschäftsbedingungen.</dd>
+          <dt>Kosten</dt><dd><ul><li>Free: 0 €</li><li>Pro: 20 USD pro Monat, 17 USD bei Jahreszahlung; zuzüglich Steuer</li><li>Max: ab 100 USD pro Monat</li><li>Team (Standard-Platz): 25 USD pro Person und Monat, 20 USD bei Jahreszahlung; zuzüglich Steuer</li><li>Enterprise: 20 USD pro Platz und Monat plus Nutzung zu API-Preisen, Jahresvertrag ab 20 Plätzen</li><li>Education: Preis auf Anfrage</li></ul></dd>
+          <dt>Schule</dt><dd>Keine Vorgabe von BMB oder Bildungsdirektionen gefunden. Wegen des Mindestalters von 18 Jahren kommen Gratis- und Pro-Konten für Schüler:innen nicht in Frage.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://claude.com/pricing" rel="noopener">Anthropic, Claude-Preise</a> · <a href="https://www.anthropic.com/news" rel="noopener">Anthropic, Newsroom</a> · <a href="https://www.anthropic.com/legal/consumer-terms" rel="noopener">Anthropic, Verbraucher-Nutzungsbedingungen (gültig ab 8.10.2025)</a> · <a href="https://www.heuking.de/en/news-events/newsletter-articles/detail/anthropic-claude-in-the-enterprise-data-protection-and-compliance-requirements-for-the-use-of-generative-ai.html" rel="noopener">Heuking Kühn Lüer Wojtek, Claude im Unternehmen, 5.6.2026 (aus der Faktenbank)</a></p>
+        </details>
+      </article><article class="m-card" id="lechat">
+        <h3>Le Chat von Mistral (jetzt Vibe)</h3><p class="m-sub">Mistral AI, Frankreich · Chat-Assistent</p>
+        <p class="m-gut"><b>Gut für</b> Wer bewusst einen europäischen Anbieter sucht: Chat, Texte, Recherche.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Die europäische Alternative, und sie wird stärker. Aber die Herkunft allein macht noch keinen Datenschutz: Auch hier zählt das Team-Konto mit Vertrag. Ich beobachte, ob Mistral im Büroalltag mit den Großen mithält.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-govgpt">→ Radar 26: Offene Modelle im eigenen Rechenzentrum</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Mistral Large 4 (Vorschau seit 6.10.2026)</dd>
+          <dt>Neu</dt><dd><ul><li><b>6.10.2026</b> Mistral Large 4 als öffentliche Vorschau, trainiert in eigenen Rechenzentren in Europa. <a href="https://mistral.ai/news/mistral-large-4/" rel="noopener">Mistral, 6.10.2026</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Bei Einzelkonten werden Eingaben standardmäßig zum Training verwendet; abschaltbar unter Datenschutz in den Einstellungen. Enterprise-Kunden sind standardmäßig vom Training ausgenommen, bei Team kann der Admin das Training für die ganze Organisation abschalten.</dd>
+          
+          <dt>Kosten</dt><dd><ul><li>Free: 0 €</li><li>Pro: 14,99 USD pro Monat, ohne Steuer (Euro-Betrag im Text nicht angezeigt)</li><li>Student: 5,99 USD pro Monat für bis zu 12 Monate, ohne Steuer</li><li>Team: 24,99 USD pro Person und Monat, ohne Steuer</li><li>Enterprise: Preis auf Anfrage</li></ul></dd>
+          <dt>Schule</dt><dd>Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.</dd>
+          <dt>Werbung</dt><dd>unklar</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://mistral.ai/pricing" rel="noopener">Mistral AI, Preise</a> · <a href="https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training" rel="noopener">Mistral Help Center, Training abschalten (3.9.2026)</a> · <a href="https://heise.de/-11311685" rel="noopener">heise online, Mistrals Chatbot heißt jetzt „Vibe“</a></p>
+        </details>
+      </article><article class="m-card" id="deepl">
+        <h3>DeepL Translator und Write</h3><p class="m-sub">DeepL SE, Deutschland · Übersetzung</p>
+        <p class="m-gut"><b>Gut für</b> Übersetzen und Texte glätten, auch ganze Dokumente.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Für Übersetzungen im Alltag bewährt. Mit Pro-Konto werden Ihre Texte nicht zum Training genutzt; mit dem Gratis-Konto gehören keine internen Texte hinein.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-hausregeln">→ Radar 1: Hausregeln mit Datenampel</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          
+          
+          <dt>Ihre Daten</dt><dd>In der Gratis-Version speichert DeepL Texte und Übersetzungen für begrenzte Zeit und nutzt sie zum Training. In den Pro-Tarifen werden Texte nur so lange gespeichert wie für die Übersetzung nötig und nicht zum Training verwendet; ein Auftragsverarbeitungsvertrag ist vorgesehen. Dokumentübersetzungen laufen laut DeepL auf Infrastruktur im EWR.</dd>
+          
+          <dt>Kosten</dt><dd><ul><li>Free: 0 €</li><li>Individual: 7,49 € pro Monat bei Jahreszahlung, inkl. USt</li><li>Team: 24,99 € pro Person und Monat bei Jahreszahlung, inkl. USt</li><li>Business (mit Write Pro): 49,99 € pro Person und Monat bei Jahreszahlung, inkl. USt</li><li>Write Pro als Zusatz zu Individual oder Team: 6,99 € pro Person und Monat bei Jahreszahlung</li><li>Enterprise: Preis auf Anfrage</li></ul></dd>
+          <dt>Schule</dt><dd>Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.</dd>
+          <dt>Werbung</dt><dd>unklar</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://www.deepl.com/de/pro" rel="noopener">DeepL, Pro-Tarife (de)</a> · <a href="https://www.deepl.com/de/privacy" rel="noopener">DeepL, Datenschutzerklärung (de)</a></p>
+        </details>
+      </article><article class="m-card" id="lokal">
+        <h3>Lokale offene Modelle</h3><p class="m-sub">verschiedene · Offenes Modell</p>
+        <p class="m-gut"><b>Gut für</b> Häuser mit eigener IT, die heikle Texte gar nicht aus dem Haus geben wollen.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Spannend, wenn wirklich nichts das Haus verlassen darf. Aber jemand muss Rechner und Updates betreuen, und kleine Modelle sind schwächer als die großen Dienste. Für die meisten Häuser ist ein Organisationskonto der einfachere Weg.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-govgpt">→ Radar 26: Offene Modelle im eigenen Rechenzentrum</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>In der Ollama-Bibliothek am häufigsten geladen: Llama 3.1 und 3.2 (Meta), DeepSeek-R1, Qwen 2.5, 3 und 3.5 (Alibaba), Gemma 2, 3 und 4 (Google) und Mistral 7B. Gemma 3, Gemma 4 und Qwen 3.5 wurden zuletzt aktualisiert (etwa Mitte Oktober 2026).</dd>
+          <dt>Neu</dt><dd><ul><li><b>Oktober 2026</b> Gemma 4 und Qwen 3.5 stehen in der Ollama-Bibliothek in mehreren Größen bereit (etwa 1 bis 122 Milliarden Parameter); die Seite nennt nur „vor 3 Wochen aktualisiert“. <a href="https://ollama.com/library" rel="noopener">Ollama, Modellbibliothek (nach Beliebtheit), abgerufen 4.11.2026</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Die Modelle laufen auf dem eigenen Rechner oder Server; Eingaben verlassen das Gerät nicht, solange keine Cloud-Funktion genutzt wird. Einen Auftragsverarbeitungsvertrag braucht es dafür nicht, die Verantwortung für Sicherheit und Updates liegt beim eigenen Haus.</dd>
+          <dt>Konto</dt><dd>Kein Konto beim Modellanbieter nötig. Die Lizenzbedingungen der einzelnen Modellfamilien unterscheiden sich.</dd>
+          <dt>Kosten</dt><dd><ul><li>Software und Modelle: 0 € Lizenzkosten; Kosten entstehen für Hardware und Strom</li></ul></dd>
+          <dt>Schule</dt><dd>Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://ollama.com/library" rel="noopener">Ollama, Modellbibliothek (nach Beliebtheit), abgerufen 4.11.2026</a></p>
+        </details>
+      </article><article class="m-card" id="govgpt">
+        <h3>GovGPT (Public AI des Bundes)</h3><p class="m-sub">Republik Österreich, Bundeskanzleramt, Österreich · Verwaltung</p>
+        <p class="m-gut"><b>Gut für</b> Bundesbedienstete. Zeigt, wie Verwaltung KI im eigenen Rechenzentrum betreiben kann.</p>
+        <div class="m-ein"><b>Meine Einschätzung</b>Ein gutes Vorbild: offene Modelle im eigenen Rechenzentrum. Für Länder und Gemeinden gibt es aber noch keinen Zeitplan.</div>
+        <p class="m-rp"><a class="m-r" href="wissen.html#radar-govgpt">→ Radar 26: Offene Modelle im eigenen Rechenzentrum</a></p>
+        <details class="m-more"><summary>Alle Angaben: Modell, Neues, Daten, Konto, Kosten</summary>
+        <dl>
+          <dt>Modell</dt><dd>Offene Modelle im Bundesrechenzentrum; seit 20.7.2026 in Betrieb.</dd>
+          <dt>Neu</dt><dd><ul><li><b>26.9.2026</b> KI kommt in den elektronischen Akt (ELAK) des Bundes, Ausrollung bis Ende 2026, unter anderem für Anfragen nach dem Informationsfreiheitsgesetz. <a href="https://www.ots.at/presseaussendung/OTS_20260926_OTS0010/proell-ki-zieht-in-den-elektronischen-akt-ein" rel="noopener">OTS Bundeskanzleramt, KI im elektronischen Akt, 26.9.2026 (aus der Faktenbank)</a></li></ul></dd>
+          <dt>Ihre Daten</dt><dd>Die Modelle laufen im Bundesrechenzentrum in Österreich.</dd>
+          <dt>Konto</dt><dd>Nur für Bundesbedienstete, rund 20.000 haben Zugang. Für Länder und Gemeinden laufen laut Bund Gespräche, ohne Zeitplan.</dd>
+          
+          <dt>Schule</dt><dd>Keine Vorgabe gefunden; GovGPT ist nicht für Schulen geöffnet.</dd>
+          <dt>Werbung</dt><dd>nein</dd>
+        </dl>
+        <p class="m-src">Nachgelesen am 4.11.2026: <a href="https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/07/proell-public-ai-launcht-govgpt-fuer-die-bundesverwaltung.html" rel="noopener">Bundeskanzleramt, GovGPT für die Bundesverwaltung, 20.7.2026 (aus der Faktenbank)</a> · <a href="https://www.ots.at/presseaussendung/OTS_20260720_OTS0074/proell-public-ai-launcht-govgpt-fuer-die-bundesverwaltung" rel="noopener">OTS Bundeskanzleramt, 20.7.2026 (aus der Faktenbank)</a> · <a href="https://www.ots.at/presseaussendung/OTS_20260926_OTS0010/proell-ki-zieht-in-den-elektronischen-akt-ein" rel="noopener">OTS Bundeskanzleramt, KI im elektronischen Akt, 26.9.2026 (aus der Faktenbank)</a></p>
+        </details>
+      </article><!--/vr--></div>
+    <p class="s m" id="m-einzeln">Jeder Steckbrief auch auf einer eigenen Seite: <a href="modelle-copilot.html">Microsoft 365 Copilot und Copilot Chat</a> · <a href="modelle-chatgpt.html">ChatGPT</a> · <a href="modelle-gemini.html">Google Gemini</a> · <a href="modelle-notebooklm.html">NotebookLM (jetzt Gemini Notebook)</a> · <a href="modelle-claude.html">Claude</a> · <a href="modelle-lechat.html">Le Chat von Mistral (jetzt Vibe)</a> · <a href="modelle-deepl.html">DeepL Translator und Write</a> · <a href="modelle-lokal.html">Lokale offene Modelle</a> · <a href="modelle-govgpt.html">GovGPT (Public AI des Bundes)</a></p>
   </div>
 </section>
 
@@ -65,7 +221,11 @@
 </section>
 
 </main>
-<footer id="site-foot"></footer>
+<footer id="site-foot" class="site-foot"><!--vr--><div class="wrap">
+    <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
+    <div><ul><li><a href="./angebot.html">Angebot</a></li><li><a href="./methode.html">So arbeite ich</a></li><li><a href="./termine.html">Termine</a></li><li><a href="./wissen.html">Wissen</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Arbeitshilfen</a></li><li><a href="./impulse/">Impulse</a></li><li><a href="./ueber-mich.html">Über mich</a></li></ul></div>
+    <div><ul><li><a href="./kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="./impressum.html">Impressum</a></li><li><a href="./datenschutz.html">Datenschutz</a></li><li><a href="./agb.html">AGB</a></li></ul><p class="xs" style="margin-top:14px;color:var(--ink)">✓ Keine Cookies, kein Tracking.<br><a href="./datenschutz.html#zaehler">Nur ein anonymer Seitenzähler.</a></p></div>
+  </div><!--/vr--></footer>
 <script src="assets/site.js?v=20261105k" data-root="./"></script>
 <script src="assets/modelle.js?v=20261104z"></script>
 </body>

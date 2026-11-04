@@ -22,18 +22,20 @@
 </head>
 <body data-page="wissen">
 <a class="skip" href="#inhalt">Zum Inhalt</a>
-<header id="site-head"></header>
+<header id="site-head" class="site-head"><!--vr--><div class="wrap"><a class="brand" href="./" aria-label="Armin Fradler – Startseite"><img src="./assets/logo/logo.svg" alt="Armin Fradler" width="238" height="40"></a>
+  <button class="burger" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav" aria-label="Hauptmenü"><a href="./angebot.html" class="">Angebot</a><a href="./methode.html" class="">So arbeite ich</a><a href="./termine.html" class="">Termine</a><a href="./wissen.html" class="on">Wissen</a><a href="./impulse/" class="">Impulse</a><a href="./ueber-mich.html" class="">Über mich</a><a class="cta" href="./kontakt.html">Anfragen</a></nav></div><!--/vr--></header>
 <main id="inhalt">
 
 <nav class="w-bereich" aria-label="Bereich Wissen"><div class="wrap"><span class="hand">Wissen:</span><a href="wissen.html">Überblick</a><a href="nachrichten.html" aria-current="page">KI-Nachrichten</a><a href="modelle.html">Modelle und Werkzeuge</a></div></nav>
 <section class="w-hero n-hero">
   <div class="wrap">
     <div>
-      <p class="kick">Wissen · KI-Nachrichten · <span data-stand></span></p>
+      <p class="kick">Wissen · KI-Nachrichten · <span data-stand>Stand 4. November 2026</span></p>
       <h1>KI-Nachrichten, <span class="nw"><span class="mark">eingeordnet</span>.</span></h1>
       <p class="hand w-sub">Was passiert ist. Und was davon zählt.</p>
       <p class="lead">Jede Woche liest eine KI-Routine Behörden, Hersteller, Studien und Fachblogs. Hier steht, was davon am Original bestätigt ist, mit einem Satz, was es für Ihr Haus heißt. Wie wichtig eine Meldung ist, entscheide ich.</p>
-      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Mein Blickwinkel:</span><div id="bw"></div></div>
+      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Mein Blickwinkel:</span><div id="bw"><!--vr--><button type="button" data-b="" aria-pressed="true">Alle</button><button type="button" data-b="bildung" title="Erwachsenenbildung und Weiterbildung" aria-pressed="false">Bildungshaus</button><button type="button" data-b="schule" title="Direktion, Kollegium, Schulteam" aria-pressed="false">Schule</button><button type="button" data-b="gemeinde" title="Amt, Verwaltung, Bürgerservice" aria-pressed="false">Gemeinde</button><button type="button" data-b="betrieb" title="KMU und Mittelstand" aria-pressed="false">Betrieb</button><!--/vr--></div></div>
     </div>
     <ul class="n-legend" aria-label="So lesen Sie die Kennzeichen">
       <li><i class="g-wichtig"></i><b>Wichtig</b> ändert jetzt etwas für Sie.</li>
@@ -47,11 +49,268 @@
   <div class="wrap">
     <div class="w-filter n-filter">
       <label class="w-search"><span class="sr">Nachrichten durchsuchen</span><input id="q" type="search" placeholder="Suchen, etwa Copilot, Schule, Datenschutz" autocomplete="off"></label>
-      <div class="w-chips" id="chips-art" role="group" aria-label="Art"></div>
+      <div class="w-chips" id="chips-art" role="group" aria-label="Art"><!--vr--><button type="button" aria-pressed="true" data-v="">Alles <small>32</small></button><button type="button" aria-pressed="false" data-v="modell">Modelle <small>3</small></button><button type="button" aria-pressed="false" data-v="werkzeug">Werkzeuge <small>11</small></button><button type="button" aria-pressed="false" data-v="recht">Recht und Regeln <small>4</small></button><button type="button" aria-pressed="false" data-v="studie">Studien <small>7</small></button><button type="button" aria-pressed="false" data-v="sicherheit">Sicherheit <small>4</small></button><button type="button" aria-pressed="false" data-v="markt">Markt <small>3</small></button><!--/vr--></div>
       <label class="n-laut"><input type="checkbox" id="laut"> Auch laute Schlagzeilen zeigen</label>
     </div>
-    <p class="s m" id="count" aria-live="polite"></p>
-    <div id="n-list"></div>
+    <p class="s m" id="count" aria-live="polite">32 Meldungen</p>
+    <div id="n-list"><!--vr--><div class="n-week" role="group" aria-label="Seit 2. November 2026"><h2>Seit 2. November 2026 <small>KW 45 · laufende Woche, nachgeschaut am 4.11.</small></h2><article class="n-item g-gut" id="nd4c98b1">
+      <p class="n-date"><time datetime="2026-11-04">4.11.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Studien</span><span>Deutschland</span></p>
+        <h3><a href="#nd4c98b1">Bitkom: Jede:r Zehnte nutzt KI schon im Kontakt mit Behörden</a></h3>
+        <p>11 % der Deutschen haben KI im Behördenkontakt genutzt, meist um sich über Rechte zu informieren oder Briefe erklären zu lassen. 51 % würden lieber mit einem KI-Assistenten sprechen als warten.</p>
+        <div class="n-ein"><b>Was das heißt</b>Auch in Österreich kommen Bürger:innen mit KI-Texten ins Amt; Gemeinden sollten damit rechnen und klare Schreiben fördern.</div>
+        <p class="n-src"><a href="https://www.bitkom.org/Presse/Presseinformation/KI-Hilfe-Amtsdeutsch-und-Behoerdenschreiben" rel="noopener">Bitkom, 4.11.2026</a> · <a class="n-r" href="wissen.html#radar-buergerbot">→ Radar 24: Chatbot auf der Gemeindeseite</a></p>
+      </div></article><article class="n-item g-gut" id="n0e82c26">
+      <p class="n-date"><time datetime="2026-11-03">3.11.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n0e82c26">Google Meet zeigt vor dem Beitritt einen Hinweis zu KI-Notizen</a></h3>
+        <p>Admins können einen eigenen Text anzeigen lassen, bevor jemand einem Meet-Call beitritt, etwa wenn aufgezeichnet, transkribiert oder von Gemini mitgeschrieben wird. Die Funktion ist anfangs aus und gilt auch für Education-Editionen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Eine einfache Möglichkeit, Teilnehmende vor einer Besprechung oder einem Online-Kurs offen über KI-Mitschriften zu informieren.</div>
+        <p class="n-src"><a href="https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html" rel="noopener">Google Workspace Updates, 3.11.2026</a> · <a class="n-r" href="wissen.html#radar-hausregeln">→ Radar 1: Hausregeln mit Datenampel</a></p>
+      </div></article></div><div class="n-week" role="group" aria-label="26. Oktober bis 1. November 2026"><h2>26. Oktober bis 1. November 2026 <small>KW 44 · nachgeschaut am 2.11.</small></h2><article class="n-item g-wichtig" id="nf5bc8e2">
+      <p class="n-date"><time datetime="2026-10-30">30.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Werkzeuge</span><span>USA</span><span class="n-v">erst als Vorschau</span></p>
+        <h3><a href="#nf5bc8e2">Microsoft Copilot bekommt Routinen, Projekte und einen Autopilot</a></h3>
+        <p>Microsoft listet für Oktober und November neue Copilot-Funktionen: zeitgesteuerte Routinen, gemeinsame Projekte, Skills im Copilot Chat und einen persönlichen Cloud-Agenten namens Autopilot. Vieles startet zuerst im Frühzugangs-Programm Frontier, weltweit folgt es ab November oder Jänner.</p>
+        <div class="n-ein"><b>Was das heißt</b>Das Werkzeug, das viele Häuser schon haben, übernimmt wiederkehrende Aufgaben; prüfen Sie vor einer Schulung, was in Ihrem Mandanten wirklich freigeschaltet ist.</div>
+        <p class="n-src"><a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528" rel="noopener">Microsoft Tech Community, Daniel Vargas, 30.10.2026</a> · <a class="n-r" href="wissen.html#radar-routinen">→ Radar 25: Routinen in Copilot Notebooks</a></p>
+      </div></article><article class="n-item g-gut" id="n5825657">
+      <p class="n-date"><time datetime="2026-10-30">30.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n5825657">Gemini überarbeitet ganze Präsentationen in Google Slides</a></h3>
+        <p>Mit einer einzigen Anweisung ändert Gemini mehrere Folien oder eine ganze Präsentation, etwa das Design. Bis mindestens 1. Dezember 2026 gelten erhöhte Testlimits, danach Limits pro Person.</p>
+        <div class="n-ein"><b>Was das heißt</b>Praktisch für Kursunterlagen im einheitlichen Design; die Limits nach Dezember sollten Sie vor einer Umstellung kennen.</div>
+        <p class="n-src"><a href="https://workspaceupdates.googleblog.com/2026/10/weekly-recap-10-30-2026.html" rel="noopener">Google Workspace Updates, Wochenrückblick 30.10.2026</a></p>
+      </div></article><article class="n-item g-gut" id="n1535ccd">
+      <p class="n-date"><time datetime="2026-10-30">30.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n1535ccd">Google Sheets zeigt bei KI-Einträgen die Webquelle je Zelle</a></h3>
+        <p>Wenn Gemini in Google Sheets Zellen mit Inhalten aus dem Web füllt, nennt es jetzt die genutzte Quelle direkt in der jeweiligen Zelle. Die Funktion verarbeitet auch größere Anfragen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Gut für Recherche-Tabellen in Verwaltung und Kursvorbereitung: Sie können jede Angabe an der Quelle nachprüfen und sollten das auch tun.</div>
+        <p class="n-src"><a href="https://workspaceupdates.googleblog.com/2026/10/weekly-recap-10-30-2026.html" rel="noopener">Google Workspace Updates, Wochenrückblick 30.10.2026</a> · <a class="n-r" href="wissen.html#radar-pruefroutine">→ Radar 10: Antworten prüfen als Gewohnheit</a></p>
+      </div></article><article class="n-item g-wichtig" id="ne97f4f3">
+      <p class="n-date"><time datetime="2026-10-30">30.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Werkzeuge</span><span>Österreich</span><span class="n-v">angekündigt</span></p>
+        <h3><a href="#ne97f4f3">Burgenland plant KI-Chatbot zu Landesförderungen ab Frühjahr 2027</a></h3>
+        <p>Das Land bietet allen 171 Gemeinden ein Digitalpaket, unter anderem kostenlose Websites über burgenland.at. Ab Frühling 2027 soll ein KI-Chatbot rund um die Uhr Fragen zu Landesförderungen beantworten.</p>
+        <div class="n-ein"><b>Was das heißt</b>Burgenländische Gemeinden sparen Website-Kosten und können Bürger:innen bald auf einen Förder-Chatbot verweisen.</div>
+        <p class="n-src"><a href="https://www.burgenland.at/news-detail/digitales-gemeindepaket-des-landes-unterstuetzt-gemeinden" rel="noopener">Land Burgenland, 30.10.2026</a> · <a class="n-r" href="wissen.html#radar-buergerbot">→ Radar 24: Chatbot auf der Gemeindeseite</a></p>
+      </div></article><article class="n-item g-gut" id="n28eca51">
+      <p class="n-date"><time datetime="2026-10-29">29.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n28eca51">Copilot Chat zeigt, welche Erinnerungen eine Antwort geprägt haben</a></h3>
+        <p>Microsoft 365 Copilot Chat zeigt seit Ende Oktober, welche gespeicherten Erinnerungen, Anweisungen und früheren Chats eine Antwort beeinflusst haben. Nutzer:innen können Erinnerungen dort prüfen und löschen; Admins können die Personalisierung abschalten.</p>
+        <div class="n-ein"><b>Was das heißt</b>Gut für Datenschutz-Schulungen: Mitarbeitende sehen, was Copilot über sie behalten hat, und können es löschen.</div>
+        <p class="n-src"><a href="https://mc.merill.net/message/MC1530959" rel="noopener">Microsoft 365 Nachrichtencenter MC1530959, 29.10.2026 (über mc.merill.net)</a> · <a class="n-r" href="wissen.html#radar-copilotchat">→ Radar 23: Copilot Chat mit Dienstkonto</a></p>
+      </div></article><article class="n-item g-gut" id="nd084a43">
+      <p class="n-date"><time datetime="2026-10-29">29.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#nd084a43">Gemini-App erstellt und bearbeitet Dateien direkt im Chat</a></h3>
+        <p>In der Gemini-App lassen sich Präsentationen, Tabellen, Dokumente und PDFs direkt im Chat erstellen, ansehen und bearbeiten. Die Funktion gilt für alle Workspace-Kunden und für private Google-Konten.</p>
+        <div class="n-ein"><b>Was das heißt</b>Erste Entwürfe für Handouts oder Tabellen entstehen schneller; Inhalt und Zahlen prüfen bleibt Ihre Aufgabe.</div>
+        <p class="n-src"><a href="https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html" rel="noopener">Google Workspace Updates, 29.10.2026</a> · <a class="n-r" href="wissen.html#radar-workslop">→ Radar 4: Wer prüft, was die KI schreibt?</a></p>
+      </div></article><article class="n-item g-wichtig" id="n6d80a7b">
+      <p class="n-date"><time datetime="2026-10-29">29.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Studien</span><span>International</span></p>
+        <h3><a href="#n6d80a7b">Reuters Institute: Hälfte nutzt KI wöchentlich, Vertrauen in KI-Nachrichten bleibt gering</a></h3>
+        <p>In sechs Ländern nutzen 51 % der Menschen wöchentlich generative KI (2025: 34 %), aber nur 12 % fühlen sich mit vollständig KI-erstellten Nachrichten wohl, gegenüber 67 % bei Nachrichten von Journalist:innen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Die Nutzung wächst deutlich schneller als das Vertrauen, menschliche Verantwortung bleibt für Glaubwürdigkeit entscheidend.</div>
+        <p class="n-src"><a href="https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure" rel="noopener">Reuters Institute: Generative AI and News Report 2026</a> · <a class="n-r" href="wissen.html#radar-pruefroutine">→ Radar 10: Antworten prüfen als Gewohnheit</a></p>
+      </div></article><article class="n-item g-gut" id="n3a67096">
+      <p class="n-date"><time datetime="2026-10-28">28.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n3a67096">Gemini-App bekommt interaktive Lernwelten für Schüler:innen</a></h3>
+        <p>Google bietet in der Gemini-App „immersive explorations“, interaktive Themen von Zellen bis Weltall. Für Education-Konten führt der Zugang über den Student Hub, Admins können die Funktion nicht eigens steuern.</p>
+        <div class="n-ein"><b>Was das heißt</b>Deutsch fehlt noch, Inhalte kommen vorerst auf Englisch; Schulen sollten wissen, dass sie die Funktion nicht einzeln abschalten können.</div>
+        <p class="n-src"><a href="https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html" rel="noopener">Google Workspace Updates, 28.10.2026</a> · <a class="n-r" href="wissen.html#radar-lernmodi">→ Radar 13: Lernmodi der großen Anbieter</a></p>
+      </div></article><article class="n-item g-gut" id="ned206f9">
+      <p class="n-date"><time datetime="2026-10-28">28.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Sicherheit</span><span>International</span></p>
+        <h3><a href="#ned206f9">Geteilter ChatGPT-Link konnte fremde Chats auslesen</a></h3>
+        <p>Forschende der Firma Parameter zeigten, dass ein präparierter ChatGPT-Teilen-Link Code im Konto des Opfers ausführen und private Chats lesen konnte. OpenAI schloss die Lücke acht Tage nach der Meldung; Angriffe sind nicht bekannt.</p>
+        <div class="n-ein"><b>Was das heißt</b>Sie müssen nichts tun, aber auch seriöse Anbieter haben Lücken: Was im Konto liegt, sollte keine Personaldaten enthalten.</div>
+        <p class="n-src"><a href="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html" rel="noopener">The Hacker News, Swati Khandelwal, 31.10.2026</a></p>
+      </div></article><article class="n-item g-gut" id="n04524f7">
+      <p class="n-date"><time datetime="2026-10-27">27.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Markt</span><span>USA</span></p>
+        <h3><a href="#n04524f7">US-Behörden bekommen Claude mit 40 % Rabatt</a></h3>
+        <p>Die US-Beschaffungsbehörde GSA hat mit Anthropic nutzungsbasierte Preise mit 40 % Nachlass ohne Mindestabnahme vereinbart, offen für Bund, Bundesstaaten, Kommunen und Stammesverwaltungen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Rahmenverträge mit Rabatt senken für Verwaltungen die Einstiegshürde, über Nutzen und Datenschutz entscheidet aber weiterhin jede Behörde selbst.</div>
+        <p class="n-src"><a href="https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-anthropic-reach-onegov-agreement-on-discounted-consumptionbased-pricing-10272026" rel="noopener">GSA: GSA, Anthropic Reach OneGov Agreement on Discounted, Consumption-Based Pricing for Claude</a></p>
+      </div></article></div><div class="n-week" role="group" aria-label="19. bis 25. Oktober 2026"><h2>19. bis 25. Oktober 2026 <small>KW 43 · nachgeschaut am 26.10.</small></h2><article class="n-item g-gut" id="n4f8ae26">
+      <p class="n-date"><time datetime="2026-10-22">22.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n4f8ae26">Anthropic übergibt „Skills“ als offenen Standard an Linux Foundation</a></h3>
+        <p>Anthropic gibt den Standard Agent Skills an die Agentic AI Foundation der Linux Foundation ab. Über 70 Plattformen nutzen ihn bereits, darunter ChatGPT und GitHub Copilot.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ein Skill, also eine Arbeitsanleitung als Datei, den Ihr Team schreibt, bleibt nicht an einen Hersteller gebunden.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" rel="noopener">Anthropic, 22.10.2026</a> · <a class="n-r" href="wissen.html#radar-skills">→ Radar 7: Eine Aufgabe als Anleitung (Skill) schreiben</a></p>
+      </div></article><article class="n-item g-gut" id="nd052463">
+      <p class="n-date"><time datetime="2026-10-22">22.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Sicherheit</span><span>Österreich</span></p>
+        <h3><a href="#nd052463">PHP-Lücke: in Österreich keine bestätigten Angriffe</a></h3>
+        <p>Das Innenministerium meldete am 22.10. keine erfolgreichen Angriffe in Österreich, rechnete aber mit Versuchen. Viele Betreiber nahmen ihre Seiten bis zum Update vom Netz. CERT.at hat seither nichts Neues dazu veröffentlicht.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ruhig bleiben, aber einmal nachfragen: Wer hat bei uns das Update eingespielt, und wann?</div>
+        <p class="n-src"><a href="https://www.vienna.at/php-sicherheitsluecke-oesterreich-warnt-vor-angriffen/10573724" rel="noopener">vienna.at/APA, 22.10.2026</a> · <a class="n-r" href="wissen.html#radar-dreifragen">→ Radar 16: Drei Fragen jeder Leitung</a></p>
+      </div></article><article class="n-item g-gut" id="n9502124">
+      <p class="n-date"><time datetime="2026-10-21">21.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Recht und Regeln</span><span>EU</span><span class="n-v">angekündigt</span></p>
+        <h3><a href="#n9502124">EU-Staaten einigen sich auf Position zur DSGVO-Lockerung</a></h3>
+        <p>Die EU-Botschafter legten das Verhandlungsmandat zum Digital Omnibus fest: Datenpannen nur bei hohem Risiko melden, dann binnen 96 Stunden; KI-Training kann sich auf berechtigtes Interesse stützen, mit Prüfung im Einzelfall. Laut Berichten stimmten Österreich und Deutschland dagegen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Bis zum Inkrafttreten gilt die DSGVO unverändert; das Parlament legt seine Position voraussichtlich erst im Februar 2027 fest.</div>
+        <p class="n-src"><a href="https://www.osborneclarke.com/de/insights/digital-omnibus-rat-legt-verhandlungsmandat-fest" rel="noopener">Osborne Clarke, 27.10.2026</a> · <a href="https://www.wko.at/information-consulting/werbung-marktkommunikation/aig-newsletter-26-october-2026" rel="noopener">WKO, AIG Newsletter 26.10.2026</a></p>
+      </div></article><article class="n-item g-wichtig" id="ncd498ac">
+      <p class="n-date"><time datetime="2026-10-21">21.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Sicherheit</span><span>Österreich</span></p>
+        <h3><a href="#ncd498ac">Kritische PHP-Lücke: Update am selben Tag verfügbar</a></h3>
+        <p>CERT.at warnte am 21.10. vor zwei kritischen Lücken in PHP, über die Fremde ohne Anmeldung Code ausführen können. Updates waren am selben Tag verfügbar. Bis 22.10. gab es keine Hinweise auf übernommene Seiten.</p>
+        <div class="n-ein"><b>Was das heißt</b>Läuft Ihre Website mit PHP, etwa mit WordPress? Dann den Anbieter fragen, ob das Update drin ist.</div>
+        <p class="n-src"><a href="https://www.cert.at/de/warnungen/2026/10/kritische-sicherheitslucken-in-php-updates-verfugbar" rel="noopener">CERT.at, 21.10.2026</a> · <a href="https://socradar.io/blog/php2shell-cve-2026-109618-cve-2026-109619/" rel="noopener">SOCRadar, 23.10.2026</a> · <a class="n-r" href="wissen.html#radar-schlank">→ Radar 20: Schlanke Website statt Plugin-Gasthaus</a></p>
+      </div></article><article class="n-item g-gut" id="n31f46f8">
+      <p class="n-date"><time datetime="2026-10-20">20.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Markt</span><span>EU</span><span class="n-v">angekündigt</span></p>
+        <h3><a href="#n31f46f8">Microsoft verspricht mehr Kontrolle über Zugriffe in der EU</a></h3>
+        <p>Mit „Data Guardian“ soll ein EU-Partner Fernzugriffe von Microsoft-Technikern auf Systeme von EU- und EFTA-Kunden überwachen, dazu kommen manipulationssichere Protokolle. Einen Termin nennt Microsoft nicht.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ein Argument mehr im Gespräch mit Ihrer IT, aber noch keine Zusage mit Datum.</div>
+        <p class="n-src"><a href="https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/" rel="noopener">Microsoft, Douglas Phillips, 20.10.2026</a></p>
+      </div></article><article class="n-item g-wichtig" id="n5f19f09">
+      <p class="n-date"><time datetime="2026-10-20">20.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Recht und Regeln</span><span>Österreich</span></p>
+        <h3><a href="#n5f19f09">AK Wien: Betriebsrat bei KI-Einführung früh einbinden</a></h3>
+        <p>Laut AK Wien brauchen KI-Systeme, die Beschäftigte kontrollieren oder beurteilen, oft die Zustimmung des Betriebsrats (§ 96a ArbVG). Schon jetzt gelten die KI-Kompetenzpflicht und das Verbot von Emotionserkennung am Arbeitsplatz.</p>
+        <div class="n-ein"><b>Was das heißt</b>Wer KI im Betrieb einführt, spricht vorher mit dem Betriebsrat, auch wenn die Hochrisiko-Regeln erst ab Dezember 2027 gelten.</div>
+        <p class="n-src"><a href="https://wien.arbeiterkammer.at/interessenvertretung/arbeitdigital/aktuelle_themen/KI_im_Betrieb.html" rel="noopener">AK Wien, 20.10.2026</a> · <a class="n-r" href="wissen.html#radar-betriebsrat">→ Radar 6: Betriebsrat früh an den Tisch</a></p>
+      </div></article></div><div class="n-week" role="group" aria-label="12. bis 18. Oktober 2026"><h2>12. bis 18. Oktober 2026 <small>KW 42 · nachgeschaut am 19.10.</small></h2><article class="n-item g-wichtig" id="n9af4e88">
+      <p class="n-date"><time datetime="2026-10-16">16.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Recht und Regeln</span><span>Österreich</span></p>
+        <h3><a href="#n9af4e88">Gesetz für KI-Chatbots und Automatik-Bescheide ist in Kraft</a></h3>
+        <p>Die AVG- und VStG-Novelle wurde als BGBl. I Nr. 86/2026 am 16. Oktober kundgemacht und gilt seit 17. Oktober. Behörden dürfen Chatbots für Anträge nutzen und in per Verordnung bestimmten Fällen vollautomatisch entscheiden; dagegen genügt eine Vorstellung binnen zwei Wochen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Gemeinden haben jetzt eine Rechtsgrundlage für Chatbots und automatische Gebührenbescheide, aber erst eine Verordnung legt fest, wofür genau.</div>
+        <p class="n-src"><a href="https://www.verwaltungsrichter.at/2026/11/02/avg-und-vstg-novelle-2026-neue-regelungen-fuer-chatbots-und-automatisierte-entscheidungen/" rel="noopener">Verwaltungsrichter:innen-Vereinigung, 2.11.2026</a> · <a class="n-r" href="wissen.html#radar-bescheide">→ Radar 28: Bescheide, die eine Maschine erlässt</a></p>
+      </div></article><article class="n-item g-gut" id="nb79f899">
+      <p class="n-date"><time datetime="2026-10-16">16.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Studien</span><span>USA</span></p>
+        <h3><a href="#nb79f899">Anthropic: Junior-Anteil bei technischen Neueinstellungen sinkt von 27 auf 9 Prozent</a></h3>
+        <p>Anthropic legt eigene Personaldaten offen: Der Anteil von Berufseinsteiger:innen an technischen Neueinstellungen fiel seit Anfang 2025 von 27 % auf 9 %, und Führungskräfte achten bei Bewerbungen mehr auf Selbstständigkeit und Urteilsvermögen als auf Fachwissen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ein einzelnes KI-Unternehmen ist kein Maßstab, die Daten passen aber zu Hinweisen aus US-Lohndaten, dass der Berufseinstieg zuerst betroffen ist.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/research/employment-at-anthropic" rel="noopener">Anthropic: How employment is changing at Anthropic</a></p>
+      </div></article><article class="n-item g-gut" id="n1c66663">
+      <p class="n-date"><time datetime="2026-10-16">16.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Studien</span><span>USA</span></p>
+        <h3><a href="#n1c66663">Erwartungslücke: KI-Fachleute erwarten 75 Prozent, US-Beschäftigte 28 Prozent</a></h3>
+        <p>Eine Anthropic-Umfrage unter 10.980 US-Erwachsenen und 1.334 eigenen Beschäftigten zeigt: Die Belegschaft des KI-Herstellers erwartet, dass KI bis 2030 drei Viertel ihrer Arbeitsstunden übernimmt, die US-Beschäftigten erwarten gut ein Viertel.</p>
+        <div class="n-ein"><b>Was das heißt</b>Erwartungen sind keine Messung, die Lücke erklärt aber, warum Fachdiskussionen und Alltag in Betrieben oft aneinander vorbeigehen.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/research/ai-expectations-gap" rel="noopener">Anthropic: The AI expectations gap</a></p>
+      </div></article><article class="n-item g-wichtig" id="n410324b">
+      <p class="n-date"><time datetime="2026-10-15">15.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n410324b">Copilot schützt Schüler:innen von 13 bis 17 stärker</a></h3>
+        <p>Microsoft aktiviert ab Mitte Oktober weltweit zusätzliche Inhaltsschutz-Regeln in Copilot für Jugendliche von 13 bis 17. Das greift nur, wenn im Schulkonto die Altersgruppe „teen“ richtig eingetragen ist.</p>
+        <div class="n-ein"><b>Was das heißt</b>Schulen mit Microsoft 365 sollten mit ihrer IT prüfen, ob Alter und Mandanten-Typ stimmen, sonst bleibt der Schutz aus.</div>
+        <p class="n-src"><a href="https://mc.merill.net/message/MC1509805" rel="noopener">Microsoft 365 Nachrichtencenter MC1509805, 15.10.2026 (über mc.merill.net)</a></p>
+      </div></article><article class="n-item g-wichtig" id="na53d139">
+      <p class="n-date"><time datetime="2026-10-14">14.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Markt</span><span>USA</span></p>
+        <h3><a href="#na53d139">US-Notenbank: KI bremst in fünf Bezirken die Einstellungen</a></h3>
+        <p>Im Beige Book vom Oktober berichten 5 der 12 Fed-Bezirke, dass einzelne Firmen nach KI-Investitionen Stellen über natürliche Abgänge oder verschobene Einstellungen abbauen. Massenkündigungen werden nicht berichtet, der Arbeitsmarkt gilt insgesamt als wenig verändert.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ein qualitatives, aber amtliches Signal, dass KI derzeit vor allem bei Neueinstellungen wirkt und weniger bei bestehenden Stellen.</div>
+        <p class="n-src"><a href="https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf" rel="noopener">Federal Reserve: Beige Book, Oktober 2026 (PDF)</a></p>
+      </div></article></div><div class="n-week" role="group" aria-label="5. bis 11. Oktober 2026"><h2>5. bis 11. Oktober 2026 <small>KW 41 · nachgeschaut am 12.10.</small></h2><article class="n-item g-gut" id="n1e775f9">
+      <p class="n-date"><time datetime="2026-10-09">9.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Werkzeuge</span><span>International</span></p>
+        <h3><a href="#n1e775f9">Gratis-Gemini wählt das Modell jetzt selbst, meist das kleinste</a></h3>
+        <p>Seit 9. Oktober wählt die Gemini-App in privaten Konten ohne Abo das Modell automatisch, meist Flash-Lite. Pro gibt es nur bei schwierigen Fragen; volle Auswahl haben AI Pro und Ultra.</p>
+        <div class="n-ein"><b>Was das heißt</b>Wer im Kurs mit privaten Gratis-Konten arbeitet, bekommt oft schwächere Antworten als in der Vorführung mit Bezahlkonto.</div>
+        <p class="n-src"><a href="https://support.google.com/gemini/answer/17004136?hl=en" rel="noopener">Google Gemini Hilfe</a> · <a class="n-r" href="wissen.html#radar-orgkonto">→ Radar 2: Organisationskonto statt Gratis-Konto</a></p>
+      </div></article><article class="n-item g-gut" id="n2d42b88">
+      <p class="n-date"><time datetime="2026-10-09">9.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Studien</span><span>Österreich</span></p>
+        <h3><a href="#n2d42b88">McKinsey: Österreichs Firmen messen KI-Nutzen kaum</a></h3>
+        <p>In der Beratungsstudie mit 54 Unternehmen stieg der KI-Reifegrad von 30 auf 36 von 100 Punkten. Rund 70 % können den Erfolg nach der Einführung nicht messen, Talent ist die schwächste Stelle.</p>
+        <div class="n-ein"><b>Was das heißt</b>Eine kleine Stichprobe großer Firmen, aber der Hinweis gilt auch für KMU: Vorher festlegen, woran Sie Nutzen erkennen.</div>
+        <p class="n-src"><a href="https://www.mckinsey.com/de/news/presse/state-of-ai-in-austria-2026" rel="noopener">McKinsey, Pressemitteilung 9.10.2026</a> · <a class="n-r" href="wissen.html#radar-zeitmessen">→ Radar 5: Zeitgewinn messen statt glauben</a></p>
+      </div></article><article class="n-item g-gut" id="n19f8be4">
+      <p class="n-date"><time datetime="2026-10-08">8.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Recht und Regeln</span><span>USA</span><span class="n-v">angekündigt</span></p>
+        <h3><a href="#n19f8be4">Anthropic verschärft Nutzungsregeln ab 12. November</a></h3>
+        <p>Neue Regeln verbieten etwa Fake-Konten und erfundene Nachrichtenseiten. Bei Anwendungen, die Existenz oder Zugang zu wichtigen Leistungen betreffen, muss ein qualifizierter Mensch prüfen und die Person über KI informiert werden.</p>
+        <div class="n-ein"><b>Was das heißt</b>Das stützt Ihre eigene Regel: Wo KI bei Entscheidungen über Menschen mitwirkt, prüft ein Mensch und sagt es offen.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/news/2026-usage-policy-update" rel="noopener">Anthropic, 8.10.2026, aktualisiert 14.10.2026</a> · <a class="n-r" href="wissen.html#radar-workslop">→ Radar 4: Wer prüft, was die KI schreibt?</a></p>
+      </div></article><article class="n-item g-gut" id="n024b019">
+      <p class="n-date"><time datetime="2026-10-08">8.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Sicherheit</span><span>International</span></p>
+        <h3><a href="#n024b019">KI findet Sicherheitslücken, das Beheben dauert Monate</a></h3>
+        <p>Anthropic startet die „Cyber Mission“: Ein kostenloser Scanner prüft wichtige offene Software mit KI, dazu kommt ein Programm mit elf Sicherheitsfirmen für kritische Infrastruktur. Laut Anthropic vergehen zwischen Fund und Behebung oft Monate.</p>
+        <div class="n-ein"><b>Was das heißt</b>Wenn KI Lücken schneller findet, zählt bei Ihnen umso mehr, dass Website, Server und Programme Updates rasch bekommen; fragen Sie Ihren IT-Dienstleister danach.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/news/anthropic-cyber-mission" rel="noopener">Anthropic, 8.10.2026</a> · <a class="n-r" href="wissen.html#radar-grundschutz">→ Radar 19: Grundschutz vor jedem KI-Projekt</a></p>
+      </div></article><article class="n-item g-wichtig" id="n9ec931f">
+      <p class="n-date"><time datetime="2026-10-07">7.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Modelle</span><span>USA</span></p>
+        <h3><a href="#n9ec931f">OpenAI stellt ChatGPT für alle auf GPT-6 um</a></h3>
+        <p>Seit 7. Oktober läuft GPT-6 Sol in den Bezahltarifen von ChatGPT, seit 8. Oktober GPT-6 Luna in Free und Go. Laut Systemkarte ersetzen die Modelle GPT-5.6, mit besserem Schutz gegen Tricks, aber etwas schwächeren Werten in Tests für Nutzer:innen unter 18.</p>
+        <div class="n-ein"><b>Was das heißt</b>Anleitungen, Übungsbeispiele und Erfahrungswerte aus Kursen sollten Sie neu prüfen, weil sich Antworten und Stil im Gratis-Konto wie im Bezahlkonto verändert haben.</div>
+        <p class="n-src"><a href="https://deploymentsafety.openai.com/gpt-6-october" rel="noopener">OpenAI Deployment Safety Hub, Systemkarte 7.10.2026</a> · <a href="https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163" rel="noopener">OpenAI Developer Community, 7.10.2026</a></p>
+      </div></article><article class="n-item g-gut" id="nb6a9ef7">
+      <p class="n-date"><time datetime="2026-10-07">7.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Modelle</span><span>USA</span></p>
+        <h3><a href="#nb6a9ef7">Anthropic bringt Claude Haiku 5.5: kleines Modell, viel billiger</a></h3>
+        <p>Claude Haiku 5.5 ist das schnellste und günstigste Claude-Modell. Laut Anthropic kostet es im Schnitt rund 75 % weniger als Haiku 4.5, ab 0,10 Dollar je Million Eingabe-Token.</p>
+        <div class="n-ein"><b>Was das heißt</b>Für Betriebe, die Zusammenfassungen oder Sortierarbeit über eine Schnittstelle automatisieren, sinken die Kosten deutlich; im normalen Chat merken Sie davon kaum etwas.</div>
+        <p class="n-src"><a href="https://www.anthropic.com/claude-haiku-5-5" rel="noopener">Anthropic, 7.10.2026</a></p>
+      </div></article><article class="n-item g-wichtig" id="n8193b25">
+      <p class="n-date"><time datetime="2026-10-07">7.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Studien</span><span>Österreich</span></p>
+        <h3><a href="#n8193b25">Vier von zehn Menschen in Österreich nutzen generative KI</a></h3>
+        <p>Laut Statistik Austria im Auftrag des OeAD nutzten 2025 39 % generative KI, EU-Schnitt 33 %. 86 % der Schüler:innen und Studierenden nutzen KI-Werkzeuge, 40 % der Bevölkerung wollen mehr über KI lernen.</p>
+        <div class="n-ein"><b>Was das heißt</b>Der Lernbedarf ist da, besonders bei Älteren und Menschen mit Pflichtschulabschluss, deren Wissen sogar sank.</div>
+        <p class="n-src"><a href="https://www.vienna.at/vier-von-zehn-menschen-in-oesterreich-nutzen-ki/10524617" rel="noopener">APA über vienna.at, 7.10.2026</a></p>
+      </div></article><article class="n-item g-wichtig" id="nf6aaadb">
+      <p class="n-date"><time datetime="2026-10-07">7.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-wichtig"></i>Wichtig</span><span>Studien</span><span>Großbritannien</span></p>
+        <h3><a href="#nf6aaadb">Englische Studie: KI-Assistent Aila spart Lehrkräften knapp eine Stunde Planung pro Woche</a></h3>
+        <p>Eine randomisierte Studie der Education Endowment Foundation mit Volksschullehrkräften (3. bis 6. Schulstufe) zeigt: Mit dem staatlichen Planungsassistenten Aila brauchten sie rund 2,5 statt 3,3 Stunden pro Woche für Stundenvorbereitung. Unabhängige Prüfer:innen fanden die Materialien nicht schlechter als ohne KI.</p>
+        <div class="n-ein"><b>Was das heißt</b>Ein seltener Wirkungsnachweis mit Kontrollgruppe: KI spart bei der Unterrichtsplanung messbar Zeit, wenn das Werkzeug auf einen geprüften Lehrplan aufbaut und die Lehrkraft entscheidet.</div>
+        <p class="n-src"><a href="https://www.edtechinnovationhub.com/news/oaks-aila-saves-primary-teachers-49-minutes-a-week-on-lesson-planning-eef-trial-finds" rel="noopener">EdTech Innovation Hub, 7.10.2026</a> · <a href="https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/aila-teacher-choices-trial" rel="noopener">Education Endowment Foundation, Projektseite</a></p>
+      </div></article><article class="n-item g-gut" id="n4e65d6a">
+      <p class="n-date"><time datetime="2026-10-06">6.10.</time></p>
+      <div class="n-body">
+        <p class="n-meta"><span class="n-g"><i class="g-gut"></i>Gut zu wissen</span><span>Modelle</span><span>EU</span><span class="n-v">erst als Vorschau</span></p>
+        <h3><a href="#n4e65d6a">Mistral zeigt Large 4, ein großes Modell aus Europa</a></h3>
+        <p>Mistral stellte Large 4 als öffentliche Vorschau über die Schnittstelle vor, mit 1 Billion Parametern, trainiert in eigenen Rechenzentren in Europa. Die Modelldaten sollen offen erscheinen, angekündigt bis Ende Oktober.</p>
+        <div class="n-ein"><b>Was das heißt</b>Eine europäische Alternative wird stärker; ob Sie sie im Alltag nutzen, entscheidet erst ein Angebot mit Vertrag und Datenstandort in der EU.</div>
+        <p class="n-src"><a href="https://mistral.ai/news/mistral-large-4/" rel="noopener">Mistral AI, 6.10.2026</a> · <a class="n-r" href="wissen.html#radar-govgpt">→ Radar 26: Offene Modelle im eigenen Rechenzentrum</a></p>
+      </div></article></div><!--/vr--></div>
+    <p class="s m" id="n-archiv">Jede Woche auch auf einer eigenen Seite: <a href="nachrichten-2026-kw45.html">KW 45/2026</a> · <a href="nachrichten-2026-kw44.html">KW 44/2026</a> · <a href="nachrichten-2026-kw43.html">KW 43/2026</a> · <a href="nachrichten-2026-kw42.html">KW 42/2026</a> · <a href="nachrichten-2026-kw41.html">KW 41/2026</a></p>
     <p class="s m w-feed">Alle Nachrichten gibt es auch als <a href="wissen-feed.xml">RSS-Feed</a> für Ihren Feed-Reader. Ohne Anmeldung, ohne Zählung. Fehler gefunden? <a href="mailto:info@arminfradler.at">info@arminfradler.at</a></p>
     <p class="xs m">Einordnung zur Orientierung, keine Rechts- oder IT-Beratung im Einzelfall. Angaben nach bestem Wissen und ohne Gewähr, mit Datum und Quelle.</p>
   </div>
@@ -66,7 +325,11 @@
 </section>
 
 </main>
-<footer id="site-foot"></footer>
+<footer id="site-foot" class="site-foot"><!--vr--><div class="wrap">
+    <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
+    <div><ul><li><a href="./angebot.html">Angebot</a></li><li><a href="./methode.html">So arbeite ich</a></li><li><a href="./termine.html">Termine</a></li><li><a href="./wissen.html">Wissen</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Arbeitshilfen</a></li><li><a href="./impulse/">Impulse</a></li><li><a href="./ueber-mich.html">Über mich</a></li></ul></div>
+    <div><ul><li><a href="./kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="./impressum.html">Impressum</a></li><li><a href="./datenschutz.html">Datenschutz</a></li><li><a href="./agb.html">AGB</a></li></ul><p class="xs" style="margin-top:14px;color:var(--ink)">✓ Keine Cookies, kein Tracking.<br><a href="./datenschutz.html#zaehler">Nur ein anonymer Seitenzähler.</a></p></div>
+  </div><!--/vr--></footer>
 <script src="assets/site.js?v=20261105k" data-root="./"></script>
 <script src="assets/nachrichten.js?v=20261104z"></script>
 </body>

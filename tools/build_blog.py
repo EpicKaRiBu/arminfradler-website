@@ -281,6 +281,16 @@ def main():
     static = ['', 'angebot.html', 'termine.html', 'wissen.html', 'nachrichten.html', 'modelle.html', 'impulse/', 'methode.html', 'ueber-mich.html', 'kontakt.html']
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f'<url><loc>{base}/{u}</loc><lastmod>{heute}</lastmod></url>' for u in static]
+    # Eigene Seiten je Nachrichtenwoche und je Steckbrief (gebaut von tools/vorrendern.mjs)
+    try:
+        wj = json.load(open(os.path.join(ROOT, 'data', 'wissen.json'), encoding='utf-8'))
+        stand = {f"nachrichten-{w['id'].lower()}.html": w['stand'] for w in wj['nachrichten']['wochen']}
+        stand.update({f"modelle-{w['id']}.html": w.get('stand') or wj['werkzeuge']['stand'] for w in wj['werkzeuge']['werkzeuge']})
+    except (OSError, KeyError, ValueError):
+        stand = {}
+    for f in sorted(os.listdir(ROOT), reverse=True):
+        if re.match(r'^(nachrichten-\d{4}-kw\d+|modelle-[a-z0-9-]+)\.html$', f):
+            sm.append(f'<url><loc>{base}/{f}</loc><lastmod>{stand.get(f, heute)}</lastmod></url>')
     sm += [f'<url><loc>{base}/impulse/{p["slug"]}/</loc><lastmod>{str(p.get("updated") or p["date"])[:10]}</lastmod></url>' for p in posts]
     sm.append('</urlset>')
     open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n').write('\n'.join(sm) + '\n')
