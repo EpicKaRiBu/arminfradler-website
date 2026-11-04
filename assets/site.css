@@ -441,3 +441,28 @@ input,select,textarea{border-color:#A89A80}
 .latest:empty,.latest:not(:has(*)){display:none}
 
 @media (max-width:600px){h1,h2,h3{-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word}}
+
+/* Wegweiser auf der Startseite */
+.wegweiser{padding-top:34px;padding-bottom:46px}
+.wegweiser h2{margin-bottom:22px}
+.weg{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.weg a{position:relative;display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px 16px 38px;box-shadow:0 12px 22px -20px rgba(0,0,0,.55);transition:transform .2s,box-shadow .2s,border-color .2s}
+.weg a:hover,.weg a:focus-visible{transform:translateY(-3px) rotate(-.4deg);border-color:var(--ink);box-shadow:0 18px 26px -18px rgba(0,0,0,.55)}
+.weg .weg-k{font-family:var(--hand);font-size:21px;line-height:1;color:var(--pencil)}
+.weg b{font-family:var(--type);font-weight:400;font-size:20px;line-height:1.2}
+.weg span:not(.weg-k){font-size:15.5px;line-height:1.45;color:var(--ink-2)}
+.weg i{position:absolute;right:14px;bottom:10px;font-style:normal;font-family:var(--type);color:var(--muted)}
+.weg a:hover i{color:var(--pencil)}
+@media (max-width:1100px){.weg{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.weg{grid-template-columns:1fr}.weg a{padding:14px 40px 14px 16px}.weg i{top:50%;bottom:auto;transform:translateY(-50%)}}
+@media (prefers-reduced-motion:reduce){.weg a{transition:none}.weg a:hover{transform:none}}
+
+.weg-neu{display:grid;grid-template-columns:auto 1fr 1fr 1fr auto;align-items:baseline;gap:8px 22px;margin-top:22px;padding-top:16px;border-top:1px dashed var(--line);font-size:15.5px;line-height:1.4}
+.weg-neu time{display:block}
+.weg-neu .hand{font-size:23px;color:var(--pencil);margin-right:2px}
+.weg-neu a{color:var(--ink);text-decoration-color:var(--line)}
+.weg-neu a:hover{text-decoration-color:var(--pencil)}
+.weg-neu time{font-family:var(--type);font-size:13px;color:var(--muted);margin-right:6px}
+.weg-neu .alle{font-family:var(--hand);font-size:21px;color:var(--pencil);text-decoration:none;white-space:nowrap}
+@media (max-width:1100px){.weg-neu{grid-template-columns:1fr 1fr 1fr}.weg-neu .hand,.weg-neu .alle{grid-column:1/-1}}
+@media (max-width:700px){.weg-neu{grid-template-columns:1fr}.weg-neu time{display:inline}}

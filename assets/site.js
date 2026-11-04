@@ -13,7 +13,7 @@ document.body.insertAdjacentHTML('afterbegin',`<svg width="0" height="0" style="
 document.documentElement.classList.add('tx-on');
 
 /* ---------- Kopf und Fuß ---------- */
-const NAV=[['angebot','Angebot','angebot.html'],['methode','So arbeite ich','methode.html'],['termine','Termine','termine.html'],['werkzeuge','Werkzeuge','https://mitmachen.arminfradler.at/werkzeuge/ki/'],['impulse','Impulse','impulse/'],['ueber','Über mich','ueber-mich.html']];
+const NAV=[['angebot','Angebot','angebot.html'],['methode','So arbeite ich','methode.html'],['termine','Termine','termine.html'],['wissen','Wissen','wissen.html'],['impulse','Impulse','impulse/'],['ueber','Über mich','ueber-mich.html']];
 const head=$('#site-head');
 if(head){
   head.className='site-head';
@@ -32,7 +32,7 @@ if(foot){
   foot.className='site-foot';
   foot.innerHTML=`<div class="wrap">
     <div><p class="bye" aria-hidden="true">Bis bald.</p><b>Armin Fradler</b><p style="margin:8px 0 0">Workshops, Vorträge und Fortbildungen zu KI für Bildungshäuser, Schulen, Gemeinden und Betriebe. Aus Oberwart im Burgenland – in ganz Österreich und online.</p><p style="margin:10px 0 0"><a href="mailto:info@arminfradler.at">info@arminfradler.at</a> · <a href="tel:+4367761769100">+43 677 617 69 100</a></p></div>
-    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
+    <div><ul><li><a href="${ROOT}angebot.html">Angebot</a></li><li><a href="${ROOT}methode.html">So arbeite ich</a></li><li><a href="${ROOT}termine.html">Termine</a></li><li><a href="${ROOT}wissen.html">Wissen</a></li><li><a href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge</a></li><li><a href="${ROOT}impulse/">Impulse</a></li><li><a href="${ROOT}ueber-mich.html">Über mich</a></li></ul></div>
     <div><ul><li><a href="${ROOT}kontakt.html">Kontakt</a></li><li><a href="https://www.linkedin.com/in/armin-fradler-a25a28359" rel="noopener">LinkedIn</a></li><li><a href="${ROOT}impressum.html">Impressum</a></li><li><a href="${ROOT}datenschutz.html">Datenschutz</a></li><li><a href="${ROOT}agb.html">AGB</a></li></ul><p class="xs" style="margin-top:14px;color:var(--ink)">✓ Keine Cookies, kein Tracking.<br><a href="${ROOT}datenschutz.html#zaehler">Nur ein anonymer Seitenzähler.</a></p></div>
   </div>`;
 }
@@ -64,8 +64,10 @@ if(h1){
     const t=h1.textContent;h1.setAttribute('aria-label',t);
     h1.innerHTML=[...t].map(c=>`<span class="ch" aria-hidden="true">${c===' '?' ':c.replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[x]))}</span>`).join('')+'<span class="caret" aria-hidden="true"></span>';
     const chs=$$('.ch',h1);let k=0;
-    const tick=()=>{if(k<chs.length){chs[k++].classList.add('on');setTimeout(tick,chs[k-1].textContent===' '?70:38+Math.random()*40)}else{setTimeout(()=>{$('.caret',h1)?.remove();done()},350)}};
-    setTimeout(tick,400);
+    // Der Text darunter erscheint schon während des Tippens, damit die Seite nie leer wirkt.
+    const half=Math.floor(chs.length*.45);
+    const tick=()=>{if(k<chs.length){chs[k++].classList.add('on');if(k===half&&write)write.classList.add('on');setTimeout(tick,chs[k-1].textContent===' '?55:26+Math.random()*28)}else{setTimeout(()=>{$('.caret',h1)?.remove();done()},300)}};
+    setTimeout(tick,250);
   }
 }
 
@@ -118,7 +120,7 @@ if(dt){
 
 
 /* ---------- Handy: Erstgespräch-Knopf unten ---------- */
-if(!['kontakt','impressum','datenschutz','agb'].includes(PAGE)&&head){
+if(!['kontakt','impressum','datenschutz','agb','wissen'].includes(PAGE)&&head){
   document.body.insertAdjacentHTML('beforeend',`<a class="btn mcta" href="${ROOT}kontakt.html">Kostenloses Erstgespräch <span class="arr">→</span></a>`);
   const m=$('.mcta'),ft=$('#site-foot');let past=false,end=false;
   const upd=()=>m.classList.toggle('on',past&&!end);
@@ -136,6 +138,14 @@ $$('.clip video').forEach(v=>{
   new IntersectionObserver(es=>{const e=es[0];if(e.isIntersecting){v.preload='auto';v.play().catch(()=>{v.controls=true})}else v.pause()},{threshold:.5}).observe(v);
 });
 
+
+/* ---------- Startseite: die drei wichtigsten KI-Nachrichten (data/neu.json, gebaut von tools/build_wissen.py) ---------- */
+const neu=document.getElementById('weg-neu');
+if(neu){fetch(ROOT+'data/neu.json').then(r=>r.json()).then(d=>{
+  const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const t=iso=>{const[,m,dd]=iso.split('-');return `${+dd}.${+m}.`};
+  neu.innerHTML='<span class="hand">Neu nachgeschaut:</span>'+d.meldungen.map(m=>`<span><time datetime="${m.datum}">${t(m.datum)}</time><a href="${ROOT}nachrichten.html#${e(m.id)}">${e(m.titel)}</a></span>`).join('')+`<a class="alle" href="${ROOT}nachrichten.html">alle KI-Nachrichten →</a>`;
+  neu.hidden=false}).catch(()=>{})}
 
 /* ---------- Anonymer Seitenzähler: nur Seite und Herkunft, keine IP, kein Cookie (Code: backend/) ---------- */
 if(/^(www\.)?arminfradler\.at$/.test(location.hostname)&&!navigator.webdriver&&!navigator.globalPrivacyControl&&navigator.doNotTrack!=='1'){

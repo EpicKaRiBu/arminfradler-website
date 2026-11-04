@@ -1,0 +1,293 @@
+{
+ "hinweis": "Kurzfassung je Blickwinkel: fünf Dinge, die jetzt zählen. Belege = Textausschnitte aus der Faktenbank, radar = Punkt-IDs. Stand bei jeder Änderung nachziehen.",
+ "stand": "2026-11-04",
+ "alle": [
+  {
+   "art": "Pflicht",
+   "titel": "Leute schulen und aufschreiben",
+   "text": "Wer KI im Haus einsetzt, muss etwas für die KI-Kompetenz der Leute tun, die damit arbeiten. Ein bestimmtes Niveau müssen Sie nicht garantieren. Eine Seite, wer wie geschult wurde, reicht als Nachweis.",
+   "radar": [
+    "art4"
+   ],
+   "belege": [
+    "Seit 27.7.2026 verpflichtet Art. 4 KI-VO"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Ein Blatt mit Hausregeln",
+   "text": "Welche Daten dürfen in welches Werkzeug? Wer prüft, was die KI schreibt? Nur jeder zehnte Betrieb hat so ein Blatt. Eine Stunde mit Leitung und Praxis reicht für den Anfang.",
+   "radar": [
+    "hausregeln"
+   ],
+   "belege": [
+    "Nur 10 % aller Betriebe ab 10 Beschäftigten"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Organisationskonto statt Gratis-Konto",
+   "text": "Mit Gratis-Konten landen Ihre Daten zu den Bedingungen des Anbieters. Ein Konto der Organisation regelt Datenschutz und Training vertraglich.",
+   "radar": [
+    "orgkonto"
+   ],
+   "belege": []
+  },
+  {
+   "art": "Vorsicht",
+   "titel": "Zurückrufen, bevor Geld fließt",
+   "text": "KI macht Betrugsmails und geklonte Stimmen glaubwürdig. Zahlungen und neue Kontonummern nur nach Rückruf unter einer Nummer, die Sie schon kennen.",
+   "radar": [
+    "rueckruf"
+   ],
+   "belege": [
+    "In der Cybersecurity-Studie 2026 (1.396 Betriebe)"
+   ]
+  },
+  {
+   "art": "Lernen",
+   "titel": "Erst selbst denken, dann KI",
+   "text": "Wer Aufgaben ganz an die KI abgibt, lernt weniger. In einem Versuch schnitt die Gruppe mit KI im Wissenstest schlechter ab, 50 zu 67 Prozent. Der erste Gedanke gehört dem Menschen.",
+   "radar": [
+    "erstselbst"
+   ],
+   "belege": [
+    "In einem randomisierten Versuch mit 52"
+   ]
+  }
+ ],
+ "bildung": [
+  {
+   "art": "Pflicht",
+   "titel": "KI-Kompetenz: schulen und aufschreiben",
+   "text": "Wer KI im Haus einsetzt, muss etwas für die KI-Kompetenz der Leute tun. Ein bestimmtes Niveau müssen Sie seit Juli 2026 nicht mehr garantieren. Eine Seite, wer wie geschult wurde, reicht als Nachweis.",
+   "radar": [
+    "art4"
+   ],
+   "belege": [
+    "Seit 27.7.2026 verpflichtet Art. 4 KI-VO"
+   ]
+  },
+  {
+   "art": "Pflicht",
+   "titel": "Und die freien Kursleitenden?",
+   "text": "Das Gesetz nennt neben dem Personal auch Menschen, die in Ihrem Auftrag mit Ihren KI-Werkzeugen arbeiten. Stellt Ihr Haus ein Werkzeug bereit, gehören freie Kursleitende also dazu. Was für ihre privaten Werkzeuge gilt, regeln Sie am besten in der Hausregel und im Auftrag.",
+   "radar": [
+    "hausregeln"
+   ],
+   "belege": [
+    "Art. 4 KI-VO nennt neben dem eigenen Personal"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Hausregel wie die Volkshochschulen",
+   "text": "Der Verband der Volkshochschulen hat seit Februar 2026 eine kurze KI-Richtlinie: KI unterstützt, die letzte Entscheidung trifft ein Mensch. Ein Blatt für das Team und eines für die Kursleitenden genügt.",
+   "radar": [
+    "hausregeln"
+   ],
+   "belege": [
+    "Der Verband Österreichischer Volkshochschulen hat eine KI"
+   ]
+  },
+  {
+   "art": "Lernen",
+   "titel": "Kurse so bauen, dass gelernt wird",
+   "text": "Wer Aufgaben ganz an die KI abgibt, lernt weniger: 50 zu 67 Prozent im Wissenstest. Wer der KI Verständnisfragen stellt, lernt gut. Erster Entwurf ohne KI, Überarbeitung mit KI.",
+   "radar": [
+    "erstselbst",
+    "pruefroutine"
+   ],
+   "belege": [
+    "In einem randomisierten Versuch mit 52"
+   ]
+  },
+  {
+   "art": "Noch warten",
+   "titel": "Keine KI, die Prüfungen bewertet",
+   "text": "KI, die Lernergebnisse bewertet oder Prüfungen überwacht, gilt als Hochrisiko-KI. Die strengen Pflichten kommen am 2.12.2027. Abschlussprüfungen bleiben bis dahin ohne KI-Bewertung.",
+   "radar": [
+    "kibewertung"
+   ],
+   "belege": [
+    "Als hochriskant gelten KI-Systeme"
+   ]
+  }
+ ],
+ "schule": [
+  {
+   "art": "Neu",
+   "titel": "Für 6. November angekündigt: die KI-Strategie",
+   "text": "Der Bildungsminister hat im September eine neue KI-Strategie für Schulen für den 6.11.2026 angekündigt. Sie soll klären, welche Werkzeuge erlaubt sind und was bei Prüfungen gilt. Bis dahin keine teuren KI-Lizenzen kaufen. Ich ergänze hier, was drinsteht.",
+   "radar": [],
+   "belege": [
+    "Die neue KI-Strategie für Schulen soll am 6.11.2026"
+   ]
+  },
+  {
+   "art": "Vorsicht",
+   "titel": "Unter 14: ohne eigenes Konto",
+   "text": "Ob Kinder unter 14 eigene Konten bei KI-Diensten haben dürfen, ist nicht geklärt. Nehmen Sie Werkzeuge, die mit Code oder Link funktionieren. Konten laufen über die Lehrperson.",
+   "radar": [
+    "ohnekonto"
+   ],
+   "belege": [
+    "Die Steckbriefe lassen offen"
+   ]
+  },
+  {
+   "art": "Lernen",
+   "titel": "Hausübung: KI fragt, statt vorzusagen",
+   "text": "94 % der 11- bis 17-Jährigen nutzen KI-Chatbots, 73 % für die Schule. Hausübungen sagen weniger aus, der Minister will die Leistungsbeurteilung anpassen. Übungen so bauen, dass der erste Gedanke im Heft steht.",
+   "radar": [
+    "loesungen",
+    "erstselbst"
+   ],
+   "belege": [
+    "94 % der 11- bis 17-Jährigen",
+    "Bildungsminister Wiederkehr sieht wegen KI"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Antworten prüfen üben",
+   "text": "40 % der Jugendlichen prüfen Chatbot-Antworten selten oder nie, 66 % erwarten von der Schule Hilfe dabei. Eine gemeinsame Prüfroutine für alle Fächer: Quelle suchen, Gegenfrage stellen, selbst begründen.",
+   "radar": [
+    "pruefroutine"
+   ],
+   "belege": [
+    "Saferinternet-Studie 2026 (11- bis 17-Jährige) verlassen sich",
+    "66 % der Jugendlichen erwarten"
+   ]
+  },
+  {
+   "art": "Noch warten",
+   "titel": "KI in der Schul-Cloud erst nach Klärung",
+   "text": "Die Unterlagen des Ministeriums zu Microsoft, Google und Apple stammen aus 2022 und sagen nichts zu Copilot oder Gemini. KI-Funktionen für Schüler:innen erst freischalten, wenn IT-Betreuung und Bildungsdirektion das geklärt haben.",
+   "radar": [],
+   "belege": [
+    "Für Microsoft 365 nennt das BMB"
+   ]
+  }
+ ],
+ "gemeinde": [
+  {
+   "art": "Vorsicht",
+   "titel": "Grundschutz vor jedem KI-Projekt",
+   "text": "Reichenau, Krieglach, Langenzersdorf: 2026 trafen Angriffe auch kleine Gemeinden. Das größte Risiko sind ungeschützte Postfächer und Daten, nicht die KI. Zwei-Faktor-Anmeldung, Sicherungen getrennt vom Netz, eine Notfall-Liste.",
+   "radar": [
+    "grundschutz"
+   ],
+   "belege": [
+    "Die Gemeinde Reichenau an der Rax",
+    "In Krieglach (Steiermark) kaperten"
+   ]
+  },
+  {
+   "art": "Pflicht",
+   "titel": "NISG: das Amt nicht, die Betriebe vielleicht",
+   "text": "Das Gemeindeamt selbst ist vom Cybersicherheitsgesetz ausgenommen. Wasser, Abwasser oder Stadtwerke können darunter fallen. Bis Ende 2026 klären und gegebenenfalls registrieren.",
+   "radar": [
+    "nisg"
+   ],
+   "belege": [
+    "Gemeinden und Gemeindeverbände sind laut Gemeindebund"
+   ]
+  },
+  {
+   "art": "Neu",
+   "titel": "Chatbots dürfen Anträge annehmen",
+   "text": "Seit der AVG-Novelle gibt es eine Rechtsgrundlage. Der Chatbot muss barrierefrei sein, und der gewohnte Weg bleibt offen. Nur mit offiziellen Inhalten befüllen und eine Weiterleitung an Menschen einbauen.",
+   "radar": [
+    "buergerbot"
+   ],
+   "belege": [
+    "Chatbots dürfen Anträge entgegennehmen"
+   ]
+  },
+  {
+   "art": "Noch warten",
+   "titel": "Automatische Bescheide: noch nichts umstellen",
+   "text": "Erlaubt nur in Massenverfahren, die eine Verordnung freigibt, etwa Gebühren. Wer widerspricht, bekommt einen Menschen. Schauen Sie, welche Abläufe schon nach festen Regeln laufen.",
+   "radar": [
+    "bescheide"
+   ],
+   "belege": [
+    "Vollautomatisierte schriftliche Erledigungen"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Nicht auf GovGPT warten",
+   "text": "Der Bund nutzt GovGPT, für Gemeinden gibt es nur Gespräche ohne Zeitplan. Starten Sie mit einem freigegebenen Werkzeug und einer Hausregel. Der Gemeindeverband Amstetten zeigt, wie es gemeinsam geht.",
+   "radar": [
+    "hausregeln",
+    "govgpt"
+   ],
+   "belege": [
+    "Zur Öffnung von GovGPT",
+    "Der Gemeindeverband Amstetten"
+   ]
+  }
+ ],
+ "betrieb": [
+  {
+   "art": "Vorsicht",
+   "titel": "Rückruf-Regel gegen den falschen Chef",
+   "text": "57 % der befragten Betriebe meldeten E-Mail-Betrug bis zum falschen Chef. Zahlungen und neue Kontonummern nur nach Rückruf unter einer bekannten Nummer, auch wenn Stimme und Gesicht echt wirken.",
+   "radar": [
+    "rueckruf"
+   ],
+   "belege": [
+    "In der Cybersecurity-Studie 2026 (1.396 Betriebe)"
+   ]
+  },
+  {
+   "art": "Pflicht",
+   "titel": "Die Pflichten in drei Zeilen",
+   "text": "Leute schulen und aufschreiben (KI-Verordnung). Keine Kunden- oder Personaldaten in Gratis-Werkzeuge (Datenschutz). Den Betriebsrat fragen, wenn ein Werkzeug Personaldaten verarbeitet oder Leistung bewertet.",
+   "radar": [
+    "art4",
+    "orgkonto",
+    "betriebsrat"
+   ],
+   "belege": [
+    "Seit 27.7.2026 verpflichtet Art. 4 KI-VO",
+    "Laut AK Wien brauchen Kontrollsysteme"
+   ]
+  },
+  {
+   "art": "Geld",
+   "titel": "Lohnt sich Copilot?",
+   "text": "Im größten Feldversuch sparten Beschäftigte mit Copilot im Schnitt 1,37 Stunden E-Mail pro Woche. In Englands Steuerbehörde waren es rund 60 Minuten pro Woche. Copilot Business kostet laut Microsoft 18,20 € pro Person und Monat. Vier Wochen bei einer Aufgabe messen, dann entscheiden.",
+   "radar": [
+    "zeitmessen"
+   ],
+   "belege": [
+    "Im größten Feldexperiment mit Microsoft 365 Copilot",
+    "Die britische Steuerbehörde HMRC kommt",
+    "Microsoft 365 Copilot Business 18,20"
+   ]
+  },
+  {
+   "art": "Geld",
+   "titel": "Förderung für die Beratung",
+   "text": "KMU.DIGITAL zahlt seit Jänner 2026 wieder bis zu 3.000 € für Beratung. Fragen Sie bei Ihrer Wirtschaftskammer nach dem Budgetstand, bevor Sie allein zahlen.",
+   "radar": [],
+   "belege": [
+    "Die KMU.DIGITAL-Beratungsförderung"
+   ]
+  },
+  {
+   "art": "Jetzt tun",
+   "titel": "Ein Blatt mit Hausregeln",
+   "text": "Nur jeder zehnte Betrieb hat eine KI-Richtlinie. Ein Blatt pro Abteilung: welche Werkzeuge erlaubt sind, welche Daten tabu bleiben, wer prüft, bevor etwas das Haus verlässt.",
+   "radar": [
+    "hausregeln"
+   ],
+   "belege": [
+    "Nur 10 % aller Betriebe ab 10 Beschäftigten"
+   ]
+  }
+ ]
+}

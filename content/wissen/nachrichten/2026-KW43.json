@@ -1,0 +1,165 @@
+{
+ "von": "2026-10-19",
+ "bis": "2026-10-25",
+ "stand": "2026-10-26",
+ "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "meldungen": [
+  {
+   "datum": "2026-10-22",
+   "titel": "Anthropic übergibt „Skills“ als offenen Standard an Linux Foundation",
+   "was": "Anthropic gibt den Standard Agent Skills an die Agentic AI Foundation der Linux Foundation ab. Über 70 Plattformen nutzen ihn bereits, darunter ChatGPT und GitHub Copilot.",
+   "einordnung": "Ein Skill, also eine Arbeitsanleitung als Datei, den Ihr Team schreibt, bleibt nicht an einen Hersteller gebunden.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "betrieb"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Anthropic, 22.10.2026",
+     "u": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "skills"
+  },
+  {
+   "datum": "2026-10-22",
+   "titel": "PHP-Lücke: in Österreich keine bestätigten Angriffe",
+   "was": "Das Innenministerium meldete am 22.10. keine erfolgreichen Angriffe in Österreich, rechnete aber mit Versuchen. Viele Betreiber nahmen ihre Seiten bis zum Update vom Netz. CERT.at hat seither nichts Neues dazu veröffentlicht.",
+   "einordnung": "Ruhig bleiben, aber einmal nachfragen: Wer hat bei uns das Update eingespielt, und wann?",
+   "gewicht": "gut",
+   "art": "sicherheit",
+   "fuer": [
+    "gemeinde",
+    "betrieb",
+    "bildung"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "vienna.at/APA, 22.10.2026",
+     "u": "https://www.vienna.at/php-sicherheitsluecke-oesterreich-warnt-vor-angriffen/10573724"
+    }
+   ],
+   "radar": "dreifragen",
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-21",
+   "titel": "ChatGPT-Werbung jetzt in 89 Ländern",
+   "was": "OpenAI zeigt Werbung in ChatGPT in 26 weiteren Ländern, insgesamt 89. Werbung gibt es nur in Free und Go; Plus, Pro und Enterprise bleiben werbefrei.",
+   "einordnung": "In Österreich ändert sich nichts Neues, aber es erinnert daran: Gratis-Konten im Haus bedeuten Werbung und keinen Vertrag für die Organisation.",
+   "gewicht": "laut",
+   "art": "markt",
+   "fuer": [
+    "bildung",
+    "schule",
+    "betrieb"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Relevant Audience, Antonio Fernandez, 24.10.2026",
+     "u": "https://www.relevantaudience.com/ai/chatgpt-ads-expands-26-countries-89-total/"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "orgkonto"
+  },
+  {
+   "datum": "2026-10-21",
+   "titel": "EU-Staaten einigen sich auf Position zur DSGVO-Lockerung",
+   "was": "Die EU-Botschafter legten das Verhandlungsmandat zum Digital Omnibus fest: Datenpannen nur bei hohem Risiko melden, dann binnen 96 Stunden; KI-Training kann sich auf berechtigtes Interesse stützen, mit Prüfung im Einzelfall. Laut Berichten stimmten Österreich und Deutschland dagegen.",
+   "einordnung": "Bis zum Inkrafttreten gilt die DSGVO unverändert; das Parlament legt seine Position voraussichtlich erst im Februar 2027 fest.",
+   "gewicht": "gut",
+   "art": "recht",
+   "fuer": [
+    "gemeinde",
+    "betrieb",
+    "bildung"
+   ],
+   "land": "eu",
+   "quellen": [
+    {
+     "t": "Osborne Clarke, 27.10.2026",
+     "u": "https://www.osborneclarke.com/de/insights/digital-omnibus-rat-legt-verhandlungsmandat-fest"
+    },
+    {
+     "t": "WKO, AIG Newsletter 26.10.2026",
+     "u": "https://www.wko.at/information-consulting/werbung-marktkommunikation/aig-newsletter-26-october-2026"
+    }
+   ],
+   "verfuegbar": "angekuendigt"
+  },
+  {
+   "datum": "2026-10-21",
+   "titel": "Kritische PHP-Lücke: Update am selben Tag verfügbar",
+   "was": "CERT.at warnte am 21.10. vor zwei kritischen Lücken in PHP, über die Fremde ohne Anmeldung Code ausführen können. Updates waren am selben Tag verfügbar. Bis 22.10. gab es keine Hinweise auf übernommene Seiten.",
+   "einordnung": "Läuft Ihre Website mit PHP, etwa mit WordPress? Dann den Anbieter fragen, ob das Update drin ist.",
+   "gewicht": "wichtig",
+   "art": "sicherheit",
+   "fuer": [
+    "gemeinde",
+    "betrieb",
+    "bildung"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "CERT.at, 21.10.2026",
+     "u": "https://www.cert.at/de/warnungen/2026/10/kritische-sicherheitslucken-in-php-updates-verfugbar"
+    },
+    {
+     "t": "SOCRadar, 23.10.2026",
+     "u": "https://socradar.io/blog/php2shell-cve-2026-109618-cve-2026-109619/"
+    }
+   ],
+   "radar": "schlank",
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-20",
+   "titel": "Microsoft verspricht mehr Kontrolle über Zugriffe in der EU",
+   "was": "Mit „Data Guardian“ soll ein EU-Partner Fernzugriffe von Microsoft-Technikern auf Systeme von EU- und EFTA-Kunden überwachen, dazu kommen manipulationssichere Protokolle. Einen Termin nennt Microsoft nicht.",
+   "einordnung": "Ein Argument mehr im Gespräch mit Ihrer IT, aber noch keine Zusage mit Datum.",
+   "gewicht": "gut",
+   "art": "markt",
+   "fuer": [
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "eu",
+   "quellen": [
+    {
+     "t": "Microsoft, Douglas Phillips, 20.10.2026",
+     "u": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/"
+    }
+   ],
+   "verfuegbar": "angekuendigt"
+  },
+  {
+   "datum": "2026-10-20",
+   "titel": "AK Wien: Betriebsrat bei KI-Einführung früh einbinden",
+   "was": "Laut AK Wien brauchen KI-Systeme, die Beschäftigte kontrollieren oder beurteilen, oft die Zustimmung des Betriebsrats (§ 96a ArbVG). Schon jetzt gelten die KI-Kompetenzpflicht und das Verbot von Emotionserkennung am Arbeitsplatz.",
+   "einordnung": "Wer KI im Betrieb einführt, spricht vorher mit dem Betriebsrat, auch wenn die Hochrisiko-Regeln erst ab Dezember 2027 gelten.",
+   "gewicht": "wichtig",
+   "art": "recht",
+   "fuer": [
+    "betrieb",
+    "bildung"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "AK Wien, 20.10.2026",
+     "u": "https://wien.arbeiterkammer.at/interessenvertretung/arbeitdigital/aktuelle_themen/KI_im_Betrieb.html"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "betriebsrat"
+  }
+ ]
+}

@@ -1,0 +1,862 @@
+{
+ "stand": "2026-11-04",
+ "vorweg": {
+  "alle": "Das beste Werkzeug ist meist das, für das Ihr Haus einen Vertrag hat. Ein Organisationskonto mit klaren Regeln schlägt jedes Gratis-Konto, egal wie gut das Modell ist.",
+  "bildung": "Für Ihr Team: das Werkzeug aus Ihrem bestehenden Vertrag, mit Organisationskonto. Teilnehmende arbeiten mit eigenen Konten nur mit Übungsdaten, nie mit echten Namen oder Unterlagen aus der Kursverwaltung.",
+  "schule": "Mit Schüler:innen derzeit nur über ein Schulkonto, das Ihre IT freigeschaltet hat, etwa Gemini in Google Workspace for Education oder Copilot Chat ab 13. Keine privaten Konten unter 14 und keine Werkzeuge, die erst ab 18 erlaubt sind, wie Claude. Für Lehrende gilt: Dienstkonto statt Gratis-Konto.",
+  "gemeinde": "Zuerst schauen, was Ihr Microsoft- oder Google-Vertrag schon enthält. Dann den Auftragsverarbeitungsvertrag prüfen und Gratis-Konten für Bürgerdaten ausschließen. GovGPT ist derzeit nur für Bundesbedienstete offen.",
+  "betrieb": "Zuerst schauen, was Ihr Microsoft- oder Google-Vertrag schon enthält. Dann den Auftragsverarbeitungsvertrag prüfen, Gratis-Konten für Kunden- und Firmendaten sperren und erst danach über ein zweites Werkzeug reden."
+ },
+ "hinweis": "Steckbriefe. Fakten aus recherche/werkzeuge-2026-11.json (am Original gelesen), Einschätzung = Armins Urteil, von Claude vorbereitet. Monatlich prüfen.",
+ "werkzeuge": [
+  {
+   "id": "copilot",
+   "name": "Microsoft 365 Copilot und Copilot Chat",
+   "anbieter": "Microsoft",
+   "land": "us",
+   "art": "Büro-Assistent",
+   "modell": "Mehrere Modelle zur Auswahl, unter anderem GPT-6.1 Sol von OpenAI und Claude Sonnet 5.5 von Anthropic, eingeführt ab 30.9.2026. Für Copilot Chat in der Bildung nennt Microsoft GPT-5.",
+   "daten": "Mit Arbeits- oder Schulkonto gelten Microsofts Data Protection Addendum (DPA) und die Product Terms, Microsoft ist Auftragsverarbeiter. Eingaben, Antworten und Daten aus Microsoft Graph werden nicht zum Training verwendet, Copilot unterstützt die EU Data Boundary. Ausgenommen sind Websuchen über Bing und die Anthropic-Modelle, die in EU-Tenants standardmäßig ausgeschaltet sind.",
+   "konto": "Copilot Chat gibt es ohne Aufpreis für Entra-Konten mit passendem Microsoft-365-Abo, in der Bildung für Lehrende, Personal und Lernende ab 13 Jahren. Das private Copilot mit Microsoft-Konto ist ein anderes Produkt.",
+   "kosten": [
+    {
+     "tarif": "Copilot Chat",
+     "preis": "0 € zusätzlich zu einem passenden Microsoft-365-Abo",
+     "q": {
+      "t": "Microsoft Österreich, Microsoft 365 Copilot Enterprise",
+      "u": "https://www.microsoft.com/de-at/microsoft-365/copilot/enterprise"
+     }
+    },
+    {
+     "tarif": "Microsoft 365 Copilot Business (Zusatz, bis 300 Personen)",
+     "preis": "18,20 € pro Person und Monat bei Jahreszahlung, Aktion 15,60 € bis 31.12.2026; 21,84 € bei monatlicher Zahlung; netto",
+     "q": {
+      "t": "Microsoft Österreich, Copilot Business Preise",
+      "u": "https://www.microsoft.com/de-at/microsoft-365/copilot/pricing"
+     }
+    },
+    {
+     "tarif": "Microsoft 365 Copilot (Enterprise)",
+     "preis": "26,00 € pro Person und Monat bei Jahreszahlung, 27,30 € bei monatlicher Zahlung; netto",
+     "q": {
+      "t": "Microsoft Österreich, Microsoft 365 Copilot Enterprise",
+      "u": "https://www.microsoft.com/de-at/microsoft-365/copilot/enterprise"
+     }
+    },
+    {
+     "tarif": "Microsoft 365 Copilot für Bildungseinrichtungen",
+     "preis": "18 USD pro Person und Monat (Stand Oktober 2025, Euro-Preis nicht angegeben)",
+     "q": {
+      "t": "Microsoft Österreich, Copilot in der Bildung",
+      "u": "https://www.microsoft.com/de-at/education/products/copilot-in-education"
+     }
+    }
+   ],
+   "schule": "Das BMB nennt für Microsoft 365 eine Eigenerklärung vom Mai 2022 und empfiehlt eine datenschutzfreundliche Tenant-Konfiguration; zu Copilot sagt sie nichts. Eine Freigabe von Copilot für Schüler:innen durch BMB oder Bildungsdirektionen wurde nicht gefunden.",
+   "werbung": "nein",
+   "gut_fuer": "Häuser, die schon mit Microsoft 365 arbeiten: Mails, Protokolle, Dokumente im eigenen Mandanten.",
+   "kurz": {
+    "eu": "Ja, EU-Datengrenze (Websuche ausgenommen)",
+    "training": "Nein, mit Dienst- oder Schulkonto",
+    "kosten": "Copilot Chat ohne Aufpreis im passenden Abo; Copilot Business 18,20 € netto pro Person (Jahreszahlung)",
+    "schule": "Copilot Chat für Lehrende und ab 13; keine Freigabe des BMB für Schüler:innen gefunden"
+   },
+   "ampel": {
+    "eu": "g",
+    "training": "g"
+   },
+   "radar": "copilotchat",
+   "einschaetzung": "Wenn Ihr Haus Microsoft 365 hat, ist Copilot Chat mit dem Dienstkonto der naheliegende erste Schritt: kein Aufpreis, alles im bestehenden Vertrag. Das volle Copilot erst kaufen, wenn Sie vier Wochen lang bei einer Aufgabe gemessen haben, was es bringt.",
+   "fuer": {
+    "schule": "Für Lehrende mit Schulkonto ein guter Start. Für Schüler:innen erst, wenn IT und Bildungsdirektion Altersgruppe und Einstellungen geklärt haben; der Jugendschutz greift nur mit richtig eingetragenem Alter."
+   },
+   "neu": [
+    {
+     "datum": "2026-09-30",
+     "text": "GPT-6.1 Sol und Claude Sonnet 5.5 kommen in Microsoft Copilot dazu; Anthropic-Modelle sind in EU-Tenants standardmäßig aus.",
+     "q": {
+      "t": "Microsoft Tech Community, GPT-6.1 Sol und Claude Sonnet 5.5",
+      "u": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801"
+     }
+    },
+    {
+     "datum": "2026-10-06",
+     "text": "Antworten lassen sich neu erzeugen, auch mit einem anderen Modell.",
+     "q": {
+      "t": "Microsoft Learn, Copilot Release Notes",
+      "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+     }
+    },
+    {
+     "datum": "2026-10-27",
+     "text": "Ein Lern-Agent kommt in Microsoft 365 Copilot unter Windows, und Admins können eigene MCP-Konnektoren verteilen.",
+     "q": {
+      "t": "Microsoft Learn, Copilot Release Notes",
+      "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Microsoft Österreich, Copilot Business Preise",
+     "u": "https://www.microsoft.com/de-at/microsoft-365/copilot/pricing"
+    },
+    {
+     "t": "Microsoft Österreich, Microsoft 365 Copilot Enterprise",
+     "u": "https://www.microsoft.com/de-at/microsoft-365/copilot/enterprise"
+    },
+    {
+     "t": "Microsoft Österreich, Copilot in der Bildung",
+     "u": "https://www.microsoft.com/de-at/education/products/copilot-in-education"
+    },
+    {
+     "t": "Microsoft Learn, Enterprise data protection (aktualisiert 29.10.2026)",
+     "u": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection"
+    },
+    {
+     "t": "Microsoft Learn, Anthropic als Unterauftragsverarbeiter",
+     "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor"
+    },
+    {
+     "t": "Microsoft Learn, Copilot Release Notes",
+     "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+    },
+    {
+     "t": "Microsoft Tech Community, Copilot Chat für Lernende ab 13",
+     "u": "https://techcommunity.microsoft.com/blog/educationblog/microsoft-365-copilot-chat-for-students-13/4440370"
+    },
+    {
+     "t": "A Guide to Cloud, Copilot-Neuerungen Oktober 2026 (Zusammenfassung)",
+     "u": "https://www.aguidetocloud.com/blog/microsoft-365-copilot-october-2026-updates/"
+    },
+    {
+     "t": "BMB, Datenschutz in Schulen (aus der Faktenbank)",
+     "u": "https://www.bmb.gv.at/Themen/schule/schulrecht/ds.html"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "chatgpt",
+   "name": "ChatGPT",
+   "anbieter": "OpenAI",
+   "land": "us",
+   "art": "Chat-Assistent",
+   "modell": "GPT-6: „Sol“ in den Bezahltarifen, „Luna“ in Free und Go, seit 7. und 8.10.2026",
+   "daten": "Vertragspartner für Personen in der EU ist OpenAI Ireland Ltd. In Free, Go und Plus dürfen Eingaben standardmäßig zum Training verwendet werden, abschaltbar in den Einstellungen oder über temporäre Chats. Business, Enterprise und Edu werden standardmäßig nicht zum Training genutzt, ein Auftragsverarbeitungsvertrag (DPA) ist möglich; Datenhaltung in Europa gibt es nur für Enterprise und Edu, nicht für Business. Euro-Preise zeigt OpenAI erst im Bestellvorgang; die Beträge hier stammen aus einem Preisvergleich.",
+   "konto": "Mindestalter 13 Jahre oder das höhere Einwilligungsalter des Landes, unter 18 nur mit Erlaubnis der Eltern. Gratis- und Einzelkonten sind private Verträge, Business, Enterprise und Edu verwaltet die Organisation.",
+   "kosten": [
+    {
+     "tarif": "Free",
+     "preis": "0 €, mit Werbung"
+    },
+    {
+     "tarif": "Go",
+     "preis": "rund 8 € pro Monat, mit Werbung"
+    },
+    {
+     "tarif": "Plus",
+     "preis": "rund 23 € pro Monat"
+    },
+    {
+     "tarif": "Business",
+     "preis": "rund 21 € pro Person und Monat bei Jahreszahlung, ab 2 Personen"
+    },
+    {
+     "tarif": "Enterprise und Edu",
+     "preis": "auf Anfrage"
+    }
+   ],
+   "schule": "Kein BMB-Steckbrief zu ChatGPT gefunden. Die Steckbriefe der Uni Graz (Juli 2025) beschreiben ChatGPT, sind aber ausdrücklich keine Empfehlungsliste.",
+   "werbung": "nur Free/Go",
+   "gut_fuer": "Texte entwerfen, Fragen klären, Ideen sammeln. Das Werkzeug, das die meisten schon privat kennen.",
+   "kurz": {
+    "eu": "Nur in Enterprise und Edu",
+    "training": "Gratis, Go, Plus: ja, abschaltbar. Business: nein",
+    "kosten": "Gratis mit Werbung; Plus rund 23 € im Monat; Business rund 21 € pro Person (Jahreszahlung, ab 2 Personen)",
+    "schule": "Ab 13 mit Erlaubnis der Eltern; kein Steckbrief des BMB"
+   },
+   "ampel": {
+    "eu": "y",
+    "training": "r"
+   },
+   "radar": "orgkonto",
+   "einschaetzung": "Das bekannteste Werkzeug, und darum das häufigste Gratis-Konto im Haus. Gratis heißt: Werbung, Training mit Ihren Eingaben und kein Vertrag für die Organisation. Wenn ChatGPT, dann als Business-Konto mit Hausregel.",
+   "fuer": {
+    "schule": "Für Schüler:innen nicht über private Konten. Wer es im Unterricht zeigt, zeigt es am Lehrer-Bildschirm und sagt dazu, welches Konto welche Funktionen hat."
+   },
+   "neu": [
+    {
+     "datum": "2026-10-07",
+     "text": "GPT-6 ersetzt das bisherige Modell: „Sol“ in den Bezahltarifen ab 7.10., „Luna“ in Free und Go ab 8.10.",
+     "q": {
+      "t": "OpenAI Community, 7.10.2026",
+      "u": "https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163"
+     }
+    },
+    {
+     "datum": "2026-10-21",
+     "text": "Werbung gibt es nur in Free und Go, inzwischen in 89 Ländern; Plus, Pro und Enterprise bleiben werbefrei.",
+     "q": {
+      "t": "Relevant Audience, 21.10.2026",
+      "u": "https://www.relevantaudience.com/ai/chatgpt-ads-expands-26-countries-89-total/"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "OpenAI Community, 7.10.2026",
+     "u": "https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163"
+    },
+    {
+     "t": "OpenAI, ChatGPT-Preise (de-DE), abgerufen 4.11.2026",
+     "u": "https://chatgpt.com/de-DE/pricing/"
+    },
+    {
+     "t": "OpenAI, EU Terms of Use",
+     "u": "https://openai.com/policies/eu-terms-of-use/"
+    },
+    {
+     "t": "OpenAI, Business data privacy",
+     "u": "https://openai.com/business-data/"
+    },
+    {
+     "t": "OpenAI, How your data is used to improve model performance (13.3.2026)",
+     "u": "https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/"
+    },
+    {
+     "t": "TechRepublic, ChatGPT-Werbung in Europa, 20.8.2026",
+     "u": "https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "gemini",
+   "name": "Google Gemini",
+   "anbieter": "Google",
+   "land": "us",
+   "art": "Chat-Assistent",
+   "modell": "Gemini 4 Argon für Google AI Pro und Ultra, ausgerollt ab 13.10.2026; das Gratis-Konto nutzt ein Flash-Lite-Modell.",
+   "daten": "Im privaten Konto werden Chats bei aktivierter Einstellung „Aktivitäten speichern“ zur Verbesserung der Modelle genutzt und teils von Menschen geprüft, geprüfte Chats bleiben bis zu drei Jahre gespeichert. Mit Schulkonto (Workspace for Education) werden die Daten laut Google nicht zum Training verwendet und nicht von Menschen geprüft. Ob Gemini-Daten in der EU bleiben können, ist nicht bestätigt.",
+   "konto": "Für private Google-Konten gilt in Österreich ein Mindestalter von 14 Jahren. In Workspace for Education ist Gemini für alle Altersgruppen verfügbar, unter 18 mit strengeren Inhaltsregeln; der Admin schaltet es für Gruppen ein oder aus.",
+   "kosten": [
+    {
+     "tarif": "Gratis",
+     "preis": "0 €",
+     "q": {
+      "t": "Google, Gemini-Abos",
+      "u": "https://gemini.google/subscriptions/"
+     }
+    },
+    {
+     "tarif": "Google AI Plus",
+     "preis": "4,99 USD pro Monat (Euro-Preis nicht bestätigt)",
+     "q": {
+      "t": "Google, Gemini-Abos",
+      "u": "https://gemini.google/subscriptions/"
+     }
+    },
+    {
+     "tarif": "Google AI Pro",
+     "preis": "19,99 USD pro Monat (Euro-Preis nicht bestätigt)",
+     "q": {
+      "t": "Google, Gemini-Abos",
+      "u": "https://gemini.google/subscriptions/"
+     }
+    },
+    {
+     "tarif": "Google AI Ultra",
+     "preis": "ab 99,99 USD pro Monat (Euro-Preis nicht bestätigt)",
+     "q": {
+      "t": "Google, Gemini-Abos",
+      "u": "https://gemini.google/subscriptions/"
+     }
+    },
+    {
+     "tarif": "Workspace for Education Fundamentals mit Gemini for Education",
+     "preis": "0 € für berechtigte Einrichtungen",
+     "q": {
+      "t": "Google for Education Österreich, Gemini for Education",
+      "u": "https://edu.google.at/workspace-for-education/add-ons/gemini-education"
+     }
+    },
+    {
+     "tarif": "Google AI Pro for Education (Zusatz)",
+     "preis": "15 USD pro Person und Monat bei Jahresbindung, 24 USD monatlich; in Österreich Preis auf Anfrage",
+     "q": {
+      "t": "Google for Education, Editionen vergleichen",
+      "u": "https://edu.google.com/intl/ALL_us/workspace-for-education/editions/compare-editions/"
+     }
+    }
+   ],
+   "schule": "Das BMB nennt für Google eine Eigenerklärung vom April 2022, Gemini ist darin nicht behandelt. Keine Vorgabe von BMB oder Bildungsdirektionen zu Gemini gefunden.",
+   "werbung": "nein",
+   "gut_fuer": "Häuser mit Google Workspace: Texte, Tabellen, Folien und Recherche direkt in den Google-Programmen.",
+   "kurz": {
+    "eu": "Nicht bestätigt",
+    "training": "Privat: ja, abschaltbar. Schulkonto: nein",
+    "kosten": "Gratis; Google AI Pro 19,99 USD; in Workspace for Education Fundamentals ohne Aufpreis",
+    "schule": "Mit Schulkonto für alle Altersgruppen, der Admin schaltet es frei"
+   },
+   "ampel": {
+    "eu": "y",
+    "training": "y"
+   },
+   "radar": "orgkonto",
+   "einschaetzung": "Stark, wenn Ihr Haus ohnehin mit Google arbeitet. Mit Schul- oder Firmenkonto deutlich datenschutzfreundlicher als jedes private Konto. Bei Vorführungen aufpassen: Das Gratis-Konto nutzt meist ein kleineres Modell als das bezahlte.",
+   "fuer": {
+    "schule": "Mit Workspace for Education der einfachste Weg zu KI mit Schulkonto. Vorher klären, für welche Gruppen der Admin Gemini freischaltet, und es mit der Bildungsdirektion abstimmen."
+   },
+   "neu": [
+    {
+     "datum": "2026-10-13",
+     "text": "Gemini 4 Argon wird weltweit für Google AI Pro und Ultra ausgerollt; über ein Menü lassen sich mehr als 40 Apps verbinden.",
+     "q": {
+      "t": "Google, Gemini Release Notes",
+      "u": "https://gemini.google/release-notes/"
+     }
+    },
+    {
+     "datum": "2026-09-30",
+     "text": "„Skills“ kommen in den Gemini-Chat als wiederverwendbare Anleitungen und sollen die Gems ablösen.",
+     "q": {
+      "t": "Google, Gemini Release Notes",
+      "u": "https://gemini.google/release-notes/"
+     }
+    },
+    {
+     "datum": "2026-09-10",
+     "text": "Die Gemini-App gibt es nun für Windows 10 und neuer.",
+     "q": {
+      "t": "Google, Gemini Release Notes",
+      "u": "https://gemini.google/release-notes/"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Google, Gemini-Abos",
+     "u": "https://gemini.google/subscriptions/"
+    },
+    {
+     "t": "Google, Gemini Release Notes",
+     "u": "https://gemini.google/release-notes/"
+    },
+    {
+     "t": "Google, Datenschutzhinweise für Gemini-Apps (23.10.2026)",
+     "u": "https://support.google.com/gemini/answer/13594961?hl=de"
+    },
+    {
+     "t": "Google for Education Österreich, Gemini for Education",
+     "u": "https://edu.google.at/workspace-for-education/add-ons/gemini-education"
+    },
+    {
+     "t": "Google Workspace Admin, Gemini und Gemini Notebook für Education (22.10.2026)",
+     "u": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?authuser=0"
+    },
+    {
+     "t": "Google for Education, Editionen vergleichen",
+     "u": "https://edu.google.com/intl/ALL_us/workspace-for-education/editions/compare-editions/"
+    },
+    {
+     "t": "Google Workspace, Preise (de)",
+     "u": "https://workspace.google.com/intl/de/pricing.html"
+    },
+    {
+     "t": "heise online, NotebookLM für jüngere Nutzer (Altersgrenzen je Land)",
+     "u": "https://heise.de/-10509578"
+    },
+    {
+     "t": "BMB, Datenschutz in Schulen (aus der Faktenbank)",
+     "u": "https://www.bmb.gv.at/Themen/schule/schulrecht/ds.html"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "notebooklm",
+   "name": "NotebookLM (jetzt Gemini Notebook)",
+   "anbieter": "Google",
+   "land": "us",
+   "art": "Notizbuch",
+   "modell": "Läuft mit Gemini-Modellen; seit 16.7.2026 heißt NotebookLM „Gemini Notebook“ und ist auch in der Gemini-App nutzbar.",
+   "daten": "Laut Google werden Daten nicht zum Training verwendet, außer man gibt Feedback; dann können Menschen den ganzen Verlauf prüfen. In den Unternehmens-Stufen von Workspace werden Dateien, Chats und Antworten weder von Menschen geprüft noch zum Training genutzt. Für Schulen gelten die Bedingungen von Workspace for Education.",
+   "konto": "Privat ab 13 Jahren, in Österreich wegen des Mindestalters für Google-Konten ab 14. Mit Schulkonto (Workspace for Education) für alle Altersgruppen als Kerndienst, der Admin schaltet es ein oder aus.",
+   "kosten": [
+    {
+     "tarif": "Gratis (privates Google-Konto)",
+     "preis": "0 €",
+     "q": {
+      "t": "Google Workspace Updates, Lernfunktionen in Gemini Notebook, 18.9.2026",
+      "u": "https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html"
+     }
+    },
+    {
+     "tarif": "Workspace for Education Fundamentals",
+     "preis": "0 € für berechtigte Einrichtungen, mit Nutzungsgrenzen",
+     "q": {
+      "t": "Google for Education Österreich, Gemini for Education",
+      "u": "https://edu.google.at/workspace-for-education/add-ons/gemini-education"
+     }
+    }
+   ],
+   "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden. Google führt Gemini Notebook in Workspace for Education als Kerndienst für alle Altersgruppen.",
+   "werbung": "nein",
+   "gut_fuer": "Lernen und Vorbereiten aus eigenen Unterlagen: Die KI antwortet aus Ihren Quellen und zeigt die Stelle.",
+   "kurz": {
+    "eu": "Nicht geprüft",
+    "training": "Nein, außer Sie geben Feedback",
+    "kosten": "Gratis; mehr Nutzung mit Google AI Pro oder Workspace",
+    "schule": "Kerndienst in Workspace for Education"
+   },
+   "ampel": {
+    "eu": "y",
+    "training": "g"
+   },
+   "radar": "pruefroutine",
+   "einschaetzung": "Gut für Kursvorbereitung und Lernen, weil jede Antwort auf eine Stelle in Ihren Unterlagen zeigt. Das macht Prüfen leicht. Hineinladen nur, was nach der Datenampel darf.",
+   "neu": [
+    {
+     "datum": "2026-07-16",
+     "text": "NotebookLM wird zu Gemini Notebook; jedes Notizbuch bekommt einen Cloud-Rechner, der Code für Datenanalysen aus den Quellen ausführt, zuerst für Ultra- und Workspace-Kunden.",
+     "q": {
+      "t": "Google Blog, NotebookLM heißt jetzt Gemini Notebook, 16.7.2026",
+      "u": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+     }
+    },
+    {
+     "datum": "2026-09-18",
+     "text": "Neue Lernfunktionen: Audioaufnahme am Handy, Sprachgespräche zu den eigenen Quellen (ab 18), Prüfungsvorbereitung und kurze Lernvideos.",
+     "q": {
+      "t": "Google Workspace Updates, Lernfunktionen in Gemini Notebook, 18.9.2026",
+      "u": "https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Google Blog, NotebookLM heißt jetzt Gemini Notebook, 16.7.2026",
+     "u": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+    },
+    {
+     "t": "Google Workspace Updates, Lernfunktionen in Gemini Notebook, 18.9.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html"
+    },
+    {
+     "t": "Google-Hilfe, Gemini Notebook mit Arbeits- oder Schulkonto",
+     "u": "https://support.google.com/gemininotebook/answer/16337734"
+    },
+    {
+     "t": "Google for Education Österreich, Gemini for Education",
+     "u": "https://edu.google.at/workspace-for-education/add-ons/gemini-education"
+    },
+    {
+     "t": "Google Workspace Admin, Gemini und Gemini Notebook für Education (22.10.2026)",
+     "u": "https://knowledge.workspace.google.com/admin/getting-started/editions/quickstart-guide-to-gemini-and-gemini-notebook-for-education?authuser=0"
+    },
+    {
+     "t": "heise online, NotebookLM für jüngere Nutzer",
+     "u": "https://heise.de/-10509578"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "claude",
+   "name": "Claude",
+   "anbieter": "Anthropic",
+   "land": "us",
+   "art": "Chat-Assistent",
+   "modell": "Claude Opus 5.5 (22.9.2026), Sonnet 5.5 (28.9.2026) und Haiku 5.5 (7.10.2026); als stärkstes Modell nennt die Preisseite „Fable 5.1“.",
+   "daten": "In Free, Pro und Max dürfen Inhalte zum Training verwendet werden, außer man widerspricht in den Kontoeinstellungen; Feedback und Sicherheitsprüfungen bleiben ausgenommen. Team, Enterprise und API haben laut Kanzlei-Einschätzung einen Auftragsverarbeitungsvertrag und kein Training. Die direkte Nutzung bedeutet eine Übermittlung in die USA, eine Verarbeitung in der EU gibt es nur über Cloud-Anbieter wie AWS oder Google.",
+   "konto": "Mindestalter 18 Jahre laut Verbraucherbedingungen; das gilt für Free, Pro und Max. Team und Enterprise sind Organisationskonten mit eigenen Geschäftsbedingungen.",
+   "kosten": [
+    {
+     "tarif": "Free",
+     "preis": "0 €",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    },
+    {
+     "tarif": "Pro",
+     "preis": "20 USD pro Monat, 17 USD bei Jahreszahlung; zuzüglich Steuer",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    },
+    {
+     "tarif": "Max",
+     "preis": "ab 100 USD pro Monat",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    },
+    {
+     "tarif": "Team (Standard-Platz)",
+     "preis": "25 USD pro Person und Monat, 20 USD bei Jahreszahlung; zuzüglich Steuer",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    },
+    {
+     "tarif": "Enterprise",
+     "preis": "20 USD pro Platz und Monat plus Nutzung zu API-Preisen, Jahresvertrag ab 20 Plätzen",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    },
+    {
+     "tarif": "Education",
+     "preis": "Preis auf Anfrage",
+     "q": {
+      "t": "Anthropic, Claude-Preise",
+      "u": "https://claude.com/pricing"
+     }
+    }
+   ],
+   "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden. Wegen des Mindestalters von 18 Jahren kommen Gratis- und Pro-Konten für Schüler:innen nicht in Frage.",
+   "werbung": "nein",
+   "gut_fuer": "Lange Dokumente, sorgfältiges Schreiben, Arbeitsanleitungen (Skills) für wiederkehrende Aufgaben.",
+   "kurz": {
+    "eu": "Nur über Cloud-Anbieter wie AWS oder Google",
+    "training": "Free, Pro: ja, außer Sie widersprechen. Team: nein",
+    "kosten": "Pro 20 USD; Team 25 USD pro Person",
+    "schule": "Mindestalter 18, also nicht für Schüler:innen"
+   },
+   "ampel": {
+    "eu": "r",
+    "training": "y"
+   },
+   "radar": "skills",
+   "einschaetzung": "Gut beim Schreiben und bei langen Dokumenten, und der Ursprung der Skills. Im Privatkonto wird mit Ihren Eingaben trainiert, außer Sie widersprechen, und die Daten gehen in die USA. Im Haus darum nur als Team-Konto mit Vertrag.",
+   "neu": [
+    {
+     "datum": "2026-10-07",
+     "text": "Claude Haiku 5.5: das schnellste und günstigste Modell, laut Anthropic im Schnitt rund 75 % billiger als der Vorgänger.",
+     "q": {
+      "t": "Anthropic, 7.10.2026",
+      "u": "https://www.anthropic.com/claude-haiku-5-5"
+     }
+    },
+    {
+     "datum": "2026-10-22",
+     "text": "Anthropic übergibt den Standard „Agent Skills“ an die Linux Foundation; über 70 Plattformen nutzen ihn.",
+     "q": {
+      "t": "Anthropic, 22.10.2026",
+      "u": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Anthropic, Claude-Preise",
+     "u": "https://claude.com/pricing"
+    },
+    {
+     "t": "Anthropic, Newsroom",
+     "u": "https://www.anthropic.com/news"
+    },
+    {
+     "t": "Anthropic, Verbraucher-Nutzungsbedingungen (gültig ab 8.10.2025)",
+     "u": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+     "t": "Heuking Kühn Lüer Wojtek, Claude im Unternehmen, 5.6.2026 (aus der Faktenbank)",
+     "u": "https://www.heuking.de/en/news-events/newsletter-articles/detail/anthropic-claude-in-the-enterprise-data-protection-and-compliance-requirements-for-the-use-of-generative-ai.html"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "lechat",
+   "name": "Le Chat von Mistral (jetzt Vibe)",
+   "anbieter": "Mistral AI",
+   "land": "fr",
+   "art": "Chat-Assistent",
+   "modell": "Mistral Large 4 (Vorschau seit 6.10.2026)",
+   "daten": "Bei Einzelkonten werden Eingaben standardmäßig zum Training verwendet; abschaltbar unter Datenschutz in den Einstellungen. Enterprise-Kunden sind standardmäßig vom Training ausgenommen, bei Team kann der Admin das Training für die ganze Organisation abschalten.",
+   "konto": "",
+   "kosten": [
+    {
+     "tarif": "Free",
+     "preis": "0 €",
+     "q": {
+      "t": "Mistral AI, Preise",
+      "u": "https://mistral.ai/pricing"
+     }
+    },
+    {
+     "tarif": "Pro",
+     "preis": "14,99 USD pro Monat, ohne Steuer (Euro-Betrag im Text nicht angezeigt)",
+     "q": {
+      "t": "Mistral AI, Preise",
+      "u": "https://mistral.ai/pricing"
+     }
+    },
+    {
+     "tarif": "Student",
+     "preis": "5,99 USD pro Monat für bis zu 12 Monate, ohne Steuer",
+     "q": {
+      "t": "Mistral AI, Preise",
+      "u": "https://mistral.ai/pricing"
+     }
+    },
+    {
+     "tarif": "Team",
+     "preis": "24,99 USD pro Person und Monat, ohne Steuer",
+     "q": {
+      "t": "Mistral AI, Preise",
+      "u": "https://mistral.ai/pricing"
+     }
+    },
+    {
+     "tarif": "Enterprise",
+     "preis": "Preis auf Anfrage",
+     "q": {
+      "t": "Mistral AI, Preise",
+      "u": "https://mistral.ai/pricing"
+     }
+    }
+   ],
+   "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.",
+   "werbung": "unklar",
+   "gut_fuer": "Wer bewusst einen europäischen Anbieter sucht: Chat, Texte, Recherche.",
+   "kurz": {
+    "eu": "Anbieter in Frankreich; Datenstandort nicht geprüft",
+    "training": "Einzelkonto: ja, abschaltbar. Enterprise: nein",
+    "kosten": "Pro 14,99 USD; Team 24,99 USD pro Person",
+    "schule": "Keine Vorgabe gefunden"
+   },
+   "ampel": {
+    "eu": "y",
+    "training": "y"
+   },
+   "radar": "govgpt",
+   "einschaetzung": "Die europäische Alternative, und sie wird stärker. Aber die Herkunft allein macht noch keinen Datenschutz: Auch hier zählt das Team-Konto mit Vertrag. Ich beobachte, ob Mistral im Büroalltag mit den Großen mithält.",
+   "neu": [
+    {
+     "datum": "2026-10-06",
+     "text": "Mistral Large 4 als öffentliche Vorschau, trainiert in eigenen Rechenzentren in Europa.",
+     "q": {
+      "t": "Mistral, 6.10.2026",
+      "u": "https://mistral.ai/news/mistral-large-4/"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Mistral AI, Preise",
+     "u": "https://mistral.ai/pricing"
+    },
+    {
+     "t": "Mistral Help Center, Training abschalten (3.9.2026)",
+     "u": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training"
+    },
+    {
+     "t": "heise online, Mistrals Chatbot heißt jetzt „Vibe“",
+     "u": "https://heise.de/-11311685"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "deepl",
+   "name": "DeepL Translator und Write",
+   "anbieter": "DeepL SE",
+   "land": "de",
+   "art": "Übersetzung",
+   "modell": "",
+   "daten": "In der Gratis-Version speichert DeepL Texte und Übersetzungen für begrenzte Zeit und nutzt sie zum Training. In den Pro-Tarifen werden Texte nur so lange gespeichert wie für die Übersetzung nötig und nicht zum Training verwendet; ein Auftragsverarbeitungsvertrag ist vorgesehen. Dokumentübersetzungen laufen laut DeepL auf Infrastruktur im EWR.",
+   "konto": "",
+   "kosten": [
+    {
+     "tarif": "Free",
+     "preis": "0 €",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    },
+    {
+     "tarif": "Individual",
+     "preis": "7,49 € pro Monat bei Jahreszahlung, inkl. USt",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    },
+    {
+     "tarif": "Team",
+     "preis": "24,99 € pro Person und Monat bei Jahreszahlung, inkl. USt",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    },
+    {
+     "tarif": "Business (mit Write Pro)",
+     "preis": "49,99 € pro Person und Monat bei Jahreszahlung, inkl. USt",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    },
+    {
+     "tarif": "Write Pro als Zusatz zu Individual oder Team",
+     "preis": "6,99 € pro Person und Monat bei Jahreszahlung",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    },
+    {
+     "tarif": "Enterprise",
+     "preis": "Preis auf Anfrage",
+     "q": {
+      "t": "DeepL, Pro-Tarife (de)",
+      "u": "https://www.deepl.com/de/pro"
+     }
+    }
+   ],
+   "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.",
+   "werbung": "unklar",
+   "gut_fuer": "Übersetzen und Texte glätten, auch ganze Dokumente.",
+   "kurz": {
+    "eu": "Dokumente laut DeepL im EWR",
+    "training": "Gratis: ja. Pro: nein",
+    "kosten": "Individual 7,49 €; Team 24,99 € pro Person (bei Jahreszahlung)",
+    "schule": "Keine Vorgabe gefunden"
+   },
+   "ampel": {
+    "eu": "g",
+    "training": "y"
+   },
+   "radar": "hausregeln",
+   "einschaetzung": "Für Übersetzungen im Alltag bewährt. Mit Pro-Konto werden Ihre Texte nicht zum Training genutzt; mit dem Gratis-Konto gehören keine internen Texte hinein.",
+   "neu": [],
+   "quellen": [
+    {
+     "t": "DeepL, Pro-Tarife (de)",
+     "u": "https://www.deepl.com/de/pro"
+    },
+    {
+     "t": "DeepL, Datenschutzerklärung (de)",
+     "u": "https://www.deepl.com/de/privacy"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "lokal",
+   "name": "Lokale offene Modelle",
+   "anbieter": "verschiedene",
+   "land": "verschieden",
+   "art": "Offenes Modell",
+   "modell": "In der Ollama-Bibliothek am häufigsten geladen: Llama 3.1 und 3.2 (Meta), DeepSeek-R1, Qwen 2.5, 3 und 3.5 (Alibaba), Gemma 2, 3 und 4 (Google) und Mistral 7B. Gemma 3, Gemma 4 und Qwen 3.5 wurden zuletzt aktualisiert (etwa Mitte Oktober 2026).",
+   "daten": "Die Modelle laufen auf dem eigenen Rechner oder Server; Eingaben verlassen das Gerät nicht, solange keine Cloud-Funktion genutzt wird. Einen Auftragsverarbeitungsvertrag braucht es dafür nicht, die Verantwortung für Sicherheit und Updates liegt beim eigenen Haus.",
+   "konto": "Kein Konto beim Modellanbieter nötig. Die Lizenzbedingungen der einzelnen Modellfamilien unterscheiden sich.",
+   "kosten": [
+    {
+     "tarif": "Software und Modelle",
+     "preis": "0 € Lizenzkosten; Kosten entstehen für Hardware und Strom",
+     "q": {
+      "t": "Ollama, Modellbibliothek (nach Beliebtheit), abgerufen 4.11.2026",
+      "u": "https://ollama.com/library"
+     }
+    }
+   ],
+   "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.",
+   "werbung": "nein",
+   "gut_fuer": "Häuser mit eigener IT, die heikle Texte gar nicht aus dem Haus geben wollen.",
+   "kurz": {
+    "eu": "Bleibt im Haus",
+    "training": "Nein",
+    "kosten": "Keine Lizenz, aber Hardware, Strom und Betreuung",
+    "schule": "Keine Vorgabe gefunden"
+   },
+   "ampel": {
+    "eu": "g",
+    "training": "g"
+   },
+   "radar": "govgpt",
+   "einschaetzung": "Spannend, wenn wirklich nichts das Haus verlassen darf. Aber jemand muss Rechner und Updates betreuen, und kleine Modelle sind schwächer als die großen Dienste. Für die meisten Häuser ist ein Organisationskonto der einfachere Weg.",
+   "neu": [
+    {
+     "datum": "2026-10",
+     "text": "Gemma 4 und Qwen 3.5 stehen in der Ollama-Bibliothek in mehreren Größen bereit (etwa 1 bis 122 Milliarden Parameter); die Seite nennt nur „vor 3 Wochen aktualisiert“.",
+     "q": {
+      "t": "Ollama, Modellbibliothek (nach Beliebtheit), abgerufen 4.11.2026",
+      "u": "https://ollama.com/library"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Ollama, Modellbibliothek (nach Beliebtheit), abgerufen 4.11.2026",
+     "u": "https://ollama.com/library"
+    }
+   ],
+   "stand": "2026-11-04"
+  },
+  {
+   "id": "govgpt",
+   "name": "GovGPT (Public AI des Bundes)",
+   "anbieter": "Republik Österreich, Bundeskanzleramt",
+   "land": "at",
+   "art": "Verwaltung",
+   "modell": "Offene Modelle im Bundesrechenzentrum; seit 20.7.2026 in Betrieb.",
+   "daten": "Die Modelle laufen im Bundesrechenzentrum in Österreich.",
+   "konto": "Nur für Bundesbedienstete, rund 20.000 haben Zugang. Für Länder und Gemeinden laufen laut Bund Gespräche, ohne Zeitplan.",
+   "kosten": [],
+   "schule": "Keine Vorgabe gefunden; GovGPT ist nicht für Schulen geöffnet.",
+   "werbung": "nein",
+   "gut_fuer": "Bundesbedienstete. Zeigt, wie Verwaltung KI im eigenen Rechenzentrum betreiben kann.",
+   "kurz": {
+    "eu": "Bundesrechenzentrum in Österreich",
+    "training": "Keine Angabe",
+    "kosten": "Nur für Bundesbedienstete",
+    "schule": "Nicht geöffnet"
+   },
+   "ampel": {
+    "eu": "g"
+   },
+   "radar": "govgpt",
+   "einschaetzung": "Ein gutes Vorbild: offene Modelle im eigenen Rechenzentrum. Für Länder und Gemeinden gibt es aber noch keinen Zeitplan.",
+   "fuer": {
+    "gemeinde": "Nicht darauf warten. Starten Sie mit einem freigegebenen Werkzeug und einer Hausregel, und fragen Sie beim Gemeindebund nach dem Stand."
+   },
+   "neu": [
+    {
+     "datum": "2026-09-26",
+     "text": "KI kommt in den elektronischen Akt (ELAK) des Bundes, Ausrollung bis Ende 2026, unter anderem für Anfragen nach dem Informationsfreiheitsgesetz.",
+     "q": {
+      "t": "OTS Bundeskanzleramt, KI im elektronischen Akt, 26.9.2026 (aus der Faktenbank)",
+      "u": "https://www.ots.at/presseaussendung/OTS_20260926_OTS0010/proell-ki-zieht-in-den-elektronischen-akt-ein"
+     }
+    }
+   ],
+   "quellen": [
+    {
+     "t": "Bundeskanzleramt, GovGPT für die Bundesverwaltung, 20.7.2026 (aus der Faktenbank)",
+     "u": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/07/proell-public-ai-launcht-govgpt-fuer-die-bundesverwaltung.html"
+    },
+    {
+     "t": "OTS Bundeskanzleramt, 20.7.2026 (aus der Faktenbank)",
+     "u": "https://www.ots.at/presseaussendung/OTS_20260720_OTS0074/proell-public-ai-launcht-govgpt-fuer-die-bundesverwaltung"
+    },
+    {
+     "t": "OTS Bundeskanzleramt, KI im elektronischen Akt, 26.9.2026 (aus der Faktenbank)",
+     "u": "https://www.ots.at/presseaussendung/OTS_20260926_OTS0010/proell-ki-zieht-in-den-elektronischen-akt-ein"
+    }
+   ],
+   "stand": "2026-11-04"
+  }
+ ]
+}

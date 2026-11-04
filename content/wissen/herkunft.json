@@ -1,0 +1,735 @@
+{
+"hinweis": "Korrekturen der automatischen Zuordnung. Schlüssel = eindeutiger Textausschnitt der Tatsache. land: at, de, ch, eu, uk, nl, dk, no, pl, tr, fr, us, kr, cn, ee, al, ng, intl. art: studie, gesetz, werkzeug, vorfall.",
+"korrekturen": [
+{
+"key": "Erledigen ist nicht Lernen",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Mit starkem Rückhalt der Führung",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "11 % der KI-nutzenden Unternehmen",
+"land": "de",
+"art": "studie"
+},
+{
+"key": "ChatGPT Business, Enterprise, Edu und API",
+"land": "us",
+"art": "werkzeug"
+},
+{
+"key": "Claude Team/Enterprise und API",
+"land": "us",
+"art": "werkzeug"
+},
+{
+"key": "Lethal trifecta",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Die besten KI-Agenten schaffen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "METR-Zeithorizont",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Chegg baut 45 %",
+"land": "us",
+"art": "vorfall"
+},
+{
+"key": "95 % der Beschäftigten in Ö-Cert-Häusern",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "Ö-Cert-Studie: 94 %",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "KI-Gesprächspartner liefern",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "44 % der Beschäftigten in Österreich",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "Österreich 2025: 30 % der Unternehmen",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "PHP2Shell (CVE",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "PHP2Shell: Fix",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "PHP2Shell: erster Angriffsversuch",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Nach dem PHP-Update",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "CVE-2026-115560",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Rund 69 % der Websites",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "LiteLLM 1.107.0",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Zapier: Code-Red-Woche",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "McKinsey 2026",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Nonprofit-Rabatte",
+"land": "us",
+"art": "werkzeug"
+},
+{
+"key": "EY: 69 % der österreichischen",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "Rotes Kreuz Österreich",
+"land": "at",
+"art": "gesetz"
+},
+{
+"key": "Dopamin ist kein Genussstoff",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "PISA 2025 Österreich",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "PISA 2025 OECD",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "PISA 2025: Wer KI",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "PISA 2022: Wer in fast",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "PIAAC Österreich",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "62 % der Österreicher:innen",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "EU-US Data Privacy Framework",
+"land": "eu",
+"art": "gesetz"
+},
+{
+"key": "Organisationales Lernen mit KI",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Von den ersten 500 Shorts",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Erwachsene schnitten im d2",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "In der Cybersecurity-Studie 2026 (1.396 Betriebe)",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "Laut Bundeskriminalamt ermöglicht Deepfake-Technik",
+"art": "studie"
+},
+{
+"key": "Die Regio Vorderland-Feldkirch",
+"art": "studie"
+},
+{
+"key": "Laut ÖGB zählen nur seminaristische Kurse",
+"art": "gesetz"
+},
+{
+"key": "Wer unter 3.465 Euro brutto verdient",
+"art": "gesetz"
+},
+{
+"key": "Chatbots dürfen Anträge entgegennehmen",
+"art": "gesetz"
+},
+{
+"key": "Die Steckbriefe warnen",
+"art": "studie"
+},
+{
+"key": "Die Kärntner KI-Umsetzungsförderung",
+"art": "gesetz"
+},
+{
+"key": "Das AMS-Förderbudget lag zuletzt",
+"art": "studie"
+},
+{
+"key": "GovGPT ist rund 20.000 Bundesbediensteten",
+"art": "werkzeug"
+},
+{
+"key": "Zur Öffnung von GovGPT für Länder und Gemeinden",
+"art": "werkzeug"
+},
+{
+"key": "In der Schweiz nutzen laut SVEB-Umfrage",
+"land": "ch",
+"art": "studie"
+},
+{
+"key": "54 % der US-Jugendlichen von 13 bis 17 Jahren haben",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "10 % der US-Jugendlichen erledigen alle oder die meisten",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "59 % der US-Jugendlichen sagen, dass an ihrer Schule",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "70 % der US-Teenager nutzen KI für Schularbeiten, und fast",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Nur 27 % der US-Teenager sagen, dass eine Lehrkraft mit",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "44 % der KI nutzenden US-Teenager hatten ein KI-Werkzeug im",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "86 % der US-Kinder und Jugendlichen von 9 bis 17 Jahren",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Mehr als 4 von 10 US-Kindern sagen, dass noch nie ein",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "51 % der US-Amerikaner:innen von 14 bis 29 Jahren nutzen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Der Anteil der jungen US-Amerikaner:innen, die KI mit",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Nur noch 46 % der jungen US-Amerikaner:innen sagen, dass KI",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Der Anteil der US-Schüler:innen, deren Schule KI-Regeln",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Nur 18 % der US-Lehrkräfte an öffentlichen Schulen bekommen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "34 % der US-Lehrkräfte bekommen zu keiner von zehn",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Im Schnitt von 27 OECD-Ländern nutzten 36 % der Lehrkräfte",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Lehrkräfte, die KI nutzen, setzen sie vor allem zum",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "72 % der Lehrkräfte in der OECD meinen, KI erlaube",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "75 % der Lehrkräfte, die keine KI nutzen, nennen fehlendes",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Der Anteil der Studierenden, die generative KI fürs Studium",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "95 % der britischen Vollzeit-Studierenden nutzen KI, 94 %",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Weniger als die Hälfte der britischen Studierenden fühlt",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "88 % der Studierenden und 77 % der Lehrenden an Hochschulen",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Nur 29 % der Studierenden halten ihre Lehrenden für fähig,",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "66 % der Studierenden fürchten, dass KI das Lernen zu",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Sechs Wochen KI-Tutoring mit GPT-4 nach dem Unterricht",
+"land": "ng",
+"art": "studie"
+},
+{
+"key": "Lehrkräfte, die ChatGPT für die Planung von",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Volksschullehrkräfte mit dem staatlichen",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Estlands Programm „AI Leap“ erreichte im Pilotjahr 2025/26",
+"land": "ee",
+"art": "studie"
+},
+{
+"key": "Südkoreas Parlament stufte die KI-Digitalschulbücher am",
+"land": "kr",
+"art": "gesetz"
+},
+{
+"key": "Peking schreibt seit Herbst 2025 mindestens acht",
+"land": "cn",
+"art": "gesetz"
+},
+{
+"key": "Die US-Verordnung 14277 vom 23.4.2025 gründet eine",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "35 US-Bundesstaaten hatten bis Juli 2026 KI-Leitlinien für",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Sechs US-Bundesstaaten verpflichten ihre Schulbezirke per",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Englands Kinderschutz-Leitfaden für Schulen zählt seit",
+"land": "uk",
+"art": "gesetz"
+},
+{
+"key": "Anthropic bietet seit 14.7.2026 „Claude for Teachers“ für",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "19,8 % der US-Betriebe nutzten Anfang Mai 2026 KI; zwischen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "In den USA nutzen 37 % der Betriebe mit 250 und mehr",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Rund 41 % der US-Beschäftigten nutzten im November 2025",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Je nach Erhebung nutzen 18 % (Census) oder 69 % (Atlanta",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "21 % der US-Beschäftigten sagten im September 2025, dass",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "20,0 % der EU-Unternehmen ab 10 Beschäftigten nutzten 2025",
+"land": "eu",
+"art": "studie"
+},
+{
+"key": "Die KI-Nutzung der Unternehmen reicht in der EU 2025 von",
+"land": "eu",
+"art": "studie"
+},
+{
+"key": "Mehr als 70 % der ChatGPT-Nachrichten waren 2025 nicht",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "93 % der ausgewerteten Claude-Gespräche ergaben ein",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "In derselben Anthropic-Umfrage berichten 86 % schnelleres",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Junge Beschäftigte (22 bis 25 Jahre) in stark",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Laut der Stanford-Aktualisierung entsteht der Rückgang bei",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Das Yale Budget Lab findet bis März 2026 keinen messbaren",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Anthropic findet seit Ende 2022 keinen systematischen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "30 % der US-Beschäftigten arbeiten in Berufen, in denen",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Bei Anthropic selbst sank der Anteil von",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Anthropic-Beschäftigte erwarten im Schnitt, dass KI bis",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Experimentell gemessen waren erfahrene",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "In der METR-Folgestudie (57 Entwickler:innen, über 800",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Nur 13 % der KI-Nutzenden geben an, dass ihre Organisation",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Laut Microsoft erklären organisatorische Faktoren (Führung,",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "86 % der befragten KI-Nutzenden behandeln KI-Ergebnisse als",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Wenn Führungskräfte KI sichtbar selbst nutzen, berichten",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Die Zahl aktiver KI-Agenten in Microsoft 365 stieg binnen",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Der viel zitierte MIT-NANDA-Bericht („95 % der",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Laut MIT NANDA haben nur 40 % der befragten Firmen ein",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Im Stanford AI Index 2026 erreichte generative KI in drei",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Private KI-Investitionen erreichten 2025 in den USA 285,88",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Beim Test OSWorld (Computerbedienung durch KI-Agenten)",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Der Preis pro Token für eine gleichbleibende Leistung sinkt",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Rund jede vierte erwerbstätige Person weltweit arbeitet",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Im Beige Book vom Oktober 2026 berichten 5 der 12",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Das Weiße Haus legte am 23.7.2025 den „AI Action Plan“ mit",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Die US-Verordnung „Ensuring a National Policy Framework for",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Die Klage-Taskforce des US-Justizministeriums hatte bis",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Im April 2026 sagte Colorados Justizminister vor dem",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Colorado ersetzte sein KI-Gesetz am 14.5.2026 durch SB",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Kaliforniens SB 53 gilt seit 1.1.2026 für Entwickler von",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "Texas' KI-Gesetz TRAIGA gilt seit 1.1.2026: Behörden müssen",
+"land": "us",
+"art": "gesetz"
+},
+{
+"key": "US-Bundesbehörden meldeten im KI-Verzeichnis 2025 rund",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Die US-Beschaffungsbehörde GSA vereinbarte am 27.10.2026",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "Im britischen Copilot-Versuch mit 20.000 Lizenzen in 12",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Das britische Arbeitsministerium DWP maß mit",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Die britische Steuerbehörde HMRC kommt in ihrer",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Das britische Werkzeug „Consult“ ordnete 87.738 Antworten",
+"land": "uk",
+"art": "studie"
+},
+{
+"key": "Dänemarks Regierung, Gemeindeverband KL und Regionen",
+"land": "dk",
+"art": "studie"
+},
+{
+"key": "Albanien stellte im September 2025 mit „Diella“ eine",
+"land": "al",
+"art": "studie"
+},
+{
+"key": "China verpflichtet seit 1.9.2025 Anbieter, KI-generierte",
+"land": "cn",
+"art": "gesetz"
+},
+{
+"key": "52 % der US-Erwachsenen sind beim Thema KI im Alltag eher",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "71 % der US-Erwachsenen erwarten, dass KI in den nächsten",
+"land": "us",
+"art": "studie"
+},
+{
+"key": "In der weltweiten Vertrauensstudie von KPMG und University",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "In derselben Studie geben 66 % der Erwerbstätigen an, sich",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "10 % der Menschen in 45 Märkten nutzen KI-Chatbots",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Nachrichten aus KI-Chatbots vertrauen nur 20 % der",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "In sechs Ländern nutzen 51 % der Menschen wöchentlich",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "57 % der Befragten in neun Ländern sahen in der Vorwoche",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Nur 12 % fühlen sich mit Nachrichten wohl, die vollständig",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Google misst für einen mittleren Gemini-Textprompt 0,24 Wh",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Rechenzentren verbrauchten 2025 weltweit 485 TWh Strom; der",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Die IEA erwartet bis 2030 rund 950 TWh Strombedarf der",
+"land": "intl",
+"art": "studie"
+},
+{
+"key": "Laut Anthropic-Bedrohungsbericht vom September 2026 griff",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Anthropic folgert aus acht Monaten Missbrauchsfällen, dass",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Der Stanford AI Index 2026 zählt für 2025 einen Rekord von",
+"land": "intl",
+"art": "vorfall"
+},
+{
+"key": "Eine von Anthropic gestoppte kommerzielle",
+"land": "intl",
+"art": "vorfall"
+}
+]
+}

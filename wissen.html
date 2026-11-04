@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wissen: Was man über KI wirklich weiß · Armin Fradler</title>
+<link rel="canonical" href="https://arminfradler.at/wissen.html">
+<meta name="description" content="Das KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe: jede Woche nachgeschaut, jede Zahl mit Quelle, Güte und Prüfdatum. Mit Einordnung, was das für Ihr Haus heißt.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Was man über KI wirklich weiß · Armin Fradler">
+<meta property="og:description" content="KI-Radar, KI-Nachrichten mit Einordnung und geprüfte Befunde. Jede Woche nachgeschaut, nicht nachgeplappert.">
+<meta property="og:url" content="https://arminfradler.at/wissen.html">
+<meta property="og:image" content="https://arminfradler.at/assets/portrait.webp">
+<meta property="og:locale" content="de_AT">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<link href="assets/site.css?v=20261104z" rel="stylesheet">
+<link href="assets/textures.css?v=20261104x" rel="stylesheet">
+<link href="assets/wissen.css?v=20261104z" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="KI-Nachrichten, eingeordnet · Armin Fradler" href="https://arminfradler.at/wissen-feed.xml">
+</head>
+<body data-page="wissen">
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header id="site-head"></header>
+<main id="inhalt">
+
+<nav class="w-bereich" aria-label="Bereich Wissen"><div class="wrap"><span class="hand">Wissen:</span><a href="wissen.html" aria-current="page">Überblick</a><a href="nachrichten.html">KI-Nachrichten</a><a href="modelle.html">Modelle und Werkzeuge</a></div></nav>
+
+<section class="w-hero">
+  <div class="wrap">
+    <div>
+      <p class="kick">Wissen · <span data-stand>Stand 4. November 2026</span></p>
+      <h1>Was man über KI <span class="mark">wirklich</span> weiß.</h1>
+      <p class="hand w-sub">Nachgeschaut, nicht nachgeplappert.</p>
+      <p class="lead">Jede Woche sucht eine KI-Routine die wichtigsten Meldungen zusammen und liest jede Zahl an der Originalquelle nach. Ich lese, was hängen bleibt, ordne es ein und entscheide, was hier steht: für Bildungshäuser, Schulen, Gemeinden und Betriebe. Mit Quelle, Datum und meiner Einordnung.</p>
+      <div class="w-bw" role="group" aria-label="Blickwinkel wählen"><span class="hand">Ich bin aus …</span><div id="bw"></div></div>
+      <p class="w-bw-ok s" id="bw-ok" aria-live="polite" hidden></p>
+      <div class="w-nums" aria-label="Auf einen Blick">
+        <a href="#nachgeschaut"><b data-n="fakten">92</b><span>geprüfte Befunde</span></a>
+        <a href="#radar"><b data-n="radar">19</b><span>Punkte im Radar</span></a>
+        <a href="#nachrichten"><b data-n="woche">2.11.</b><span>zuletzt nachgeschaut</span></a>
+      </div>
+    </div>
+    <div class="w-hero-card" aria-hidden="true">
+      <div class="w-mini"><svg viewBox="-110 -110 220 220"><g class="mr"><circle r="100"/><circle r="74"/><circle r="48"/><circle r="22"/><path d="M-104 0H104M0-104V104"/></g><g class="md"></g></svg></div>
+      <span class="stamp">JEDE WOCHE NACHGESCHAUT</span>
+    </div>
+  </div>
+</section>
+
+<nav class="w-tabs" aria-label="Auf dieser Seite">
+  <div class="wrap"><button type="button" class="w-bwtag" id="bwtag" hidden></button><a href="#kurz">Das Wichtigste</a><a href="#radar">Radar</a><a href="#nachrichten">Nachrichten</a><a href="#nachgeschaut">Befunde</a><a href="#begriffe">Begriffe</a><a href="#so-entsteht">So entsteht das</a></div>
+</nav>
+
+<section id="kurz">
+  <div class="wrap">
+    <div class="w-sheet rv">
+      <p class="kick" id="kurz-kick">Kurz und bündig</p>
+      <h2 id="kurz-h">Das Wichtigste jetzt, in fünf Punkten</h2>
+      <p class="s m" id="kurz-hint"></p>
+      <ol class="w-kurz" id="kurz-list"></ol>
+      <p class="w-sheet-foot xs m"><span id="kurz-stand"></span><button type="button" class="more" id="kurz-print">Dieses Blatt drucken</button></p>
+    </div>
+  </div>
+</section>
+
+<section id="radar" class="alt">
+  <div class="wrap">
+    <p class="kick rv">Das KI-Radar</p>
+    <h2 class="rv">Was lohnt sich jetzt, was kann warten?</h2>
+    <p class="lead rv w-max">Vier Themen, vier Ringe. Innen steht, was ich fast jedem Haus heute empfehle. Außen, wovon ich vorerst abrate. Wählen Sie einen Punkt.</p>
+    <div class="w-radar-wrap">
+      <figure class="w-radar" role="group" aria-label="KI-Radar">
+        <svg id="radar-svg" viewBox="-330 -330 660 660" aria-hidden="true"></svg>
+        <figcaption class="xs m">Einordnung von Armin Fradler. Jeder Punkt verweist auf geprüfte Befunde.</figcaption>
+      </figure>
+      <aside class="w-detail" id="radar-detail" aria-live="polite"></aside>
+    </div>
+    <div class="w-rings" id="radar-list"></div>
+  </div>
+</section>
+
+<section id="nachrichten">
+  <div class="wrap">
+    <p class="kick rv">KI-Nachrichten, eingeordnet</p>
+    <h2 class="rv">Was zuletzt passiert ist. Und was davon zählt.</h2>
+    <p class="lead rv w-max">Wie der Schaukasten vor dem Gemeindeamt: Hier hängen die fünf wichtigsten Meldungen der letzten vier Wochen, jede mit Datum, Quelle und einem Satz, was sie für Ihr Haus heißt. Hier hängt nur, was am Original gelesen wurde.</p>
+    <div class="w-board" id="board"></div>
+    <div class="w-board-go rv"><a class="btn" href="nachrichten.html" id="alle-n">Alle KI-Nachrichten <span class="arr">→</span></a><a class="btn light" href="modelle.html">Modelle und Werkzeuge im Überblick</a></div>
+    <p class="s m rv w-feed">Die Nachrichten gibt es auch als <a href="wissen-feed.xml">RSS-Feed</a> für Ihren Feed-Reader. Ohne Anmeldung, ohne Zählung.</p>
+  </div>
+</section>
+
+<section id="nachgeschaut" class="alt">
+  <div class="wrap">
+    <p class="kick rv">Nachgeschaut</p>
+    <h2 class="rv">Befunde mit Quelle, Güte und Datum</h2>
+    <p class="lead rv w-max">Jede Zahl, die ich in Workshops und Impulsen verwende, steht hier. Mit der Angabe, wie gut die Quelle ist, wo ihre Grenzen liegen und wann ich zuletzt nachgeschaut habe.</p>
+    <div class="w-filter">
+      <label class="w-search"><span class="sr">Befunde durchsuchen</span><input id="q" type="search" placeholder="Suchen, etwa PISA, Copilot, Datenschutz" autocomplete="off"></label>
+      <details class="w-filt" id="filt" open><summary>Filtern nach Thema, Art und Herkunft</summary>
+      <div class="w-chips" id="chips-thema" role="group" aria-label="Thema"></div>
+      <div class="w-chips w-art" id="chips-art" role="group" aria-label="Art"></div>
+      <div class="w-chips" id="chips-region" role="group" aria-label="Herkunft"></div>
+      <details class="w-more"><summary>Nach Güte der Quelle filtern</summary><div class="w-chips w-guete" id="chips-guete" role="group" aria-label="Güte der Quelle"></div></details>
+      </details>
+    </div>
+    <p class="s m" id="count" aria-live="polite"></p>
+    <div class="w-facts" id="facts"></div>
+    <p class="center"><button class="btn light" id="more" type="button">Mehr zeigen</button></p>
+  </div>
+</section>
+
+<section id="begriffe">
+  <div class="wrap">
+    <p class="kick rv">Begriffe</p>
+    <h2 class="rv">Was die Wörter heißen</h2>
+    <div class="w-terms" id="terms"></div>
+  </div>
+</section>
+
+<section id="so-entsteht" class="alt">
+  <div class="wrap">
+    <p class="kick rv">So entsteht diese Seite</p>
+    <h2 class="rv">Die KI macht viel Arbeit. <span class="hand w-inline">Das Urteil bleibt bei mir.</span></h2>
+    <ol class="w-loop rv">
+      <li><b>Einmal pro Woche</b><span>Eine KI-Routine liest Behörden, Hersteller, Studien und ausgewählte Fachblogs der vergangenen sieben Tage.</span></li>
+      <li><b>Am Original</b><span>Jede Zahl wird an der Originalquelle nachgelesen. Was nur irgendwo <i>gemeldet</i> wurde, kommt nicht auf diese Seite.</span></li>
+      <li><b>Ich entscheide</b><span>Ich lese die Vorschläge, frage nach, wo mir etwas komisch vorkommt, und gebe frei, was zu den Nachrichten und den Befunden kommt. Das Radar verschiebe nur ich.</span></li>
+      <li><b>Nachschauen</b><span>Jeder Befund hat ein Ablaufdatum. Ist es vorbei, steht „wird nachgeprüft“ daneben, bis er bestätigt oder gestrichen ist.</span></li>
+    </ol>
+    <div class="w-who rv">
+      <img src="assets/portrait.webp" alt="Armin Fradler" width="96" height="96" loading="lazy">
+      <div><p class="kick">Wer hier prüft</p><p>Ich bin Armin Fradler aus Oberwart. Ich unterrichte selbst, an der Volkshochschule, am BFI und an einer Mittelschule, und begleite Organisationen beim Umgang mit KI. Die Routine spart mir das Suchen. Das Lesen und Entscheiden spart sie mir nicht.</p>
+      <p class="s m">Fehler passieren auch mir. Hinweise bitte an <a href="mailto:info@arminfradler.at">info@arminfradler.at</a>, ich schaue nach und korrigiere. <a href="ueber-mich.html">Mehr über mich</a></p></div>
+    </div>
+    <div class="w-map rv w-map-end">
+      <figure class="w-map-fig"><svg id="map" viewBox="0 0 1000 500" role="group" aria-label="Weltkarte: Herkunft der Befunde"></svg></figure>
+      <div class="w-map-txt">
+        <p class="kick">Woher kommt unser Wissen über KI?</p>
+        <p class="w-map-big" id="map-big"></p>
+        <p class="s" id="map-small"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap narrow center rv">
+    <p class="hand" style="font-size:clamp(30px,4vw,42px);margin-bottom:10px" id="cta-h">Und was heißt das für Ihr Haus?</p>
+    <p class="lead" id="cta-t">In einer Praxis-Sitzung gehen wir Ihr eigenes Radar durch: was bei Ihnen schon läuft, was Sie ausprobieren und wovon Sie die Finger lassen. Am Ende steht Ihr Blatt an der Wand.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px"><a class="btn" href="kontakt.html">Gespräch vereinbaren <span class="arr">→</span></a><a class="btn light" href="https://mitmachen.arminfradler.at/werkzeuge/ki/">Werkzeuge zum Selbermachen</a></div>
+  </div>
+</section>
+
+</main>
+<footer id="site-foot"></footer>
+<script src="assets/site.js?v=20261104z" data-root="./"></script>
+<script src="assets/wissen.js?v=20261104z"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+{
+ "von": "2026-10-26",
+ "bis": "2026-11-01",
+ "stand": "2026-11-02",
+ "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "meldungen": [
+  {
+   "datum": "2026-10-30",
+   "titel": "Microsoft Copilot bekommt Routinen, Projekte und einen Autopilot",
+   "was": "Microsoft listet für Oktober und November neue Copilot-Funktionen: zeitgesteuerte Routinen, gemeinsame Projekte, Skills im Copilot Chat und einen persönlichen Cloud-Agenten namens Autopilot. Vieles startet zuerst im Frühzugangs-Programm Frontier, weltweit folgt es ab November oder Jänner.",
+   "einordnung": "Das Werkzeug, das viele Häuser schon haben, übernimmt wiederkehrende Aufgaben; prüfen Sie vor einer Schulung, was in Ihrem Mandanten wirklich freigeschaltet ist.",
+   "gewicht": "wichtig",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Microsoft Tech Community, Daniel Vargas, 30.10.2026",
+     "u": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528"
+    }
+   ],
+   "verfuegbar": "vorschau",
+   "radar": "routinen"
+  },
+  {
+   "datum": "2026-10-30",
+   "titel": "Gemini überarbeitet ganze Präsentationen in Google Slides",
+   "was": "Mit einer einzigen Anweisung ändert Gemini mehrere Folien oder eine ganze Präsentation, etwa das Design. Bis mindestens 1. Dezember 2026 gelten erhöhte Testlimits, danach Limits pro Person.",
+   "einordnung": "Praktisch für Kursunterlagen im einheitlichen Design; die Limits nach Dezember sollten Sie vor einer Umstellung kennen.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "schule"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Workspace Updates, Wochenrückblick 30.10.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/10/weekly-recap-10-30-2026.html"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-30",
+   "titel": "Google Sheets zeigt bei KI-Einträgen die Webquelle je Zelle",
+   "was": "Wenn Gemini in Google Sheets Zellen mit Inhalten aus dem Web füllt, nennt es jetzt die genutzte Quelle direkt in der jeweiligen Zelle. Die Funktion verarbeitet auch größere Anfragen.",
+   "einordnung": "Gut für Recherche-Tabellen in Verwaltung und Kursvorbereitung: Sie können jede Angabe an der Quelle nachprüfen und sollten das auch tun.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "gemeinde",
+    "betrieb",
+    "bildung"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Workspace Updates, Wochenrückblick 30.10.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/10/weekly-recap-10-30-2026.html"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "pruefroutine"
+  },
+  {
+   "datum": "2026-10-30",
+   "titel": "Burgenland plant KI-Chatbot zu Landesförderungen ab Frühjahr 2027",
+   "was": "Das Land bietet allen 171 Gemeinden ein Digitalpaket, unter anderem kostenlose Websites über burgenland.at. Ab Frühling 2027 soll ein KI-Chatbot rund um die Uhr Fragen zu Landesförderungen beantworten.",
+   "einordnung": "Burgenländische Gemeinden sparen Website-Kosten und können Bürger:innen bald auf einen Förder-Chatbot verweisen.",
+   "gewicht": "wichtig",
+   "art": "werkzeug",
+   "fuer": [
+    "gemeinde"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "Land Burgenland, 30.10.2026",
+     "u": "https://www.burgenland.at/news-detail/digitales-gemeindepaket-des-landes-unterstuetzt-gemeinden"
+    }
+   ],
+   "verfuegbar": "angekuendigt",
+   "radar": "buergerbot"
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Copilot Chat zeigt, welche Erinnerungen eine Antwort geprägt haben",
+   "was": "Microsoft 365 Copilot Chat zeigt seit Ende Oktober, welche gespeicherten Erinnerungen, Anweisungen und früheren Chats eine Antwort beeinflusst haben. Nutzer:innen können Erinnerungen dort prüfen und löschen; Admins können die Personalisierung abschalten.",
+   "einordnung": "Gut für Datenschutz-Schulungen: Mitarbeitende sehen, was Copilot über sie behalten hat, und können es löschen.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "betrieb",
+    "gemeinde",
+    "bildung"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Microsoft 365 Nachrichtencenter MC1530959, 29.10.2026 (über mc.merill.net)",
+     "u": "https://mc.merill.net/message/MC1530959"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "copilotchat"
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Gemini-App erstellt und bearbeitet Dateien direkt im Chat",
+   "was": "In der Gemini-App lassen sich Präsentationen, Tabellen, Dokumente und PDFs direkt im Chat erstellen, ansehen und bearbeiten. Die Funktion gilt für alle Workspace-Kunden und für private Google-Konten.",
+   "einordnung": "Erste Entwürfe für Handouts oder Tabellen entstehen schneller; Inhalt und Zahlen prüfen bleibt Ihre Aufgabe.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "schule",
+    "betrieb"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Workspace Updates, 29.10.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "workslop"
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Bitkom: Jede:r fünfte Mieter:in lässt Nebenkosten von KI erklären",
+   "was": "22 % der befragten Mieter:innen in Deutschland nutzen KI, um ihre Nebenkostenabrechnung zu verstehen. 63 % wünschen sich in digitalen Abrechnungen einen KI-Chatbot für Rückfragen.",
+   "einordnung": "Ein Alltagsbeispiel für Kurse: KI hilft beim Verstehen schwieriger Schreiben, die Zahlen prüfen Sie trotzdem selbst.",
+   "gewicht": "laut",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "gemeinde"
+   ],
+   "land": "de",
+   "quellen": [
+    {
+     "t": "Bitkom, 29.10.2026",
+     "u": "https://www.bitkom.org/Presse/Presseinformation/Jeder-Fuenfte-fragt-bei-der-Nebenkostenabrechnung-die-KI"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Reuters Institute: Hälfte nutzt KI wöchentlich, Vertrauen in KI-Nachrichten bleibt gering",
+   "was": "In sechs Ländern nutzen 51 % der Menschen wöchentlich generative KI (2025: 34 %), aber nur 12 % fühlen sich mit vollständig KI-erstellten Nachrichten wohl, gegenüber 67 % bei Nachrichten von Journalist:innen.",
+   "einordnung": "Die Nutzung wächst deutlich schneller als das Vertrauen, menschliche Verantwortung bleibt für Glaubwürdigkeit entscheidend.",
+   "gewicht": "wichtig",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Reuters Institute: Generative AI and News Report 2026",
+     "u": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+    }
+   ],
+   "radar": "pruefroutine"
+  },
+  {
+   "datum": "2026-10-28",
+   "titel": "Gemini-App bekommt interaktive Lernwelten für Schüler:innen",
+   "was": "Google bietet in der Gemini-App „immersive explorations“, interaktive Themen von Zellen bis Weltall. Für Education-Konten führt der Zugang über den Student Hub, Admins können die Funktion nicht eigens steuern.",
+   "einordnung": "Deutsch fehlt noch, Inhalte kommen vorerst auf Englisch; Schulen sollten wissen, dass sie die Funktion nicht einzeln abschalten können.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "schule"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Workspace Updates, 28.10.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "lernmodi"
+  },
+  {
+   "datum": "2026-10-28",
+   "titel": "Geteilter ChatGPT-Link konnte fremde Chats auslesen",
+   "was": "Forschende der Firma Parameter zeigten, dass ein präparierter ChatGPT-Teilen-Link Code im Konto des Opfers ausführen und private Chats lesen konnte. OpenAI schloss die Lücke acht Tage nach der Meldung; Angriffe sind nicht bekannt.",
+   "einordnung": "Sie müssen nichts tun, aber auch seriöse Anbieter haben Lücken: Was im Konto liegt, sollte keine Personaldaten enthalten.",
+   "gewicht": "gut",
+   "art": "sicherheit",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "The Hacker News, Swati Khandelwal, 31.10.2026",
+     "u": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-27",
+   "titel": "US-Behörden bekommen Claude mit 40 % Rabatt",
+   "was": "Die US-Beschaffungsbehörde GSA hat mit Anthropic nutzungsbasierte Preise mit 40 % Nachlass ohne Mindestabnahme vereinbart, offen für Bund, Bundesstaaten, Kommunen und Stammesverwaltungen.",
+   "einordnung": "Rahmenverträge mit Rabatt senken für Verwaltungen die Einstiegshürde, über Nutzen und Datenschutz entscheidet aber weiterhin jede Behörde selbst.",
+   "gewicht": "gut",
+   "art": "markt",
+   "fuer": [
+    "gemeinde"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "GSA: GSA, Anthropic Reach OneGov Agreement on Discounted, Consumption-Based Pricing for Claude",
+     "u": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-anthropic-reach-onegov-agreement-on-discounted-consumptionbased-pricing-10272026"
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-26",
+   "titel": "OpenAI startet GPT-6.1 Terra für Agenten-Aufgaben",
+   "was": "GPT-6.1 Terra ist ein mittleres Modell für knappe Texte aus vorgegebenem Material, Bildschirm-Aufgaben und kleine Code-Korrekturen. Es steht in ChatGPT Work und Codex für Plus, Pro, Business, Enterprise und Edu bereit, nicht im normalen Chat und nicht in Free und Go.",
+   "einordnung": "Wer keinen Bezahltarif hat, sieht das Modell nicht; für Schulungen heißt das: genau sagen, welches Konto welche Funktionen zeigt.",
+   "gewicht": "laut",
+   "art": "modell",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "MIXED, Shane S. Ellison, 26.10.2026",
+     "u": "https://mixed-news.com/en/?p=38341"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "zeithorizont"
+  },
+  {
+   "datum": "2026-10-26",
+   "titel": "Anthropic beantragt Börsengang in den USA",
+   "was": "Anthropic hat bei der US-Börsenaufsicht SEC den Antrag für einen Börsengang an der Nasdaq eingereicht. Preis und Zahl der Aktien stehen noch nicht fest.",
+   "einordnung": "Für Ihre tägliche Arbeit mit Claude ändert das vorerst nichts.",
+   "gewicht": "laut",
+   "art": "markt",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic, 26.10.2026",
+     "u": "https://www.anthropic.com/news/s1-sec"
+    }
+   ],
+   "verfuegbar": "angekuendigt"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "von": "2026-10-12",
+ "bis": "2026-10-18",
+ "stand": "2026-10-19",
+ "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "meldungen": [
+  {
+   "datum": "2026-10-16",
+   "titel": "Gesetz für KI-Chatbots und Automatik-Bescheide ist in Kraft",
+   "was": "Die AVG- und VStG-Novelle wurde als BGBl. I Nr. 86/2026 am 16. Oktober kundgemacht und gilt seit 17. Oktober. Behörden dürfen Chatbots für Anträge nutzen und in per Verordnung bestimmten Fällen vollautomatisch entscheiden; dagegen genügt eine Vorstellung binnen zwei Wochen.",
+   "einordnung": "Gemeinden haben jetzt eine Rechtsgrundlage für Chatbots und automatische Gebührenbescheide, aber erst eine Verordnung legt fest, wofür genau.",
+   "gewicht": "wichtig",
+   "art": "recht",
+   "fuer": [
+    "gemeinde"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "Verwaltungsrichter:innen-Vereinigung, 2.11.2026",
+     "u": "https://www.verwaltungsrichter.at/2026/11/02/avg-und-vstg-novelle-2026-neue-regelungen-fuer-chatbots-und-automatisierte-entscheidungen/"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "bescheide"
+  },
+  {
+   "datum": "2026-10-16",
+   "titel": "Anthropic: Junior-Anteil bei technischen Neueinstellungen sinkt von 27 auf 9 Prozent",
+   "was": "Anthropic legt eigene Personaldaten offen: Der Anteil von Berufseinsteiger:innen an technischen Neueinstellungen fiel seit Anfang 2025 von 27 % auf 9 %, und Führungskräfte achten bei Bewerbungen mehr auf Selbstständigkeit und Urteilsvermögen als auf Fachwissen.",
+   "einordnung": "Ein einzelnes KI-Unternehmen ist kein Maßstab, die Daten passen aber zu Hinweisen aus US-Lohndaten, dass der Berufseinstieg zuerst betroffen ist.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "betrieb",
+    "bildung",
+    "schule"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic: How employment is changing at Anthropic",
+     "u": "https://www.anthropic.com/research/employment-at-anthropic"
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-16",
+   "titel": "Erwartungslücke: KI-Fachleute erwarten 75 Prozent, US-Beschäftigte 28 Prozent",
+   "was": "Eine Anthropic-Umfrage unter 10.980 US-Erwachsenen und 1.334 eigenen Beschäftigten zeigt: Die Belegschaft des KI-Herstellers erwartet, dass KI bis 2030 drei Viertel ihrer Arbeitsstunden übernimmt, die US-Beschäftigten erwarten gut ein Viertel.",
+   "einordnung": "Erwartungen sind keine Messung, die Lücke erklärt aber, warum Fachdiskussionen und Alltag in Betrieben oft aneinander vorbeigehen.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic: The AI expectations gap",
+     "u": "https://www.anthropic.com/research/ai-expectations-gap"
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-15",
+   "titel": "Copilot schützt Schüler:innen von 13 bis 17 stärker",
+   "was": "Microsoft aktiviert ab Mitte Oktober weltweit zusätzliche Inhaltsschutz-Regeln in Copilot für Jugendliche von 13 bis 17. Das greift nur, wenn im Schulkonto die Altersgruppe „teen“ richtig eingetragen ist.",
+   "einordnung": "Schulen mit Microsoft 365 sollten mit ihrer IT prüfen, ob Alter und Mandanten-Typ stimmen, sonst bleibt der Schutz aus.",
+   "gewicht": "wichtig",
+   "art": "werkzeug",
+   "fuer": [
+    "schule"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Microsoft 365 Nachrichtencenter MC1509805, 15.10.2026 (über mc.merill.net)",
+     "u": "https://mc.merill.net/message/MC1509805"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-14",
+   "titel": "US-Notenbank: KI bremst in fünf Bezirken die Einstellungen",
+   "was": "Im Beige Book vom Oktober berichten 5 der 12 Fed-Bezirke, dass einzelne Firmen nach KI-Investitionen Stellen über natürliche Abgänge oder verschobene Einstellungen abbauen. Massenkündigungen werden nicht berichtet, der Arbeitsmarkt gilt insgesamt als wenig verändert.",
+   "einordnung": "Ein qualitatives, aber amtliches Signal, dass KI derzeit vor allem bei Neueinstellungen wirkt und weniger bei bestehenden Stellen.",
+   "gewicht": "wichtig",
+   "art": "markt",
+   "fuer": [
+    "betrieb",
+    "gemeinde"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Federal Reserve: Beige Book, Oktober 2026 (PDF)",
+     "u": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261014.pdf"
+    }
+   ]
+  }
+ ]
+}

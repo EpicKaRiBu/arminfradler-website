@@ -7,6 +7,9 @@
 - [Angebot](https://arminfradler.at/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe
 - [So arbeite ich](https://arminfradler.at/methode.html): Leitfrage, Prinzipien und Ablauf eines Workshops, mit Quellen
 - [Über mich](https://arminfradler.at/ueber-mich.html): Hintergrund und Arbeitsweise
+- [Wissen](https://arminfradler.at/wissen.html): KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe, mit geprüften Befunden und Quellen
+- [KI-Nachrichten](https://arminfradler.at/nachrichten.html): Meldungen mit Datum, Quelle und Einordnung, wöchentlich nachgeschaut
+- [Modelle und Werkzeuge](https://arminfradler.at/modelle.html): Steckbriefe zu Daten, Kosten und Schule
 - [Termine](https://arminfradler.at/termine.html): offene Vorträge und Workshops
 - [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen
 - [Kontakt](https://arminfradler.at/kontakt.html)

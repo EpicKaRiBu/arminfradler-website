@@ -176,7 +176,7 @@ HEAD = '''<!doctype html>
 <link rel="icon" href="../../assets/logo/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/logo/apple-touch-icon.png">
 <link href="../../assets/fonts/fonts.css" rel="stylesheet">
-<link href="../../assets/site.css?v=20261010a" rel="stylesheet">
+<link href="../../assets/site.css?v=20261104z" rel="stylesheet">
 <link href="../../assets/textures.css?v=20261010a" rel="stylesheet">
 <script type="application/ld+json">{ld}</script>
 </head>
@@ -187,7 +187,7 @@ HEAD = '''<!doctype html>
 '''
 FOOT = '''</article></section></main>
 <footer id="site-foot"></footer>
-<script src="../../assets/site.js?v=20261021a" data-root="../../"></script>
+<script src="../../assets/site.js?v=20261104z" data-root="../../"></script>
 </body>
 </html>
 '''
@@ -278,7 +278,7 @@ def main():
 
     # Sitemap
     heute = datetime.date.today().isoformat()
-    static = ['', 'angebot.html', 'termine.html', 'impulse/', 'methode.html', 'ueber-mich.html', 'kontakt.html']
+    static = ['', 'angebot.html', 'termine.html', 'wissen.html', 'nachrichten.html', 'modelle.html', 'impulse/', 'methode.html', 'ueber-mich.html', 'kontakt.html']
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f'<url><loc>{base}/{u}</loc><lastmod>{heute}</lastmod></url>' for u in static]
     sm += [f'<url><loc>{base}/impulse/{p["slug"]}/</loc><lastmod>{str(p.get("updated") or p["date"])[:10]}</lastmod></url>' for p in posts]
@@ -293,6 +293,9 @@ def main():
            f'- [Angebot]({base}/angebot.html): Formate und Themen für Organisationen, Schulen und Betriebe',
            f'- [So arbeite ich]({base}/methode.html): Leitfrage, Prinzipien und Ablauf eines Workshops, mit Quellen',
            f'- [Über mich]({base}/ueber-mich.html): Hintergrund und Arbeitsweise',
+           f'- [Wissen]({base}/wissen.html): KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe, mit geprüften Befunden und Quellen',
+           f'- [KI-Nachrichten]({base}/nachrichten.html): Meldungen mit Datum, Quelle und Einordnung, wöchentlich nachgeschaut',
+           f'- [Modelle und Werkzeuge]({base}/modelle.html): Steckbriefe zu Daten, Kosten und Schule',
            f'- [Termine]({base}/termine.html): offene Vorträge und Workshops',
            f'- [Kostenlose Werkzeuge](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',
            f'- [Kontakt]({base}/kontakt.html)', '', '## Impulse', '']

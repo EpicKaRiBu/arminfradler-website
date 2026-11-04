@@ -1,0 +1,222 @@
+{
+ "von": "2026-10-05",
+ "bis": "2026-10-11",
+ "stand": "2026-10-12",
+ "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "meldungen": [
+  {
+   "datum": "2026-10-09",
+   "titel": "Gratis-Gemini wählt das Modell jetzt selbst, meist das kleinste",
+   "was": "Seit 9. Oktober wählt die Gemini-App in privaten Konten ohne Abo das Modell automatisch, meist Flash-Lite. Pro gibt es nur bei schwierigen Fragen; volle Auswahl haben AI Pro und Ultra.",
+   "einordnung": "Wer im Kurs mit privaten Gratis-Konten arbeitet, bekommt oft schwächere Antworten als in der Vorführung mit Bezahlkonto.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "schule"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Gemini Hilfe",
+     "u": "https://support.google.com/gemini/answer/17004136?hl=en"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "orgkonto"
+  },
+  {
+   "datum": "2026-10-09",
+   "titel": "McKinsey: Österreichs Firmen messen KI-Nutzen kaum",
+   "was": "In der Beratungsstudie mit 54 Unternehmen stieg der KI-Reifegrad von 30 auf 36 von 100 Punkten. Rund 70 % können den Erfolg nach der Einführung nicht messen, Talent ist die schwächste Stelle.",
+   "einordnung": "Eine kleine Stichprobe großer Firmen, aber der Hinweis gilt auch für KMU: Vorher festlegen, woran Sie Nutzen erkennen.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "McKinsey, Pressemitteilung 9.10.2026",
+     "u": "https://www.mckinsey.com/de/news/presse/state-of-ai-in-austria-2026"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "zeitmessen"
+  },
+  {
+   "datum": "2026-10-08",
+   "titel": "Google zeigt einen Gemini-Agenten für die Büroarbeit",
+   "was": "Bei „Gemini at Work 2026“ stellte Google Cloud den Gemini Agent vor, einen „universellen Agenten für die Arbeit“. Er plant Aufgaben, nutzt Werkzeuge und liefert Ergebnisse direkt in Dokumente und Postfächer.",
+   "einordnung": "Noch eine Ankündigung ohne Preis und Termin für die EU; für Ihre Planung zählt erst, was in Ihrem Workspace-Tarif ankommt.",
+   "gewicht": "laut",
+   "art": "werkzeug",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Google Blog, 8.10.2026",
+     "u": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"
+    }
+   ],
+   "verfuegbar": "angekuendigt",
+   "radar": "zeithorizont"
+  },
+  {
+   "datum": "2026-10-08",
+   "titel": "Anthropic verschärft Nutzungsregeln ab 12. November",
+   "was": "Neue Regeln verbieten etwa Fake-Konten und erfundene Nachrichtenseiten. Bei Anwendungen, die Existenz oder Zugang zu wichtigen Leistungen betreffen, muss ein qualifizierter Mensch prüfen und die Person über KI informiert werden.",
+   "einordnung": "Das stützt Ihre eigene Regel: Wo KI bei Entscheidungen über Menschen mitwirkt, prüft ein Mensch und sagt es offen.",
+   "gewicht": "gut",
+   "art": "recht",
+   "fuer": [
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic, 8.10.2026, aktualisiert 14.10.2026",
+     "u": "https://www.anthropic.com/news/2026-usage-policy-update"
+    }
+   ],
+   "verfuegbar": "angekuendigt",
+   "radar": "workslop"
+  },
+  {
+   "datum": "2026-10-08",
+   "titel": "KI findet Sicherheitslücken, das Beheben dauert Monate",
+   "was": "Anthropic startet die „Cyber Mission“: Ein kostenloser Scanner prüft wichtige offene Software mit KI, dazu kommt ein Programm mit elf Sicherheitsfirmen für kritische Infrastruktur. Laut Anthropic vergehen zwischen Fund und Behebung oft Monate.",
+   "einordnung": "Wenn KI Lücken schneller findet, zählt bei Ihnen umso mehr, dass Website, Server und Programme Updates rasch bekommen; fragen Sie Ihren IT-Dienstleister danach.",
+   "gewicht": "gut",
+   "art": "sicherheit",
+   "fuer": [
+    "gemeinde",
+    "betrieb",
+    "bildung"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Anthropic, 8.10.2026",
+     "u": "https://www.anthropic.com/news/anthropic-cyber-mission"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "grundschutz"
+  },
+  {
+   "datum": "2026-10-07",
+   "titel": "OpenAI stellt ChatGPT für alle auf GPT-6 um",
+   "was": "Seit 7. Oktober läuft GPT-6 Sol in den Bezahltarifen von ChatGPT, seit 8. Oktober GPT-6 Luna in Free und Go. Laut Systemkarte ersetzen die Modelle GPT-5.6, mit besserem Schutz gegen Tricks, aber etwas schwächeren Werten in Tests für Nutzer:innen unter 18.",
+   "einordnung": "Anleitungen, Übungsbeispiele und Erfahrungswerte aus Kursen sollten Sie neu prüfen, weil sich Antworten und Stil im Gratis-Konto wie im Bezahlkonto verändert haben.",
+   "gewicht": "wichtig",
+   "art": "modell",
+   "fuer": [
+    "bildung",
+    "schule",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "OpenAI Deployment Safety Hub, Systemkarte 7.10.2026",
+     "u": "https://deploymentsafety.openai.com/gpt-6-october"
+    },
+    {
+     "t": "OpenAI Developer Community, 7.10.2026",
+     "u": "https://community.openai.com/t/gpt-6-is-now-rolling-out-to-all-chatgpt-users/1404163"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-07",
+   "titel": "Anthropic bringt Claude Haiku 5.5: kleines Modell, viel billiger",
+   "was": "Claude Haiku 5.5 ist das schnellste und günstigste Claude-Modell. Laut Anthropic kostet es im Schnitt rund 75 % weniger als Haiku 4.5, ab 0,10 Dollar je Million Eingabe-Token.",
+   "einordnung": "Für Betriebe, die Zusammenfassungen oder Sortierarbeit über eine Schnittstelle automatisieren, sinken die Kosten deutlich; im normalen Chat merken Sie davon kaum etwas.",
+   "gewicht": "gut",
+   "art": "modell",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic, 7.10.2026",
+     "u": "https://www.anthropic.com/claude-haiku-5-5"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-07",
+   "titel": "Vier von zehn Menschen in Österreich nutzen generative KI",
+   "was": "Laut Statistik Austria im Auftrag des OeAD nutzten 2025 39 % generative KI, EU-Schnitt 33 %. 86 % der Schüler:innen und Studierenden nutzen KI-Werkzeuge, 40 % der Bevölkerung wollen mehr über KI lernen.",
+   "einordnung": "Der Lernbedarf ist da, besonders bei Älteren und Menschen mit Pflichtschulabschluss, deren Wissen sogar sank.",
+   "gewicht": "wichtig",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "APA über vienna.at, 7.10.2026",
+     "u": "https://www.vienna.at/vier-von-zehn-menschen-in-oesterreich-nutzen-ki/10524617"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-10-07",
+   "titel": "Englische Studie: KI-Assistent Aila spart Lehrkräften knapp eine Stunde Planung pro Woche",
+   "was": "Eine randomisierte Studie der Education Endowment Foundation mit Volksschullehrkräften (3. bis 6. Schulstufe) zeigt: Mit dem staatlichen Planungsassistenten Aila brauchten sie rund 2,5 statt 3,3 Stunden pro Woche für Stundenvorbereitung. Unabhängige Prüfer:innen fanden die Materialien nicht schlechter als ohne KI.",
+   "einordnung": "Ein seltener Wirkungsnachweis mit Kontrollgruppe: KI spart bei der Unterrichtsplanung messbar Zeit, wenn das Werkzeug auf einen geprüften Lehrplan aufbaut und die Lehrkraft entscheidet.",
+   "gewicht": "wichtig",
+   "art": "studie",
+   "fuer": [
+    "schule",
+    "bildung"
+   ],
+   "land": "uk",
+   "quellen": [
+    {
+     "t": "EdTech Innovation Hub, 7.10.2026",
+     "u": "https://www.edtechinnovationhub.com/news/oaks-aila-saves-primary-teachers-49-minutes-a-week-on-lesson-planning-eef-trial-finds"
+    },
+    {
+     "t": "Education Endowment Foundation, Projektseite",
+     "u": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/aila-teacher-choices-trial"
+    }
+   ]
+  },
+  {
+   "datum": "2026-10-06",
+   "titel": "Mistral zeigt Large 4, ein großes Modell aus Europa",
+   "was": "Mistral stellte Large 4 als öffentliche Vorschau über die Schnittstelle vor, mit 1 Billion Parametern, trainiert in eigenen Rechenzentren in Europa. Die Modelldaten sollen offen erscheinen, angekündigt bis Ende Oktober.",
+   "einordnung": "Eine europäische Alternative wird stärker; ob Sie sie im Alltag nutzen, entscheidet erst ein Angebot mit Vertrag und Datenstandort in der EU.",
+   "gewicht": "gut",
+   "art": "modell",
+   "fuer": [
+    "betrieb",
+    "gemeinde"
+   ],
+   "land": "eu",
+   "quellen": [
+    {
+     "t": "Mistral AI, 6.10.2026",
+     "u": "https://mistral.ai/news/mistral-large-4/"
+    }
+   ],
+   "verfuegbar": "vorschau",
+   "radar": "govgpt"
+  }
+ ]
+}

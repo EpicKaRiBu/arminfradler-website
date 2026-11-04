@@ -1,0 +1,889 @@
+{
+ "stand": "2026-11-04",
+ "hinweis": "Einordnung von Armin Fradler. Belege verweisen auf die Faktenbank (Schlüssel = eindeutiger Textausschnitt der Tatsache). Neue Woche: Ring ändern, 'bewegt' setzen, Armin gibt frei.",
+ "themen": [
+  {
+   "id": "team",
+   "name": "KI im Team",
+   "frage": "Wie arbeitet ein Haus gemeinsam gut mit KI?"
+  },
+  {
+   "id": "lernen",
+   "name": "Lernen und Denken",
+   "frage": "Was bleibt im Kopf, wenn die KI mitarbeitet?"
+  },
+  {
+   "id": "sicher",
+   "name": "Sicher mit Hausverstand",
+   "frage": "Was läuft bei uns, wer wartet es, wer entscheidet?"
+  },
+  {
+   "id": "werkzeuge",
+   "name": "Werkzeuge und Agenten",
+   "frage": "Was ist wirklich verfügbar, was nur Vorschau?"
+  }
+ ],
+ "ringe": [
+  {
+   "id": "einsetzen",
+   "name": "Einsetzen",
+   "satz": "Lohnt sich jetzt, in fast jedem Haus."
+  },
+  {
+   "id": "ausprobieren",
+   "name": "Ausprobieren",
+   "satz": "An einer echten Aufgabe testen, mit Ablaufdatum."
+  },
+  {
+   "id": "beobachten",
+   "name": "Beobachten",
+   "satz": "Kommt, ist aber noch nicht reif oder nicht allgemein verfügbar."
+  },
+  {
+   "id": "abwarten",
+   "name": "Abwarten",
+   "satz": "Vorerst die Finger davon, oder nur mit klaren Grenzen."
+  }
+ ],
+ "punkte": [
+  {
+   "id": "hausregeln",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "Hausregeln mit Datenampel",
+   "satz": "Ein Blatt, das sagt, welche Daten in welches Werkzeug dürfen. Mehr braucht es am Anfang nicht, aber das braucht es.",
+   "haus": "Eine Stunde mit Leitung, IT und zwei Leuten aus der Praxis. Am Ende hängt die Ampel an der Wand.",
+   "belege": [
+    "DSB empfiehlt interne Regeln",
+    "Rotes Kreuz Österreich",
+    "27 % ohne einheitliche Kriterien",
+    "Nur 10 % aller Betriebe ab 10 Beschäftigten",
+    "Der Verband Österreichischer Volkshochschulen hat eine KI",
+    "Nur 18 % der US-Lehrkräfte"
+   ],
+   "impuls": "datenampel-welche-daten-in-ki-tools",
+   "fuer": {
+    "schule": {
+     "haus": "Im Schulteam festlegen, was Lehrkräfte in welches Werkzeug geben dürfen, und was Schüler:innen. Das sind zwei verschiedene Blätter."
+    },
+    "gemeinde": {
+     "haus": "Im Amt gilt: Bürgerdaten sind fast immer Rot. Die Ampel zeigt, was trotzdem geht, etwa Entwürfe für Aussendungen."
+    },
+    "betrieb": {
+     "haus": "Ein Blatt pro Abteilung reicht. Kundendaten, Angebote, Personaldaten: Jede Spalte bekommt eine Farbe."
+    },
+    "bildung": {
+     "haus": "Die Volkshochschulen zeigen, wie kurz das geht: KI unterstützt, die letzte Entscheidung trifft immer ein Mensch. Details kommen in eigene Blätter."
+    }
+   }
+  },
+  {
+   "id": "orgkonto",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "Organisationskonto statt Gratis-Konto",
+   "satz": "Wer nichts bereitstellt, bekommt Schatten-KI. Ein Konto mit Vertrag ist billiger als die Unsicherheit.",
+   "haus": "Schauen, was schon bezahlt ist. Copilot Chat mit Dienstkonto kostet oft nichts extra.",
+   "belege": [
+    "29,1 % der beruflichen KI-Nutzenden",
+    "ChatGPT Business, Enterprise, Edu und API",
+    "Copilot Chat mit Entra-Dienstkonto",
+    "Laut MIT NANDA haben nur 40 %",
+    "44 % der KI nutzenden US-Teenager hatten"
+   ],
+   "impuls": "ki-souveraenitaet-schatten-ki-oesterreich-2025",
+   "fuer": {
+    "schule": {
+     "haus": "Schulkonten über den Bund oder das Land prüfen, bevor Kolleg:innen privat Lizenzen kaufen."
+    },
+    "gemeinde": {
+     "haus": "Was über den Gemeindebund oder das Land schon bereitsteht, ist meist besser als jede Einzellösung."
+    },
+    "betrieb": {
+     "haus": "Copilot Business oder ChatGPT Business mit Vertrag. Rechnen Sie gegen die Stunden, die heute heimlich mit Gratis-Konten laufen."
+    }
+   }
+  },
+  {
+   "id": "art4",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "KI-Kompetenz festhalten (Art. 4)",
+   "satz": "Die Pflicht bleibt: Wer KI im Haus einsetzt, muss etwas für die KI-Kompetenz seiner Leute tun. Seit Juli 2026 muss man aber kein bestimmtes Niveau mehr garantieren.",
+   "haus": "Eine Seite reicht: wer wurde wie eingeschult, wann wird nachgeschult. Das ist Ihr Nachweis, falls jemand fragt.",
+   "belege": [
+    "Art. 4 KI-VO neu",
+    "KI-Teil des Digital Omnibus",
+    "Seit 27.7.2026 verpflichtet Art. 4 KI-VO",
+    "75 % der Lehrkräfte, die keine KI nutzen"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ],
+    "betrieb": {
+     "haus": "Eine Seite reicht: wer wurde wie eingeschult. Sie hilft auch, wenn ein Kunde fragt."
+    }
+   }
+  },
+  {
+   "id": "workslop",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "Wer prüft, was die KI schreibt?",
+   "satz": "KI-Texte ohne Gehalt kosten die Empfänger Zeit und den Absender Ansehen. Die Unterschrift darunter bleibt beim Menschen.",
+   "haus": "Vereinbaren: Wer KI-Text weitergibt, hat ihn gelesen und steht dafür ein.",
+   "belege": [
+    "Workslop",
+    "Je mehr Vertrauen in die KI",
+    "In derselben Studie geben 66 % der Erwerbstätigen an",
+    "86 % der befragten KI-Nutzenden behandeln"
+   ],
+   "fuer": {
+    "schule": {
+     "haus": "Gilt für Elternbriefe und Zeugnisbemerkungen genauso wie für Schularbeiten."
+    }
+   }
+  },
+  {
+   "id": "zeitmessen",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "Zeitgewinn messen statt glauben",
+   "satz": "Die besten Feldstudien zeigen ein paar Prozent gesparte Zeit, vor allem bei E-Mails. Wo Behörden genauer hingeschaut haben, schrumpft der gefühlte Gewinn: in England von 26 Minuten am Tag auf rund eine Stunde pro Woche.",
+   "haus": "Vier Wochen lang bei einer Aufgabe die Zeit vorher und nachher notieren. Dann entscheiden.",
+   "belege": [
+    "Im größten Feldexperiment mit Microsoft 365 Copilot",
+    "In Dänemark (rund 25.000",
+    "Rund 70 % erwarteten zu Beginn Zeitersparnis",
+    "Die britische Steuerbehörde HMRC kommt",
+    "Das britische Arbeitsministerium DWP maß",
+    "In der METR-Folgestudie",
+    "Volksschullehrkräfte mit dem staatlichen"
+   ],
+   "fuer": {
+    "schule": {
+     "haus": "Im Teachino-Versuch erwarteten 70 % Zeitersparnis, erlebt haben sie 25 %. In England sparten Lehrkräfte mit einem geprüften Planungsassistenten knapp 50 Minuten pro Woche. Erst mit zwei, drei Freiwilligen testen, dann Lizenzen kaufen."
+    }
+   }
+  },
+  {
+   "id": "betriebsrat",
+   "thema": "team",
+   "ring": "einsetzen",
+   "name": "Betriebsrat früh an den Tisch",
+   "satz": "KI, die Personaldaten verarbeitet oder Leistung bewertet, braucht die Zustimmung des Betriebsrats. Früh reden spart späteren Streit.",
+   "haus": "Vor der Einführung offenlegen, welche Daten das Werkzeug sieht, und schriftlich festhalten, dass es nicht zur Leistungskontrolle dient.",
+   "belege": [
+    "Laut AK Wien brauchen Kontrollsysteme",
+    "Der OGH wertete ein Testverfahren"
+   ],
+   "fuer": {
+    "aus": [
+     "schule",
+     "gemeinde"
+    ]
+   }
+  },
+  {
+   "id": "skills",
+   "thema": "team",
+   "ring": "ausprobieren",
+   "name": "Eine Aufgabe als Anleitung (Skill) schreiben",
+   "satz": "Eine wiederkehrende Aufgabe einmal sauber beschreiben, dann macht die KI sie jedes Mal gleich. Der Standard dafür ist inzwischen offen.",
+   "haus": "Eine Aufgabe auswählen, die jede Woche nervt. In der Praxis-Sitzung schreiben wir die Anleitung gemeinsam.",
+   "belege": [
+    "Anthropic hat Agent Skills",
+    "6 % High Performer"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ],
+    "gemeinde": {
+     "haus": "Ein Bescheid-Entwurf oder eine Bürgerauskunft als feste Anleitung: gleichbleibende Qualität, Mensch prüft."
+    }
+   }
+  },
+  {
+   "id": "einstieg",
+   "thema": "team",
+   "ring": "beobachten",
+   "name": "Der Berufseinstieg verändert sich",
+   "satz": "In den USA stellen Firmen in KI-nahen Berufen weniger junge Leute ein. Kündigungen gibt es dabei kaum, und ob die KI die Ursache ist, ist noch nicht belegt.",
+   "haus": "Fragen Sie sich, welche Einstiegsaufgaben bald die KI erledigt und woran Junge dann ihr Handwerk lernen.",
+   "belege": [
+    "Junge Beschäftigte (22 bis 25 Jahre)",
+    "Im Beige Book vom Oktober 2026",
+    "Das Yale Budget Lab findet",
+    "Bei Anthropic selbst sank"
+   ],
+   "fuer": {
+    "bildung": {
+     "haus": "Übungsaufgaben so bauen, dass das eigene Können wächst, auch wenn im Beruf später die KI die Routine erledigt."
+    },
+    "schule": {
+     "haus": "In der Berufsorientierung offen darüber reden: Was Betriebe beim Einstieg erwarten, verschiebt sich gerade."
+    },
+    "betrieb": {
+     "haus": "Lehrlinge und Junge nicht einsparen, sondern anders einarbeiten: mit echten Aufgaben, an denen sie Urteil lernen."
+    }
+   }
+  },
+  {
+   "id": "erstselbst",
+   "thema": "lernen",
+   "ring": "einsetzen",
+   "name": "Erst selbst, dann KI",
+   "satz": "Wer zuerst selber denkt und dann die KI dazunimmt, lernt mehr und bleibt wacher. Umgekehrt geht es schneller und bleibt weniger hängen.",
+   "haus": "Als Hausregel für Kurse: erster Entwurf ohne KI, Überarbeitung mit KI.",
+   "belege": [
+    "Wer zuerst selbst schrieb",
+    "Ganz delegieren schwächt",
+    "Schon nach kurzer KI-Hilfe",
+    "In einem randomisierten Versuch mit 52",
+    "70 % der US-Teenager nutzen KI für Schularbeiten"
+   ],
+   "impuls": "ki-erwachsenenbildung-trainer-wertvoller-nicht-ersetzbar",
+   "fuer": {
+    "aus": [
+     "gemeinde"
+    ],
+    "schule": {
+     "haus": "Hausübung und Schularbeit so bauen, dass der erste Gedanke im Heft steht, nicht im Chat."
+    },
+    "betrieb": {
+     "haus": "Bei Einschulungen: neue Leute lösen die Aufgabe erst selbst, dann vergleichen sie mit der KI."
+    }
+   }
+  },
+  {
+   "id": "pruefroutine",
+   "thema": "lernen",
+   "ring": "einsetzen",
+   "name": "Antworten prüfen als Gewohnheit",
+   "satz": "Fast alle Jugendlichen nutzen Chatbots, aber 40 % prüfen die Antworten selten oder nie. Prüfen muss man üben wie Lesen.",
+   "haus": "Eine einfache Routine für alle Kurse: Quelle suchen, Gegenfrage stellen, selbst begründen. Und sie jedes Mal einmal üben.",
+   "belege": [
+    "Saferinternet-Studie 2026 (11- bis 17-Jährige) verlassen sich 52 %",
+    "PISA 2025: Wer KI für Aufgaben",
+    "Je mehr Vertrauen in die KI",
+    "10 % der Menschen in 45 Märkten"
+   ],
+   "fuer": {
+    "aus": [
+     "gemeinde",
+     "betrieb"
+    ],
+    "schule": {
+     "haus": "Fächerübergreifend vereinbaren und ab der ersten Klasse üben. 66 % der Jugendlichen erwarten genau das von der Schule."
+    }
+   }
+  },
+  {
+   "id": "tutor",
+   "thema": "lernen",
+   "ring": "ausprobieren",
+   "name": "KI-Tutor, der nur Hinweise gibt",
+   "satz": "Gut gebaut kann ein Tutor viel. Entscheidend ist die Leitplanke: Hinweise statt Lösungen.",
+   "haus": "In einem Kurs ausprobieren, mit einer klaren Anleitung für den Tutor und einem Vergleich ohne.",
+   "belege": [
+    "Ein Tutor, der nur Hinweise gibt",
+    "Ein didaktisch gebauter KI-Tutor",
+    "Tutor CoPilot",
+    "Sechs Wochen KI-Tutoring mit GPT-4"
+   ],
+   "fuer": {
+    "aus": [
+     "gemeinde"
+    ],
+    "schule": {
+     "haus": "In einer Klasse testen, mit einer Anleitung, die Hinweise gibt und keine Lösungen."
+    },
+    "betrieb": {
+     "ring": "beobachten",
+     "haus": "Für Lehrlinge interessant, für den Rest des Betriebs noch nicht."
+    }
+   }
+  },
+  {
+   "id": "sprachkurs",
+   "thema": "lernen",
+   "ring": "ausprobieren",
+   "name": "KI-Gesprächspartner im Sprachkurs",
+   "satz": "Mehr Wortschatz, mehr Grammatik. Aber aus Gesprächen werden „gestützte Monologe“. Das Gespräch mit Menschen bleibt nötig.",
+   "haus": "Als Übung zwischen den Kursterminen, nicht als Ersatz für die Gruppe.",
+   "belege": [
+    "KI-Gesprächspartner liefern Deutschlernenden",
+    "Eine Meta-Analyse (16 Studien, 89 Effektgrößen)"
+   ],
+   "fuer": {
+    "aus": [
+     "schule",
+     "gemeinde",
+     "betrieb"
+    ]
+   }
+  },
+  {
+   "id": "lernmodi",
+   "thema": "lernen",
+   "ring": "beobachten",
+   "name": "Lernmodi der großen Anbieter",
+   "satz": "Study Mode und Guided Learning gibt es. Ob sie genutzt werden, ist eine andere Frage: In Schulstudien öffnete fast die Hälfte den Tutor nie.",
+   "haus": "Nicht kaufen, bevor klar ist, wer die Leute dorthin begleitet.",
+   "belege": [
+    "Lernmodi der Anbieter",
+    "40 bis 47 % den KI-Tutor nie"
+   ],
+   "fuer": {
+    "aus": [
+     "gemeinde",
+     "betrieb"
+    ]
+   }
+  },
+  {
+   "id": "loesungen",
+   "thema": "lernen",
+   "ring": "abwarten",
+   "name": "Lösungen auf Knopfdruck beim Üben",
+   "satz": "Beim Üben sieht es gut aus, in der Prüfung ohne KI fehlt es dann. Das ist die zweite Hälfte der Leitfrage.",
+   "haus": "Übungsphasen ohne fertige Lösungen planen. Die KI darf fragen, nicht vorsagen.",
+   "belege": [
+    "verschlechtert aber die Leistung ohne KI",
+    "PISA 2025: Wer KI für Aufgaben"
+   ],
+   "fuer": {
+    "aus": [
+     "gemeinde",
+     "betrieb"
+    ],
+    "schule": {
+     "haus": "Übungsphasen ohne fertige Lösungen. Die KI darf fragen, nicht vorsagen. Das ist die Kernfrage für jede Hausübung."
+    }
+   }
+  },
+  {
+   "id": "kibewertung",
+   "thema": "lernen",
+   "ring": "abwarten",
+   "name": "Noten und Prüfungsaufsicht durch KI",
+   "satz": "KI, die Lernergebnisse bewertet oder Prüfungen überwacht, gilt als Hochrisiko-KI. Die strengen Pflichten dafür gelten ab 2.12.2027.",
+   "haus": "Abschlussprüfungen vorerst ohne KI-Bewertung. Prüfungen so bauen, dass sie zeigen, was Menschen ohne KI können.",
+   "belege": [
+    "Als hochriskant gelten KI-Systeme",
+    "Hochrisiko-Pflichten für KI nach Anhang III",
+    "Südkorea Juni 2026"
+   ],
+   "fuer": {
+    "aus": [
+     "gemeinde",
+     "betrieb"
+    ],
+    "schule": {
+     "haus": "Schularbeiten und Matura bleiben Sache der Lehrperson. Die neue KI-Strategie des Ministeriums soll klären, was bei Prüfungen gilt."
+    }
+   }
+  },
+  {
+   "id": "dreifragen",
+   "thema": "sicher",
+   "ring": "einsetzen",
+   "name": "Drei Fragen jeder Leitung",
+   "satz": "Was läuft bei uns? Wer wartet es? Wer entscheidet, wenn es brennt? Wer das beantworten kann, ist weiter als die meisten.",
+   "haus": "Die drei Fragen in die nächste Teamsitzung mitnehmen. Lücken aufschreiben, nicht verstecken.",
+   "belege": [
+    "11 % der KI-nutzenden Unternehmen",
+    "PHP2Shell (CVE-2026-109618/-109619, CVSS 9.2)"
+   ],
+   "impuls": "ki-sicherheitsluecken-was-leitungen-in-der-hand-haben",
+   "fuer": {
+    "schule": {
+     "haus": "Was läuft an unserer Schule, wer betreut es, wer entscheidet? Oft ist die Antwort: ein engagierter Kollege in seiner Freizeit."
+    },
+    "betrieb": {
+     "haus": "Die drei Fragen gehören in die Geschäftsführung, nicht nur zur IT."
+    }
+   }
+  },
+  {
+   "id": "rueckruf",
+   "thema": "sicher",
+   "ring": "einsetzen",
+   "name": "Rückruf-Regel gegen den falschen Chef",
+   "satz": "KI macht Betrugsmails und geklonte Stimmen glaubwürdig. Die beste Abwehr ist alt: zurückrufen, unter einer Nummer, die man schon kennt.",
+   "haus": "Zahlungen, neue Kontonummern und dringende Bitten von oben nur nach Rückruf. Auch wenn Stimme und Gesicht echt wirken.",
+   "belege": [
+    "In der Cybersecurity-Studie 2026 (1.396 Betriebe)",
+    "Der Cybersicherheitsbericht 2025 der Bundesregierung",
+    "Laut Bundeskriminalamt ermöglicht Deepfake-Technik",
+    "In Krieglach (Steiermark) kaperten",
+    "Anthropic folgert aus acht Monaten"
+   ],
+   "fuer": {
+    "schule": {
+     "haus": "Gilt auch für Mails „vom Direktor“ an das Sekretariat und für Gutschein-Bitten an Kolleg:innen."
+    },
+    "gemeinde": {
+     "haus": "In Krieglach kam der Betrug aus dem echten Gemeindepostfach. Zwei-Faktor-Anmeldung für jedes Postfach und Rückruf bei jeder Zahlungsbitte."
+    }
+   }
+  },
+  {
+   "id": "ohnekonto",
+   "thema": "sicher",
+   "ring": "einsetzen",
+   "name": "Ohne Schülerkonto arbeiten",
+   "satz": "Ob Kinder unter 14 eigene Konten bei KI-Diensten haben dürfen, ist nicht geklärt. Werkzeuge, die mit Code oder Link funktionieren, sind der sichere Weg.",
+   "haus": "Eine kurze Liste kontoloser Werkzeuge für die Unterstufe. Konten laufen über die Lehrperson.",
+   "belege": [
+    "Die Steckbriefe lassen offen",
+    "Die Graz-Steckbriefe beschreiben 18"
+   ],
+   "fuer": {
+    "aus": [
+     "bildung",
+     "gemeinde",
+     "betrieb"
+    ]
+   }
+  },
+  {
+   "id": "grundschutz",
+   "thema": "sicher",
+   "ring": "einsetzen",
+   "name": "Grundschutz vor jedem KI-Projekt",
+   "satz": "Die Angriffe 2026 auf kleine Gemeinden und Betriebe zeigen: Das größte Risiko sind ungeschützte Postfächer und Daten, nicht die KI.",
+   "haus": "Zwei-Faktor-Anmeldung für alle Postfächer. Sicherungen, die getrennt vom Netz liegen und einmal zurückgespielt wurden. Alte Daten löschen. Eine Notfall-Liste mit Telefonnummern.",
+   "belege": [
+    "Die Gemeinde Reichenau an der Rax",
+    "Nach einem Cyberangriff Ende Februar 2026",
+    "In Krieglach (Steiermark) kaperten",
+    "Der Cybersicherheitsbericht 2025 der Bundesregierung"
+   ],
+   "fuer": {
+    "schule": {
+     "haus": "Schulverwaltung und Sekretariat zuerst: Zwei-Faktor-Anmeldung und eine Notfall-Liste. Die Schul-IT weiß, wo die Sicherungen liegen. Fragen Sie nach."
+    },
+    "betrieb": {
+     "haus": "Laut Cybersicherheitsbericht trifft Ransomware auch kleine Betriebe. Zwei-Faktor-Anmeldung, getrennte Sicherungen, ein Notfallplan mit der Nummer Ihres IT-Betreuers."
+    }
+   }
+  },
+  {
+   "id": "schlank",
+   "thema": "sicher",
+   "ring": "ausprobieren",
+   "name": "Schlanke Website statt Plugin-Gasthaus",
+   "satz": "Was nicht läuft, kann nicht angegriffen werden. Eine einfache Seite ist wie ein Plakat im Schaukasten: braucht kaum Pflege.",
+   "haus": "Zählen, wie viele Erweiterungen Ihre Seite hat und wer sie wartet.",
+   "belege": [
+    "Rund 69 % der Websites",
+    "Nach dem PHP-Update: Millionen Angriffsversuche"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ],
+    "gemeinde": {
+     "haus": "Gemeindeseiten mit vielen Erweiterungen sind ein beliebtes Ziel. Fragen Sie Ihren Anbieter, wer die Updates einspielt."
+    }
+   }
+  },
+  {
+   "id": "nisg",
+   "thema": "sicher",
+   "ring": "beobachten",
+   "name": "NISG 2026",
+   "satz": "Das neue Cybersicherheitsgesetz gilt seit 1. Oktober 2026 für mittlere und große Einrichtungen in wichtigen Bereichen. Viele andere trifft es nur indirekt, über Kunden oder Lieferanten.",
+   "haus": "Einmal klären lassen, ob Sie oder Ihr Träger betroffen sind. Registrieren muss man sich bis Ende 2026.",
+   "belege": [
+    "NISG 2026 in Kraft",
+    "Gemeinden und Gemeindeverbände sind laut Gemeindebund"
+   ],
+   "fuer": {
+    "aus": [
+     "schule",
+     "bildung"
+    ],
+    "gemeinde": {
+     "haus": "Das Gemeindeamt selbst ist ausgenommen. Wasser, Abwasser oder Stadtwerke können aber darunter fallen: bis Ende 2026 klären und registrieren."
+    },
+    "betrieb": {
+     "ring": "einsetzen",
+     "haus": "Prüfen, ob Ihr Betrieb selbst darunter fällt oder ein großer Kunde Nachweise verlangt. Registrieren muss man sich bis Ende 2026."
+    }
+   }
+  },
+  {
+   "id": "browseragent",
+   "thema": "sicher",
+   "ring": "abwarten",
+   "name": "Browser-Agenten mit Zugriff aufs Postfach",
+   "satz": "Fremde Inhalte, private Daten und ein Weg nach außen: Diese drei zusammen sind gefährlich. Versteckte Anweisungen wirken noch zu oft.",
+   "haus": "Agenten nur dort, wo sie nichts verschicken und nichts Privates sehen.",
+   "belege": [
+    "Versteckte Anweisungen in Webseiten",
+    "„Lethal trifecta“"
+   ],
+   "fuer": {
+    "betrieb": {
+     "haus": "Agenten nur mit getrennten Konten, ohne Zugriff auf Postfach und Zahlungen."
+    }
+   }
+  },
+  {
+   "id": "copilotchat",
+   "thema": "werkzeuge",
+   "ring": "einsetzen",
+   "name": "Copilot Chat mit Dienstkonto",
+   "satz": "Für viele Häuser schon da, mit Datenschutz aus dem Vertrag. Ohne Lizenz sieht er nur, was Sie hochladen.",
+   "haus": "Prüfen, ob alle mit dem Dienstkonto angemeldet sind, nicht privat.",
+   "belege": [
+    "Copilot und Copilot Chat in Organisationen",
+    "Copilot Chat mit Entra-Dienstkonto"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ],
+    "gemeinde": {
+     "haus": "Wenn Ihre Gemeinde Microsoft 365 hat: Dienstkonto statt privatem Konto. Das ist der schnellste Gewinn."
+    }
+   }
+  },
+  {
+   "id": "buergerbot",
+   "thema": "werkzeuge",
+   "ring": "ausprobieren",
+   "name": "Chatbot auf der Gemeindeseite",
+   "satz": "Seit der AVG-Novelle dürfen Chatbots Anträge entgegennehmen. Sie müssen barrierefrei sein, und der gewohnte Weg bleibt offen.",
+   "haus": "Nur mit offiziellen Inhalten füttern, eine Weiterleitung an Menschen einbauen und Antworten stichprobenartig prüfen.",
+   "belege": [
+    "Chatbots dürfen Anträge entgegennehmen",
+    "Im Kärntner Gailtal",
+    "Die Regio Vorderland-Feldkirch"
+   ],
+   "fuer": {
+    "aus": [
+     "bildung",
+     "schule",
+     "betrieb"
+    ]
+   }
+  },
+  {
+   "id": "routinen",
+   "thema": "werkzeuge",
+   "ring": "beobachten",
+   "name": "Routinen in Copilot Notebooks",
+   "satz": "Wiederkehrende Aufgaben nach Zeitplan. Spannend, aber im Herbst 2026 nur im Frontier-Programm.",
+   "haus": "Noch nicht einplanen. Wenn es allgemein kommt, stehen die Anleitungen schon.",
+   "belege": [
+    "Copilot Notebooks können wiederkehrende"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ]
+   }
+  },
+  {
+   "id": "govgpt",
+   "thema": "werkzeuge",
+   "ring": "beobachten",
+   "name": "Offene Modelle im eigenen Rechenzentrum",
+   "satz": "Der Bund zeigt mit GovGPT, dass es geht. Für ein einzelnes Bildungshaus ist das meist zu viel Betrieb.",
+   "haus": "Interessant für Träger und Verbände, die gemeinsam betreiben könnten.",
+   "belege": [
+    "GovGPT des Bundes",
+    "GovGPT ist rund 20.000 Bundesbediensteten",
+    "Zur Öffnung von GovGPT für Länder"
+   ],
+   "fuer": {
+    "aus": [
+     "schule",
+     "betrieb"
+    ],
+    "gemeinde": {
+     "ring": "beobachten",
+     "haus": "Spannend, wenn Länder oder der Gemeindebund das für Gemeinden öffnen. Nachfragen lohnt sich."
+    }
+   }
+  },
+  {
+   "id": "zeithorizont",
+   "thema": "werkzeuge",
+   "ring": "beobachten",
+   "name": "Agenten, die stundenlang arbeiten",
+   "satz": "Die Aufgabenlänge, die Agenten schaffen, verdoppelt sich alle paar Monate. Zuverlässig sind sie bei kürzeren Aufgaben.",
+   "haus": "Nicht unterschätzen und nicht kopflos einführen: kleine Aufgaben, Mensch gibt frei.",
+   "belege": [
+    "METR-Zeithorizont",
+    "Die besten KI-Agenten schaffen Aufgaben"
+   ],
+   "fuer": {
+    "aus": [
+     "schule"
+    ]
+   }
+  },
+  {
+   "id": "bescheide",
+   "thema": "werkzeuge",
+   "ring": "beobachten",
+   "name": "Bescheide, die eine Maschine erlässt",
+   "satz": "Vollautomatische Bescheide sind erlaubt, aber nur in Massenverfahren, die eine Verordnung freigibt. Wer widerspricht, bekommt einen Menschen.",
+   "haus": "Noch nichts umstellen. Aber schauen, welche Gebührenabläufe schon heute nach festen Regeln laufen, und wer eingreift, wenn etwas schiefgeht.",
+   "belege": [
+    "Vollautomatisierte schriftliche Erledigungen",
+    "Gegen einen vollautomatisierten Bescheid",
+    "Das Bundeskanzleramt nennt als Gemeindebeispiel"
+   ],
+   "fuer": {
+    "aus": [
+     "bildung",
+     "schule",
+     "betrieb"
+    ]
+   }
+  },
+  {
+   "id": "bezahlen",
+   "thema": "werkzeuge",
+   "ring": "abwarten",
+   "name": "Agenten, die selbst bezahlen",
+   "satz": "Die Protokolle gibt es. Für ein Haus mit Budgetverantwortung ist das noch nichts.",
+   "haus": "Keine Zahlungsmittel an Agenten geben.",
+   "belege": [
+    "Agenten-Bezahlprotokolle"
+   ],
+   "fuer": {
+    "aus": [
+     "schule",
+     "bildung",
+     "gemeinde"
+    ]
+   }
+  }
+ ],
+ "begriffe": [
+  {
+   "id": "datenampel",
+   "name": "Datenampel",
+   "satz": "Grün, Gelb, Rot für Daten: was in welches KI-Werkzeug darf. Hängt vom Werkzeug und vom Vertrag ab, nicht nur von den Daten.",
+   "radar": [
+    "hausregeln",
+    "orgkonto"
+   ]
+  },
+  {
+   "id": "schattenki",
+   "name": "Schatten-KI",
+   "satz": "KI-Werkzeuge, die Leute privat für die Arbeit nutzen, weil das Haus nichts bereitstellt.",
+   "radar": [
+    "orgkonto"
+   ],
+   "auch": [
+    "Privat-Konten"
+   ]
+  },
+  {
+   "id": "workslop",
+   "name": "Workslop",
+   "satz": "KI-Arbeit, die nach Arbeit aussieht, aber keine ist. Die Nacharbeit landet beim Empfänger.",
+   "radar": [
+    "workslop"
+   ]
+  },
+  {
+   "id": "cognitive",
+   "name": "Kognitive Kapitulation",
+   "satz": "Wenn Menschen falsche KI-Antworten übernehmen, weil sie nicht mehr prüfen. Im Labor in 80 % der Fälle.",
+   "radar": [
+    "workslop",
+    "loesungen"
+   ],
+   "auch": [
+    "kognitive Kapitulation"
+   ]
+  },
+  {
+   "id": "skill",
+   "name": "Skill",
+   "satz": "Eine schriftliche Arbeitsanleitung für die KI. Einmal gut geschrieben, wird eine Aufgabe jedes Mal gleich erledigt.",
+   "radar": [
+    "skills"
+   ],
+   "auch": [
+    "Skills"
+   ]
+  },
+  {
+   "id": "agent",
+   "name": "KI-Agent",
+   "satz": "Eine KI, die nicht nur antwortet, sondern selbst Schritte ausführt: suchen, klicken, schreiben, verschicken.",
+   "radar": [
+    "browseragent",
+    "zeithorizont",
+    "bezahlen",
+    "routinen"
+   ],
+   "auch": [
+    "KI-Agenten",
+    "Agenten",
+    "Agent"
+   ]
+  },
+  {
+   "id": "injection",
+   "name": "Versteckte Anweisung",
+   "satz": "Text auf einer Webseite oder in einer Mail, der einen Agenten zu etwas bringt, das niemand wollte (Prompt Injection).",
+   "radar": [
+    "browseragent"
+   ],
+   "auch": [
+    "Prompt Injection",
+    "versteckte Anweisungen",
+    "versteckten Anweisungen"
+   ]
+  },
+  {
+   "id": "leitfrage",
+   "name": "Leitfrage",
+   "satz": "Wo lassen wir uns Arbeit abnehmen, und wo das Denken? Abgeben, anregen lassen, behalten.",
+   "radar": [
+    "erstselbst",
+    "loesungen",
+    "tutor"
+   ]
+  },
+  {
+   "id": "hochrisiko",
+   "name": "Hochrisiko-KI",
+   "satz": "KI, die über Menschen Wichtiges entscheidet, etwa über Zulassung, Noten oder Bewerbungen. Dafür gelten strenge Pflichten, ab 2.12.2027.",
+   "radar": [
+    "kibewertung"
+   ],
+   "auch": [
+    "hochriskant",
+    "Hochrisiko"
+   ]
+  },
+  {
+   "id": "ceofraud",
+   "name": "CEO-Fraud",
+   "satz": "Betrug, bei dem sich jemand per Mail, Anruf oder gefälschtem Video als Chefin oder Lieferant ausgibt, um eine Überweisung auszulösen.",
+   "radar": [
+    "rueckruf"
+   ],
+   "auch": [
+    "falschen Chef",
+    "falscher Chef",
+    "geklonte Stimmen"
+   ]
+  },
+  {
+   "id": "vorstellung",
+   "name": "Vorstellung",
+   "satz": "Ein einfacher Einspruch gegen einen automatisch erlassenen Bescheid, binnen zwei Wochen und ohne Begründung. Dann entscheidet ein Mensch neu.",
+   "radar": [
+    "bescheide"
+   ]
+  },
+  {
+   "id": "dsgvokonform",
+   "name": "DSGVO-konform",
+   "satz": "„Kompatibel“ sagt der Anbieter. „Konform“ heißt: Der konkrete Einsatz in Ihrem Haus ist geprüft. Das ist nicht dasselbe.",
+   "radar": [
+    "ohnekonto",
+    "orgkonto"
+   ],
+   "auch": [
+    "DSGVO-kompatibel"
+   ]
+  },
+  {
+   "id": "leistungohne",
+   "name": "Leistung ohne Lernen",
+   "satz": "Mit KI wird das Ergebnis besser, das eigene Können wächst aber nicht und fällt ohne KI zurück.",
+   "radar": [
+    "erstselbst",
+    "pruefroutine",
+    "loesungen"
+   ]
+  },
+  {
+   "id": "omnibus",
+   "name": "Digital Omnibus",
+   "satz": "Ein Paket der EU, das im Juli 2026 mehrere Digitalgesetze auf einmal geändert hat, auch den AI Act. Daher die neuen Fristen.",
+   "radar": [
+    "art4",
+    "kibewertung"
+   ],
+   "auch": [
+    "Omnibus"
+   ]
+  },
+  {
+   "id": "preprint",
+   "name": "Preprint",
+   "satz": "Eine Studie, die schon veröffentlicht, aber noch nicht von unabhängigen Fachleuten begutachtet ist. Ernst nehmen, aber mit Vorsicht.",
+   "radar": [],
+   "auch": [
+    "Preprints"
+   ]
+  },
+  {
+   "id": "nisg",
+   "name": "NISG",
+   "satz": "Das österreichische Cybersicherheitsgesetz seit 1. Oktober 2026. Es verpflichtet mittlere und große Einrichtungen in wichtigen Bereichen zu Schutzmaßnahmen und Meldungen.",
+   "radar": [
+    "nisg"
+   ],
+   "auch": [
+    "Cybersicherheitsgesetz",
+    "NIS2"
+   ]
+  }
+ ],
+ "blickwinkel": [
+  {
+   "id": "bildung",
+   "name": "Bildungshaus",
+   "lang": "Erwachsenenbildung und Weiterbildung",
+   "haus": "Ihr Haus",
+   "fuer": "Ihr Haus",
+   "mehrzahl": "Bildungshäuser",
+   "cta": "In einer Praxis-Sitzung gehen wir mit Leitung und Team Ihr eigenes Radar durch: was bei Ihnen schon läuft, was Sie ausprobieren und wovon Sie die Finger lassen. Am Ende steht Ihr Blatt an der Wand."
+  },
+  {
+   "id": "schule",
+   "name": "Schule",
+   "lang": "Direktion, Kollegium, Schulteam",
+   "haus": "Ihre Schule",
+   "fuer": "Ihre Schule",
+   "mehrzahl": "Schulen",
+   "cta": "Als schulinterne Fortbildung (SCHILF) oder pädagogischer Tag: Wir gehen Ihr Radar mit dem Kollegium durch, mit Beispielen aus dem eigenen Unterricht. Von Kollege zu Kollegium, ruhig und ohne Technikbegeisterung als Selbstzweck."
+  },
+  {
+   "id": "gemeinde",
+   "name": "Gemeinde",
+   "lang": "Amt, Verwaltung, Bürgerservice",
+   "haus": "Ihr Amt",
+   "fuer": "Ihr Amt",
+   "mehrzahl": "Gemeinden",
+   "cta": "In einer Praxis-Sitzung mit Amtsleitung und Team: was bei Ihnen schon läuft, welche Daten tabu bleiben und wer entscheidet, wenn es brennt. Am Ende steht Ihr Blatt an der Wand."
+  },
+  {
+   "id": "betrieb",
+   "name": "Betrieb",
+   "lang": "KMU und Mittelstand",
+   "haus": "Ihr Betrieb",
+   "fuer": "Ihren Betrieb",
+   "mehrzahl": "Betriebe",
+   "cta": "In einer Praxis-Sitzung mit der Geschäftsführung am Tisch: Ihre echten Aufgaben, Ihre Werkzeuge, erfundene Beispieldaten. Am Ende steht Ihr Blatt an der Wand."
+  }
+ ]
+}

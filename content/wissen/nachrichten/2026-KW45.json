@@ -1,0 +1,69 @@
+{
+ "von": "2026-11-02",
+ "bis": "2026-11-08",
+ "stand": "2026-11-04",
+ "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "meldungen": [
+  {
+   "datum": "2026-11-04",
+   "titel": "Bitkom: Jede:r Zehnte nutzt KI schon im Kontakt mit Behörden",
+   "was": "11 % der Deutschen haben KI im Behördenkontakt genutzt, meist um sich über Rechte zu informieren oder Briefe erklären zu lassen. 51 % würden lieber mit einem KI-Assistenten sprechen als warten.",
+   "einordnung": "Auch in Österreich kommen Bürger:innen mit KI-Texten ins Amt; Gemeinden sollten damit rechnen und klare Schreiben fördern.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "gemeinde"
+   ],
+   "land": "de",
+   "quellen": [
+    {
+     "t": "Bitkom, 4.11.2026",
+     "u": "https://www.bitkom.org/Presse/Presseinformation/KI-Hilfe-Amtsdeutsch-und-Behoerdenschreiben"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "buergerbot"
+  },
+  {
+   "datum": "2026-11-03",
+   "titel": "Google Meet zeigt vor dem Beitritt einen Hinweis zu KI-Notizen",
+   "was": "Admins können einen eigenen Text anzeigen lassen, bevor jemand einem Meet-Call beitritt, etwa wenn aufgezeichnet, transkribiert oder von Gemini mitgeschrieben wird. Die Funktion ist anfangs aus und gilt auch für Education-Editionen.",
+   "einordnung": "Eine einfache Möglichkeit, Teilnehmende vor einer Besprechung oder einem Online-Kurs offen über KI-Mitschriften zu informieren.",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde"
+   ],
+   "land": "intl",
+   "quellen": [
+    {
+     "t": "Google Workspace Updates, 3.11.2026",
+     "u": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "hausregeln"
+  },
+  {
+   "datum": "2026-11-02",
+   "titel": "Bitkom: Firmen wollen KI aus Europa, aber nicht teurer",
+   "was": "96 % der befragten deutschen Unternehmen würden KI deutscher Anbieter bevorzugen, 64 % aber keine Nachteile wie höhere Preise dafür in Kauf nehmen. Vertrauen in US-Anbieter sank von 51 auf 41 %.",
+   "einordnung": "Die Herkunft des Anbieters wird wichtiger; prüfen Sie bei der Auswahl Vertrag und Datenstandort, nicht nur das Etikett.",
+   "gewicht": "laut",
+   "art": "studie",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "de",
+   "quellen": [
+    {
+     "t": "Bitkom, 2.11.2026",
+     "u": "https://www.bitkom.org/Presse/Presseinformation/Digital-Gipfel-Unternehmen-wollen-KI-aus-Deutschland"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  }
+ ]
+}
