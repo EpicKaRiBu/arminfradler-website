@@ -6,7 +6,7 @@ date: "2026-11-06T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Wie aus KI-Fragen ein Ablauf wird, der jede Woche besser läuft: Ordner als Gedächtnis, eine Anleitung, ein Mensch, der freigibt. Für Teams ohne IT-Abteilung."
-excerpt: "Die meisten fangen mit der KI jeden Tag von vorn an. Mehr bringt sie, wenn sie einen wiederkehrenden Ablauf kennt: wo die Unterlagen liegen, wie das Haus schreibt, wer prüft. Dann wird sie jede Woche verlässlicher, und das Urteil bleibt beim Menschen."
+excerpt: "Die meisten fangen mit der KI jeden Tag von vorn an. Mehr bringt sie, wenn sie einen wiederkehrenden Ablauf kennt: wo die Unterlagen liegen, wie das Haus schreibt, wer prüft. Dann wird der Ablauf jede Woche verlässlicher, und ein Mensch steht dafür gerade."
 seo_title: "KI-Agenten im Team: ein Ablauf mit KI, der jede Woche dazulernt"
 keywords: ["Arbeitsabläufe mit KI", "KI im Team einführen", "KI-Agenten", "KI-Workflow", "KI-Assistent einrichten", "Copilot", "ChatGPT-Projekte", "Mensch und KI", "KI Erwachsenenbildung", "KI KMU Österreich"]
 minutes: 7
@@ -29,7 +29,7 @@ Aus drei Teilen, und keiner davon ist Technik im engen Sinn.
 
 1. **Ein Ordner als Gedächtnis.** Darin liegt, was die KI für diese Aufgabe wissen muss: gute Beispiele von früher, die Hausregeln, eine Liste mit Dingen, die schiefgegangen sind.
 2. **Eine Anleitung.** Ein, zwei Seiten in normaler Sprache: Was ist die Aufgabe, in welchen Schritten, was ist tabu? Fachleute sagen dazu „Skill“. Für viele KI-Werkzeuge gibt es dafür inzwischen einen gemeinsamen Standard. Die Anleitung bleibt Ihnen auch erhalten, wenn Sie das Werkzeug wechseln.
-3. **Ein Prüfschritt.** Es steht fest, wer das Ergebnis ansieht, bevor es hinausgeht, und was er dabei prüft.
+3. **Ein Prüfschritt.** Es steht fest, wie geprüft wird, gern auch von einer zweiten KI, und wer am Ende freigibt, bevor etwas hinausgeht.
 
 Wenn die KI mit diesen drei Teilen mehrere Schritte hintereinander selbst erledigt, nennt man das einen KI-Agenten. Das Wort klingt größer, als es ist.
 
@@ -51,7 +51,7 @@ Die Werkzeuge dafür haben viele schon. Copilot kann seit April 2026 in Word, Ex
 
 ## Muss man sich schämen, wenn man so mit KI arbeitet?
 
-Nein. Manche reden nicht gern darüber, dass ein Text mit KI entstanden ist. Ich verstehe das, es fühlt sich ein bisschen an wie Schummeln. Aber so ein Ablauf ist kein Abgeben. Er ist Zusammenarbeit: Die KI liefert schnell, der Mensch bringt Erfahrung, Urteil und das letzte Wort. KI ist ein Verstärker. Sie macht gute Arbeit schneller und schlechte auch. Darum zählt, was im Ordner liegt und wer freigibt.
+Nein. Manche reden nicht gern darüber, dass ein Text mit KI entstanden ist. Ich verstehe das, es fühlt sich ein bisschen an wie Schummeln. Aber so ein Ablauf ist kein Abgeben. Er ist Zusammenarbeit: Die KI liefert schnell, der Mensch setzt Ziel und Maßstab und steht mit seinem Namen dafür. KI ist ein Verstärker. Sie macht gute Arbeit schneller und schlechte auch. Darum zählt, was im Ordner liegt und wer freigibt.
 
 ## Was das für Sie heißt
 
@@ -76,6 +76,9 @@ Das regelt die [Datenampel](/impulse/datenampel-welche-daten-in-ki-tools/). Für
 Dann bleibt der Ordner. Die Beispiele, Regeln und die Anleitung gehören Ihnen und funktionieren auch im nächsten Werkzeug. Das ist der eigentliche Wert.
 
 **Nimmt die KI damit jemandem die Arbeit weg?**
-Das ist nicht das Ziel. Weg fällt das Kopieren, Umformulieren und Suchen. Prüfen und Freigeben bleibt bei Menschen, und genau dafür braucht man die Erfahrenen. Wer welches Ergebnis verantwortet, legt Ihr Haus selbst fest.
+Das ist nicht das Ziel. Weg fällt das Kopieren, Umformulieren und Suchen. Freigeben und Verantworten bleibt bei Menschen, und dafür braucht man Leute, die wissen, worauf es ankommt. Wer welches Ergebnis verantwortet, legt Ihr Haus selbst fest.
+
+**Prüft ein Mensch besser als die KI?**
+Nicht unbedingt. Bei klar umrissenen Aufgaben, etwa eine Zahl mit der Quelle vergleichen, ist eine gute KI oft gründlicher als ein müder Blick am Freitagnachmittag. Der Mensch legt fest, was geprüft wird und wie gründlich, merkt, wenn schon die Frage schief ist, und steht für das Ergebnis gerade. Und Vorsicht: Wenn sich mehrere KI-Durchgänge einig sind, beweist das wenig, wenn alle von derselben falschen Quelle ausgehen.
 
 *Stand: November 2026. Das Beispiel aus dem Bildungshaus Musterstadt ist erfunden.*

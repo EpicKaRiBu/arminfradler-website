@@ -68,7 +68,7 @@ Das Gegengewicht gehört dazu. Auslagern ist ganz normal. Einkaufszettel, Kalend
 
 Je besser die KI wird, desto größer die Versuchung, nicht mehr hinzuschauen. In einem Versuch an der Wharton School übernahmen die Leute falsche KI-Antworten in 80 % der Fälle (Shaw und Nave, 2026, Arbeitspapier, Laborsituation). Das ist eine alte Erfahrung aus der Industrie in neuem Gewand: Je mehr die Maschine übernimmt, desto wichtiger wird das Können der Menschen, und desto seltener wird es geübt (Bainbridge, 1983).
 
-Daraus folgt etwas Unbequemes. **Wer heute die Neuen alles von der KI machen lässt, hat in fünf Jahren niemanden mehr, der prüfen kann.** Der KI-Einsatz ist damit keine reine Technikfrage. Er ist eine Frage, wie man Leute einarbeitet.
+Daraus folgt etwas Unbequemes. **Wer heute die Neuen alles von der KI machen lässt, riskiert, dass in ein paar Jahren niemand mehr gut beurteilen kann, was die KI liefert.** Der KI-Einsatz ist damit keine reine Technikfrage. Er ist eine Frage, wie man Leute einarbeitet.
 
 Ich halte es bei meiner eigenen Arbeit genauso. Bei mir arbeiten inzwischen mehrere KI-Routinen jede Woche mit: Sie lesen Meldungen, prüfen Quellen, schreiben vor. Abgeben tu ich viel. Ob etwas rausgeht, entscheide ich.
 

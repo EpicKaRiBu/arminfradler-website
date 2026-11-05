@@ -6,14 +6,14 @@ date: "2026-11-20T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Viele nutzen KI und reden nicht darüber. Warum offenes Arbeiten mit KI kein Schummeln ist, was es im Team ändert und wo die ehrliche Grenze liegt."
-excerpt: "Viele arbeiten mit KI und sagen es lieber nicht. Es fühlt sich an wie Schummeln. Dabei ist gute Arbeit mit KI Zusammenarbeit: Die KI liefert schnell, der Mensch bringt Erfahrung und das letzte Wort. Wer das offen macht, hilft dem ganzen Team."
+excerpt: "Viele arbeiten mit KI und sagen es lieber nicht. Es fühlt sich an wie Schummeln. Dabei ist gute Arbeit mit KI Zusammenarbeit: Die KI liefert schnell, der Mensch setzt Ziel und Maßstab und steht dafür gerade. Wer das offen macht, hilft dem ganzen Team."
 seo_title: "Mit KI arbeiten und es zugeben: Mensch-KI-Zusammenarbeit im Team"
 keywords: ["Mensch und KI", "Ko-Kreation", "KI im Team", "Schatten-KI", "KI offen nutzen", "KI-Kennzeichnung", "KI Erwachsenenbildung", "KI Schule"]
 minutes: 5
 sources: [{"title": "IW Köln (19.9.2026): Schatten-KI, Kurzbericht 63/2026 (Stand: Oktober 2026)", "url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Kurzberichte/PDF/2026/IW-Kurzbericht_2026-Schatten-KI.pdf"}, {"title": "Microsoft Work Trend Index 2026 (Stand: November 2026)", "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization"}, {"title": "Axios (24.9.2025) über Stanford, BetterUp und HBR: AI workslop (Stand: Oktober 2026)", "url": "https://www.axios.com/2025/09/24/ai-workslop-workplace-efficiency-study"}]
 ---
 
-Kurz gesagt: Wer mit KI arbeitet, muss sich nicht verstecken. Gute Arbeit mit KI ist Zusammenarbeit. Die KI liefert schnell, der Mensch bringt Erfahrung, Urteil und das letzte Wort. Schämen muss man sich nur für eines: für Arbeit, die man ungeprüft weitergibt, egal ob mit oder ohne KI.
+Kurz gesagt: Wer mit KI arbeitet, muss sich nicht verstecken. Gute Arbeit mit KI ist Zusammenarbeit. Die KI liefert schnell, der Mensch setzt Ziel und Maßstab und steht mit seinem Namen dafür. Schämen muss man sich nur für eines: für Arbeit, die man ungeprüft weitergibt, egal ob mit oder ohne KI.
 
 ## Warum redet kaum jemand offen darüber?
 
@@ -31,7 +31,7 @@ Der Unterschied liegt woanders. Es gibt eine Studie aus den USA über sogenannte
 
 Weil sie das verstärkt, was man hineinsteckt. Wer weiß, was ein guter Kursplan ist, bekommt mit KI schneller einen guten Kursplan. Wer es nicht weiß, bekommt schneller einen schlechten, und merkt es nicht. Gute Arbeit wird schneller, schlechte auch.
 
-Darum ist die Erfahrung der Leute, die schon lange im Haus sind, mit KI mehr wert und nicht weniger. Sie sehen auf einen Blick, was nicht stimmt.
+Darum ist die Erfahrung der Leute, die schon lange im Haus sind, mit KI mehr wert und nicht weniger. Sie wissen, wonach man fragen muss und was nicht passen kann. Beim Nachprüfen selbst darf die KI helfen, oft ist sie dabei gründlicher als wir.
 
 ## Was ändert es, wenn man offen damit umgeht?
 
@@ -40,7 +40,7 @@ Es macht anderen Mut. Microsoft hat in einer eigenen Untersuchung gefunden: Wo F
 ## Was das für Sie heißt
 
 1. **Sagen Sie dazu, wenn etwas mit KI entstanden ist.** Ein Halbsatz reicht: „Mit KI vorbereitet, von mir geprüft.“ Das schützt vor Misstrauen, bevor es entsteht.
-2. **Prüfen Sie, bevor Sie weitergeben.** Was hinausgeht, hat ein Mensch gelesen. Das ist die einzige Regel, die wirklich zählt.
+2. **Prüfen Sie, bevor Sie weitergeben.** Gern mit Hilfe der KI, aber was hinausgeht, hat jemand gelesen und verantwortet. Das ist die Regel, die wirklich zählt.
 3. **Fangen Sie oben an.** Wenn die Leitung offen zeigt, wie sie mit KI arbeitet, braucht im Team niemand mehr heimlich zu arbeiten. Welche Werkzeuge und welche Daten dabei passen, regelt die [Datenampel](/impulse/datenampel-welche-daten-in-ki-tools/).
 
 ## Häufige Fragen
