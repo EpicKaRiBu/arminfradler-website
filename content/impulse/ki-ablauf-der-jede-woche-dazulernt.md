@@ -10,7 +10,7 @@ excerpt: "Die meisten fangen mit der KI jeden Tag von vorn an. Mehr bringt sie, 
 seo_title: "KI-Agenten im Team: ein Ablauf mit KI, der jede Woche dazulernt"
 keywords: ["Arbeitsabläufe mit KI", "KI im Team einführen", "KI-Agenten", "KI-Workflow", "KI-Assistent einrichten", "Copilot", "ChatGPT-Projekte", "Mensch und KI", "KI Erwachsenenbildung", "KI KMU Österreich"]
 minutes: 7
-sources: [{"title": "McKinsey (2026): The State of AI in 2026 (Stand: Oktober 2026)", "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/the-state-of-ai-in-2026-on-the-road-to-roi.pdf"}, {"title": "Microsoft Work Trend Index 2026 (Stand: November 2026)", "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization"}, {"title": "Microsoft 365 Blog (22.4.2026): Agentenfunktionen in Word, Excel und PowerPoint (Stand: November 2026)", "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/"}, {"title": "Google Workspace Updates: Workspace Studio (Stand: November 2026)", "url": "https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html?m=1"}, {"title": "Anthropic (22.10.2026): Agent Skills als offener Standard (Stand: Oktober 2026)", "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"}]
+sources: [{"title": "McKinsey (2026): The State of AI in 2026 (Stand: Oktober 2026)", "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/the-state-of-ai-in-2026-on-the-road-to-roi.pdf"}, {"title": "Microsoft 365 Blog (22.4.2026): Agentenfunktionen in Word, Excel und PowerPoint (Stand: November 2026)", "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/"}, {"title": "Google Workspace Updates: Workspace Studio (Stand: November 2026)", "url": "https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html?m=1"}, {"title": "Anthropic (22.10.2026): Agent Skills als offener Standard (Stand: Oktober 2026)", "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"}]
 image: "titel.webp"
 image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 11/2026)"
 image_alt: "Abgegriffener Karton-Ordner mit farbigen Registerblättern auf einem alten Holztisch, auf der obersten Karteikarte ein rotes Häkchen, daneben ein kurzer roter Stift."
@@ -18,23 +18,23 @@ image_alt: "Abgegriffener Karton-Ordner mit farbigen Registerblättern auf einem
 
 Kurz gesagt: Die meisten nutzen KI wie ein besseres Suchfeld. Frage rein, Antwort raus, am nächsten Tag wieder von vorn. Viel mehr bringt sie, wenn sie einen Ablauf kennt, der jede Woche wiederkommt: wo die Unterlagen liegen, wie Ihr Haus schreibt, was geprüft wird. Dann lernt der Ablauf mit jeder Runde dazu, und ein Mensch gibt frei.
 
-Ich arbeite selbst so. Jeden Montag prüft ein Ablauf meine Website von außen, eine KI bereitet mir vor, was zu tun ist, und ich entscheide. Seit Ende Oktober waren das für mich insgesamt etwa drei Minuten, fürs Lesen und Freigeben. Der Ablauf ist noch jung, ich zähle weiter.
+Ich arbeite selbst so. Jeden Montag prüft ein Ablauf meine Website von außen, eine KI bereitet mir vor, was zu tun ist, und ich entscheide. Er läuft erst seit Ende Oktober, das ist noch keine Statistik. Bisher habe ich dafür insgesamt etwa drei Minuten gebraucht, fürs Lesen und Freigeben. Ich zähle weiter.
 
 ## Warum fängt die KI jeden Tag bei null an?
 
 Weil man ihr jeden Tag wieder alles erklären muss. Wer mit ChatGPT oder Copilot einen Text schreiben lässt, tippt jedes Mal dazu, für wen er ist, wie lang er sein soll und was nicht hineingehört. Vergisst man etwas, wird das Ergebnis schlechter. Die KI ist nicht dumm. Ihr fehlt der Zusammenhang, den eine Kollegin nach drei Wochen im Haus einfach hat.
 
-Stellen Sie sich eine neue Kollegin vor, die sehr schnell arbeitet, aber jeden Morgen ihr Gedächtnis verliert. Sie würden ihr einen Ordner auf den Tisch legen: So machen wir das hier. Genau das ist der Trick.
+Stellen Sie sich eine neue Kollegin vor, die sehr schnell arbeitet, aber jeden Morgen ihr Gedächtnis verliert. Sie würden ihr einen Ordner auf den Tisch legen: So machen wir das hier.
 
 ## Woraus besteht so ein Ablauf?
 
 Aus drei Teilen, und keiner davon ist Technik im engen Sinn.
 
 1. **Ein Ordner als Gedächtnis.** Darin liegt, was die KI für diese Aufgabe wissen muss: gute Beispiele von früher, die Hausregeln, eine Liste mit Dingen, die schiefgegangen sind.
-2. **Eine Anleitung.** Ein, zwei Seiten in normaler Sprache: Was ist die Aufgabe, in welchen Schritten, was ist tabu? Fachleute sagen dazu „Skill“. Für viele KI-Werkzeuge gibt es dafür inzwischen einen gemeinsamen Standard. Die Anleitung bleibt Ihnen auch erhalten, wenn Sie das Werkzeug wechseln.
-3. **Ein Prüfschritt.** Es steht fest, wie geprüft wird, gern auch von einer zweiten KI, und wer am Ende freigibt, bevor etwas hinausgeht.
+2. **Eine Anleitung.** Ein, zwei Seiten in normaler Sprache: Was ist die Aufgabe, in welchen Schritten, was ist tabu? Fachleute sagen dazu „Skill“. Dafür gibt es inzwischen einen gemeinsamen Standard. Eine gute Anleitung lässt sich deshalb in vielen Werkzeugen weiterverwenden.
+3. **Ein Prüfschritt.** Es steht fest, wie geprüft wird und wer am Ende freigibt, bevor etwas hinausgeht. Prüfen darf auch eine zweite KI. Dann legt ein Mensch fest, wogegen sie prüft, sonst bestätigen sich zwei Durchgänge nur gegenseitig.
 
-Wenn die KI mit diesen drei Teilen mehrere Schritte hintereinander selbst erledigt, nennt man das einen KI-Agenten. Das Wort klingt größer, als es ist.
+Das ist noch kein KI-Agent. Von einem Agenten spricht man, wenn die KI selbst Unterlagen holt, mehrere Schritte aneinanderreiht und das Ergebnis ablegt. Mein Montagsablauf ist so einer. Anfangen sollte man trotzdem mit Ordner, Anleitung und Prüfschritt, denn ohne die arbeitet auch ein Agent ins Blaue.
 
 ## Wie sieht das bei einer echten Aufgabe aus?
 
@@ -42,19 +42,13 @@ Ein erfundenes Beispiel: Im Bildungshaus Musterstadt schreibt Frau Berger jedes 
 
 Gemeinsam legen wir einen Ordner an: zehn Ausschreibungen, die gut angekommen sind, die Schreibregeln des Hauses, die Vorgaben des Fördergebers. Dazu kommt eine Anleitung: „Du bekommst Titel, Zielgruppe und drei Stichworte. Schreib per Sie, höchstens 80 Wörter. Termin, Ort und Preis erfindest du nicht.“ Prüfen und freigeben macht Frau Berger selbst.
 
-In der ersten Woche korrigiert sie noch viel. Jede Korrektur, die öfter vorkommt, landet als neue Regel in der Anleitung. Nach ein paar Wochen liest sie nur noch und gibt frei. Das meine ich mit „lernt dazu“: Nicht die KI wird klüger, der Ordner wird besser.
+In der ersten Woche korrigiert sie noch viel. Zum dritten Mal streicht sie „spannend“ und „abwechslungsreich“. Also schreibt sie in die Anleitung: „Kein spannend, kein abwechslungsreich.“ Ab dann kommt es nicht mehr. So geht es mit jeder Korrektur, die sich wiederholt. Nach ein paar Wochen liest sie nur noch und gibt frei. Das meine ich mit „lernt dazu“: Nicht die KI wird klüger, der Ordner wird besser.
 
 ## Was sagt die Forschung dazu?
 
-Große Umfragen zeigen in dieselbe Richtung. Unter den Organisationen, die mit KI wirklich weiterkommen, haben laut einer großen McKinsey-Umfrage von 2026 rund drei Viertel ihre Abläufe neu aufgebaut. Bei den übrigen war es etwa ein Viertel. Ein Werkzeug zu kaufen reicht also nicht. Es kommt darauf an, was man damit umbaut.
+Große Umfragen sehen den Unterschied eher im Ablauf als in der Lizenz. Bei McKinsey haben unter den rund 6 Prozent der Firmen, die nach eigener Angabe spürbar Gewinn mit KI machen, fast drei Viertel ihre Abläufe grundlegend umgebaut, bei den übrigen ein Viertel. Das ist ein Rückblick und kein Beweis für Ursache und Wirkung. Es deckt sich aber mit dem, was ich in Teams sehe.
 
-Microsoft kommt in seiner Umfrage unter 20.000 KI-Nutzenden auf ein ähnliches Bild. Führung, Kultur und Abläufe erklären dort rund zwei Drittel der Wirkung von KI, das einzelne Können der Leute ein Drittel. Nur 13 Prozent sagen, ihre Organisation belohnt es, wenn jemand Arbeit mit KI neu gestaltet. Das ist eine Herstellerstudie, aber die Botschaft passt zu dem, was ich in Teams sehe.
-
-Die Werkzeuge dafür haben viele schon. Copilot kann seit April 2026 in Word, Excel und PowerPoint mehrere Schritte selbst erledigen, und mit Google Workspace Studio bauen Teams solche Abläufe ohne Programmieren. Was meistens fehlt, ist nicht die Lizenz. Es fehlt der Ordner, die Anleitung und die Frage, wer prüft.
-
-## Muss man sich schämen, wenn man so mit KI arbeitet?
-
-Nein. Manche reden nicht gern darüber, dass ein Text mit KI entstanden ist. Ich verstehe das, es fühlt sich ein bisschen an wie Schummeln. Aber so ein Ablauf ist kein Abgeben. Er ist Zusammenarbeit: Die KI liefert schnell, der Mensch setzt Ziel und Maßstab und steht mit seinem Namen dafür. KI ist ein Verstärker. Sie macht gute Arbeit schneller und schlechte auch. Darum zählt, was im Ordner liegt und wer freigibt.
+Die Werkzeuge dafür haben viele schon. Copilot kann mit passender Lizenz seit April 2026 in Word, Excel und PowerPoint mehrere Schritte selbst erledigen, und mit Google Workspace Studio bauen Teams solche Abläufe ohne Programmieren. Was meistens fehlt, ist nicht die Lizenz. Es fehlen der Ordner, die Anleitung und die Frage, wer prüft.
 
 ## Was das für Sie heißt
 
@@ -79,7 +73,7 @@ Das regelt die [Datenampel](/impulse/datenampel-welche-daten-in-ki-tools/). Für
 Dann bleibt der Ordner. Die Beispiele, Regeln und die Anleitung gehören Ihnen und funktionieren auch im nächsten Werkzeug. Das ist der eigentliche Wert.
 
 **Nimmt die KI damit jemandem die Arbeit weg?**
-Das ist nicht das Ziel. Weg fällt das Kopieren, Umformulieren und Suchen. Freigeben und Verantworten bleibt bei Menschen, und dafür braucht man Leute, die wissen, worauf es ankommt. Wer welches Ergebnis verantwortet, legt Ihr Haus selbst fest.
+Die Arbeit verschiebt sich. Aus zwei Abenden Kopieren wird eine Stunde Prüfen. Ob ein Haus die gewonnene Zeit anders nutzt oder anders bezahlt, etwa bei Honorarkräften, sollte es offen sagen, bevor es den Ablauf einführt. Freigeben und Verantworten bleibt bei Menschen.
 
 **Prüft ein Mensch besser als die KI?**
 Nicht unbedingt. Bei klar umrissenen Aufgaben, etwa eine Zahl mit der Quelle vergleichen, ist eine gute KI oft gründlicher als ein müder Blick am Freitagnachmittag. Der Mensch legt fest, was geprüft wird und wie gründlich, merkt, wenn schon die Frage schief ist, und steht für das Ergebnis gerade. Und Vorsicht: Wenn sich mehrere KI-Durchgänge einig sind, beweist das wenig, wenn alle von derselben falschen Quelle ausgehen.
