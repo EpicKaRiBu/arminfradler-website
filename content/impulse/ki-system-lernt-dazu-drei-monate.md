@@ -2,6 +2,7 @@
 title: "Wie Ihr KI-System dazulernt — und warum es nach 3 Monaten besser ist als am ersten Tag"
 slug: "ki-system-lernt-dazu-drei-monate"
 status: "draft"
+replaced_by: "ki-ablauf-der-jede-woche-dazulernt"
 date: "2026-03-29T21:07:32.616+00:00"
 updated: "2026-04-03T09:55:09.063934+00:00"
 category: "KI-Strategie"

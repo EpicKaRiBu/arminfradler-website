@@ -47,7 +47,7 @@
       <label for="org">Organisation</label><input id="org" name="org" autocomplete="organization" maxlength="160">
       <label for="anlass">Worum geht es?</label>
       <select id="anlass" name="anlass">
-        <option value="">Bitte wählen (optional)</option><option>Workshop</option><option>Vortrag oder Impuls</option><option>Pädagogischer Tag / SCHILF</option><option>Leitungsklausur</option><option>Workshop-Reihe</option><option>Online-Format</option><option>Etwas anderes</option>
+        <option value="">Bitte wählen (optional)</option><option>Workshop</option><option>Vortrag oder Impuls</option><option>Pädagogischer Tag / SCHILF</option><option>Leitungsklausur</option><option>Erster Ablauf mit KI</option><option>Workshop-Reihe</option><option>Online-Format</option><option>Etwas anderes</option>
       </select>
       <label for="quelle">Wie sind Sie auf mich gekommen?</label>
       <select id="quelle" name="quelle">
@@ -73,7 +73,7 @@
 (()=>{
 const f=document.getElementById('f'),err=document.getElementById('err'),start=Date.now();
 const KONTAKT='https://jfdxewwynvmahhgtmdvg.supabase.co/functions/v1/kontakt'; // eigene Funktion, Frankfurt (Code: backend/)
-const pre={'Vortrag-Workshop':'Vortrag oder Impuls','Bildung':'Pädagogischer Tag / SCHILF','Inhouse-Training':'Workshop-Reihe','Thema':'Etwas anderes'};
+const pre={'Vortrag-Workshop':'Vortrag oder Impuls','Bildung':'Pädagogischer Tag / SCHILF','Inhouse-Training':'Workshop-Reihe','Thema':'Etwas anderes','Ablauf':'Erster Ablauf mit KI'};
 const b=new URLSearchParams(location.search).get('betreff');if(b&&pre[b])f.anlass.value=pre[b];
 f.onsubmit=async e=>{
   e.preventDefault();err.textContent='';
