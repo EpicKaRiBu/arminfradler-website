@@ -8,7 +8,7 @@
    "datum": "2026-10-30",
    "titel": "Microsoft Copilot bekommt Routinen, Projekte und einen Autopilot",
    "was": "Microsoft listet für Oktober und November neue Copilot-Funktionen: zeitgesteuerte Routinen, gemeinsame Projekte, Skills im Copilot Chat und einen persönlichen Cloud-Agenten namens Autopilot. Vieles startet zuerst im Frühzugangs-Programm Frontier, weltweit folgt es ab November oder Jänner.",
-   "einordnung": "Das Werkzeug, das viele Häuser schon haben, übernimmt wiederkehrende Aufgaben; prüfen Sie vor einer Schulung, was in Ihrem Mandanten wirklich freigeschaltet ist.",
+   "einordnung": "Das Werkzeug, das viele schon im Vertrag haben, übernimmt wiederkehrende Aufgaben; prüfen Sie vor einer Schulung, was in Ihrem Mandanten wirklich freigeschaltet ist.",
    "gewicht": "wichtig",
    "art": "werkzeug",
    "fuer": [
@@ -50,7 +50,7 @@
    "datum": "2026-10-30",
    "titel": "Google Sheets zeigt bei KI-Einträgen die Webquelle je Zelle",
    "was": "Wenn Gemini in Google Sheets Zellen mit Inhalten aus dem Web füllt, nennt es jetzt die genutzte Quelle direkt in der jeweiligen Zelle. Die Funktion verarbeitet auch größere Anfragen.",
-   "einordnung": "Gut für Recherche-Tabellen in Verwaltung und Kursvorbereitung: Sie können jede Angabe an der Quelle nachprüfen und sollten das auch tun.",
+   "einordnung": "Gut für Recherche-Tabellen in Büro, Verwaltung und Vorbereitung: Sie können jede Angabe an der Quelle nachprüfen und sollten das auch tun.",
    "gewicht": "gut",
    "art": "werkzeug",
    "fuer": [
@@ -136,7 +136,7 @@
    "datum": "2026-10-29",
    "titel": "Bitkom: Jede:r fünfte Mieter:in lässt Nebenkosten von KI erklären",
    "was": "22 % der befragten Mieter:innen in Deutschland nutzen KI, um ihre Nebenkostenabrechnung zu verstehen. 63 % wünschen sich in digitalen Abrechnungen einen KI-Chatbot für Rückfragen.",
-   "einordnung": "Ein Alltagsbeispiel für Kurse: KI hilft beim Verstehen schwieriger Schreiben, die Zahlen prüfen Sie trotzdem selbst.",
+   "einordnung": "Ein Alltagsbeispiel: KI hilft beim Verstehen schwieriger Schreiben, die Zahlen prüfen Sie trotzdem selbst.",
    "gewicht": "laut",
    "art": "studie",
    "fuer": [

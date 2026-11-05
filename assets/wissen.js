@@ -126,18 +126,21 @@ function init(D,K){
   function setBw(v,push){bw=v;keep(bw);const ok=$('#bw-ok');ok.hidden=!bw;ok.innerHTML=bw?`Die ganze Seite zeigt jetzt, was für ${esc(BWN[bw].fuer)} zählt: <a href="#kurz">das Wichtigste in fünf Punkten ↓</a>`:'';$$('button',bwBox).forEach(x=>x.setAttribute('aria-pressed',x.dataset.b===bw));
     const tag=$('#bwtag');tag.hidden=!bw;tag.innerHTML=bw?`Blick: ${esc(BWN[bw].name)} <small>ändern</small>`:'';tag.title='Blickwinkel ändern';
     if(push){const u=new URL(location.href);bw?u.searchParams.set('fuer',bw):u.searchParams.delete('fuer');history.replaceState(null,'',u)}
+    const fw=$('#fuer-wen');if(fw)fw.textContent=bw?BWN[bw].mehrzahl:'Bildungshäuser, Schulen, Gemeinden und Betriebe';
+    $('[data-n=fakten]').textContent=bw?F.filter(f=>f.fuer.includes(bw)).length:F.length;const fl=$('#fakten-l');if(fl)fl.textContent=bw?'Befunde für '+BWN[bw].mehrzahl:'Befunde mit Quelle';
+    $('[data-n=radar]').textContent=P.filter(p=>!offFor(p)).length;
     redraw();drawList();if(cur>=0)pick(P[cur].id,false);if(ready){st.alle=false;st.n=N0;list();drawWeeks();drawKurz();drawCta()}}
   $('#bwtag').addEventListener('click',()=>{$('.w-bw').scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});const b=$('#bw button[aria-pressed=true]')||$('#bw button');setTimeout(()=>b.focus({preventScroll:true}),RM?0:450)});
   bwBox.addEventListener('click',e=>{const b=e.target.closest('button');if(b)setBw(b.dataset.b,true)});
   const det=$('#radar-detail');
-  det.innerHTML=`<p class="tag">So lesen Sie das Radar</p><p class="hint">Innen: lohnt sich jetzt.<br>Außen: lieber noch warten.</p><p class="s">Jeder Punkt hat eine Einordnung, einen Vorschlag für Ihr Haus und die Befunde dahinter. Tippen Sie auf eine Nummer.</p>`;
+  det.innerHTML=`<p class="tag">So lesen Sie das Radar</p><p class="hint">Innen: lohnt sich jetzt.<br>Außen: lieber noch warten.</p><p class="s">Jeder Punkt hat eine Einordnung, einen Vorschlag für Sie und die Befunde dahinter. Tippen Sie auf eine Nummer.</p>`;
   function pick(id,scroll){
     const p=P.find(q=>q.id===id);cur=P.indexOf(p);
     $$('.r-dot',svg).forEach(g=>g.classList.toggle('on',g.dataset.id===id));
     const bel=p.belege.map(fid=>FB[fid]).filter(Boolean);
     det.style.setProperty('--c',COL[p.thema]);
     det.innerHTML=`<p class="tag"><i></i>${esc(TH[p.thema].name)} · Nr. ${p.n}</p><h3>${esc(p.name)}</h3><p class="ring">${esc(RG[ringOf(p)].name)}</p>${bw&&ringOf(p)!==p.ring?`<p class="alle">Ohne Blickwinkel: ${esc(RG[p.ring].name)}</p>`:''}${offFor(p)?`<p class="alle">Für ${esc(BWN[bw].mehrzahl)} eher am Rand.</p>`:''}<p>${T(p.satz)}</p>
-      <div class="haus"><b>Für ${esc(bw?BWN[bw].fuer:'Ihr Haus')}</b>${T(hausOf(p))}</div>
+      <div class="haus"><b>Für ${esc(bw?BWN[bw].fuer:'Sie')}</b>${T(hausOf(p))}</div>
       ${bel.length?`<p class="xs m" style="margin:14px 0 0">Was dahinter steht (${bel.length})</p><ul class="bel">${bel.map(f=>`<li><a href="#${f.id}" data-f="${f.id}" data-from="${p.id}">${esc(cut(f.text,120))}</a> <span class="xs m">· ${esc(f.guete_name)}, nachgelesen ${dat(f.geprueft)}</span></li>`).join('')}</ul>`:''}
       ${p.impuls&&D.impulse[p.impuls]?`<p class="s" style="margin:14px 0 0">Ausführlich im Impuls: <a href="impulse/${p.impuls}/">${esc(D.impulse[p.impuls])}</a></p>`:''}
       <div class="nav2"><button type="button" data-d="-1">← voriger</button><button type="button" data-d="1">nächster →</button></div>`;
@@ -154,7 +157,7 @@ function init(D,K){
     const L=(D.kurz||{})[bw||'alle']||[];
     $('#kurz-kick').textContent=bw?'Kurz und bündig · für '+BWN[bw].mehrzahl:'Kurz und bündig · für alle';
     $('#kurz-h').textContent=bw?`Das Wichtigste für ${BWN[bw].fuer}`:'Das Wichtigste jetzt, in fünf Punkten';
-    $('#kurz-hint').innerHTML=bw?'':'Gilt für fast jedes Haus. Wählen Sie oben, woher Sie kommen, dann stehen hier fünf Punkte für Bildungshaus, Schule, Gemeinde oder Betrieb.';
+    $('#kurz-hint').innerHTML=bw?'':'Gilt fast überall. Wählen Sie oben, woher Sie kommen, dann stehen hier fünf Punkte für Bildungshaus, Schule, Gemeinde oder Betrieb.';
     $('#kurz-hint').hidden=!!bw;
     $('#kurz-list').innerHTML=L.map(k=>{
       const rad=(k.radar||[]).map(id=>P.find(p=>p.id===id)).filter(Boolean);

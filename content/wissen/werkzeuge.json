@@ -1,7 +1,7 @@
 {
  "stand": "2026-11-04",
  "vorweg": {
-  "alle": "Das beste Werkzeug ist meist das, für das Ihr Haus einen Vertrag hat. Ein Organisationskonto mit klaren Regeln schlägt jedes Gratis-Konto, egal wie gut das Modell ist.",
+  "alle": "Das beste Werkzeug ist meist das, für das Sie schon einen Vertrag haben. Ein Organisationskonto mit klaren Regeln schlägt jedes Gratis-Konto, egal wie gut das Modell ist.",
   "bildung": "Für Ihr Team: das Werkzeug aus Ihrem bestehenden Vertrag, mit Organisationskonto. Teilnehmende arbeiten mit eigenen Konten nur mit Übungsdaten, nie mit echten Namen oder Unterlagen aus der Kursverwaltung.",
   "schule": "Mit Schüler:innen derzeit nur über ein Schulkonto, das Ihre IT freigeschaltet hat, etwa Gemini in Google Workspace for Education oder Copilot Chat ab 13. Keine privaten Konten unter 14 und keine Werkzeuge, die erst ab 18 erlaubt sind, wie Claude. Für Lehrende gilt: Dienstkonto statt Gratis-Konto.",
   "gemeinde": "Zuerst schauen, was Ihr Microsoft- oder Google-Vertrag schon enthält. Dann den Auftragsverarbeitungsvertrag prüfen und Gratis-Konten für Bürgerdaten ausschließen. GovGPT ist derzeit nur für Bundesbedienstete offen.",
@@ -54,7 +54,7 @@
    ],
    "schule": "Das BMB nennt für Microsoft 365 eine Eigenerklärung vom Mai 2022 und empfiehlt eine datenschutzfreundliche Tenant-Konfiguration; zu Copilot sagt sie nichts. Eine Freigabe von Copilot für Schüler:innen durch BMB oder Bildungsdirektionen wurde nicht gefunden.",
    "werbung": "nein",
-   "gut_fuer": "Häuser, die schon mit Microsoft 365 arbeiten: Mails, Protokolle, Dokumente im eigenen Mandanten.",
+   "gut_fuer": "Alle, die schon mit Microsoft 365 arbeiten: Mails, Protokolle, Dokumente im eigenen Mandanten.",
    "kurz": {
     "eu": "Ja, EU-Datengrenze (Websuche ausgenommen)",
     "training": "Nein, mit Dienst- oder Schulkonto",
@@ -66,7 +66,7 @@
     "training": "g"
    },
    "radar": "copilotchat",
-   "einschaetzung": "Wenn Ihr Haus Microsoft 365 hat, ist Copilot Chat mit dem Dienstkonto der naheliegende erste Schritt: kein Aufpreis, alles im bestehenden Vertrag. Das volle Copilot erst kaufen, wenn Sie vier Wochen lang bei einer Aufgabe gemessen haben, was es bringt.",
+   "einschaetzung": "Wenn bei Ihnen Microsoft 365 läuft, ist Copilot Chat mit dem Dienstkonto der naheliegende erste Schritt: kein Aufpreis, alles im bestehenden Vertrag. Das volle Copilot erst kaufen, wenn Sie vier Wochen lang bei einer Aufgabe gemessen haben, was es bringt.",
    "fuer": {
     "schule": "Für Lehrende mit Schulkonto ein guter Start. Für Schüler:innen erst, wenn IT und Bildungsdirektion Altersgruppe und Einstellungen geklärt haben; der Jugendschutz greift nur mit richtig eingetragenem Alter."
    },
@@ -181,7 +181,7 @@
     "training": "r"
    },
    "radar": "orgkonto",
-   "einschaetzung": "Das bekannteste Werkzeug, und darum das häufigste Gratis-Konto im Haus. Gratis heißt: Werbung, Training mit Ihren Eingaben und kein Vertrag für die Organisation. Wenn ChatGPT, dann als Business-Konto mit Hausregel.",
+   "einschaetzung": "Das bekannteste Werkzeug, und darum das häufigste Gratis-Konto im Team. Gratis heißt: Werbung, Training mit Ihren Eingaben und kein Vertrag für die Organisation. Wenn ChatGPT, dann als Business-Konto mit Hausregel.",
    "fuer": {
     "schule": "Für Schüler:innen nicht über private Konten. Wer es im Unterricht zeigt, zeigt es am Lehrer-Bildschirm und sagt dazu, welches Konto welche Funktionen hat."
    },
@@ -292,7 +292,7 @@
    ],
    "schule": "Das BMB nennt für Google eine Eigenerklärung vom April 2022, Gemini ist darin nicht behandelt. Keine Vorgabe von BMB oder Bildungsdirektionen zu Gemini gefunden.",
    "werbung": "nein",
-   "gut_fuer": "Häuser mit Google Workspace: Texte, Tabellen, Folien und Recherche direkt in den Google-Programmen.",
+   "gut_fuer": "Alle, die mit Google Workspace arbeiten: Texte, Tabellen, Folien und Recherche direkt in den Google-Programmen.",
    "kurz": {
     "eu": "Nicht bestätigt",
     "training": "Privat: ja, abschaltbar. Schulkonto: nein",
@@ -304,7 +304,7 @@
     "training": "y"
    },
    "radar": "orgkonto",
-   "einschaetzung": "Stark, wenn Ihr Haus ohnehin mit Google arbeitet. Mit Schul- oder Firmenkonto deutlich datenschutzfreundlicher als jedes private Konto. Bei Vorführungen aufpassen: Das Gratis-Konto nutzt meist ein kleineres Modell als das bezahlte.",
+   "einschaetzung": "Stark, wenn Sie ohnehin mit Google arbeiten. Mit Schul- oder Firmenkonto deutlich datenschutzfreundlicher als jedes private Konto. Bei Vorführungen aufpassen: Das Gratis-Konto nutzt meist ein kleineres Modell als das bezahlte.",
    "fuer": {
     "schule": "Mit Workspace for Education der einfachste Weg zu KI mit Schulkonto. Vorher klären, für welche Gruppen der Admin Gemini freischaltet, und es mit der Bildungsdirektion abstimmen."
    },
@@ -415,7 +415,7 @@
     "training": "g"
    },
    "radar": "pruefroutine",
-   "einschaetzung": "Gut für Kursvorbereitung und Lernen, weil jede Antwort auf eine Stelle in Ihren Unterlagen zeigt. Das macht Prüfen leicht. Hineinladen nur, was nach der Datenampel darf.",
+   "einschaetzung": "Gut zum Vorbereiten und Lernen, weil jede Antwort auf eine Stelle in Ihren Unterlagen zeigt. Das macht Prüfen leicht. Hineinladen nur, was nach der Datenampel darf.",
    "neu": [
     {
      "datum": "2026-07-16",
@@ -535,7 +535,7 @@
     "training": "y"
    },
    "radar": "skills",
-   "einschaetzung": "Gut beim Schreiben und bei langen Dokumenten, und der Ursprung der Skills. Im Privatkonto wird mit Ihren Eingaben trainiert, außer Sie widersprechen, und die Daten gehen in die USA. Im Haus darum nur als Team-Konto mit Vertrag.",
+   "einschaetzung": "Gut beim Schreiben und bei langen Dokumenten, und der Ursprung der Skills. Im Privatkonto wird mit Ihren Eingaben trainiert, außer Sie widersprechen, und die Daten gehen in die USA. In der Arbeit darum nur als Team-Konto mit Vertrag.",
    "neu": [
     {
      "datum": "2026-10-07",
@@ -774,7 +774,7 @@
    ],
    "schule": "Keine Vorgabe von BMB oder Bildungsdirektionen gefunden.",
    "werbung": "nein",
-   "gut_fuer": "Häuser mit eigener IT, die heikle Texte gar nicht aus dem Haus geben wollen.",
+   "gut_fuer": "Organisationen mit eigener IT, die heikle Texte gar nicht hinausgeben wollen.",
    "kurz": {
     "eu": "Bleibt im Haus",
     "training": "Nein",
@@ -786,7 +786,7 @@
     "training": "g"
    },
    "radar": "govgpt",
-   "einschaetzung": "Spannend, wenn wirklich nichts das Haus verlassen darf. Aber jemand muss Rechner und Updates betreuen, und kleine Modelle sind schwächer als die großen Dienste. Für die meisten Häuser ist ein Organisationskonto der einfachere Weg.",
+   "einschaetzung": "Spannend, wenn wirklich nichts nach draußen darf. Aber jemand muss Rechner und Updates betreuen, und kleine Modelle sind schwächer als die großen Dienste. Für die meisten ist ein Organisationskonto der einfachere Weg.",
    "neu": [
     {
      "datum": "2026-10",

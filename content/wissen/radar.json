@@ -5,7 +5,7 @@
   {
    "id": "team",
    "name": "KI im Team",
-   "frage": "Wie arbeitet ein Haus gemeinsam gut mit KI?"
+   "frage": "Wie arbeitet ein Team gemeinsam gut mit KI?"
   },
   {
    "id": "lernen",
@@ -27,7 +27,7 @@
   {
    "id": "einsetzen",
    "name": "Einsetzen",
-   "satz": "Lohnt sich jetzt, in fast jedem Haus."
+   "satz": "Lohnt sich jetzt, fast überall."
   },
   {
    "id": "ausprobieren",
@@ -109,7 +109,7 @@
    "thema": "team",
    "ring": "einsetzen",
    "name": "KI-Kompetenz festhalten (Art. 4)",
-   "satz": "Die Pflicht bleibt: Wer KI im Haus einsetzt, muss etwas für die KI-Kompetenz seiner Leute tun. Seit Juli 2026 muss man aber kein bestimmtes Niveau mehr garantieren.",
+   "satz": "Die Pflicht bleibt: Wer KI in der Arbeit einsetzt, muss etwas für die KI-Kompetenz seiner Leute tun. Seit Juli 2026 muss man aber kein bestimmtes Niveau mehr garantieren.",
    "haus": "Eine Seite reicht: wer wurde wie eingeschult, wann wird nachgeschult. Das ist Ihr Nachweis, falls jemand fragt.",
    "belege": [
     "Art. 4 KI-VO neu",
@@ -236,7 +236,7 @@
    "ring": "einsetzen",
    "name": "Erst selbst, dann KI",
    "satz": "Wer zuerst selber denkt und dann die KI dazunimmt, lernt mehr und bleibt wacher. Umgekehrt geht es schneller und bleibt weniger hängen.",
-   "haus": "Als Hausregel für Kurse: erster Entwurf ohne KI, Überarbeitung mit KI.",
+   "haus": "Als Hausregel beim Lernen und Einarbeiten: erster Entwurf ohne KI, Überarbeitung mit KI.",
    "belege": [
     "Wer zuerst selbst schrieb",
     "Ganz delegieren schwächt",
@@ -263,7 +263,7 @@
    "ring": "einsetzen",
    "name": "Antworten prüfen als Gewohnheit",
    "satz": "Fast alle Jugendlichen nutzen Chatbots, aber 40 % prüfen die Antworten selten oder nie. Prüfen muss man üben wie Lesen.",
-   "haus": "Eine einfache Routine für alle Kurse: Quelle suchen, Gegenfrage stellen, selbst begründen. Und sie jedes Mal einmal üben.",
+   "haus": "Eine einfache Routine für alle, die lernen oder einarbeiten: Quelle suchen, Gegenfrage stellen, selbst begründen. Und sie jedes Mal einmal üben.",
    "belege": [
     "Saferinternet-Studie 2026 (11- bis 17-Jährige) verlassen sich 52 %",
     "PISA 2025: Wer KI für Aufgaben",
@@ -286,7 +286,7 @@
    "ring": "ausprobieren",
    "name": "KI-Tutor, der nur Hinweise gibt",
    "satz": "Gut gebaut kann ein Tutor viel. Entscheidend ist die Leitplanke: Hinweise statt Lösungen.",
-   "haus": "In einem Kurs ausprobieren, mit einer klaren Anleitung für den Tutor und einem Vergleich ohne.",
+   "haus": "In einer Gruppe ausprobieren, mit einer klaren Anleitung für den Tutor und einem Vergleich ohne.",
    "belege": [
     "Ein Tutor, der nur Hinweise gibt",
     "Ein didaktisch gebauter KI-Tutor",
@@ -538,7 +538,7 @@
    "thema": "werkzeuge",
    "ring": "einsetzen",
    "name": "Copilot Chat mit Dienstkonto",
-   "satz": "Für viele Häuser schon da, mit Datenschutz aus dem Vertrag. Ohne Lizenz sieht er nur, was Sie hochladen.",
+   "satz": "In vielen Organisationen schon da, mit Datenschutz aus dem Vertrag. Ohne Lizenz sieht er nur, was Sie hochladen.",
    "haus": "Prüfen, ob alle mit dem Dienstkonto angemeldet sind, nicht privat.",
    "belege": [
     "Copilot und Copilot Chat in Organisationen",
@@ -594,7 +594,7 @@
    "thema": "werkzeuge",
    "ring": "beobachten",
    "name": "Offene Modelle im eigenen Rechenzentrum",
-   "satz": "Der Bund zeigt mit GovGPT, dass es geht. Für ein einzelnes Bildungshaus ist das meist zu viel Betrieb.",
+   "satz": "Der Bund zeigt mit GovGPT, dass es geht. Für eine einzelne Organisation ist das meist zu viel Aufwand.",
    "haus": "Interessant für Träger und Verbände, die gemeinsam betreiben könnten.",
    "belege": [
     "GovGPT des Bundes",
@@ -654,7 +654,7 @@
    "thema": "werkzeuge",
    "ring": "abwarten",
    "name": "Agenten, die selbst bezahlen",
-   "satz": "Die Protokolle gibt es. Für ein Haus mit Budgetverantwortung ist das noch nichts.",
+   "satz": "Die Protokolle gibt es. Wer Budget verantwortet, lässt vorerst die Finger davon.",
    "haus": "Keine Zahlungsmittel an Agenten geben.",
    "belege": [
     "Agenten-Bezahlprotokolle"
@@ -681,7 +681,7 @@
   {
    "id": "schattenki",
    "name": "Schatten-KI",
-   "satz": "KI-Werkzeuge, die Leute privat für die Arbeit nutzen, weil das Haus nichts bereitstellt.",
+   "satz": "KI-Werkzeuge, die Leute privat für die Arbeit nutzen, weil der Arbeitgeber nichts bereitstellt.",
    "radar": [
     "orgkonto"
    ],
@@ -795,7 +795,7 @@
   {
    "id": "dsgvokonform",
    "name": "DSGVO-konform",
-   "satz": "„Kompatibel“ sagt der Anbieter. „Konform“ heißt: Der konkrete Einsatz in Ihrem Haus ist geprüft. Das ist nicht dasselbe.",
+   "satz": "„Kompatibel“ sagt der Anbieter. „Konform“ heißt: Der konkrete Einsatz bei Ihnen ist geprüft. Das ist nicht dasselbe.",
    "radar": [
     "ohnekonto",
     "orgkonto"
