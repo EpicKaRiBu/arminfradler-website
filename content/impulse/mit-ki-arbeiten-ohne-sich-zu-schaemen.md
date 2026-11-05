@@ -2,7 +2,7 @@
 title: "Mit KI arbeiten, ohne sich zu schämen"
 slug: "mit-ki-arbeiten-ohne-sich-zu-schaemen"
 status: "draft"
-date: "2026-11-20T08:00:00+01:00"
+date: "2026-11-28T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Viele nutzen KI und reden nicht darüber. Warum offenes Arbeiten mit KI kein Schummeln ist, was es im Team ändert und wo die ehrliche Grenze liegt."
@@ -35,7 +35,7 @@ Darum ist die Erfahrung der Leute, die schon lange im Haus sind, mit KI mehr wer
 
 ## Was ändert es, wenn man offen damit umgeht?
 
-Es macht anderen Mut. Microsoft hat in einer eigenen Untersuchung gefunden: Wo Führungskräfte KI sichtbar selbst nutzen, berichten Mitarbeitende deutlich häufiger, dass KI ihnen nützt. Und sie denken häufiger kritisch über die Ergebnisse nach. Das ist ein Zusammenhang aus einer Herstellerstudie, kein Beweis. Aber es passt zu dem, was ich erlebe: Wenn die Chefin sagt „Das hab ich mit KI vorbereitet, schaut’s bitte drüber“, trauen sich die anderen auch.
+Es macht anderen Mut. Microsoft hat in einer eigenen Untersuchung gefunden: Wo Führungskräfte KI sichtbar selbst nutzen, berichten Mitarbeitende deutlich häufiger, dass KI ihnen nützt. Und sie denken häufiger kritisch über die Ergebnisse nach. Das ist ein Zusammenhang aus einer Herstellerstudie, kein Beweis. Aber es passt zu dem, was ich erlebe: Wenn die Chefin sagt „Das habe ich mit KI vorbereitet, schaut bitte drüber“, trauen sich die anderen auch.
 
 ## Was das für Sie heißt
 

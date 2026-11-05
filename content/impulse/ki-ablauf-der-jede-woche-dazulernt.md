@@ -2,7 +2,7 @@
 title: "Der Ordner, der jede Woche dazulernt"
 slug: "ki-ablauf-der-jede-woche-dazulernt"
 status: "draft"
-date: "2026-11-06T08:00:00+01:00"
+date: "2026-11-07T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Wie aus KI-Fragen ein Ablauf wird, der jede Woche besser läuft: Ordner als Gedächtnis, eine Anleitung, ein Mensch, der freigibt. Für Teams ohne IT-Abteilung."
