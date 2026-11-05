@@ -11,6 +11,9 @@ seo_title: "Mit KI arbeiten und es zugeben: Mensch-KI-Zusammenarbeit im Team"
 keywords: ["Mensch und KI", "Ko-Kreation", "KI im Team", "Schatten-KI", "KI offen nutzen", "KI-Kennzeichnung", "KI Erwachsenenbildung", "KI Schule"]
 minutes: 5
 sources: [{"title": "IW Köln (19.9.2026): Schatten-KI, Kurzbericht 63/2026 (Stand: Oktober 2026)", "url": "https://www.iwkoeln.de/fileadmin/user_upload/Studien/Kurzberichte/PDF/2026/IW-Kurzbericht_2026-Schatten-KI.pdf"}, {"title": "Microsoft Work Trend Index 2026 (Stand: November 2026)", "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization"}, {"title": "Axios (24.9.2025) über Stanford, BetterUp und HBR: AI workslop (Stand: Oktober 2026)", "url": "https://www.axios.com/2025/09/24/ai-workslop-workplace-efficiency-study"}]
+image: "titel.webp"
+image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 11/2026)"
+image_alt: "Getipptes Blatt auf einem Holztisch, am Rand zwei Häkchen und ein Strich in rotem Stift, darauf ein leerer Zettel mit Klebeband, daneben ein kurzer roter Stift."
 ---
 
 Kurz gesagt: Wer mit KI arbeitet, muss sich nicht verstecken. Gute Arbeit mit KI ist Zusammenarbeit. Die KI liefert schnell, der Mensch setzt Ziel und Maßstab und steht mit seinem Namen dafür. Schämen muss man sich nur für eines: für Arbeit, die man ungeprüft weitergibt, egal ob mit oder ohne KI.
