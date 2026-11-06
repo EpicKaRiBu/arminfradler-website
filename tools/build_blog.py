@@ -291,6 +291,12 @@ def main():
     for f in sorted(os.listdir(ROOT), reverse=True):
         if re.match(r'^(nachrichten-\d{4}-kw\d+|modelle-[a-z0-9-]+)\.html$', f):
             sm.append(f'<url><loc>{base}/{f}</loc><lastmod>{stand.get(f, heute)}</lastmod></url>')
+    # Lernnetz: Startseite, Folgen, Lehrerhefte, Material und Begleitseiten (eigener Ordner, gebaut im Lernpfade-Projekt)
+    ln = os.path.join(ROOT, 'lernnetz')
+    if os.path.isdir(ln):
+        for f in sorted(os.listdir(ln)):
+            if f.endswith('.html') and f != 'stilbuch.html':
+                sm.append(f'<url><loc>{base}/lernnetz/{"" if f == "index.html" else f}</loc><lastmod>{datetime.date.fromtimestamp(os.path.getmtime(os.path.join(ln, f))).isoformat()}</lastmod></url>')
     sm += [f'<url><loc>{base}/impulse/{p["slug"]}/</loc><lastmod>{str(p.get("updated") or p["date"])[:10]}</lastmod></url>' for p in posts]
     sm.append('</urlset>')
     open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n').write('\n'.join(sm) + '\n')
@@ -306,6 +312,7 @@ def main():
            f'- [Wissen]({base}/wissen.html): KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe, mit geprüften Befunden und Quellen',
            f'- [KI-Nachrichten]({base}/nachrichten.html): Meldungen mit Datum, Quelle und Einordnung, wöchentlich nachgeschaut',
            f'- [Modelle und Werkzeuge]({base}/modelle.html): Steckbriefe zu Daten, Kosten und Schule',
+           f'- [Lernnetz]({base}/lernnetz/): kostenlose Lernpfade zum Spielen für die Sek I (Lehrplan 2023), am Beamer, mit Lehrerheft und Druckmaterial, CC BY 4.0, in Erprobung',
            f'- [Termine]({base}/termine.html): offene Vorträge und Workshops',
            f'- [Kostenlose Arbeitshilfen](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen',
            f'- [Kontakt]({base}/kontakt.html)', '', '## Impulse', '']

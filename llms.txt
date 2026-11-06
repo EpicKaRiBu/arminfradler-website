@@ -10,6 +10,7 @@
 - [Wissen](https://arminfradler.at/wissen.html): KI-Radar für Bildungshäuser, Schulen, Gemeinden und Betriebe, mit geprüften Befunden und Quellen
 - [KI-Nachrichten](https://arminfradler.at/nachrichten.html): Meldungen mit Datum, Quelle und Einordnung, wöchentlich nachgeschaut
 - [Modelle und Werkzeuge](https://arminfradler.at/modelle.html): Steckbriefe zu Daten, Kosten und Schule
+- [Lernnetz](https://arminfradler.at/lernnetz/): kostenlose Lernpfade zum Spielen für die Sek I (Lehrplan 2023), am Beamer, mit Lehrerheft und Druckmaterial, CC BY 4.0, in Erprobung
 - [Termine](https://arminfradler.at/termine.html): offene Vorträge und Workshops
 - [Kostenlose Arbeitshilfen](https://mitmachen.arminfradler.at/werkzeuge/ki/): Datenampel, Module zu Regeln, Kontext, Menschen und Wissen
 - [Kontakt](https://arminfradler.at/kontakt.html)
