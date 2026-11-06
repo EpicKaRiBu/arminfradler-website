@@ -34,7 +34,7 @@ const SEITEN = {
   'index.html': [], 'angebot.html': [], 'methode.html': [], 'termine.html': [], 'ueber-mich.html': [],
   'kontakt.html': [], 'impressum.html': [], 'datenschutz.html': [], 'agb.html': [],
   'wissen.html': ['[data-stand]', '[data-n="fakten"]', '[data-n="radar"]', '[data-n="woche"]', '#bw', '#board',
-    '#kurz-kick', '#kurz-h', '#kurz-list', '#kurz-stand', '#radar-list', '#facts', '#terms', '#count'],
+    '#kurz-kick', '#kurz-h', '#kurz-list', '#kurz-stand', '#radar-list', '#facts', '#terms', '#count', '#g-zahlen'],
   'nachrichten.html': ['[data-stand]', '#bw', '#chips-art', '#count', '#n-list'],
   'modelle.html': ['[data-stand]', '#bw', '#m-tab', '#m-cards'],
 };

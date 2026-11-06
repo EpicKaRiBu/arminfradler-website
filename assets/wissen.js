@@ -20,7 +20,7 @@ function init(D,K){
   const R=D.radar,P=R.punkte,F=D.fakten,FB=Object.fromEntries(F.map(f=>[f.id,f]));
   const TH=Object.fromEntries(R.themen.map(t=>[t.id,t])),RG=Object.fromEntries(R.ringe.map((r,i)=>[r.id,{...r,i}]));
   P.forEach((p,i)=>p.n=i+1);
-  const stand=new Date(R.stand);
+  const stand=new Date([R.stand,D.nachrichten&&D.nachrichten.stand,...F.map(f=>f.geprueft)].filter(Boolean).sort().pop());
   $('[data-stand]').textContent='Stand '+stand.getDate()+'. '+stand.toLocaleDateString('de-AT',{month:'long'})+' '+stand.getFullYear();
   $('[data-n=fakten]').textContent=F.length;$('[data-n=radar]').textContent=P.length;
   if(D.nachrichten&&D.nachrichten.stand)$('[data-n=woche]').textContent=dat(D.nachrichten.stand).replace(/\d{4}$/,'');
@@ -283,6 +283,12 @@ function init(D,K){
     st={t:'',g:'',q:'',a:'',r:'',l:'',n:N0,hl:id,alle:st.alle,back:back||null};$('#q').value='';
     list();const c=document.getElementById(id);if(c)c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});
   }
+  // Schaufenster: der Stand in Zahlen, aus denselben Daten wie die Seite
+  (()=>{const g=$('#g-zahlen');if(!g)return;const bis=new Date(Date.now()+30*864e5).toISOString().slice(0,10);
+    const NNm=(D.nachrichten&&D.nachrichten.meldungen)||[];const laut=NNm.filter(m=>m.gewicht==='laut').length;
+    const z=[[F.length,'Befunde, jeder mit Quelle, Güte und Datum'],[F.filter(f=>f.land==='at').length,'davon aus Österreich'],
+      [NNm.length-laut,`KI-Nachrichten eingeordnet, dazu ${laut} laute Schlagzeilen, als solche markiert`],[F.filter(f=>f.faellig&&f.faellig<=bis).length,'sind in den nächsten 30 Tagen zum Nachlesen fällig']];
+    g.innerHTML=z.map(([n,t])=>`<div><dd>${n}</dd><dt>${t}</dt></div>`).join('')})();
   ready=true;setBw(bw,false);
 
   /* ---------- Begriffe ---------- */

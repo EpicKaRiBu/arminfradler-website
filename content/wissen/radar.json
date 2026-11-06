@@ -291,7 +291,8 @@
     "Ein Tutor, der nur Hinweise gibt",
     "Ein didaktisch gebauter KI-Tutor",
     "Tutor CoPilot",
-    "Sechs Wochen KI-Tutoring mit GPT-4"
+    "Sechs Wochen KI-Tutoring mit GPT-4",
+    "Ein KI-Tutor im Lernportal senkte"
    ],
    "fuer": {
     "aus": [
@@ -352,7 +353,8 @@
    "haus": "Übungsphasen ohne fertige Lösungen planen. Die KI darf fragen, nicht vorsagen.",
    "belege": [
     "verschlechtert aber die Leistung ohne KI",
-    "PISA 2025: Wer KI für Aufgaben"
+    "PISA 2025: Wer KI für Aufgaben",
+    "Ein KI-Tutor im Lernportal senkte"
    ],
    "fuer": {
     "aus": [
@@ -395,7 +397,7 @@
    "haus": "Die drei Fragen in die nächste Teamsitzung mitnehmen. Lücken aufschreiben, nicht verstecken.",
    "belege": [
     "11 % der KI-nutzenden Unternehmen",
-    "PHP2Shell (CVE-2026-109618/-109619, CVSS 9.2)"
+    "PHP2Shell (CVE-2026-109618/-109619): mit KI-Unterstützung"
    ],
    "impuls": "ki-sicherheitsluecken-was-leitungen-in-der-hand-haben",
    "fuer": {
@@ -845,6 +847,42 @@
    "auch": [
     "Cybersicherheitsgesetz",
     "NIS2"
+   ]
+  },
+  {
+   "id": "routine",
+   "name": "KI-Routine",
+   "satz": "Ein Ablauf, den eine KI regelmäßig von selbst erledigt, etwa jeden Montag neue Meldungen sammeln. Ein Mensch legt fest, was sie darf, und prüft, was herauskommt.",
+   "radar": [
+    "routinen",
+    "skills"
+   ],
+   "auch": [
+    "KI-Routinen"
+   ]
+  },
+  {
+   "id": "kontext",
+   "name": "Kontext",
+   "satz": "Das Material, das man der KI mitgibt, bevor sie anfängt: Regeln, Beispiele, Quellen, frühere Ergebnisse. Fachleute sagen Context Engineering.",
+   "radar": [
+    "skills",
+    "hausregeln"
+   ],
+   "auch": [
+    "Context Engineering"
+   ]
+  },
+  {
+   "id": "arbeitsgeruest",
+   "name": "Arbeitsgerüst",
+   "satz": "Was eine KI zum verlässlichen Arbeiten braucht: ein Gedächtnis in geordneten Ordnern, Regeln, Routinen, ein Logbuch und eine Stelle, an der ein Mensch freigibt. Fachleute sagen dazu Harness, englisch für Geschirr.",
+   "radar": [
+    "zeithorizont",
+    "browseragent"
+   ],
+   "auch": [
+    "Harness"
    ]
   }
  ],
