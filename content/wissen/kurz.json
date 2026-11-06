@@ -1,6 +1,6 @@
 {
  "hinweis": "Kurzfassung je Blickwinkel: fünf Dinge, die jetzt zählen. Belege = Textausschnitte aus der Faktenbank, radar = Punkt-IDs. Stand bei jeder Änderung nachziehen.",
- "stand": "2026-11-04",
+ "stand": "2026-11-06",
  "alle": [
   {
    "art": "Pflicht",
@@ -117,21 +117,26 @@
  "schule": [
   {
    "art": "Neu",
-   "titel": "Für 6. November angekündigt: die KI-Strategie",
-   "text": "Der Bildungsminister hat im September eine neue KI-Strategie für Schulen für den 6.11.2026 angekündigt. Sie soll klären, welche Werkzeuge erlaubt sind und was bei Prüfungen gilt. Bis dahin keine teuren KI-Lizenzen kaufen. Ich ergänze hier, was drinsteht.",
-   "radar": [],
+   "titel": "Die KI-Strategie ist da: ein Rahmen, kein Erlass",
+   "text": "Seit 6. November gibt es die KI-Strategie für Österreichs Schulen. Sie verbietet nichts und schreibt keine Werkzeuge vor, wie KI im Unterricht vorkommt, entscheiden Sie als Lehrperson. Vorher klären: Was ist bei dieser Aufgabe erlaubt? Eine KI-Sandbox und geprüfte KI-Werkzeuge im Marktplatz Lernapps kommen 2027 als Pilot.",
+   "radar": [
+    "kibewertung"
+   ],
    "belege": [
-    "Die neue KI-Strategie für Schulen soll am 6.11.2026"
+    "Das Bildungsministerium hat am 6.11.2026 die",
+    "Zur KI-Strategie für Schulen kündigt",
+    "legt die Lehrperson vor jeder Aufgabe fest"
    ]
   },
   {
    "art": "Vorsicht",
    "titel": "Unter 14: ohne eigenes Konto",
-   "text": "Ob Kinder unter 14 eigene Konten bei KI-Diensten haben dürfen, ist nicht geklärt. Nehmen Sie Werkzeuge, die mit Code oder Link funktionieren. Konten laufen über die Lehrperson.",
+   "text": "Das Ministerium sagt es jetzt klar: keine privaten Konten für Lernende unter 14. Nehmen Sie Werkzeuge, die mit Code oder Link funktionieren, oder solche, die die Schule lizenziert hat. Konten laufen über die Lehrperson.",
    "radar": [
     "ohnekonto"
    ],
    "belege": [
+    "sollen Lernende unter 14 Jahren keine privaten Konten",
     "Die Steckbriefe lassen offen"
    ]
   },

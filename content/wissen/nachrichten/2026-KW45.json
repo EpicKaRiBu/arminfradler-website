@@ -1,9 +1,36 @@
 {
  "von": "2026-11-02",
  "bis": "2026-11-08",
- "stand": "2026-11-04",
+ "stand": "2026-11-06",
  "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
  "meldungen": [
+  {
+   "datum": "2026-11-06",
+   "titel": "Bildungsministerium legt KI-Strategie für Schulen vor",
+   "was": "Die Strategie ist ein Orientierungsrahmen ohne neue Gebote oder Verbote. Die Lehrperson legt pro Aufgabe fest, ob KI erlaubt ist; Lernende unter 14 sollen keine privaten Konten nutzen. KI-Detektoren gelten nicht als Mittel erster Wahl. Eine KI-Sandbox startet als Pilot ab dem ersten Quartal 2027, geprüfte KI-Werkzeuge im Marktplatz Lernapps und eine Servicestelle beim OeAD ab Sommersemester 2027.",
+   "einordnung": "Keine Werkzeugliste und keine neue Prüfungsregel: Schulen bleiben bei eigenen Vereinbarungen. Jetzt pro Fach festlegen, wann KI erlaubt ist und wie der Arbeitsweg gezeigt wird, und mit Lizenzkäufen bis zur Sandbox warten.",
+   "gewicht": "wichtig",
+   "art": "recht",
+   "fuer": [
+    "schule"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "BMB, KI-Strategie für Österreichs Schulen, 6.11.2026",
+     "u": "https://www.bmb.gv.at/dam/jcr:7c6d616d-41c1-4a33-9c5f-991fd531c39b/ki_strategie_schulen_pub.pdf"
+    },
+    {
+     "t": "BMB, FAQ Pädagogischer Einsatz von KI",
+     "u": "https://www.bmb.gv.at/Themen/schule/zrp/ki/faq.html"
+    },
+    {
+     "t": "news.ORF.at, 6.11.2026",
+     "u": "https://orf.at/stories/3447421"
+    }
+   ],
+   "radar": "ohnekonto"
+  },
   {
    "datum": "2026-11-04",
    "titel": "Bitkom: Jede:r Zehnte nutzt KI schon im Kontakt mit Behörden",

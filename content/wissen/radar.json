@@ -376,7 +376,9 @@
    "belege": [
     "Als hochriskant gelten KI-Systeme",
     "Hochrisiko-Pflichten für KI nach Anhang III",
-    "Südkorea Juni 2026"
+    "Südkorea Juni 2026",
+    "Notenvorschläge durch KI seien laut AI Act",
+    "lässt sich ein Text nicht zu 100 Prozent"
    ],
    "fuer": {
     "aus": [
@@ -384,7 +386,7 @@
      "betrieb"
     ],
     "schule": {
-     "haus": "Schularbeiten und Matura bleiben Sache der Lehrperson. Die neue KI-Strategie des Ministeriums soll klären, was bei Prüfungen gilt."
+     "haus": "Schularbeiten und Matura bleiben Sache der Lehrperson, so sagt es auch die KI-Strategie. KI-Detektoren sind kein Beweis: lieber den Arbeitsweg zeigen lassen und kurz mündlich nachfragen."
     }
    }
   },
@@ -437,9 +439,10 @@
    "thema": "sicher",
    "ring": "einsetzen",
    "name": "Ohne Schülerkonto arbeiten",
-   "satz": "Ob Kinder unter 14 eigene Konten bei KI-Diensten haben dürfen, ist nicht geklärt. Werkzeuge, die mit Code oder Link funktionieren, sind der sichere Weg.",
+   "satz": "Das Bildungsministerium rät: keine privaten Konten für Lernende unter 14. Werkzeuge, die mit Code oder Link funktionieren, sind der einfachste Weg.",
    "haus": "Eine kurze Liste kontoloser Werkzeuge für die Unterstufe. Konten laufen über die Lehrperson.",
    "belege": [
+    "sollen Lernende unter 14 Jahren keine privaten Konten",
     "Die Steckbriefe lassen offen",
     "Die Graz-Steckbriefe beschreiben 18"
    ],
