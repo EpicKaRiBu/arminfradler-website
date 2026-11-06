@@ -879,13 +879,10 @@
   {
    "id": "arbeitsgeruest",
    "name": "Arbeitsgerüst",
-   "satz": "Was eine KI zum verlässlichen Arbeiten braucht: ein Gedächtnis in geordneten Ordnern, Regeln, Routinen, ein Logbuch und eine Stelle, an der ein Mensch freigibt. Fachleute sagen dazu Harness, englisch für Geschirr.",
+   "satz": "Was eine KI zum verlässlichen Arbeiten braucht, in fünf Teilen: Wissenskarte (das Gedächtnis), Hausordnung (die Regeln), Routinen, Prüfrat und Journal. Freigeben tut ein Mensch. Das KI-Werkzeug stellt der Anbieter, das Arbeitsgerüst bauen Sie selbst.",
    "radar": [
     "zeithorizont",
     "browseragent"
-   ],
-   "auch": [
-    "Harness"
    ]
   }
  ],
