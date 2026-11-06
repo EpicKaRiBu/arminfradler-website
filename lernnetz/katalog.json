@@ -76,7 +76,7 @@
   "folge": "F1",
   "titel": "Echt oder Fake?",
   "frage": "Echt oder Fake: Woran erkennt man das?",
-  "beschreibung": "Der erste Fall: In der Klassengruppe tauchen ein Hochwasser-Foto, eine Schoko-Studie, ein Fuchs im Bus und ein Hackerangriff auf. Die Klasse verlässt den Beitrag, öffnet andere Tabs in einem erfundenen Übungsnetz, heftet Belege an, wägt sie ab und urteilt mit Begründung. Manchmal heißt das Urteil: Kann man noch nicht wissen.",
+  "beschreibung": "Der erste Fall: ein Hochwasser-Foto, eine Schoko-Studie, ein Fuchs im Bus. Die Klasse prüft Quellen in einem erfundenen Übungsnetz, heftet Belege an und urteilt mit Begründung.",
   "key": "lernnetz-f1",
   "stempel": [
    "Absender",
@@ -101,7 +101,7 @@
   "folge": "M1",
   "titel": "Ist ein Achtel mehr?",
   "frage": "Ist ein Achtel mehr als ein Viertel?",
-  "beschreibung": "Die erste Werkstatt: Ein vorlautes Achtel ist sich ganz sicher, dass acht mehr ist als vier. Die Klasse faltet Papier, sägt Leisten, schneidet am Zahlenstrahl fein und schiebt Stücke zusammen. Drei Werkbänke vom gelösten Beispiel bis zur Falle, jede falsche Antwort mit einer Rückmeldung zum Denkfehler.",
+  "beschreibung": "Die erste Werkstatt: Ein vorlautes Achtel hält sich für mehr als ein Viertel. Die Klasse faltet, sägt und schiebt Stücke am Zahlenstrahl, mit Rückmeldung zu jedem Denkfehler.",
   "key": "lernnetz-m1",
   "stempel": [
    "Nenner",
