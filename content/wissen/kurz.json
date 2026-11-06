@@ -47,7 +47,7 @@
   {
    "art": "Lernen",
    "titel": "Erst selbst denken, dann KI",
-   "text": "Wer Aufgaben ganz an die KI abgibt, lernt weniger. In einem Versuch schnitt die Gruppe mit KI im Wissenstest schlechter ab, 50 zu 67 Prozent. Der erste Gedanke gehört dem Menschen.",
+   "text": "In einem kleinen Versuch (52 Entwickler:innen, noch nicht begutachtet) schnitt die Gruppe mit KI im Wissenstest schlechter ab, 50 zu 67 Prozent. Wer ganz abgab, lernte am wenigsten, wer mitdachte, lernte trotzdem gut. Der erste Gedanke gehört dem Menschen.",
    "radar": [
     "erstselbst"
    ],
@@ -93,7 +93,7 @@
   {
    "art": "Lernen",
    "titel": "Kurse so bauen, dass gelernt wird",
-   "text": "Wer Aufgaben ganz an die KI abgibt, lernt weniger: 50 zu 67 Prozent im Wissenstest. Wer der KI Verständnisfragen stellt, lernt gut. Erster Entwurf ohne KI, Überarbeitung mit KI.",
+   "text": "Mit KI-Hilfe schnitt eine Gruppe im Wissenstest schlechter ab, 50 zu 67 Prozent, vor allem wer ganz abgab. Wer der KI Verständnisfragen stellt, lernt gut. Erster Entwurf ohne KI, Überarbeitung mit KI.",
    "radar": [
     "erstselbst",
     "pruefroutine"

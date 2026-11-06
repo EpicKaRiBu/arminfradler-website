@@ -705,7 +705,7 @@
   {
    "id": "cognitive",
    "name": "Kognitive Kapitulation",
-   "satz": "Wenn Menschen falsche KI-Antworten übernehmen, weil sie nicht mehr prüfen. Im Labor in 80 % der Fälle.",
+   "satz": "Wenn Menschen falsche KI-Antworten ungeprüft übernehmen. In einem Laborversuch mit absichtlich eingebauten Fehlern in rund 80 % der Fälle, in denen sie die KI gefragt hatten.",
    "radar": [
     "workslop",
     "loesungen"

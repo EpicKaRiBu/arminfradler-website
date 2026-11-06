@@ -6,7 +6,7 @@ date: "2026-11-07T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
 description: "Wie aus KI-Fragen ein Ablauf wird, der jede Woche besser läuft: Ordner als Gedächtnis, eine Anleitung, ein Mensch, der freigibt. Für Teams ohne IT-Abteilung."
-excerpt: "Die meisten fangen mit der KI jeden Tag von vorn an. Mehr bringt sie, wenn sie einen wiederkehrenden Ablauf kennt: wo die Unterlagen liegen, wie das Haus schreibt, wer prüft. Dann wird der Ablauf jede Woche verlässlicher, und ein Mensch steht dafür gerade."
+excerpt: "Die meisten fangen mit der KI jeden Tag von vorn an. Mehr bringt sie, wenn sie einen wiederkehrenden Ablauf kennt: wo die Unterlagen liegen, wie das Haus schreibt, wer prüft. Dann kann der Ablauf jede Woche verlässlicher werden, und ein Mensch steht dafür gerade."
 seo_title: "KI-Agenten im Team: ein Ablauf mit KI, der jede Woche dazulernt"
 keywords: ["Arbeitsabläufe mit KI", "KI im Team einführen", "KI-Agenten", "KI-Workflow", "KI-Assistent einrichten", "Copilot", "ChatGPT-Projekte", "Mensch und KI", "KI Erwachsenenbildung", "KI KMU Österreich"]
 minutes: 7
@@ -16,7 +16,7 @@ image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 11/2026)"
 image_alt: "Abgegriffener Karton-Ordner mit farbigen Registerblättern auf einem alten Holztisch, auf der obersten Karteikarte ein rotes Häkchen, daneben ein kurzer roter Stift."
 ---
 
-Kurz gesagt: Die meisten nutzen KI wie ein besseres Suchfeld. Frage rein, Antwort raus, am nächsten Tag wieder von vorn. Viel mehr bringt sie, wenn sie einen Ablauf kennt, der jede Woche wiederkommt: wo die Unterlagen liegen, wie Ihr Haus schreibt, was geprüft wird. Dann lernt der Ablauf mit jeder Runde dazu, und ein Mensch gibt frei.
+Die meisten nutzen KI wie ein besseres Suchfeld. Frage rein, Antwort raus, am nächsten Tag wieder von vorn. Viel mehr bringt sie, wenn sie einen Ablauf kennt, der jede Woche wiederkommt: wo die Unterlagen liegen, wie Ihr Haus schreibt, was geprüft wird. Dann kann der Ablauf mit jeder Runde dazulernen, wenn jede Korrektur, die sich wiederholt, in die Anleitung wandert. Und ein Mensch gibt frei.
 
 Ich arbeite selbst so. Jeden Montag prüft ein Ablauf meine Website von außen, eine KI bereitet mir vor, was zu tun ist, und ich entscheide. Er läuft erst seit Ende Oktober, das ist noch keine Statistik. Bisher habe ich dafür insgesamt etwa drei Minuten gebraucht, fürs Lesen und Freigeben. Ich zähle weiter.
 
@@ -30,9 +30,9 @@ Stellen Sie sich eine neue Kollegin vor, die sehr schnell arbeitet, aber jeden M
 
 Aus drei Teilen, und keiner davon ist Technik im engen Sinn.
 
-1. **Ein Ordner als Gedächtnis.** Darin liegt, was die KI für diese Aufgabe wissen muss: gute Beispiele von früher, die Hausregeln, eine Liste mit Dingen, die schiefgegangen sind.
+1. **Ein Ordner als Gedächtnis.** Das kann ein Projekt in ChatGPT sein, ein Notizbuch in Copilot oder ein gewöhnlicher Ordner, den die KI mitliest. Darin liegt, was die KI für diese Aufgabe wissen muss: gute Beispiele von früher, die Hausregeln, eine Liste mit Dingen, die schiefgegangen sind.
 2. **Eine Anleitung.** Ein, zwei Seiten in normaler Sprache: Was ist die Aufgabe, in welchen Schritten, was ist tabu? Fachleute sagen dazu „Skill“. Dafür gibt es inzwischen einen gemeinsamen Standard. Eine gute Anleitung lässt sich deshalb in vielen Werkzeugen weiterverwenden.
-3. **Ein Prüfschritt.** Es steht fest, wie geprüft wird und wer am Ende freigibt, bevor etwas hinausgeht. Prüfen darf auch eine zweite KI. Dann legt ein Mensch fest, wogegen sie prüft, sonst bestätigen sich zwei Durchgänge nur gegenseitig.
+3. **Ein Prüfschritt.** Es steht fest, wie geprüft wird und wer am Ende freigibt, bevor etwas hinausgeht. Prüfen darf auch eine zweite KI. Dann legt ein Mensch fest, wogegen sie prüft, sonst bestätigen sich zwei Durchgänge nur gegenseitig. Hier steckt die [Leitfrage](/impulse/wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken/) im Kleinen: Die Arbeit darf man abgeben, das Urteil darüber nicht.
 
 Das ist noch kein KI-Agent. Von einem Agenten spricht man, wenn die KI selbst Unterlagen holt, mehrere Schritte aneinanderreiht und das Ergebnis ablegt. Mein Montagsablauf ist so einer. Anfangen sollte man trotzdem mit Ordner, Anleitung und Prüfschritt, denn ohne die arbeitet auch ein Agent ins Blaue.
 
@@ -61,7 +61,7 @@ Genau das machen wir im Format [„Der erste Ablauf, der ab morgen läuft“](/a
 ## Häufige Fragen
 
 **Ist das dasselbe wie ein KI-Agent?**
-Im Kern ja. Ein KI-Agent erledigt mehrere Schritte selbst. Der Unterschied liegt im Zuschnitt: klein anfangen, mit einem Ablauf, und eine klare Stelle festlegen, an der ein Mensch prüft.
+Fast. Ordner, Anleitung und Prüfschritt sind die Grundlage. Ein Agent wird daraus, wenn die KI Unterlagen selbst holt und mehrere Schritte aneinanderreiht. Mein Montagsablauf ist so einer. Klein anfangen, mit einer klaren Stelle, an der ein Mensch prüft.
 
 **Brauchen wir dafür eine IT-Abteilung?**
 Für den Anfang nicht. Ordner, Anleitung und Prüfschritt gehen in den gängigen Werkzeugen mit Firmenlizenz. Was dauerhaft automatisch laufen soll, etwa jede Nacht, entscheiden Sie mit Ihrer IT.

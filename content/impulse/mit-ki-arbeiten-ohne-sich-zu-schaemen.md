@@ -16,13 +16,13 @@ image_label: "Bild: mit KI erstellt (gpt-image-2.5-sunburst, 11/2026)"
 image_alt: "Getipptes Blatt auf einem Holztisch, am Rand zwei Häkchen und ein Strich in rotem Stift, darauf ein leerer Zettel mit Klebeband, daneben ein kurzer roter Stift."
 ---
 
-Kurz gesagt: Viele nutzen KI im Job und sagen es nicht. Das hat Gründe. Wer offen sagt, dass er mit KI gearbeitet hat, bekommt zunächst etwas weniger Vertrauen. Wer dabei erwischt wird, verliert deutlich mehr. Ehrlich sein ist also nicht gratis, aber billiger. Damit es leichter wird, muss zuerst das Haus etwas tun.
+Viele nutzen KI im Job und sagen es nicht. Das hat Gründe, und die sind nicht dumm. Wer offen sagt, dass er mit KI gearbeitet hat, bekommt zunächst etwas weniger Vertrauen. Wer dabei erwischt wird, verliert deutlich mehr. Ehrlich sein ist also nicht gratis, aber billiger. Damit es leichter wird, muss zuerst das Haus etwas tun.
 
 ## Wie viele nutzen KI heimlich?
 
-In Österreich ist es ungefähr jede:r Sechste. Laut einer Umfrage von Tieto Austria nutzen 17 Prozent der Berufstätigen KI im Job ohne Wissen des Arbeitgebers. Im Burgenland, wo ich wohne, sind es 27 Prozent, so viel wie in keinem anderen Bundesland. Die Umfrage stammt von einer IT-Firma, und die Zahlen für die einzelnen Länder sind mit Vorsicht zu lesen. Die Richtung kenne ich aber aus fast jedem Workshop.
+In Österreich ist es ungefähr jede:r Sechste. Laut einer Umfrage von Tieto Austria nutzen 17 Prozent der Berufstätigen KI im Job ohne Wissen des Arbeitgebers. Im Burgenland, wo ich wohne, sind es laut der Umfrage 27 Prozent, in Salzburg nur 10. Die Umfrage stammt von einer IT-Firma, und die Zahlen für die einzelnen Länder sind mit Vorsicht zu lesen. Die Richtung kenne ich aber aus fast jedem Workshop.
 
-Interessant ist eine zweite Zahl aus derselben Umfrage: 24 Prozent verzichten ganz auf KI, weil im Unternehmen nicht klar ist, was erlaubt ist. Die einen machen es heimlich, die anderen gar nicht. Beides hat dieselbe Ursache.
+Interessant ist eine zweite Zahl aus derselben Umfrage: 24 Prozent nutzen derzeit keine KI, weil im Unternehmen klare Regeln fehlen. Die einen machen es heimlich, die anderen gar nicht. Beides hat dieselbe Ursache.
 
 ## Warum schweigen so viele?
 
@@ -34,7 +34,7 @@ Der andere Teil ist ein Gefühl. Wir haben gelernt, dass zählt, was man selbst 
 
 Ja, zunächst schon. Zwei Forscher haben das in 13 Experimenten mit über 5.000 Menschen untersucht. Wer offenlegte, dass er KI verwendet hat, bekam weniger Vertrauen. Auch der Zusatz „von einem Menschen geprüft und überarbeitet“ half nicht. Wer aber nichts sagte und dann von anderen aufgedeckt wurde, verlor deutlich mehr.
 
-Das finde ich die ehrlichste Antwort auf die Frage, ob man es sagen soll. Ehrlichkeit hat einen Preis. Erwischt werden hat einen höheren, und erwischt wird man immer leichter. Wie lange der Vertrauensabzug anhält, hat die Studie nicht gemessen. Ich vermute, er wird kleiner, je normaler KI im Haus ist.
+Das finde ich die ehrlichste Antwort auf die Frage, ob man es sagen soll. Ehrlichkeit hat einen Preis. Erwischt werden hat einen höheren. Und je normaler KI im Alltag wird, desto eher fällt es auf, vermute ich. Wie lange der Vertrauensabzug anhält, hat die Studie nicht gemessen. Ich vermute, er wird kleiner, je normaler KI im Haus ist.
 
 ## Was soll man dazusagen?
 
@@ -47,8 +47,10 @@ Auf dieser Website mache ich es so. Jedes Bild, das eine KI gemacht hat, trägt 
 ## Was das für Sie heißt
 
 1. **Als Leitung: zuerst Regeln und ein erlaubtes Werkzeug, dann Offenheit erwarten.** Solange niemand weiß, was erlaubt ist, ist Schweigen vernünftig. Welche Daten in welches Werkzeug dürfen, regelt die [Datenampel](/impulse/datenampel-welche-daten-in-ki-tools/).
-2. **Vorleben.** Wo Vorgesetzte KI-Nutzung vorleben, berichten Mitarbeitende laut Microsoft deutlich häufiger, dass KI ihnen nützt, und denken häufiger kritisch über die Ergebnisse nach. Das ist ein Zusammenhang aus einer Herstellerstudie, kein Beweis. Es passt aber zu dem, was ich sehe: Wenn die Chefin sagt „Das habe ich mit KI vorbereitet, schaut bitte drüber“, trauen sich die anderen auch.
+2. **Vorleben.** Wo Vorgesetzte KI-Nutzung vorleben, berichten Mitarbeitende laut Microsoft deutlich häufiger, dass KI ihnen nützt und dass sie über die Ergebnisse kritisch nachdenken. Das ist eine Befragung eines Herstellers, also ein Zusammenhang und kein Beweis. Es passt aber zu dem, was ich sehe: Wenn die Chefin sagt „Das habe ich mit KI vorbereitet, schaut bitte drüber“, trauen sich die anderen auch.
 3. **Als Kursleiter:in oder Honorarkraft: vorher fragen.** Erlaubt das Haus KI für diese Aufgabe? Und wird nach Stunden bezahlt oder nach Ergebnis? Diese Frage steckt hinter vielen Bedenken. Sie gehört auf den Tisch, nicht darunter.
+
+Offen sagen, wofür man geradesteht, ist die Leitfrage im Kleinen: [Wo lassen wir uns Arbeit abnehmen, und wo das Denken?](/impulse/wo-lassen-wir-uns-arbeit-abnehmen-und-wo-das-denken/)
 
 ## Häufige Fragen
 
@@ -59,6 +61,6 @@ Nein. Wer sich bei einem Mail die Rechtschreibung prüfen lässt, muss das niema
 Nein. Es kommt darauf an, ob Sie das Ergebnis beurteilen können. Wenn nicht, ist nicht die KI das Problem.
 
 **Was, wenn Kolleg:innen dagegen sind?**
-Dann ist das ein gutes Gespräch. Skepsis ist oft Fachwissen. Hören Sie zu, was dahintersteckt, und vereinbaren Sie gemeinsam, wofür KI passt und wofür nicht.
+Dann ist das ein gutes Gespräch. Hinter Bedenken steckt oft Erfahrung mit glatten Ergebnissen, die nicht gestimmt haben. Hören Sie zu, was dahintersteckt, und vereinbaren Sie gemeinsam, wofür KI passt und wofür nicht.
 
 *Stand: November 2026.*

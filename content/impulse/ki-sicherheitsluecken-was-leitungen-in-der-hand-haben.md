@@ -5,7 +5,7 @@ status: "published"
 pin: 2
 startseite: true
 date: "2026-10-30T14:00:00+01:00"
-updated: "2026-11-05T09:00:00+01:00"
+updated: "2026-11-06T03:00:00+01:00"
 category: "Sicher mit Hausverstand"
 category_slug: "sicher-mit-hausverstand"
 description: "KI findet Sicherheitslücken schneller als je zuvor. Was heißt das für Organisationen ohne IT-Abteilung? Drei Dinge, die jede Leitung selbst regeln kann."
@@ -23,7 +23,7 @@ Kurz gesagt: KI findet inzwischen Sicherheitslücken, die Fachleute jahrelang ü
 
 ## Was ist im Oktober passiert?
 
-Am 21. Oktober 2026 kam eine Meldung, die viele nervös gemacht hat. PHP, die Technik hinter rund zwei Dritteln aller Websites, hatte zwei schwere Lücken. Jede WordPress-Seite läuft auf PHP. Die Lücken steckten seit 2012 im Code. Gefunden haben sie zwei Teams unabhängig voneinander, beide mit Hilfe von KI.
+Am 21. Oktober 2026 kam eine Meldung, die viele nervös gemacht hat. PHP, die Technik hinter den meisten Websites, hatte zwei schwere Lücken. Jede WordPress-Seite läuft auf PHP. Die Lücken steckten seit 2012 im Code. Gefunden haben sie zwei Teams unabhängig voneinander, beide mit Hilfe von KI.
 
 Was mich an der Geschichte am meisten beschäftigt: 2024 hatten Fachleute PHP schon einmal gründlich geprüft und ein verwandtes Problem gesehen. Repariert wurde es nicht, weil niemand zeigen konnte, dass man es wirklich ausnutzen kann. Zwei Jahre später konnte das ein kleines Team mit KI.
 
@@ -39,7 +39,7 @@ Das eigentliche Problem sind die Seiten, um die sich keiner mehr kümmert. Die a
 
 ## Was ändert sich durch KI wirklich?
 
-Das Suchen wird billig. Im PHP-Fall fand ein Team aus zwei Leuten mit KI in rund drei Wochen, was eine fast zweimonatige Prüfung durch Fachleute nicht als ausnutzbar erkannt hatte. OpenAI-Chef Sam Altman hat es laut einem Bericht von Gizmodo in einem Gespräch an der Universität Stanford, veröffentlicht am 21. Oktober, so gesagt: „Ich glaube nicht mehr, dass wir einfach alle Fehler beheben können.“ Und er meinte, dass sich die meisten Führungskräfte schon wieder anderen Dingen zugewandt haben, während die Modelle immer besser werden.
+Das Suchen wird billig. Im PHP-Fall fand ein Sicherheitsforscher mit KI-Unterstützung binnen gut zwei Wochen einen funktionierenden Angriff. Eine fast zweimonatige Prüfung durch Fachleute hatte eines der Probleme 2024 zwar gesehen, aber nicht als ausnutzbar erkannt. OpenAI-Chef Sam Altman hat es laut einem Bericht von Gizmodo in einem Gespräch an der Universität Stanford, veröffentlicht am 21. Oktober, so gesagt: „Ich glaube nicht mehr, dass wir einfach alle Fehler beheben können.“ Und er meinte, dass sich die meisten Führungskräfte schon wieder anderen Dingen zugewandt haben, während die Modelle immer besser werden.
 
 Sein Rezept: Verteidigung mit derselben Technik, also mit KI. Für Konzerne stimmt das wahrscheinlich. Man darf aber dazusagen, dass er genau diese Technik verkauft. Einem Betrieb mit zwölf Leuten fehlt im entscheidenden Moment meist etwas anderes: das Wissen, ob die eigene Seite betroffen ist, wer sie betreut und wer sagen darf: Wir drehen sie heute ab.
 
