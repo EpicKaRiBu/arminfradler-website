@@ -1,7 +1,7 @@
 ---
 title: "Der Ordner, der jede Woche dazulernt"
 slug: "ki-ablauf-der-jede-woche-dazulernt"
-status: "draft"
+status: "published"
 date: "2026-11-07T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
