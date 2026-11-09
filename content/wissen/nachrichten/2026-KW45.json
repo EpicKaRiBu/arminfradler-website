@@ -1,8 +1,8 @@
 {
  "von": "2026-11-02",
  "bis": "2026-11-08",
- "stand": "2026-11-06",
- "freigegeben": "2026-11-04, Armin (veröffentlichen im Thread)",
+ "stand": "2026-11-09",
+ "freigegeben": "ENTWURF (vier neue Meldungen vom 9.11.2026; die übrigen sind seit 4. bzw. 6.11. live)",
  "meldungen": [
   {
    "datum": "2026-11-06",
@@ -32,6 +32,67 @@
    "radar": "ohnekonto"
   },
   {
+   "datum": "2026-11-06",
+   "titel": "Agenten mit Gedächtnis: Wiki und Suche zusammen am besten",
+   "was": "In einem Test von Anthropic mit 25 Fragen zu Firmenunterlagen erreichte ein KI-Agent mit Suche allein 53 % der Kriterien, mit einem selbst gepflegten Wiki allein höchstens 48 % und mit beidem bis zu 61 %. Notizen gegen die Originalprotokolle zu prüfen, korrigierte Fehler im Gedächtnis.",
+   "einordnung": "Ein geordneter Ordner, den die KI pflegt, hilft, ersetzt aber nicht den Blick in die Originalunterlagen. Wer der KI ein Gedächtnis gibt, sollte festlegen, wie es geprüft wird.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic Research, 6.11.2026",
+     "u": "https://www.anthropic.com/research/components-of-agent-memory"
+    }
+   ],
+   "radar": "skills"
+  },
+  {
+   "datum": "2026-11-05",
+   "titel": "Word, Excel und PowerPoint jetzt direkt in der Copilot-App",
+   "was": "Microsoft rollt bis Mitte November weltweit aus: In der Microsoft-Copilot-App lassen sich Office-Dateien anlegen und bearbeiten, Änderungen gehen in die normalen Office-Apps zurück. Die Administration muss dafür nichts tun, es gelten die bestehenden Copilot-Einstellungen.",
+   "einordnung": "Ein neuer Weg, Dokumente mit KI zu bearbeiten, taucht auf, ohne dass jemand etwas beschlossen hat. Jetzt prüfen, welche Copilot-Richtlinien eingestellt sind und welche Daten mit dem Dienstkonto hinein dürfen.",
+   "gewicht": "wichtig",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Microsoft 365 Message Center MC1530611, aktualisiert 5.11.2026",
+     "u": "https://mc.merill.net/message/MC1530611"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "copilotchat"
+  },
+  {
+   "datum": "2026-11-05",
+   "titel": "Claude liest in den USA Bankkonten mit",
+   "was": "Anthropic startet in den USA eine Beta für Pro-, Max- und Ultra-Konten: Claude kann über den Dienst Plaid Kontostände und bis zu zwei Jahre Umsätze lesen, aber kein Geld bewegen. Für Österreich ist nichts angekündigt.",
+   "einordnung": "Eine laute Schlagzeile für den Arbeitsalltag hier: nicht verfügbar und für Organisationen ohne Belang. Für Privates gilt die Datenampel, Bankdaten sind rot.",
+   "gewicht": "laut",
+   "art": "werkzeug",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Claude, Personal Finance, 5.11.2026",
+     "u": "https://claude.com/de/resources/articles/introducing-personal-finance-in-claude"
+    }
+   ],
+   "verfuegbar": "vorschau"
+  },
+  {
    "datum": "2026-11-04",
    "titel": "Bitkom: Jede:r Zehnte nutzt KI schon im Kontakt mit Behörden",
    "was": "11 % der Deutschen haben KI im Behördenkontakt genutzt, meist um sich über Rechte zu informieren oder Briefe erklären zu lassen. 51 % würden lieber mit einem KI-Assistenten sprechen als warten.",
@@ -50,6 +111,28 @@
    ],
    "verfuegbar": "allgemein",
    "radar": "buergerbot"
+  },
+  {
+   "datum": "2026-11-04",
+   "titel": "Laborbericht: KI spart Tage, kostet aber Wochen, wo das Fachwissen fehlt",
+   "was": "Anthropic beschreibt ein Laborprojekt: Claude verkürzte einen Reinigungsschritt von rund drei Tagen auf etwa 90 Minuten. Ein von Claude geschriebenes Protokoll mit einem ungeeigneten Zusatzstoff kostete aber rund zwei Wochen. Fehler fielen dort schnell auf, wo das Team sich auskannte, und spät, wo nicht.",
+   "einordnung": "Ein Herstellerbericht, aber eine ehrliche Lehre: Prüfen braucht Fachwissen. Wo niemand im Team das Thema kennt, lohnt sich ein zweiter Blick von außen, bevor man der KI folgt.",
+   "gewicht": "gut",
+   "art": "studie",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Anthropic Research, 4.11.2026",
+     "u": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+    }
+   ],
+   "radar": "pruefroutine"
   },
   {
    "datum": "2026-11-03",
