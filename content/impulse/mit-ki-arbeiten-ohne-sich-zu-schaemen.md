@@ -1,7 +1,7 @@
 ---
 title: "Mit KI arbeiten, ohne sich zu schämen"
 slug: "mit-ki-arbeiten-ohne-sich-zu-schaemen"
-status: "draft"
+status: "published"
 date: "2026-11-13T08:00:00+01:00"
 category: "KI im Team"
 category_slug: "ki-im-team"
