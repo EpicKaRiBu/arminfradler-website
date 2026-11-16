@@ -1,0 +1,71 @@
+{
+ "von": "2026-11-09",
+ "bis": "2026-11-15",
+ "stand": "2026-11-16",
+ "freigegeben": "ENTWURF (Wochenlauf 16.11.2026)",
+ "meldungen": [
+  {
+   "datum": "2026-11-09",
+   "titel": "Copilot zeigt ab Jänner Cowork und Autopilot für alle mit Lizenz",
+   "was": "Ab Ende Jänner 2027 sehen alle mit Microsoft-365-Copilot-Lizenz die Einstiege zu Cowork, Code und Autopilot, auch ohne Freischaltung. Wer keine Ausgabenrichtlinie hat, sieht „Zugang anfragen“ oder „Mehr erfahren“. Die Einstellung dafür kommt ab Mitte November ins Admin Center, kosten tut es erst mit Ausgabenrichtlinie.",
+   "einordnung": "Bis Ende Jänner festlegen, wer anfragen darf und wer Ja sagt. Ab Mitte Dezember lässt sich dort ein Link auf die eigenen KI-Regeln eintragen. Wer das offen lässt, bekommt Anfragen ohne Antwort.",
+   "gewicht": "wichtig",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Microsoft 365 Message Center MC1546354, 9.11.2026",
+     "u": "https://mc.merill.net/message/MC1546354"
+    }
+   ],
+   "verfuegbar": "angekuendigt",
+   "radar": "hausregeln"
+  },
+  {
+   "datum": "2026-11-10",
+   "titel": "Claude bekommt Tabellen, Whiteboards und bald einen Besprechungs-Assistenten",
+   "was": "Anthropic hat in Claude gemeinsame Tabellen, Whiteboards und Datenauswertungen freigegeben. Ein Assistent, der an Besprechungen teilnimmt und Dokumente nachführt, ist angekündigt, ohne Datum. Tarife und EU-Verfügbarkeit nennt der Beitrag nicht.",
+   "einordnung": "Nach Copilot und Google Meet kommen KI-Notizen in Besprechungen überall an. Eine kurze Regel vorab hilft: Wer darf die KI dazuholen, und wird das am Anfang gesagt?",
+   "gewicht": "gut",
+   "art": "werkzeug",
+   "fuer": [
+    "bildung",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Claude, 10.11.2026",
+     "u": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-11-11",
+   "titel": "Gestohlene KI-Schlüssel kosteten 740.000 US-Dollar",
+   "was": "Beim App-Hoster Railway erbeuteten Angreifer im Oktober gespeicherte Zugangsdaten von bis zu rund 100.000 Arbeitsbereichen. Sie suchten gezielt nach Schlüsseln von KI-Anbietern und verbrauchten damit KI-Dienste um geschätzt 740.000 US-Dollar. Railway will übernehmen, was die Anbieter nicht erstatten.",
+   "einordnung": "Ein KI-Schlüssel ist Geld. Beim Anbieter ein Ausgabenlimit setzen, Schlüssel nie in Code oder geteilte Dateien schreiben und nach einem Vorfall beim Hoster sofort tauschen.",
+   "gewicht": "gut",
+   "art": "sicherheit",
+   "fuer": [
+    "betrieb",
+    "gemeinde"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "iTnews, 11.11.2026",
+     "u": "https://www.itnews.com.au/news/app-hoster-railway-attackers-ran-up-us740000-on-stolen-ai-keys-630277"
+    }
+   ],
+   "radar": "grundschutz"
+  }
+ ]
+}
