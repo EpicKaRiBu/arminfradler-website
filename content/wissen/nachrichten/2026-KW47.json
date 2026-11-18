@@ -1,0 +1,73 @@
+{
+ "von": "2026-11-16",
+ "bis": "2026-11-22",
+ "stand": "2026-11-18",
+ "freigegeben": "ENTWURF (Recherche 18.11.2026)",
+ "meldungen": [
+  {
+   "datum": "2026-11-16",
+   "titel": "Google findet KI-Agenten, die Lücken ohne Menschen ausnutzen",
+   "was": "Auf einem offen liegenden Server fand Google ein Agentensystem, das Sicherheitsupdates verbreiteter Web-Software auswertet, daraus Angriffscode schreibt und ihn selbst ausführt. Laut Google zum ersten Mal ganz ohne Menschen dazwischen. Untersucht wurde unter anderem ein verbreitetes WordPress-Plugin, Ziele waren französische Websites aus Medien, Unterhaltung und Bildung.",
+   "einordnung": "Neu ist das Tempo, nicht die Art der Lücke: Zwischen Update und Angriff bleibt weniger Zeit. Für eine WordPress-Seite heißt das automatische Updates einschalten, nicht genutzte Plugins löschen und wissen, wer die Seite wartet. Laut Google hinterlassen diese Werkzeuge noch deutliche Spuren.",
+   "gewicht": "wichtig",
+   "art": "sicherheit",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Google Threat Intelligence, 16.11.2026",
+     "u": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+    },
+    {
+     "t": "CyberScoop, 16.11.2026",
+     "u": "https://cyberscoop.com/google-fully-automated-ai-cyberattack/"
+    }
+   ],
+   "radar": "grundschutz"
+  },
+  {
+   "datum": "2026-11-16",
+   "titel": "Gestohlene KI-Zugänge kosten bis zu 100.000 Dollar am Tag",
+   "was": "Im selben Bericht beschreibt Google Fälle, in denen Angreifer gestohlene KI- und Cloud-Zugänge nutzten. Die Kosten lagen teils über 100.000 US-Dollar an einem Tag, im schwersten Fall bei rund einer Million bis zur Entdeckung. In einem anderen Fall änderte eine Gruppe nach einem Einbruch die Einstellungsdatei eines KI-Programmierwerkzeugs, damit beim Start eine Hintertür geladen wird.",
+   "einordnung": "KI-Zugänge sind Geld und gehören wie Passwörter geschützt: Ausgabenlimit beim Anbieter, Schlüssel nie in geteilten Dateien, Abrechnung einmal pro Woche ansehen. Wer KI-Werkzeuge in Code-Ablagen nutzt, prüft auch deren Einstellungsdateien.",
+   "gewicht": "gut",
+   "art": "sicherheit",
+   "fuer": [
+    "betrieb",
+    "gemeinde",
+    "bildung"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Google Threat Intelligence, 16.11.2026",
+     "u": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+    }
+   ],
+   "radar": "grundschutz"
+  },
+  {
+   "datum": "2026-11-18",
+   "titel": "Ausfälle in den USA: kein Beleg für einen KI-Angriff",
+   "was": "Nach Ausfällen bei Flugsicherung, einer Großbank und Outlook Anfang November verbinden manche Medien diese mit den neuen Warnungen vor KI-Angriffen. Eine offizielle Zuschreibung gibt es nicht. Microsoft nennt für Outlook einen technischen Fehler, zu den übrigen Ausfällen liegen keine Ursachenberichte vor.",
+   "einordnung": "Die Warnungen von Google und FBI sind echt, die Verbindung zu den Ausfällen ist bisher Vermutung. Ruhig bleiben und auf die Originalquelle warten.",
+   "gewicht": "laut",
+   "art": "sicherheit",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Voz, 18.11.2026 (ohne Zuschreibung)",
+     "u": "https://voz.us/en/politics/261118/1000677/warnings-of-ai-powered-cyber-attacks-and-autonomous-hacking-reach-fever-pitch-amid-system.html"
+    }
+   ]
+  }
+ ]
+}
