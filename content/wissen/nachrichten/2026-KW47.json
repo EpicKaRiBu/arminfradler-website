@@ -1,13 +1,13 @@
 {
  "von": "2026-11-16",
  "bis": "2026-11-22",
- "stand": "2026-11-18",
+ "stand": "2026-11-23",
  "freigegeben": "ENTWURF (Recherche 18.11.2026)",
  "meldungen": [
   {
    "datum": "2026-11-16",
    "titel": "Google findet KI-Agenten, die Lücken ohne Menschen ausnutzen",
-   "was": "Auf einem offen liegenden Server fand Google ein Agentensystem, das Sicherheitsupdates verbreiteter Web-Software auswertet, daraus Angriffscode schreibt und ihn selbst ausführt. Laut Google zum ersten Mal ganz ohne Menschen dazwischen. Untersucht wurde unter anderem ein verbreitetes WordPress-Plugin, Ziele waren französische Websites aus Medien, Unterhaltung und Bildung.",
+   "was": "Auf einem offen liegenden Server fand Google ein Agentensystem, das Sicherheitsupdates verbreiteter Web-Software auswertet, daraus Angriffscode schreibt und ihn selbst ausführt. Laut Google zum ersten Mal ganz ohne Menschen dazwischen. Das System untersuchte unter anderem ein verbreitetes WordPress-Plugin; eine erfolgreiche Ausnutzung beschreibt Google nicht. Laut Daten auf dem Server interessierte sich der Betreiber für französische Websites aus Medien, Unterhaltung und Bildung, bestätigte Opfer nennt der Bericht nicht.",
    "einordnung": "Neu ist das Tempo, nicht die Art der Lücke: Zwischen Update und Angriff bleibt weniger Zeit. Für eine WordPress-Seite heißt das automatische Updates einschalten, nicht genutzte Plugins löschen und wissen, wer die Seite wartet. Laut Google hinterlassen diese Werkzeuge noch deutliche Spuren.",
    "gewicht": "wichtig",
    "art": "sicherheit",
