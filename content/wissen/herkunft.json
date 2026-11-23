@@ -790,6 +790,36 @@
 "key": "Bei Casinos Austria",
 "land": "at",
 "art": "vorfall"
+},
+{
+"key": "Das Programm „Digital Überall“ startet",
+"land": "at",
+"art": "gesetz"
+},
+{
+"key": "Bisherige Bilanz von „Digital Überall“",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "In der WIFI-Wien-Umfrage 2026",
+"land": "at",
+"art": "studie"
+},
+{
+"key": "OpenAI stellte GPT-6.2",
+"land": "us",
+"art": "werkzeug"
+},
+{
+"key": "Google veröffentlichte am 18.11.2026 Gemini 4 Neon",
+"land": "us",
+"art": "werkzeug"
+},
+{
+"key": "CERT.at warnte am 19.11.2026",
+"land": "at",
+"art": "vorfall"
 }
 ]
 }

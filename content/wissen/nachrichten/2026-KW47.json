@@ -2,7 +2,7 @@
  "von": "2026-11-16",
  "bis": "2026-11-22",
  "stand": "2026-11-23",
- "freigegeben": "ENTWURF (Recherche 18.11.2026)",
+ "freigegeben": "ENTWURF (Wochenlauf 23.11.2026)",
  "meldungen": [
   {
    "datum": "2026-11-16",
@@ -52,6 +52,47 @@
    "radar": "grundschutz"
   },
   {
+   "datum": "2026-11-17",
+   "titel": "GPT-6.2: neue Modelle, und ein ehrlicher Satz im Kleingedruckten",
+   "was": "OpenAI stellt GPT-6.2 Astra für schwere Aufgaben und Sol für den Alltag vor, für Plus, Pro, Enterprise und Edu. In Enterprise und Edu muss die Verwaltung sie erst freischalten. Laut OpenAI verschwiegen die Modelle in zwei Tests eher, was ihre Arbeit blockiert hatte.",
+   "einordnung": "Der wichtigste Satz steht nicht in der Überschrift: Auch ein neues Modell meldet nicht immer, was es nicht geschafft hat. Ergebnisse weiter selbst prüfen, vor allem „fertig“-Meldungen.",
+   "gewicht": "gut",
+   "art": "modell",
+   "fuer": [
+    "bildung",
+    "schule",
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "OpenAI, 17.11.2026",
+     "u": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+    }
+   ],
+   "verfuegbar": "allgemein",
+   "radar": "pruefroutine"
+  },
+  {
+   "datum": "2026-11-17",
+   "titel": "Microsoft baut eigene Programmier-Modelle für GitHub Copilot",
+   "was": "Microsoft stellt bei der Ignite MAI Code 2 und MAI Code 2 Flash vor, beide in GitHub Copilot verfügbar. Microsoft vergleicht Leistung und Kosten mit Modellen von OpenAI und Anthropic, alles mit eigenen Messungen und zum Aktionspreis.",
+   "einordnung": "Für die meisten Organisationen nur am Rand wichtig. Die Vergleichszahlen sind Herstellerangaben und sollten nicht zitiert werden, ohne das dazuzusagen.",
+   "gewicht": "laut",
+   "art": "modell",
+   "fuer": [
+    "betrieb"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Microsoft AI, 17.11.2026",
+     "u": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
    "datum": "2026-11-18",
    "titel": "Ausfälle in den USA: kein Beleg für einen KI-Angriff",
    "was": "Nach Ausfällen bei Flugsicherung, einer Großbank und Outlook Anfang November verbinden manche Medien diese mit den neuen Warnungen vor KI-Angriffen. Eine offizielle Zuschreibung gibt es nicht. Microsoft nennt für Outlook einen technischen Fehler, zu den übrigen Ausfällen liegen keine Ursachenberichte vor.",
@@ -68,6 +109,68 @@
      "u": "https://voz.us/en/politics/261118/1000677/warnings-of-ai-powered-cyber-attacks-and-autonomous-hacking-reach-fever-pitch-amid-system.html"
     }
    ]
+  },
+  {
+   "datum": "2026-11-18",
+   "titel": "Google bringt Gemini 4 Neon",
+   "was": "Gemini 4 Neon ist das mittlere Modell der Gemini-4-Familie, gedacht für Programmieren, Wissensarbeit und Forschung. Es kommt in die Gemini-App für Pro und Ultra, in Gemini für Unternehmen und in die Schnittstelle. Regionen nennt Google nicht.",
+   "einordnung": "Eine Modellmeldung ohne Handlungsbedarf. Wer Gemini über die Organisation nutzt, schaut, ob die Verwaltung das neue Modell freigibt, und bleibt sonst bei den bestehenden Regeln.",
+   "gewicht": "gut",
+   "art": "modell",
+   "fuer": [
+    "betrieb",
+    "bildung"
+   ],
+   "land": "us",
+   "quellen": [
+    {
+     "t": "Google, 18.11.2026",
+     "u": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    }
+   ],
+   "verfuegbar": "allgemein"
+  },
+  {
+   "datum": "2026-11-19",
+   "titel": "Wieder kritische PHP-Lücken, eine davon ein unvollständiger Oktober-Fix",
+   "was": "CERT.at warnt vor sieben kritischen Lücken in PHP, über die sich unter Umständen fremder Code ausführen lässt. Behoben sind sie in 8.2.36, 8.3.37, 8.4.28, 8.5.13 und 8.6.0. Eine Lücke ist laut CERT.at ein unvollständiger Fix der Lücke vom 21. Oktober.",
+   "einordnung": "Wer eine WordPress-Seite oder andere PHP-Software betreibt, fragt den Dienstleister jetzt: Ist das Update drauf und sind die PHP-Prozesse neu gestartet? Das ist die Frage „Wer wartet es?“ in der Praxis.",
+   "gewicht": "wichtig",
+   "art": "sicherheit",
+   "fuer": [
+    "bildung",
+    "schule",
+    "gemeinde",
+    "betrieb"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "CERT.at, 19.11.2026",
+     "u": "https://www.cert.at/de/warnungen/2026/11/kritische-sicherheitslucken-in-php-updates-verfugbar2"
+    }
+   ],
+   "radar": "grundschutz"
+  },
+  {
+   "datum": "2026-11-22",
+   "titel": "3.000 kostenlose KI-Workshops in Gemeinden bis Ende 2027",
+   "was": "Das Programm „Digital Überall“ startet am 30. November die ersten 1.000 von rund 3.000 kostenlosen Workshops mit je drei Unterrichtseinheiten, Schwerpunkt KI. Gemeinden und Vereine buchen seit 18. November über eine zentrale Plattform. Umgesetzt wird von 58 ausgewählten Anbietern, darunter mehrere Volkshochschulen und BFIs.",
+   "einordnung": "Für Gemeinden ein Einstieg ohne Kosten, für Bildungshäuser ein Signal: Grundkurse gibt es bald gratis um die Ecke. Eigene Angebote sollten dort ansetzen, wo die drei Stunden aufhören, etwa bei der Arbeit im eigenen Haus.",
+   "gewicht": "wichtig",
+   "art": "markt",
+   "fuer": [
+    "bildung",
+    "gemeinde"
+   ],
+   "land": "at",
+   "quellen": [
+    {
+     "t": "Bundeskanzleramt über APA-OTS, 22.11.2026",
+     "u": "https://www.ots.at/presseaussendung/OTS_20261122_OTS0022/1000-kostenlose-ki-workshops-starten-oesterreichweit-am-30-november"
+    }
+   ],
+   "verfuegbar": "angekuendigt"
   }
  ]
 }
