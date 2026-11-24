@@ -71,31 +71,6 @@
   "material": "schnecke-im-draht-material.html"
  },
  {
-  "id": "f1-echt-oder-fake",
-  "linie": "F",
-  "folge": "F1",
-  "titel": "Echt oder Fake?",
-  "frage": "Echt oder Fake: Woran erkennt man das?",
-  "beschreibung": "Der erste Fall: ein Hochwasser-Foto, eine Schoko-Studie, ein Fuchs im Bus. Die Klasse prüft Quellen in einem erfundenen Übungsnetz, heftet Belege an und urteilt mit Begründung.",
-  "key": "lernnetz-f1",
-  "stempel": [
-   "Absender",
-   "Original",
-   "Andere Quellen"
-  ],
-  "fach": "DGB",
-  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
-  "datei": "echt-oder-fake.html",
-  "welt": "Lernnetz-Fälle",
-  "format": "Fall",
-  "schulstufe": 6,
-  "status": "fertig",
-  "station": "dgb-6-fake-news-und-manipulation",
-  "thema": "Fake News und Manipulation: laterales Lesen, Absender prüfen, Original eines Bildes suchen, andere Quellen vergleichen, Werbung erkennen, KI-Bilder, begründet urteilen",
-  "lehrerheft": "echt-oder-fake-lehrerheft.html",
-  "material": "echt-oder-fake-material.html"
- },
- {
   "id": "m1-brueche",
   "linie": "M",
   "folge": "M1",
@@ -119,6 +94,31 @@
   "thema": "Brüche: gleich große Teile, Größenvergleich, gleichwertige Brüche am Zahlenstrahl, Addieren gleichnamiger und einfacher ungleichnamiger Brüche",
   "lehrerheft": "ist-ein-achtel-mehr-lehrerheft.html",
   "material": "ist-ein-achtel-mehr-material.html"
+ },
+ {
+  "id": "m2-zoom",
+  "linie": "M",
+  "folge": "M2",
+  "titel": "Wie klein ist winzig?",
+  "frage": "Wie oft muss man zehnmal vergrößern, bis man ein Atom sieht?",
+  "beschreibung": "Der große Zoom: eine durchgehende Fahrt von Lena auf der Schulwiese bis ins Atom und hinaus bis zur Sonne. Jeder Schritt ist zehnmal. Eine Null, die sich für nichts hält, zählt mit. Die Klasse schneidet einen Meterstreifen, fährt selbst und rechnet mit Zehnerpotenzen, Einheiten und Faktoren.",
+  "key": "lernnetz-m2",
+  "stempel": [
+   "Zehnerpotenz",
+   "Einheit",
+   "Faktor"
+  ],
+  "fach": "M",
+  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
+  "datei": "wie-klein-ist-winzig.html",
+  "welt": "Lernnetz-Werkstatt",
+  "format": "Werkstatt",
+  "schulstufe": 7,
+  "status": "fertig",
+  "station": "m-7-potenzen-mit-naturl-exponenten",
+  "thema": "Zehnerpotenzen mit natürlichen Hochzahlen, Stellenwert, Längeneinheiten von Kilometer bis Nanometer, Größenvergleich mit Faktoren",
+  "lehrerheft": "wie-klein-ist-winzig-lehrerheft.html",
+  "material": "wie-klein-ist-winzig-material.html"
  },
  {
   "id": "p1-anreise",
@@ -235,5 +235,29 @@
   "thema": "Wärme: Teilchenmodell, Wärmeleitung, Leiter und Isolatoren",
   "lehrerheft": "heisser-loeffel-lehrerheft.html",
   "material": "heisser-loeffel-material.html"
+ },
+ {
+  "id": "w2-pfuetze",
+  "linie": "W",
+  "folge": "W2",
+  "titel": "Wohin verschwindet die Pfütze?",
+  "frage": "Wohin verschwindet die Pfütze?",
+  "beschreibung": "Ein Wasser-Teilchen liegt nach dem Regen in einer Pfütze am Sportplatz. Am Nachmittag ist die Pfütze weg, das Teilchen nicht. Film, drei Etappen mit der Teilchenkiste, in der fest, flüssig und gasförmig von selbst entstehen, und eine Postkarte.",
+  "key": "winzlinge-w2",
+  "stempel": [
+   "Anordnung",
+   "Verdunsten",
+   "Sieden"
+  ],
+  "fach": "PH",
+  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
+  "datei": "wohin-verschwindet-die-pfuetze.html",
+  "welt": "Winzlinge auf Reisen",
+  "schulstufe": 8,
+  "station": "ph-8-aggregatzustande-und-phasenubergange",
+  "status": "fertig",
+  "thema": "Teilchenmodell: Aggregatzustände, Verdunsten, Sieden, Kondensieren",
+  "lehrerheft": "wohin-verschwindet-die-pfuetze-lehrerheft.html",
+  "material": "wohin-verschwindet-die-pfuetze-material.html"
  }
 ]
