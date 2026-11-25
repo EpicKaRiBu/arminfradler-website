@@ -1375,7 +1375,7 @@ return{fig,bis,von,rein,schritte,rest,W,dauer,f0,an,ende:an+1.1,name,satz:ZE.sat
 const ZOOM=zoomPlan();
 function zeilen(c,s,maxw){const out=[];let z='';for(const w of String(s).split(/\s+/)){const t=z?z+' '+w:w;if(c.measureText(t).width>maxw&&z){out.push(z);z=w;}else z=t;}if(z)out.push(z);return out;}
 function zoomZaehler(c,Zo,n,puls,k,vorher,links){
-const kopf=Zo.frage.toUpperCase(),wo=(i)=>(i<0?'Start: Lena auf der Schulwiese':i===0?'gleich geht es los':`${i===Zo.schritte&&Zo.rest?'mehr als ':''}${ZMAL[i]||''} ${Zo.rein?'vergrößert':'verkleinert'}`),wort=wo(vorher? -1:n);
+const kopf=Zo.frage.toUpperCase(),wo=(i)=>(i<0?'Start: Lena auf der Schulwiese':i===0?`bald zehnmal ${Zo.rein?'vergrößert':'verkleinert'}`:`${i===Zo.schritte&&Zo.rest?'mehr als ':''}${ZMAL[i]||''} ${Zo.rein?'vergrößert':'verkleinert'}`),wort=wo(vorher? -1:n);
 c.save();c.font=`700 ${21*k}px ${MONO}`;fx.spaced(c,'1.5px');const w1=c.measureText(kopf).width;fx.spaced(c,'0px');
 c.font=`400 ${27*k}px ${HAND}`;let w2=0;for(let i= -1;i<=Zo.schritte;i++)w2=Math.max(w2,c.measureText(wo(i)).width);c.restore();
 const w=Math.max(390*k,w1+40*k,w2+40*k),h=146*k,x=links?24:1280-24-w,y=22;
@@ -1390,7 +1390,7 @@ c.restore();return[x,y,w,h];
 const flaeche=(a,b,d=8)=>Math.max(0,Math.min(a[0]+a[2],b[0]+b[2]+d)-Math.max(a[0],b[0]-d))*Math.max(0,Math.min(a[1]+a[3],b[1]+b[3]+d)-Math.max(a[1],b[1]-d));
 function zoomLage(Zo,k){
 const V=ZM.sicht(Zo.bis),hx=V.ox+Zo.W.ort[0]*V.s,hy=V.oy+Zo.W.ort[1]*V.s,hr=Math.max(Zo.W.rpx||clamp(Zo.W.r*V.s,8,420),Zo.W.rpx?22:8);
-const held=[hx-hr-16,hy-hr-16,2*hr+32,2*hr+32],o=document.createElement('canvas');o.width=1280;o.height=720;const oc=o.getContext('2d');
+const held=[hx-hr-16,hy-hr-16,2*hr+32,2*hr+32,1],o=document.createElement('canvas');o.width=1280;o.height=720;const oc=o.getContext('2d');
 let links=false,zb=zoomZaehler(oc,Zo,0,0,Math.min(k,1.3),true,false);if(flaeche(zb,held,0)>0){links=true;zb=zoomZaehler(oc,Zo,0,0,Math.min(k,1.3),true,true);}
 const frei=[zb,held];
 ZM.zeichne(oc,Zo.bis,{t:0,frei});const rz=Math.max(hr+16,150),umfeld=[hx-rz,hy-rz,2*rz,2*rz],hin=[zb,held,umfeld].concat(ZM.kaesten());
@@ -1412,7 +1412,9 @@ const L=zeilen(oc,Zo.satz,breit*kb),bw=Math.max(...L.map((l)=>oc.measureText(l).
 if(best&&L.length===best.L.length)continue;
 for(let y=16;y<=646-bh;y+=8)for(let x=16;x<=1264-bw;x+=8){const r=[x,y,bw,bh];
 const ueberlapp=hin.reduce((sum,f,i)=>sum+flaeche(r,f)*(i<2?12:i===2?1.5:3),0),nx=clamp(hx,x,x+bw),ny=clamp(hy,y,y+bh),abst=Math.hypot(nx-hx,ny-hy)-hr;
-const wert=ueberlapp*4+(detail?detail(x,y,bw,bh)*3:0)+Math.abs(abst-34)+(abst<18?400:0);if(!best||wert<best.wert)best={wert,r,L};}}
+const ax=clamp(hx,x+30,x+bw-30),ay=clamp(hy,y+20,y+bh-20);let quer=0;
+for(let i=3;i<hin.length;i++){const f=hin[i];for(let u=0.1;u<0.95;u+=0.1){const qx=ax+(hx-ax)*u,qy=ay+(hy-ay)*u;if(qx>f[0]&&qx<f[0]+f[2]&&qy>f[1]&&qy<f[1]+f[3]&&Math.hypot(qx-hx,qy-hy)>hr+14){quer++;break;}}}
+const wert=ueberlapp*4+(detail?detail(x,y,bw,bh)*3:0)+Math.abs(abst-34)+(abst<18?400:0)+quer*40000;if(!best||wert<best.wert)best={wert,r,L};}}
 return{links,frei,hx,hy,hr,L:best.L,size,blase:best.r};
 }
 function zoomBlase(c,lage,hx,hy,hr,a,s){
@@ -1619,7 +1621,7 @@ const br=$('.brand');if(br&&HEIM!==false&& !document.querySelector('.bar .heim')
 renderPass();requestAnimationFrame(frame);
 dunkelEinbauen();
 document.querySelectorAll('.say').forEach((e)=>e.setAttribute('aria-live','polite'));
-if((ST.reach||0)>=2&& !document.querySelector('#weiterBei')){const st=STOPS[Math.min(ST.reach,STOPS.length-1)],rw=document.querySelector('#s-start .row');if(st&&rw)rw.insertAdjacentHTML('beforeend',`<button class="btn" type="button" id="weiterBei" data-go="${st[0]}">Weiter bei: ${st[1]} →</button>`);}
+if((ST.reach||0)>=2&& !document.querySelector('#weiterBei')){const st=STOPS[Math.min(ST.reach,STOPS.length-1)],rw=document.querySelector('#s-start .row');if(st&&rw){rw.insertAdjacentHTML('beforeend',`<button class="btn" type="button" id="weiterBei" data-go="${st[0]}">Weiter bei: ${st[1]} →</button>`);rw.querySelectorAll('.btn:not(#weiterBei)').forEach((b)=>b.classList.add('ghost'));}}
 window.__reise={MODS,show,ST:()=>ST,zoomEin};
 const bar=document.querySelector('.bar');if(bar){const hoch=()=>document.documentElement.style.setProperty('--bar-h',(getComputedStyle(bar).position==='sticky'?bar.offsetHeight:0)+'px');hoch();if('ResizeObserver'in window)new ResizeObserver(hoch).observe(bar);addEventListener('resize',hoch);}
 const valid=(id)=>STOPS.some((s)=>s[0]===id)||BONUS.includes(id);
@@ -1732,6 +1734,10 @@ const GEBIRGE=[[1.5,6.9,44.1,7.1,45.5,8.2,46.3,9.8,46.7,11.3,47,12.8,47.15,14,47
 [1,14.6,45.2,16.5,44,18.3,43.2,19.8,42.2,20.6,40.5],[0.9,17.8,48.9,19.6,49.3,22.3,49,24.4,48,25.6,46.6,25.2,45.6,23.2,45.4],[1.3,6.5,59.5,8.5,61.5,12,64,15.5,67,18.5,68.6],[0.8,38,44.3,41,43.4,44,42.8,47.5,41.3],
 [1.2,29.5,37,33,37,36.5,38,41,39,44,39.5],[1,-8,31,-4.5,32.6,-0.5,34,4,35.5,8.5,35.8],[0.8,59,52,58.5,56,59.5,60,60.5,64,64,67.5],[1.2,45,37.5,48.5,33.5,52.5,30,57,27.5],[2.4,72,35.5,78,32.5,84,28.5,90,28,96,29]];
 const STAEDTE=[['Wien',16.37,48.21,1],['Graz',15.44,47.07,1],['Linz',14.29,48.31,1],['Salzburg',13.05,47.8,-1],['Innsbruck',11.39,47.27,1],['Klagenfurt',14.31,46.62,1],['Bregenz',9.75,47.5,1],['Eisenstadt',16.52,47.85,1]];
+const STROM={donau:['Donau','',3.2,'+818+4809+5-4+6+0+4-5+11-3+2-4+7+2+8-3+15+2+0+2+13+8+4-1-2-2+3+1+3+3+8+4+33-2+17+18+15-1+6+4+16+5+13+11+32+6+6+7+14+3+24+12+7+1+50+2+6+2+21+1+10+5+4+7+23+3+1+1-3+2+4+3-1+4+9+0+7-2+12+0+4-1-2-3+20-3-2-2+4+0-1-2+4-1+5+2+5-1+7-2+2-4+5-1+4+2+10-1+7-7-2-5+7+0+4-5+12-5+38-5+18-10+20-5+5-9+12+1+11-3+3+2+9-6+18-3+10-6+14+3+6+3+6+0+5-3+10-3+7+4+16+2+6+4+5+11+6+3+34-1+12-5+14+0+21+3+2-2+10-14+13-7+20-3+11+1+13+4+7-4+7+0+2+0+1-5+8-5+2-3+8-1+23-17+5+0+12-6+9-2+41+0+31+4+14-1+10+5+11-1+3-2+13+3+5-3+2-6-2-9-6-11+1-7-2-6-7-3-4-5-5-16+2-8+7-6-2-2+2-9-4-4+0-4+5-6+2-7-5-5-9-5+6-11-3-12+2-5+0-13-1-3-3+1-17-14-1-2+14-12+2-4+0-5+5-4+2-6+4-3+0-2-5-4-1-5+4-3+8+3+9-6-3-2-7+1-1-4+4-4-6-2+1-2+3-2+7-1+1-3+6-3+20-4+17+2+7-4+10+2+11-2+7+5+3-1+8-8+23-1+13-11+1-4-7-5+3-5+8-7+6-2+18+1-1-8+13-10+12+0+11+5+17+3+3+3+8+3+9+2+5-4+17-1+8-9+10-1+9+2+14-4+10-14+6-2+3+2+12+16+13+5+4+0+12-8+11-2+6-5-2-3-4-1-12+3-3-6-7-1+0-4+2-2+2-6+6-5+10-2+1-8+22-11+12-3+1-3-2-3-11-3-4-3-2-10+7-4+21+2+19+4+16-1+11-4+15+0+42-9+20+1+11+4+24-6+25+1+12-3+13-1+15-6+20+2+11+5+11+1+15+14+12+6+10+8+16+4+44+6+13+5+15+2+20-6+6+3+15-2+13+7+16+1+6+3+18+4+14+18-2+4-8+3+2+11-5+4-8+3-2+6-5+1-2+3+7+7+1+8-1+4+7+13-1+9+8+12+1+6+4+2+12+0+1+2+4+1+5-3+2-7+4-4+23-6+17-2+13-5+9+2+4-2+47-1+5+2+15-4'],inn:['Inn','donau',2,'+975+4640+1+4+34+27-1+4+2+2+28+7+26+22-1+6-7+2+2+3+11+5+13+2+5+3+15+4+34-4+17+3+14+5+22+12+14+4+17+13-1+3-5+5-2+8+3+4-2+7+2+8+8+8-2+0+5+5-2+2+8+2+0+2+7+0+6+2+3+2-2+2+35+4+7-3+4-4+10+5+24+5+15+8+4+13-2+4+5+2'],salzach:['Salzach','inn',1.4,'+1227+4710-7+3-2+9+3+3+26+4+60+2+12+4+3+8-15+35-33+32+14+11+5+0'],traun:['Traun','donau',1.4,'+1400+4768-28-8-3-3-8+10+1+5+18+13+1+17+6+7+50+19'],enns:['Enns','donau',1.4,'+1340+4731+3+8+48+5+28+12+53+5+3+4-10+9-3+13-16+4-11+6+13+14+1+12+7+1'],isar:['Isar','donau',1.4,'+1141+4737-14+2-1+4+6+10+21+5+5+5-5+21-9+11+32+46+15+3+6+6+13+3+15+7+57+11+14+9+6-2'],march:['March','donau',1.4,'+1684+5020-4-8+12-2-4-13+5-4+3-15+5-5+23-9+8-21+0-7+14-9+6-9-2-9-11-6-4-8-24-12-16-21+0-6-9-10-2-9+11-10+4-9'],thaya:['Thaya','march',1.4,'+1508+4868+11+8+7+0+4+13+5+4+18-10+23+11+16-10+20+1+22-10+8+3+10+11+15+1+19-9+8-21'],waag:['Waag','donau',1.4,'+1949+4941-31-4+0-4+33+8+4-7-12-7-7+0-20-8-10-7-13+1-7+6-20+7-12-4-8-8-13-1-8-10-38-24+0-11-13-35+10-14+7-5+14-30+9-7-3-1'],gran:['Gran','donau',1.4,'+2016+4885-22+3-31-6-21+1-27-9+0-11-6-6-22+2-12-5-23-26+2-8+13-13-1-19+11-6'],raab:['Raab','donau',1.4,'+1580+4753-10-7+1-18+27-19+19-8+30-5+37+15+22+30+11+4+19+0+8+15+25+13+14+2'],mur:['Mur','drau',1.8,'+1350+4716+16-6+14+3+2-4+7-1+16+5+5-2+12+1+16+3+9+7+8+1+9-3+18+1+2+1+1+4+6+2+8+8+7+1+8+4+14+1+9-10-6-3+2-1-2-2+3-3+0-4-2-3+2-3+10-5+1-4+5-8+0-6+7-7+1-7+3-3+12-3+12+2+14-3+21-10+7-5+14+0+17-7+6+0+11-9+2+2+7-2+3-2+1-5'],drau:['Drau','donau',2,'+1229+4673+40+5+8+6+19-8+18-2+18+3+3+2+2+4+3+0+46-21+17-3+11-5+28+2+7+2+10+7+20-1+7+3+8-2+8-5+17+2+25-4+3-3+10+2+11-1+2+0+3-5+21-13+20+3+18-4+4-5+12-2+12+2+28-1+17-16+7-3+9+0+4-4+3-7+4-1-3-2+4-1+1+1+0-2+25-2+6-5+1-4+15-4+5-4+3+2+19-2+15+1+16-8+9-1+1-2+10-4+5-5+29-3'],save:['Save','donau',2,'+1523+4605+23-4+4-5+10-2+9-7+12-3+6-5+11+0+7-2+3+2+6+0+2-2+7-1-2-6+4+0+0-3+9-3+0-2+2+0-2-2+7-3-3-3+5-1-2-3-2+1+0-3+5-4+10-3+4+2+10-4+1-3+4+2+6-4-1-2+4+0-2-4+10-1+2+1+3-4+2+0-1+1+4-2+1+1+0-2+3+1+2-3+13-5+5+1+3+3+11-5+6+2+2-1-1-2+5+1-2-3+9+1+6+4+5+0+16-10+7+2+9+7+15-5+4+1+1+3+4+2+8-4+9-1+11-5+2+0-1+3+8+1+4-4+3+3+6-7+5-1+1-4-3-3+1-3+11-5+18+2+12+5+1-2+11+0+4-1-3+2+7+0+1+1-3+1+8+2+3+2+17-2+2-2+9-2-6-11+3-5+7-1+11-5+10-1-8-3-1-1+2-2+19+9+6-4+5+4+0-3+3-3+9+12+8+3+2+3'],theiss:['Theiß','donau',2,'+2426+4832+8-1+3-3-8-9-4-9-7-7+1-7-4-5-14+5-16-3-7+6-22+2-34+17-9-1-21-9-8+1-6+3-19-2-4-3-13+0-9+6+0+3-5+3+0+4-4+4+3+13-7+2-6-3-6-8-7+0-8-7-8-1-16-6-9+1-14-1-3-4+0-8-2-2-11-1-6+3-10-4-3-7-5-5+0-5-4-2+1-4-5-1-9-9-12-1-6-4-2-5-31-16+0-2+5-2+3-10-5-2-6+1-7-6-10-5-2-3+3-2+1-7+6+1+2-2-5-1-12-6+0-1+4-2-11-8+5-9+4-2+0-2+6-1+2-3-7-11+6-9-1-7+4-12-9-4-8-9+0-4-2-3+5-3-2-3-3+0+5-4+1-4+3-5-4-4+5-3+2-9-7-2+1-7-4-5+6+0-2-6+13-10-3-4+6-6-2-3+6-5+2-5-3-3+0-5'],mieresch:['Mieresch','theiss',1.4,'+2567+4664-21+7+0+14-5+6-23+6-22+1-14-7-21-28-16-12-19-5-10+3-5-4-2+3-35-12-4-22-11-10-50-17-22+7-35+1-12+7-28+0-13+9-31-1-28+5-8+5-32-3-13-9-12+6-15+0-42+12'],morava:['Morava','donau',1.4,'+2135+4224+2+14+23+9+0+4+19-3+13+6+11+10+10+22-34+45-4+20-11+3-2+5-13+2-1+6-6-1-4+7-1+7-3+1+1+12+2+3-3+6-14+6-2+6-4+2+3+10-5+3+3+3-4+5+2+6+4+1-2+2+2+2-5+5+1+5-4+2-5+10+4+3'],olt:['Alt','donau',1.4,'+2578+4668+2-6-5-9+1-15+10-8+4-11-7-17+3-5+0-5-10-16-9-1+0+3-10+6+0+20-6+1-2-3-13-1+1-2-4+1-7-2-11-12-74-10-15-14-1-6+6-12-3-12+10-18-13-22+8-32-3-11+6-8+3-12+10-11-1-3+11-12+5-14+9-8+4-7-2+0'],sereth:['Sereth','donau',1.4,'+2525+4801+5+2+2+13+16+6+8+0+71-33+25-23+5-19+9-4+13-27+18-16+0-10-6-7+9-27-4-11+26-32+2-15+14-25+13-11+2-6+12-2+2-5+10-6+26-3'],pruth:['Pruth','donau',1.4,'+2458+4829-1+8+5+5-7+2+7+9+28+5+15-9+50-4+12-9+11+2+32-13+23-4+36+7+13-3+9-7+3+3+6-4-3-3+7-1+0-5+7-5-1-2+7-3-1-6+9-9-3-2+7-6-1-6+15-11+4-9+11-3-1-8+7-7+9-3+8-14+26-15+5-16+11-17-1-16+3-7-7-14-7-6+3-5-6-17+4-9-1-9+4-7+2-13-11-4+8-3+7-11'],rhein:['Rhein','',2.4,'+871+4662+2+5+10+2+6+4+53+10+11+6+2+4+0+3-7+10+3+5-2+10+15+18+1+6-7+3-3+5-28+12-22+5-14-4-13+3-14+1-3-3+1-2-1+1-2-6-3-4-8+3-16+0-3+3-6+0-19-6-13+0-1+3-8+1-5-4-9-2-9+3+0+4-7+7-1+3+3+2-1+5+3+6+0+4+6+9+0+3-4+5+0+6+3+7+8+7+1+6+5+3-1+7+4+9+3+2+0+10+15+10+1+4+5+0+2+3+5+2+9+13+8+5+10+12+3+12+9+7-2+1+4+7+0+5-6+2+2+2-10+19+2+5+6+2+4+4-6+1-8+11+1+4-1+3-14+9-32-8-11+9-5+6+0+4-7+2-7+7+7+1-6+6+2+6-3+3-19+4-6+4-6+8-6+3-4+10-19+14+7+5-7+2-2+3+3+3-3+2+1+3-12+6+3+3-3+2+0+3-5-1-1+3-5+1-2+4+5+1-7+3+3+6-8+3+8+2+1+3-3+3+1+3-4+1+4+3-5+4+2+1-10+2+0+5+1+1-1+2-10+1-8+5+0+3-7+2-6+5-20+3-7+4-3-3-5+2-7-3-14+4-18+1-8-1-9-7-3-1-4+2-31-1-87+16'],moldau:['Moldau','elbe',1.4,'+1398+4878-15+16-25+7+60-36+15-3+3+2-6+15+15+15+1+24-11+7-16+20-1+13+14+14+11+4-2+2+4+6-5+2-3+7+4+15+5+3-6+1+0+4-4+1+2+3-7+6+3+6+13+2'],elbe:['Elbe','',2.4,'+1592+5037-4+3-14+7+1+4-2+3-10+5-1+5-4+5+35-33-11-12+1-2-3-11+4-3-2-2-20-2-24+1-14-3-5+2-3+4-2+5-8+5-30-1-8+1-7+6-4-1-4+3+0+3-4+1+0+3-4+2+1+4-7+4-3+4-4+0-4-4-3+0-4+9-16+1-2+5+4+3-2+4+13+3+2+2-1+5+5+5-2+10-16+3+3+2-2+1-17+1-10+10-5-1-19+6-14+8-2+1+1+4-3+5-8+1-2+4-4+0-1+1+3+2-5+3-3+8-3-1-9+3-5+5+2+4-14+7-4+0-4+6+0+6+3+3-19+4-14+0-2+2-2-2-2+1+0+1-8-3-6+4-7-1-1-2-3+2-18-1-13+10+0+5-5-1-6+3-3-1-6+3-3+7+2+6+4+2-1+4+8+8+15+5+0+2+3+1+3+5-3+5+7+25-1+4+1+5-2+2-19+6+2+2-4+1-5+3-7-1-1+3-6+1+2+2-1+1-5-1-14+4-10-1-8+7-4+1-3-1-3+3-7-3-35+17-1+4-2+2-14-1-22+7-18-2-10+5-3+7-21+2+0-2+24-7'],ill:['Ill','rhein',1.4,'+1010+4692-28+24-16+4-11+10'],lech:['Lech','donau',1.4,'+1003+4720+11+1+5+5+11-1+15+4+27+20-2+8+13+16+4+13+8+84-7+3'],lainsitz:['Lainsitz','moldau',1.4,'+1478+4853+26+24-24+20-20+41-13-8-3-8']};
+const STROMSCHILD=[['donau',15.55,48.36,-1],['inn',10.8,47.17,-1],['mur',14.72,47.2,1],['drau',13.25,46.78,-1],['rhein',9.52,47.1,1],['march',16.93,48.58,1]];
+let NETZ=null;
+const stromBau=()=>{NETZ={};for(const k in STROM){const[name,inn,b,s]=STROM[k],P=dek(s,100)[0],punkte=[];for(let i=0;i<P.length;i+=2)punkte.push([P[i],P[i+1]]);NETZ[k]={name,in:inn,b,punkte,pfad:pfad([P],false)};}return NETZ;};
 const pfad=(L,zu=true)=>{const P=new Path2D();let x0=9,y0=9,x1= -9,y1= -9,vorn=false;
 for(const a of L){const p=[];for(let i=0;i<a.length;i+=2){const g=geo(a[i],a[i+1]);if(g[2]>0)vorn=true;p.push(g);x0=Math.min(x0,g[0]);y0=Math.min(y0,g[1]);x1=Math.max(x1,g[0]);y1=Math.max(y1,g[1]);}
 const n=p.length,mi=(i)=>[(p[i%n][0]+p[(i+1)%n][0])/2,(p[i%n][1]+p[(i+1)%n][1])/2],bis=(i)=>{const e=mi(i);P.quadraticCurveTo(p[i][0],p[i][1],e[0],e[1]);};
@@ -1768,6 +1774,20 @@ if(r>1.3){kugel(c,mx,my,r,['#F4F1E8','#B9B6AE','#4C4A52']);if(r>9){c.save();fx.c
 else{c.fillStyle=`rgba(232,228,218,${aM})`;fx.circle(c,mx,my,1.7);c.fill();}}
 }
 function seen(c,V){if(!GEO)geoBau();const R=RERDE*V.s;c.save();c.translate(V.ox,V.oy);c.scale(R,R);c.lineJoin='round';if(R>9000){c.strokeStyle='rgba(150,164,84,.7)';c.lineWidth=9/R;c.stroke(GEO.seen);}c.fillStyle='rgb(64,124,176)';c.fill(GEO.seen);c.strokeStyle='rgba(190,226,246,.7)';c.lineWidth=1.2/R;c.stroke(GEO.seen);c.restore();}
+function stroeme(c,V){
+const z=V.z,a=zw(z,4.75,7.0,0.5);if(a<=0)return;if(!NETZ)stromBau();const R=RERDE*V.s,B=[-V.ox/R,-V.oy/R,(W-V.ox)/R,(H-V.oy)/R],k=1+1.4*(1-sm(5,6.2,z));
+c.save();c.translate(V.ox,V.oy);c.scale(R,R);c.lineJoin=c.lineCap='round';
+for(const r of[0,1])for(const id in NETZ){const S=NETZ[id],P=S.pfad;if(!P.vorn||P.bb[2]<B[0]||P.bb[0]>B[2]||P.bb[3]<B[1]||P.bb[1]>B[3])continue;
+c.lineWidth=(S.b*k+(r?0:2.6))/R;c.strokeStyle=r?`rgba(70,140,210,${a})`:`rgba(228,242,252,${0.5*a})`;c.stroke(P);}
+c.restore();
+const aS=a*zw(z,5.55,6.45,0.2);if(aS<=0.01)return;
+const P=(lo,la)=>{const g=geo(lo,la);return[V.ox+g[0]*R,V.oy+g[1]*R];};
+c.save();c.font=`italic 400 23px ${F.hand}`;c.textAlign='center';c.lineJoin='round';
+for(const[id,lo,la,seite]of STROMSCHILD){const pk=NETZ[id].punkte;let bi=0,bd=1e9;pk.forEach((q,i)=>{const dd=Math.hypot(q[0]-lo,q[1]-la);if(dd<bd){bd=dd;bi=i;}});
+const a0=P(...pk[Math.max(0,bi-2)]),a1=P(...pk[Math.min(pk.length-1,bi+2)]),m0=P(...pk[bi]);let w=Math.atan2(a1[1]-a0[1],a1[0]-a0[0]);if(w>PI/2)w-=PI;if(w< -PI/2)w+=PI;
+c.save();c.globalAlpha=aS;c.translate(m0[0]-Math.sin(w)*17*seite,m0[1]+Math.cos(w)*17*seite);c.rotate(w);c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=4.5;c.strokeText(NETZ[id].name,0,7);c.fillStyle='#DCEEFF';c.fillText(NETZ[id].name,0,7);c.restore();}
+c.restore();
+}
 function erde(c,V,t){
 const z=V.z,R=RERDE*V.s;if(!GEO)geoBau();
 if(R<2.2){c.fillStyle='#7FB4F0';fx.circle(c,V.ox,V.oy,Math.max(R,1.7));c.fill();return;}
@@ -1790,7 +1810,7 @@ if(R>60){const aG=sm(4.9,5.5,z),fern=1-sm(500,1000,R),nah=sm(3000,5500,R);c.save
 c.lineWidth=P.w;for(const[per,a]of[[0.05,(1-fern)*(1-nah)],[0.011,nah]])if(a>0.01){c.globalAlpha=aG*a;c.strokeStyle=fuellMuster(c,BERG,per,R);c.stroke(P);}
 if(fern>0){c.globalAlpha=aG*fern;const lw=Math.max(1.2/R,P.w*0.12);c.lineWidth=lw;c.save();c.translate(lw*0.7,lw*0.8);c.strokeStyle='rgba(30,52,44,.35)';c.stroke(P);c.restore();c.strokeStyle='rgba(240,240,228,.5)';c.stroke(P);}}c.restore();}
 c.fillStyle='rgb(64,124,176)';c.fill(GEO.seen);
-const aF=zw(z,4.9,7.0,0.5);if(aF>0){c.strokeStyle=`rgba(88,150,200,${0.9*aF})`;c.lineWidth=Math.min(2.4/R,0.0009+1/R);for(const P of GEO.fluss)if(da(P))c.stroke(P);}
+const aF=zw(z,4.9,7.0,0.5);if(aF>0){c.strokeStyle=`rgba(88,150,200,${0.9*aF})`;c.lineWidth=Math.min(2.4/R,0.0009+1/R);for(const P of GEO.fluss.slice(5))if(da(P))c.stroke(P);}
 const aA=zw(z,4.9,7.3,0.4);if(aA>0){c.fillStyle=`rgba(255,252,235,${0.2*aA*sm(5.2,5.8,z)})`;c.fill(GEO.at);c.strokeStyle=`rgba(255,250,236,${0.95*aA})`;c.lineWidth=2.6/R;c.stroke(GEO.at);c.strokeStyle=`rgba(214,40,59,${0.9*aA})`;c.lineWidth=1.1/R;c.stroke(GEO.at);}
 }
 c.restore();
@@ -1998,7 +2018,7 @@ else{c.fillStyle=ink;c.beginPath();c.ellipse(-0.03,-0.205,0.0095,0.0135,0,0,TAU)
 c.strokeStyle=ink;c.lineWidth=0.006;c.beginPath();c.moveTo(-0.045,-0.232);c.lineTo(-0.02,-0.236);c.moveTo(0.045,-0.232);c.lineTo(0.02,-0.236);c.stroke();
 c.strokeStyle=rgb(hd);c.lineWidth=0.005;c.beginPath();c.arc(0,-0.183,0.008,0.1*PI,0.9*PI);c.stroke();
 c.fillStyle=ink;c.beginPath();c.moveTo(-0.026,-0.158);c.quadraticCurveTo(0,-0.118,0.026,-0.158);c.closePath();c.fill();c.fillStyle='#FF7F8A';c.beginPath();c.ellipse(0,-0.143,0.009,0.005,0,0,TAU);c.fill();
-if(o.sommer&&fein){c.fillStyle='rgba(170,100,70,.5)';for(const[x,y]of[[-0.012,-0.178],[0.012,-0.178],[-0.024,-0.172],[0.024,-0.172],[0,-0.172]]){fx.circle(c,x,y,0.0022);c.fill();}}
+if(o.sommer&&fein){c.fillStyle='rgba(170,100,70,.4)';for(const sg of[-1,1])for(const[x,y]of[[0.042,-0.186],[0.053,-0.183],[0.047,-0.178]]){fx.circle(c,sg*x,y,0.0019);c.fill();}}
 }
 const LENA0=[-0.73,-0.06];
 function menschen(c,V,t){
@@ -2212,8 +2232,10 @@ const k=[[rx+rw+8,by],[rx-bw-8,by],[bx,ry+rh+8],[bx,ry-bh-8]].filter(([x,y])=>x>
 if(k.length)[bx,by]=k[0];}
 if(al>0.3)KAESTEN.push([bx,by,bw,bh],[ax-40,ay-40,80,80]);
 const px=clamp(ax,bx+12,bx+bw-12),py=ay<by?by:ay>by+bh?by+bh:clamp(ay,by,by+bh);
-if(Math.hypot(px-ax,py-ay)>6){c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=4.5;c.lineCap='round';c.beginPath();c.moveTo(ax,ay);c.lineTo(px,py);c.stroke();c.strokeStyle=T.papier;c.lineWidth=2;c.stroke();}
-if(ring){c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=5;fx.circle(c,ax,ay,ring);c.stroke();c.strokeStyle=T.gold;c.lineWidth=2.5;c.stroke();}else{c.fillStyle=T.papier;fx.circle(c,ax,ay,3.5);c.fill();}
+let sx=ax,sy=ay,innen=false;if(!ring)for(const[rx,ry,rw,rh,fig]of FREI){if(!fig||ax<=rx||ax>=rx+rw||ay<=ry||ay>=ry+rh)continue;innen=true;
+const ex=px-ax,ey=py-ay,u=Math.min(ex>0?(rx+rw-ax)/ex:ex<0?(rx-ax)/ex:9,ey>0?(ry+rh-ay)/ey:ey<0?(ry-ay)/ey:9);if(u<1&&Math.hypot(ex*u,ey*u)>Math.hypot(sx-ax,sy-ay)){sx=ax+ex*u;sy=ay+ey*u;}}
+if(Math.hypot(px-sx,py-sy)>6){c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=4.5;c.lineCap='round';c.beginPath();c.moveTo(sx,sy);c.lineTo(px,py);c.stroke();c.strokeStyle=T.papier;c.lineWidth=2;c.stroke();}
+if(innen){}else if(ring){c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=5;fx.circle(c,ax,ay,ring);c.stroke();c.strokeStyle=T.gold;c.lineWidth=2.5;c.stroke();}else{c.fillStyle=T.papier;fx.circle(c,ax,ay,3.5);c.fill();}
 c.fillStyle='rgba(11,7,20,.84)';fx.rrect(c,bx,by,bw,bh,10);c.fill();c.strokeStyle='rgba(255,200,87,.5)';c.lineWidth=1.2;c.stroke();
 fx.spaced(c,'1.5px');text(c,titel,bx+14,by+29,{size:21,font:F.mono,w:700,col:T.gold});fx.spaced(c,'0px');
 if(zeile)text(c,zeile,bx+14,by+60,{size:25});
@@ -2257,6 +2279,21 @@ weg();c.strokeStyle='rgba(90,255,150,.16)';c.lineWidth=26;c.stroke();c.strokeSty
 c.restore();
 if(lam<1150)klammer(c,V.ox-lam/2,y0+amp+34,V.ox+lam/2,y0+amp+34,'EINE WELLE VON GRÜNEM LICHT','0,5 µm lang, das sind 0,0005 mm',a*zw(V.z,-6.45,-5.3,0.2),1);
 }
+const SCHALL={mund:[-0.73,-0.21],lam:1.34,R:5.2};
+function schallringe(c,V,t){
+const a=zw(V.z,0.3,1.75,0.25);if(a<=0)return;const{mund,lam,R}=SCHALL,mx=V.ox+mund[0]*V.s,my=V.oy+mund[1]*V.s,ph=((t||0)*0.3)%lam;
+const g=c.createRadialGradient(mx,my,0,mx,my,R*V.s);
+for(let i=0;i<=160;i++){const r=(i/160)*R,k=Math.pow(Math.max(0,Math.cos(((r-ph)/lam)*TAU)),3)*sm(0.12,0.45,r)*(1-sm(2.4,R,r));g.addColorStop(i/160,`rgba(255,248,226,${(0.5*k).toFixed(3)})`);}
+c.save();c.globalAlpha=a;c.fillStyle=g;c.beginPath();c.arc(mx,my,R*V.s,0,TAU);c.fill();c.restore();
+}
+function schallSchild(c,V,al){
+const{mund,lam}=SCHALL,w=0.45,r0=0.85,X=(r)=>V.ox+(mund[0]+Math.cos(w)*r)*V.s,Y=(r)=>V.oy+(mund[1]+Math.sin(w)*r)*V.s;
+const x0=X(r0),y0=Y(r0),x1=X(r0+lam),y1=Y(r0+lam),nx= -Math.sin(w)*9,ny=Math.cos(w)*9;
+if(al>0.3)KAESTEN.push([Math.min(x0,x1)-12,Math.min(y0,y1)-12,Math.abs(x1-x0)+24,Math.abs(y1-y0)+24]);
+c.save();c.globalAlpha*=al;c.lineCap='round';c.beginPath();c.moveTo(x0-nx,y0-ny);c.lineTo(x0+nx,y0+ny);c.moveTo(x1-nx,y1-ny);c.lineTo(x1+nx,y1+ny);c.moveTo(x0,y0);c.lineTo(x1,y1);
+c.strokeStyle='rgba(11,7,20,.75)';c.lineWidth=6;c.stroke();c.strokeStyle=T.gold;c.lineWidth=2.6;c.stroke();c.restore();
+schild(c,(x0+x1)/2,(y0+y1)/2,20,46,'EINE WELLE VON LENAS STIMME','rund 1,3 m lang, in echt unsichtbar',al);
+}
 function schilder(c,V,t){
 const z=V.z,s=V.s,X=(x)=>V.ox+x*s,Y=(y)=>V.oy+y*s,A=(a,b,f=0.22)=>zw(z,a,b,f);
 let a;
@@ -2270,12 +2307,15 @@ if((a=A(7.55,8.95))>0){const R=RERDE*s;schild(c,X(0)+R*0.72,Y(0)+R*0.7,40,26,'DI
 if((a=A(8.0,8.95))>0&&AMOND*s>560)weiser(c,X(0)+540*Math.cos(MONDW),Y(0)+540*Math.sin(MONDW),MONDW,'ZUM MOND','384.400 km von der Erde',a);
 if((a=A(6.35,7.4))>0){const g=geo(13.6,47.6),R=RERDE*s;schild(c,X(0)+g[0]*R,Y(0)+g[1]*R,-70,-110,'ÖSTERREICH','',a,Math.max(14,0.047*R));}
 if((a=A(5.5,6.35))>0){const R=RERDE*s,G=(lo,la)=>{const g=geo(lo,la);return[X(0)+g[0]*R,Y(0)+g[1]*R];},p=G(9.53,46.15),q=G(17.16,46.15);klammer(c,p[0],p[1],q[0],p[1],'ÖSTERREICH','575 km von West nach Ost',a,1);
-c.save();c.globalAlpha=a*A(5.5,6.25);for(const[n,lo,la,seite]of STAEDTE){const[x,y]=G(lo,la);c.fillStyle=T.tinte;fx.circle(c,x,y,6);c.fill();c.fillStyle=T.papier;fx.circle(c,x,y,3.6);c.fill();c.font=`400 24px ${F.hand}`;c.textAlign=seite>0?'left':'right';c.lineJoin='round';c.strokeStyle='rgba(11,7,20,.8)';c.lineWidth=5;c.strokeText(n,x+seite*11,y+8);c.fillStyle=T.papier;c.fillText(n,x+seite*11,y+8);}c.restore();}
+c.save();c.globalAlpha=a*A(5.5,6.25);for(const[n,lo,la,seite]of STAEDTE){const[x,y]=G(lo,la);c.fillStyle=T.tinte;fx.circle(c,x,y,6);c.fill();c.fillStyle=T.papier;fx.circle(c,x,y,3.6);c.fill();c.font=`400 24px ${F.hand}`;const tw=c.measureText(n).width,kasten=(sd)=>[sd>0?x+8:x-14-tw,y-14,tw+6,28],stoesst=(k)=>FREI.some(([rx,ry,rw,rh])=>k[0]<rx+rw&&k[0]+k[2]>rx&&k[1]<ry+rh&&k[1]+k[3]>ry);
+const sd=stoesst(kasten(seite))&& !stoesst(kasten(-seite))? -seite:seite;if(a>0.3)KAESTEN.push(kasten(sd));
+c.textAlign=sd>0?'left':'right';c.lineJoin='round';c.strokeStyle='rgba(11,7,20,.8)';c.lineWidth=5;c.strokeText(n,x+sd*11,y+8);c.fillStyle=T.papier;c.fillText(n,x+sd*11,y+8);}c.restore();}
 if((a=A(4.75,5.6))>0){const g=geo(16.76,47.8),R=RERDE*s;schild(c,X(0)+g[0]*R,Y(0)+g[1]*R,30,-40,'NEUSIEDLER SEE','',a);}
-if((a=A(3.55,5.5))>0)schild(c,X(0),Y(-100),-40,70,'LENAS ORT',z<4.4?'rund 1,5 km von Rand zu Rand':'',a,Math.max(16,760*s));
+if((a=A(3.55,5.5))>0)schild(c,X(0),Y(-100),-40,70,'LENAS ORT (ERFUNDEN)',z<4.4?'rund 1,5 km von Rand zu Rand':'',a,Math.max(16,760*s));
 if((a=A(2.75,3.55))>0)schild(c,X(-16),Y(-6),60,-90,'DIE SCHULE','',a,Math.max(18,74*s));
 if((a=A(1.75,2.6))>0){klammer(c,X(-60),Y(-36.4),X(-12),Y(-36.4),'SCHULHAUS','48 m lang',a*A(1.75,2.45),-1);schild(c,X(-0.73),Y(0.4),46,40,'LENA','liegt in der Pause im Gras',a,Math.max(16,1.3*s));klammer(c,X(-30),Y(47),X(30),Y(47),'LAUFBAHN','60 m',a*A(2.0,2.6),-1);}
 if((a=A(0.25,1.25))>0)klammer(c,X(-1.2),Y(-0.365),X(-1.2),Y(1.14),'LENA','1,50 m groß',a,-1);
+if((a=A(0.3,1.75,0.25))>0)schallSchild(c,V,a);
 if((a=A(-1.25,-0.45))>0)klammer(c,X(-0.15),Y(-0.068),X(0.0098),Y(-0.068),'LENAS HAND','rund 16 cm lang',a,-1);
 if((a=A(-2.35,-1.45))>0)klammer(c,X(-0.0118),Y(-0.00465),X(-0.0118),Y(0.00465),'FINGERNAGEL','rund 1 cm breit',a,1);
 if((a=A(-1.6,-0.75))>0){schild(c,X(-0.0013),Y(-0.0108),40,-40,'EIN HAAR','liegt quer über dem Finger',a*A(-1.6,-0.75));schild(c,X(0.012),Y(0.004),50,60,'KLEEBLATT','',a);}
@@ -2305,11 +2345,12 @@ c.save();c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=5;c.strokeRect(x,y,w,h);c.
 if(w>170){c.font=`700 21px ${F.mono}`;const tx=STUFEN[k].kurz,tw=c.measureText(tx).width;c.fillStyle=T.papier;c.fillRect(x-1,y-31,tw+16,31);c.fillStyle=T.tinte;c.fillText(tx,x+7,y-9);}c.restore();}
 }
 function unterzeile(z,kurz){
-if(kurz)return z< -9.2?'Modell: Punktwolke, Kern viel zu groß gezeichnet':z< -6.4?'Modell: Teilchen als Kugeln, Farben erfunden':z< -3.85?'Zeichnung nach Mikroskop-Bildern, Größen stimmen':z>8.5?'Größen und Abstände stimmen':'Zeichnung, Größen stimmen';
+if(kurz)return z< -9.2?'Modell: Punktwolke, Kern viel zu groß gezeichnet':z< -6.4?'Modell: Teilchen als Kugeln, Farben erfunden':z< -3.85?'Zeichnung nach Mikroskop-Bildern, Größen stimmen':z>8.5?'Größen und Abstände stimmen':z>2.5&&z<6.5?'Zeichnung, Größen stimmen. Lenas Ort ist erfunden.':'Zeichnung, Größen stimmen';
 if(z< -9.2)return'Modell: Die Punktwolke zeigt, wo die Elektronen sein können. Den Kern sähe man in echt nicht, er ist viel zu groß gezeichnet.';
 if(z< -6.4)return'Modell: Teilchen sind als Kugeln gezeichnet. Die Farben sind erfunden. So klein kann niemand sehen.';
 if(z< -3.85)return'Zeichnung nach Mikroskop-Bildern. Wir schauen durch die Haut. Die Größen stimmen.';
 if(z>8.5)return'Größen und Abstände stimmen. Darum sind Erde und Mond hier nur Punkte.';
+if(z>2.5&&z<6.5)return'Zeichnung. Die Größen stimmen. Lenas Ort ist erfunden.';
 return'Zeichnung. Die Größen stimmen.';
 }
 function gravur(cv,s){const el=cv&&cv.closest&&cv.closest('.linse,.fenster'),b=el&&el.querySelector('.gravur b');if(b&&b.textContent!==s)b.textContent=s;}
@@ -2322,7 +2363,15 @@ c.fillStyle='#FFF8E6';c.beginPath();c.ellipse(0,0,r*(0.6+w),r*(0.8-w),0,0,TAU);c
 c.strokeStyle='rgba(255,255,255,.55)';c.lineWidth=r*0.07;c.lineCap='round';c.beginPath();c.ellipse(0,0,r*0.76,r*0.97,0,PI*1.08,PI*1.42);c.stroke();
 return{cheek:'rgba(255,120,110,.4)',ink:'#1B1224',faceY: -0.04};
 });
-function vorbereiten(){if(!GEO)geoBau();if(!FELD)feldBau();if(!KRONE)kroneBau();if(!GRAS)grasBau();if(!HAUS)ortBau();if(!KAP)kapBau();if(!WASSER)wasserBau();if(!BERG)bergBau();if(!WALDK)waldBau();if(!EIWEISS)eiweissBau();atomBau();}
+const ALEX=[29.92,31.2],SYENE=[32.9,24.09];
+function eratosthenes(c,V,namen){
+const a=zw(V.z,7.15,7.85,0.2);if(a<=0)return;const R=RERDE*V.s,P=([lo,la])=>{const g=geo(lo,la);return[V.ox+g[0]*R,V.oy+g[1]*R];},A=P(ALEX),S=P(SYENE);
+c.save();c.globalAlpha=a;c.lineCap='round';c.setLineDash([5,5]);c.strokeStyle='rgba(11,7,20,.7)';c.lineWidth=4.5;c.beginPath();c.moveTo(A[0],A[1]);c.lineTo(S[0],S[1]);c.stroke();c.strokeStyle=T.gold;c.lineWidth=2.2;c.stroke();c.setLineDash([]);
+for(const[x,y]of[A,S]){c.fillStyle=T.tinte;fx.circle(c,x,y,6);c.fill();c.fillStyle=T.papier;fx.circle(c,x,y,3.6);c.fill();}
+c.restore();
+if(namen){schild(c,A[0],A[1],250,-110,'ALEXANDRIA','Hier warf ein Stab einen Schatten.',a);schild(c,S[0],S[1],250,60,'SYENE, HEUTE ASSUAN','rund 800 km weiter im Süden',a);}
+}
+function vorbereiten(){if(!GEO)geoBau();if(!NETZ)stromBau();if(!FELD)feldBau();if(!KRONE)kroneBau();if(!GRAS)grasBau();if(!HAUS)ortBau();if(!KAP)kapBau();if(!WASSER)wasserBau();if(!BERG)bergBau();if(!WALDK)waldBau();if(!EIWEISS)eiweissBau();atomBau();}
 function zeichne(c,z,opts={}){
 LINKS=opts.links||0;const V=sicht(z),t=opts.t||0;z=V.z;FREI=opts.frei||[];KAESTEN=[];
 c.save();
@@ -2330,8 +2379,10 @@ if(z>7.0)weltall(c,V,t);
 if(z>5.1&&z<10.6)erde(c,V,t);
 if(z<5.7&&z>1.95)gegend(c,V);
 if(z<5.7&&z>4.6)seen(c,V);
+if(z>4.75&&z<7.0)stroeme(c,V);
 if(z<4.6&&z>1.95)ort(c,V);
-schule(c,V,t);wiese(c,V);menschen(c,V,t);hand(c,V);klee(c,V);mikro(c,V,t);nano(c,V,t);
+schule(c,V,t);wiese(c,V);schallringe(c,V,t);menschen(c,V,t);hand(c,V);klee(c,V);mikro(c,V,t);nano(c,V,t);
+if(z>7.15&&z<7.85)eratosthenes(c,V,opts.namen!==false);
 if(opts.winzlinge)winzlinge(c,V,t,opts.winzlinge===true?1:clamp(+opts.winzlinge||0,0,1));
 if(opts.rahmen)rahmen(c,V);
 if(opts.namen!==false)schilder(c,V,t);else lichtwelle(c,V,t);
@@ -2350,7 +2401,12 @@ text(c,n===0?'los geht es':n<=9?`zusammen ${m.fmt(Math.pow(10,n))}-mal`:`zusamme
 return{z,schritte:n,fertig:t>=(o.dauer||10),V};
 }
 const PLAETZE={co2:{figur:'kohlenstoff',name:'Kohlenstoff im Kohlendioxid',z: -8.6,ort:[CO2[0]*1e-9,CO2[1]*1e-9],r:RC*1e-9,text:'rund 0,3 nm',folge:'C2'}};
-EJ.zoom={zeichne,fahrt,zVon,sicht,breite,stufe,STUFEN,ANKER,WOHNORTE,PLAETZE,kaesten:()=>KAESTEN.slice(),unterzeile,gravur,text,schild,klammer,vorbereiten,MIN,MAX,punkt:(z,x,y,li=0)=>{const V=sicht(z,li);return[V.ox+x*V.s,V.oy+y*V.s];}};
+const lage=(lon,lat)=>{const g=geo(lon,lat);return[g[0]*RERDE,g[1]*RERDE];};
+PLAETZE.donau={figur:'wasser',name:'Wasser-Teilchen auf der Donau',z:6,ort:(()=>{const P=dek(STROM.donau[3],100)[0],R=dek(STROM.raab[3],100)[0],e=[R[R.length-2],R[R.length-1]];let b=0;for(let i=0;i<P.length;i+=2)if(Math.hypot(P[i]-e[0],P[i+1]-e[1])<Math.hypot(P[b]-e[0],P[b+1]-e[1]))b=i;return lage(P[b],P[b+1]);})(),rpx:24,text:'auf der Donau, unterwegs zum Schwarzen Meer',folge:'W3'};
+PLAETZE.stimme={figur:'sauerstoff',name:'Sauerstoff-Teilchen in der Luft',z:1,ort:[-1.85,-0.5],rpx:22,text:'Eine Welle von Lenas Stimme ist rund 1,3 m lang.',folge:'S2'};
+PLAETZE.erde={figur:'photon',name:'Photon über Syene',z:7.45,ort:lage(31.6,14.6),rpx:20,text:'Die Erde ist rund 12.700 km dick, einmal rundherum sind es rund 40.000 km.',folge:'M3'};
+PLAETZE.mond={figur:'photon',name:'Photon zwischen Mond und Erde',z:9,ort:[Math.cos(MONDW)*AMOND*0.42,Math.sin(MONDW)*AMOND*0.42],mond:[Math.cos(MONDW)*AMOND,Math.sin(MONDW)*AMOND],rpx:22,text:'Sonnenlicht vom Mond, unterwegs zur Erde: 384.400 km',folge:'P2'};
+EJ.zoom={zeichne,fahrt,zVon,sicht,breite,stufe,STUFEN,ANKER,WOHNORTE,PLAETZE,lage,flussnetz:()=>NETZ||stromBau(),kaesten:()=>KAESTEN.slice(),unterzeile,gravur,text,schild,klammer,vorbereiten,MIN,MAX,punkt:(z,x,y,li=0)=>{const V=sicht(z,li);return[V.ox+x*V.s,V.oy+y*V.s];}};
 })();</script>
 <script>(()=>{
 const EJ=window.EJ;
@@ -2783,7 +2839,7 @@ c.font=`700 20px ${MONO}`;c.fillText('IN JEDER SEKUNDE',190,186);c.font=`400 30p
 c.font=`700 16px ${MONO}`;c.fillStyle='rgba(27,18,36,.7)';c.fillText('BILD STARK VERGRÖSSERT, OHNE MASSSTAB',190,282);
 },
 },
-weiter:{href:'ein-atemzug.html',titel:'Ein Atemzug'},
+weiter:{href:'wie-gross-ist-die-erde.html',titel:'Wie groß ist die Erde?'},
 texte:{
 lueckeFertig:'Merksatz gestempelt! Jetzt dreht die Postkarte um.',
 detektivFertig:'',

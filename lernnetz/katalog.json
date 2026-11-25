@@ -121,6 +121,30 @@
   "material": "wie-klein-ist-winzig-material.html"
  },
  {
+  "id": "m3-erde",
+  "linie": "M",
+  "folge": "M3",
+  "titel": "Wie groß ist die Erde?",
+  "frage": "Wie kann man die ganze Erde messen, ohne die eigene Stadt zu verlassen?",
+  "beschreibung": "Vor rund 2.250 Jahren hat Eratosthenes in Alexandria mit einem Stab, einem Schatten und einem Winkel den Umfang der Erde bestimmt. Ein Photon kommt als Sonnenlicht mit. Die Klasse schaltet zwischen flacher und runder Erde, misst den Schattenwinkel selbst mit dem Winkelmesser, findet ihn im Erdmittelpunkt wieder und rechnet mit dem Fünfzigstel bis zum Erdumfang. Dazu ein echter Schatten am Fenster.",
+  "key": "lernnetz-m3",
+  "stempel": [
+   "Schattenwinkel",
+   "Parallelwinkel",
+   "Anteil"
+  ],
+  "fach": "M",
+  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
+  "datei": "wie-gross-ist-die-erde.html",
+  "welt": "Lernnetz-Werkstatt",
+  "format": "Werkstatt",
+  "schulstufe": 6,
+  "status": "fertig",
+  "thema": "Winkel messen, Parallelwinkel an parallelen Geraden, Bruchteil des Vollwinkels, Maßstab und direkte Proportionalität am Beispiel des Eratosthenes",
+  "lehrerheft": "wie-gross-ist-die-erde-lehrerheft.html",
+  "material": "wie-gross-ist-die-erde-material.html"
+ },
+ {
   "id": "p1-anreise",
   "linie": "P",
   "folge": "P1",
@@ -214,6 +238,30 @@
   "material": "ein-atemzug-material.html"
  },
  {
+  "id": "s2-schall",
+  "linie": "S",
+  "folge": "S2",
+  "titel": "Wie kommt deine Stimme ins Ohr?",
+  "frage": "Wie kommt deine Stimme ins Ohr?",
+  "beschreibung": "Lena ruft, Samir hört sie. Dazwischen sitzt ein Sauerstoff-Teilchen in der Luft und gibt die Stimme weiter, ohne selbst mitzureisen. Film, drei Etappen mit der Teilchenkette, die Glasglocke, das Trommelfell und eine Postkarte.",
+  "key": "winzlinge-s2",
+  "stempel": [
+   "Weitergeben",
+   "Schwingen",
+   "Vakuum"
+  ],
+  "fach": "PH",
+  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
+  "datei": "wie-kommt-die-stimme-ins-ohr.html",
+  "welt": "Winzlinge auf Reisen",
+  "schulstufe": 6,
+  "station": "ph-6-schall-entstehung-und-ausbreitung",
+  "status": "fertig",
+  "thema": "Schall: Entstehung und Ausbreitung im Teilchenmodell, Lautstärke und Tonhöhe, kein Schall im Vakuum, das Trommelfell",
+  "lehrerheft": "wie-kommt-die-stimme-ins-ohr-lehrerheft.html",
+  "material": "wie-kommt-die-stimme-ins-ohr-material.html"
+ },
+ {
   "id": "w1-loeffel",
   "linie": "W",
   "folge": "W1",
@@ -259,5 +307,29 @@
   "thema": "Teilchenmodell: Aggregatzustände, Verdunsten, Sieden, Kondensieren",
   "lehrerheft": "wohin-verschwindet-die-pfuetze-lehrerheft.html",
   "material": "wohin-verschwindet-die-pfuetze-material.html"
+ },
+ {
+  "id": "w3-regen",
+  "linie": "W",
+  "folge": "W3",
+  "titel": "Wohin fließt der Regen vom Schuldach?",
+  "frage": "Wohin fließt der Regen vom Schuldach?",
+  "beschreibung": "Ein Wasser-Teilchen fällt mit einem Regentropfen auf das Dach einer Schule. Es läuft bergab, über Bach und Fluss in die Donau und bis ins Schwarze Meer. Film, drei Etappen mit Schulhof, Wasserscheide und Donaukarte, und eine Postkarte.",
+  "key": "winzlinge-w3",
+  "stempel": [
+   "Bergab",
+   "Wasserscheide",
+   "Mündung"
+  ],
+  "fach": "GW",
+  "dauer": "eine Unterrichtsstunde (ca. 50 Min.)",
+  "datei": "wohin-fliesst-der-regen.html",
+  "welt": "Winzlinge auf Reisen",
+  "schulstufe": 5,
+  "station": "gw-5-orientierung-mit-karten-und-geomedien",
+  "status": "fertig",
+  "thema": "Fließgewässer, Einzugsgebiet, Wasserscheide, Wasserkreislauf: der Weg des Regens vom Schuldach bis ins Meer",
+  "lehrerheft": "wohin-fliesst-der-regen-lehrerheft.html",
+  "material": "wohin-fliesst-der-regen-material.html"
  }
 ]
